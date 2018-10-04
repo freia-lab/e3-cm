@@ -1,0 +1,9 @@
+# Cryo-module
+
+file "cm-cernox.template" { pattern
+
+#PSL SUBS?
+{OFFS, PREC, SUBS1,  DEV1,	SUBS2,	DEV2,	SUBS3,	DEV3}
+{68,   6,    VB,     TT01,	VB,	TT08,	VB,	TT91}
+}
+

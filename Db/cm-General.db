@@ -1,0 +1,49 @@
+record (bi, "CM-Ctrl:s7-status") {
+  field (DTYP, "S7plc stat")
+  field (INP,  "@PLC:CM")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "disconnected")
+  field (ONAM, "connected")
+  field (ZSV,  "MAJOR")
+  field (FLNK, "CM-Ctrl:s7-status-counter")
+}
+
+
+
+record (calc, "CM-Ctrl:s7-status-counter")
+{
+   field (INPA, "CM-Ctrl:s7-status-counter")
+   field (CALC, "A+1")
+   field (FLNK, "CM-Ctrl:s7-disconnect-counter")
+}
+
+record (calc, "CM-Ctrl:s7-disconnect-counter")
+{
+   field (INPA, "CM-Ctrl:s7-status")
+   field (INPB, "CM-Ctrl:s7-disconnect-counter.LA")
+   field (INPC, "CM-Ctrl:s7-disconnect-counter")
+   field (CALC, "(A=0&&B=1)?C+1:C")
+}
+
+
+record(bo, "CM-Ctrl:Archiving:On") {
+  field(DESC, "Turn CM archiving on or off")
+  field(ZNAM, "Archiving off")
+  field(ONAM, "Archiving on")
+  field(ZSV, "MINOR")
+}
+
+record(ao, "CM-test0:cSetV") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=FLOAT")
+  field(PINI, "NO")
+  field(PREC, "6")
+}
+
+record(ai, "CM-test0:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=FLOAT")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+}

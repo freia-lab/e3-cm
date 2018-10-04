@@ -1,0 +1,3 @@
+To start the module on your local DM go to directory above modules directory and
+ start the IOC with the following command:
+rm require.lock-*; iocsh -r ioc-cm-freia,local -c 'requireSnippet(cm-freia.cmd, "PLC_IPADDR=<actual-ip-addr>")'

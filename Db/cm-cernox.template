@@ -1,0 +1,32 @@
+record(ai, "CM-$(SUBS1):$(DEV1)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+#  field(SDIS, "CM-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+#  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+
+record(ai, "CM-$(SUBS2):$(DEV2)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+4 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+#  field(SDIS, "CM-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+#  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+
+record(ai, "CM-$(SUBS3):$(DEV3)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+#  field(SDIS, "CM-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+#  field(DISV, "-1") # Will never disable, but will propagate severity
+}
