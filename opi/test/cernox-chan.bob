@@ -17,7 +17,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
-    <pv_name>$(P)-$(SUBS):$(TT):sRdV-stat</pv_name>
+    <pv_name>$(P)-$(SUBS):$(TT):sFlt</pv_name>
     <x>70</x>
     <y>10</y>
     <off_color>

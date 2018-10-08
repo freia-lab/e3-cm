@@ -366,9 +366,9 @@ record(ai, "CM-$(SUBS16):$(DEV16):sRdV") {
    field (LINR, "$(ID16)")
 }
 
-# Fault bits
+# Fault bits (for GUI and for status propagation)
 #
-record(bi, "CM-$(SUBS1):$(DEV1):sRdV-stat") {
+record(bi, "CM-$(SUBS1):$(DEV1):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=0")
    field(SCAN, "I/O Intr")
@@ -376,7 +376,7 @@ record(bi, "CM-$(SUBS1):$(DEV1):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS2):$(DEV2):sRdV-stat") {
+record(bi, "CM-$(SUBS2):$(DEV2):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=1")
    field(SCAN, "I/O Intr")
@@ -384,7 +384,7 @@ record(bi, "CM-$(SUBS2):$(DEV2):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS3):$(DEV3):sRdV-stat") {
+record(bi, "CM-$(SUBS3):$(DEV3):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=2")
    field(SCAN, "I/O Intr")
@@ -392,7 +392,7 @@ record(bi, "CM-$(SUBS3):$(DEV3):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS4):$(DEV4):sRdV-stat") {
+record(bi, "CM-$(SUBS4):$(DEV4):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=3")
    field(SCAN, "I/O Intr")
@@ -400,7 +400,7 @@ record(bi, "CM-$(SUBS4):$(DEV4):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS5):$(DEV5):sRdV-stat") {
+record(bi, "CM-$(SUBS5):$(DEV5):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=4")
    field(SCAN, "I/O Intr")
@@ -408,7 +408,7 @@ record(bi, "CM-$(SUBS5):$(DEV5):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS6):$(DEV6):sRdV-stat") {
+record(bi, "CM-$(SUBS6):$(DEV6):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=5")
    field(SCAN, "I/O Intr")
@@ -416,7 +416,7 @@ record(bi, "CM-$(SUBS6):$(DEV6):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS7):$(DEV7):sRdV-stat") {
+record(bi, "CM-$(SUBS7):$(DEV7):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=6")
    field(SCAN, "I/O Intr")
@@ -424,7 +424,7 @@ record(bi, "CM-$(SUBS7):$(DEV7):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS8):$(DEV8):sRdV-stat") {
+record(bi, "CM-$(SUBS8):$(DEV8):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=7")
    field(SCAN, "I/O Intr")
@@ -432,7 +432,7 @@ record(bi, "CM-$(SUBS8):$(DEV8):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS9):$(DEV9):sRdV-stat") {
+record(bi, "CM-$(SUBS9):$(DEV9):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=0")
    field(SCAN, "I/O Intr")
@@ -440,7 +440,7 @@ record(bi, "CM-$(SUBS9):$(DEV9):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS10):$(DEV10):sRdV-stat") {
+record(bi, "CM-$(SUBS10):$(DEV10):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=1")
    field(SCAN, "I/O Intr")
@@ -448,7 +448,7 @@ record(bi, "CM-$(SUBS10):$(DEV10):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS11):$(DEV11):sRdV-stat") {
+record(bi, "CM-$(SUBS11):$(DEV11):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=2")
    field(SCAN, "I/O Intr")
@@ -456,7 +456,7 @@ record(bi, "CM-$(SUBS11):$(DEV11):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS12):$(DEV12):sRdV-stat") {
+record(bi, "CM-$(SUBS12):$(DEV12):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=3")
    field(SCAN, "I/O Intr")
@@ -464,7 +464,7 @@ record(bi, "CM-$(SUBS12):$(DEV12):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS13):$(DEV13):sRdV-stat") {
+record(bi, "CM-$(SUBS13):$(DEV13):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=4")
    field(SCAN, "I/O Intr")
@@ -472,7 +472,7 @@ record(bi, "CM-$(SUBS13):$(DEV13):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS14):$(DEV14):sRdV-stat") {
+record(bi, "CM-$(SUBS14):$(DEV14):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=5")
    field(SCAN, "I/O Intr")
@@ -480,7 +480,7 @@ record(bi, "CM-$(SUBS14):$(DEV14):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS15):$(DEV15):sRdV-stat") {
+record(bi, "CM-$(SUBS15):$(DEV15):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=6")
    field(SCAN, "I/O Intr")
@@ -488,11 +488,108 @@ record(bi, "CM-$(SUBS15):$(DEV15):sRdV-stat") {
    field(ONAM, "Err")
    field(OSV, "MAJOR")
 }
-record(bi, "CM-$(SUBS16):$(DEV16):sRdV-stat") {
+record(bi, "CM-$(SUBS16):$(DEV16):sFlt") {
    field(DTYP, "S7plc")
    field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=7")
    field(SCAN, "I/O Intr")
    field(ZNAM, "OK")
    field(ONAM, "Err")
    field(OSV, "MAJOR")
+}
+
+record(bi, "CM-$(SUBS1):$(DEV1):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+  field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS2):$(DEV2):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS3):$(DEV3):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS4):$(DEV4):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS5):$(DEV5):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS6):$(DEV6):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS7):$(DEV7):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS8):$(DEV8):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS9):$(DEV9):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS10):$(DEV10):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS11):$(DEV11):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS12):$(DEV12):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS13):$(DEV13):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS14):$(DEV14):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS15):$(DEV15):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS16):$(DEV16):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
 }
