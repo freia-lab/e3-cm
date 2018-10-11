@@ -69,7 +69,7 @@ record(ai, "CM-$(SUBS3):$(DEV3):sRdV") {
 
 record(ai, "CM-$(SUBS4):$(DEV4)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -92,7 +92,7 @@ record(ai, "CM-$(SUBS4):$(DEV4):sRdV") {
 
 record(ai, "CM-$(SUBS5):$(DEV5)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+16 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -115,7 +115,7 @@ record(ai, "CM-$(SUBS5):$(DEV5):sRdV") {
 
 record(ai, "CM-$(SUBS6):$(DEV6)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+20 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -138,7 +138,7 @@ record(ai, "CM-$(SUBS6):$(DEV6):sRdV") {
 
 record(ai, "CM-$(SUBS7):$(DEV7)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+24 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -161,7 +161,7 @@ record(ai, "CM-$(SUBS7):$(DEV7):sRdV") {
 
 record(ai, "CM-$(SUBS8):$(DEV8)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+28 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -184,7 +184,7 @@ record(ai, "CM-$(SUBS8):$(DEV8):sRdV") {
 
 record(ai, "CM-$(SUBS9):$(DEV9)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+32 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -207,7 +207,7 @@ record(ai, "CM-$(SUBS9):$(DEV9):sRdV") {
 
 record(ai, "CM-$(SUBS10):$(DEV10)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+36 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -230,7 +230,7 @@ record(ai, "CM-$(SUBS10):$(DEV10):sRdV") {
 
 record(ai, "CM-$(SUBS11):$(DEV11)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+40 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -253,7 +253,7 @@ record(ai, "CM-$(SUBS11):$(DEV11):sRdV") {
 
 record(ai, "CM-$(SUBS12):$(DEV12)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+44 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -276,7 +276,7 @@ record(ai, "CM-$(SUBS12):$(DEV12):sRdV") {
 
 record(ai, "CM-$(SUBS13):$(DEV13)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+48 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -299,7 +299,7 @@ record(ai, "CM-$(SUBS13):$(DEV13):sRdV") {
 
 record(ai, "CM-$(SUBS14):$(DEV14)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+52 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -322,7 +322,7 @@ record(ai, "CM-$(SUBS14):$(DEV14):sRdV") {
 
 record(ai, "CM-$(SUBS15):$(DEV15)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+56 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
@@ -345,7 +345,7 @@ record(ai, "CM-$(SUBS15):$(DEV15):sRdV") {
 
 record(ai, "CM-$(SUBS16):$(DEV16)-R:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+60 T=FLOAT")
   field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
