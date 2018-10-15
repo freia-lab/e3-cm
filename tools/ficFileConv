@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# Bash script to create epics breaktables for CERNOX
+# temperature probes
+#
+# Usage: Run the script in the directory with the measurement files.
+#        The files needs to have names starting with "CX*(1.5K"  low
+#        temperature, and "CX*(10.0K" high temperature
+#        The directory "out" is created with the generated breaktables.
+#
+# Version: 1.0 181012 KF
+#
+
+# Create/recreate out 
+if [ -d out ]
+then
+rm -r out
+mkdir out
+else
+mkdir out
+fi
+
+# Loop over low temp files
+for f in CX*\(1.5K*; do
+
+    # Extract the breaktable filename
+    fout=$(echo "$f" | sed 's/(.*//')
+
+    # Save the date field
+    fdat=$(echo "$f" | awk -F, '{print $4}')
+
+    # Create the breaktable and start line
+    echo "breaktable("$fout") {" | cat -> out/"$fout"
+
+    # Remove "+" from exponentials, comment the header and print data 
+    cat "$f" | sed 's/+//' | awk 'NR < 16 {print "# "$0 }
+                                  NR == 16 {print "# "$1, $2}
+                                  NR > 16 {print $1, $2 }' > temp
+
+    # Add the high temp data without header
+    f2=$(ls "$fout(10.0K"*"$fdat")
+    cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> temp
+
+    # Remove duplicate lines and fill the output file
+    awk '!seen[$0]++' temp >> out/"$fout"
+    echo "}" | cat - >> out/"$fout"
+
+    rm temp
+    # echo "$f"; echo "$f2"; echo "$fout";  echo "$dat";
+done
+
+# Print some statistics
+echo -n -e " Total number of files \t\t\t"
+ls -l C* | wc -l 
+echo -n -e " Number of unique low temp files \t"  
+ls C*\(1.5K* | awk '!seen[$0]++' | wc -l
+echo -n -e " Number of unique high temp files \t"
+ls C*\(10.0K* | awk '!seen[$0]++' | wc -l
+echo -n -e " Number of different Cernox's \t\t"  
+ls C*\(1.5K* | sed 's/(.*//' | awk '!seen[$0]++' | wc -l
+echo -n -e " Number of generated files \t\t"      
+ls -l out/C* | wc -l
+exit
