@@ -3,6 +3,7 @@
   <macros>
     <P>CM</P>
   </macros>
+  <width>1200</width>
   <height>900</height>
   <background_color>
     <color red="240" green="240" blue="240">
@@ -294,7 +295,7 @@
       <TT>TT01</TT>
     </macros>
     <x>20</x>
-    <y>160</y>
+    <y>170</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -315,7 +316,7 @@
       <TT>TT08</TT>
     </macros>
     <x>20</x>
-    <y>198</y>
+    <y>208</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -328,7 +329,7 @@
       <TT>TT91</TT>
     </macros>
     <x>20</x>
-    <y>237</y>
+    <y>247</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -341,7 +342,7 @@
       <TT>TT92</TT>
     </macros>
     <x>20</x>
-    <y>276</y>
+    <y>286</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -354,7 +355,7 @@
       <TT>TT93</TT>
     </macros>
     <x>20</x>
-    <y>315</y>
+    <y>325</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -367,7 +368,7 @@
       <TT>TT94</TT>
     </macros>
     <x>20</x>
-    <y>354</y>
+    <y>364</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -380,7 +381,7 @@
       <TT>TT95</TT>
     </macros>
     <x>20</x>
-    <y>392</y>
+    <y>402</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -393,7 +394,7 @@
       <TT>TT97</TT>
     </macros>
     <x>20</x>
-    <y>431</y>
+    <y>441</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -406,7 +407,7 @@
       <TT>TT98</TT>
     </macros>
     <x>20</x>
-    <y>470</y>
+    <y>480</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -419,7 +420,7 @@
       <TT>TT02JM</TT>
     </macros>
     <x>20</x>
-    <y>509</y>
+    <y>519</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -432,7 +433,7 @@
       <TT>TT03JM</TT>
     </macros>
     <x>20</x>
-    <y>548</y>
+    <y>558</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -445,7 +446,7 @@
       <TT>TT09</TT>
     </macros>
     <x>20</x>
-    <y>586</y>
+    <y>596</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -458,7 +459,7 @@
       <TT>TT10</TT>
     </macros>
     <x>20</x>
-    <y>625</y>
+    <y>635</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -471,7 +472,7 @@
       <TT>TTx114</TT>
     </macros>
     <x>20</x>
-    <y>664</y>
+    <y>674</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -484,7 +485,7 @@
       <TT>TTx115</TT>
     </macros>
     <x>20</x>
-    <y>703</y>
+    <y>713</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
@@ -497,9 +498,92 @@
       <TT>TTx116</TT>
     </macros>
     <x>20</x>
-    <y>742</y>
+    <y>752</y>
     <width>352</width>
     <height>42</height>
     <resize>2</resize>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>690</x>
+    <y>126</y>
+    <width>226</width>
+    <height>64</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
+      <x>126</x>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Operation mode:</text>
+      <width>114</width>
+      <height>21</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-Ctrl:opMode:cmdLocal</pv_name>
+      <text>Local</text>
+      <y>34</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-Ctrl:opMode:cmdRemote</pv_name>
+      <text>Remote</text>
+      <x>126</x>
+      <y>34</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
 </display>
