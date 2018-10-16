@@ -1,6 +1,6 @@
 record(bi, "CM-$(SUBS):$(DEV):sAuto") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=0")
+  field(INP, "@PLC:CM/$(OFFS)+12 T=BYTE B=0")
   field(ZSV, "MINOR")
   field(ONAM, "Auto")
   field(ZNAM, "Manual")
@@ -36,7 +36,7 @@ record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-link") {
 
 record(bo, "CM-$(SUBS):$(DEV):cmdAuto") {
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=0")
+  field(OUT, "@PLC:CM/$(OFFS2)+4 T=BYTE B=1")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdAuto")
   field(PINI, "NO")
@@ -46,7 +46,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdAuto") {
 
 record(bo, "CM-$(SUBS):$(DEV):cmdMan") {
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=1")
+  field(OUT, "@PLC:CM/$(OFFS2)+4 T=BYTE B=0")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdMan")
   field(PINI, "NO")
@@ -56,7 +56,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdMan") {
 
 record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=2")
+  field(OUT, "@PLC:CM/$(OFFS2)+4 T=BYTE B=2")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdSet")
   field(HIGH, "0.5")
@@ -74,30 +74,39 @@ record(bo, "CM-$(SUBS):$(DEV):cmdSet-link") {
 
 record(ao, "CM-$(SUBS):$(DEV):cSetV") {
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/$(OFFS2)+2 T=FLOAT")
-  field(LOPR, "$(LOPR)")
-  field(HOPR, "$(HOPR)")
+  field(OUT, "@PLC:CM/$(OFFS2) T=FLOAT")
+  field(LOPR, "0")
+  field(HOPR, "100")
   field(PINI, "NO")
-  field(PREC, "6")
+  field(PREC, "1")
   field(FLNK, "CM-$(SUBS):$(DEV):cmdSet-link")
-  field(EGU, "$(EGU)")
+  field(EGU, "%")
+}
+
+record(ai, "CM-$(SUBS):$(DEV):sSetV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+4 T=FLOAT")
+  field(PREC, "2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
+  field(EGU, "%")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+2 T=FLOAT")
-  field(PREC, "6")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(PREC, "2")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
-  field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
-  field(EGU, "$(EGU)")
+  field(EGU, "%")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+6 T=FLOAT")
-  field(PREC, "6")
+  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
+  field(PREC, "2")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
-  field(EGU, "$(EGU)")
+  field(EGU, "%")
 }
