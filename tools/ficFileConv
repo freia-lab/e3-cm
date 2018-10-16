@@ -5,11 +5,13 @@
 #
 # Usage: Run the script in the directory with the measurement files.
 #        The files needs to have names starting with "CX*(1.5K"  low
-#        temperature, and "CX*(10.0K" high temperature
-#        The directory "out" is created with the generated breaktables.
+#        temperature, and "CX*(10.0K" high temperature.
+#        The date should be at the end.
+#        The directory "out" is created with the generated breaktables
+#        and a file with all tables combined
 #
 # Version: 1.0 181012 KF
-#
+#          1.1 181016 KF Added sorting and a combined file
 
 # Create/recreate out 
 if [ -d out ]
@@ -32,17 +34,18 @@ for f in CX*\(1.5K*; do
     # Create the breaktable and start line
     echo "breaktable("$fout") {" | cat -> out/"$fout"
 
-    # Remove "+" from exponentials, comment the header and print data 
+    # Remove "+" from exponentials and comment the header.
     cat "$f" | sed 's/+//' | awk 'NR < 16 {print "# "$0 }
-                                  NR == 16 {print "# "$1, $2}
-                                  NR > 16 {print $1, $2 }' > temp
-
+                                  NR == 16 {print "# "$1, $2}' >> out/"$fout"
+    # Print the data.
+    cat "$f" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' > temp
+                
     # Add the high temp data without header
     f2=$(ls "$fout(10.0K"*"$fdat")
     cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> temp
 
-    # Remove duplicate lines and fill the output file
-    awk '!seen[$0]++' temp >> out/"$fout"
+    # Write the sorted file, removing duplicates, to the output file
+    sort -gru -k 1,1 temp >> out/"$fout"
     echo "}" | cat - >> out/"$fout"
 
     rm temp
@@ -60,4 +63,8 @@ echo -n -e " Number of different Cernox's \t\t"
 ls C*\(1.5K* | sed 's/(.*//' | awk '!seen[$0]++' | wc -l
 echo -n -e " Number of generated files \t\t"      
 ls -l out/C* | wc -l
+
+# Generate a combined file
+cd out
+cat * > CX_all
 exit
