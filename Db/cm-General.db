@@ -8,7 +8,32 @@ record (bi, "CM-Ctrl:s7-status") {
   field (FLNK, "CM-Ctrl:s7-status-counter")
 }
 
+record (bi, "CM-Ctrl:opMode:sLocal") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:CM/0 T=BYTE B=0")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "Local")
+  field (ZNAM,  "Remote")
+  field (SCAN, "I/O Intr")
+}
 
+record (bo, "CM-Ctrl:opMode:cmdLocal") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:CM/0 T=BYTE B=0")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdLocal")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+}
+record (bo, "CM-Ctrl:opMode:cmdRemote") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:CM/0 T=BYTE B=1")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdRemote")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+}
 
 record (calc, "CM-Ctrl:s7-status-counter")
 {
@@ -35,14 +60,14 @@ record(bo, "CM-Ctrl:Archiving:On") {
 
 record(ao, "CM-test0:cSetV") {
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/0 T=FLOAT")
+  field(OUT, "@PLC:CM/4 T=FLOAT")
   field(PINI, "NO")
   field(PREC, "6")
 }
 
 record(ai, "CM-test0:sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/0 T=FLOAT")
+  field(INP, "@PLC:CM/4 T=FLOAT")
   field(PREC, "6")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
