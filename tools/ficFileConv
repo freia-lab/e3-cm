@@ -12,6 +12,7 @@
 #
 # Version: 1.0 181012 KF
 #          1.1 181016 KF Added sorting and a combined file
+#          1.2 181017 KF Remove lines where temperature is not increasing
 
 # Create/recreate out 
 if [ -d out ]
@@ -45,7 +46,8 @@ for f in CX*\(1.5K*; do
     cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> temp
 
     # Write the sorted file, removing duplicates, to the output file
-    sort -gru -k 1,1 temp >> out/"$fout"
+    # Check for a monotonous dependence
+    sort -gru -k 1,1 temp | awk '$2 > prev {print $1, $2 ; prev = $2}' >> out/"$fout"
     echo "}" | cat - >> out/"$fout"
 
     rm temp
