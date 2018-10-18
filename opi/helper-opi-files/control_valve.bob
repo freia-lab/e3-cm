@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Control valves</name>
-  <widget type="picture" version="2.0.0">
-    <name>Picture</name>
-    <file>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated.svg</file>
-    <x>770</x>
-    <y>40</y>
-    <width>36</width>
-    <height>21</height>
-  </widget>
-  <widget type="picture" version="2.0.0">
-    <name>Picture_1</name>
-    <file>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated_w.svg</file>
-    <x>770</x>
-    <y>10</y>
-    <width>36</width>
-    <height>21</height>
-  </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
     <macros>
@@ -24,7 +8,7 @@
       <V>CV01</V>
     </macros>
     <y>45</y>
-    <width>610</width>
+    <width>670</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -102,6 +86,17 @@
       <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
       <x>580</x>
       <y>5</y>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <symbols>
+        <symbol>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated.svg</symbol>
+      </symbols>
+      <x>610</x>
+      <y>8</y>
+      <width>50</width>
+      <height>15</height>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">

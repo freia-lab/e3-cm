@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>cernox-table</name>
   <width>1480</width>
   <height>645</height>
   <background_color>
@@ -130,7 +131,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT02JM</TT>
+      <TT>TT09</TT>
     </macros>
     <x>10</x>
     <y>359</y>
@@ -143,7 +144,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT03JM</TT>
+      <TT>TT03</TT>
     </macros>
     <x>10</x>
     <y>398</y>
@@ -156,7 +157,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT09</TT>
+      <TT>TT10</TT>
     </macros>
     <x>10</x>
     <y>436</y>
@@ -169,7 +170,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT10</TT>
+      <TT>TTx113</TT>
     </macros>
     <x>10</x>
     <y>475</y>
@@ -221,7 +222,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT01</TT>
+      <TT>TTx201</TT>
     </macros>
     <x>380</x>
     <y>10</y>
@@ -234,7 +235,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT08</TT>
+      <TT>TTx202</TT>
     </macros>
     <x>380</x>
     <y>48</y>
@@ -247,7 +248,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT91</TT>
+      <TT>TTx203</TT>
     </macros>
     <x>380</x>
     <y>87</y>
@@ -260,7 +261,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT92</TT>
+      <TT>TTx204</TT>
     </macros>
     <x>380</x>
     <y>126</y>
@@ -273,7 +274,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT93</TT>
+      <TT>TTx205</TT>
     </macros>
     <x>380</x>
     <y>165</y>
@@ -286,7 +287,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT94</TT>
+      <TT>TTx206</TT>
     </macros>
     <x>380</x>
     <y>204</y>
@@ -299,7 +300,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT95</TT>
+      <TT>TTx207</TT>
     </macros>
     <x>380</x>
     <y>242</y>
@@ -312,7 +313,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT97</TT>
+      <TT>TTx208</TT>
     </macros>
     <x>380</x>
     <y>281</y>
@@ -325,7 +326,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT98</TT>
+      <TT>TTx209</TT>
     </macros>
     <x>380</x>
     <y>320</y>
@@ -338,7 +339,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT02JM</TT>
+      <TT>TTx210</TT>
     </macros>
     <x>380</x>
     <y>359</y>
@@ -351,7 +352,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT03JM</TT>
+      <TT>TTx211</TT>
     </macros>
     <x>380</x>
     <y>398</y>
@@ -364,7 +365,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT09</TT>
+      <TT>TTx212</TT>
     </macros>
     <x>380</x>
     <y>436</y>
@@ -377,7 +378,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT10</TT>
+      <TT>TTx213</TT>
     </macros>
     <x>380</x>
     <y>475</y>
@@ -390,7 +391,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx114</TT>
+      <TT>TTx214</TT>
     </macros>
     <x>380</x>
     <y>514</y>
@@ -403,7 +404,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx115</TT>
+      <TT>TTx215</TT>
     </macros>
     <x>380</x>
     <y>553</y>
@@ -416,7 +417,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx116</TT>
+      <TT>TTx216</TT>
     </macros>
     <x>380</x>
     <y>592</y>
@@ -429,7 +430,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT01</TT>
+      <TT>TTx301</TT>
     </macros>
     <x>750</x>
     <y>10</y>
@@ -442,7 +443,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT08</TT>
+      <TT>TTx302</TT>
     </macros>
     <x>750</x>
     <y>48</y>
@@ -455,7 +456,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT91</TT>
+      <TT>TTx303</TT>
     </macros>
     <x>750</x>
     <y>87</y>
@@ -468,7 +469,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT92</TT>
+      <TT>TTx304</TT>
     </macros>
     <x>750</x>
     <y>126</y>
@@ -481,7 +482,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT93</TT>
+      <TT>TTx305</TT>
     </macros>
     <x>750</x>
     <y>165</y>
@@ -494,7 +495,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT94</TT>
+      <TT>TTx306</TT>
     </macros>
     <x>750</x>
     <y>204</y>
@@ -507,7 +508,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT95</TT>
+      <TT>TTx307</TT>
     </macros>
     <x>750</x>
     <y>242</y>
@@ -520,7 +521,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT97</TT>
+      <TT>TTx308</TT>
     </macros>
     <x>750</x>
     <y>281</y>
@@ -533,7 +534,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT98</TT>
+      <TT>TTx309</TT>
     </macros>
     <x>750</x>
     <y>320</y>
@@ -546,7 +547,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT02JM</TT>
+      <TT>TTx310</TT>
     </macros>
     <x>750</x>
     <y>359</y>
@@ -559,7 +560,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT03JM</TT>
+      <TT>TTx311</TT>
     </macros>
     <x>750</x>
     <y>398</y>
@@ -572,7 +573,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT09</TT>
+      <TT>TTx312</TT>
     </macros>
     <x>750</x>
     <y>436</y>
@@ -585,7 +586,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT10</TT>
+      <TT>TTx313</TT>
     </macros>
     <x>750</x>
     <y>475</y>
@@ -598,7 +599,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx114</TT>
+      <TT>TTx314</TT>
     </macros>
     <x>750</x>
     <y>514</y>
@@ -611,7 +612,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx115</TT>
+      <TT>TTx315</TT>
     </macros>
     <x>750</x>
     <y>553</y>
@@ -624,7 +625,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx116</TT>
+      <TT>TTx316</TT>
     </macros>
     <x>750</x>
     <y>592</y>
@@ -637,7 +638,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT01</TT>
+      <TT>TTx401</TT>
     </macros>
     <x>1120</x>
     <y>10</y>
@@ -650,7 +651,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT08</TT>
+      <TT>TTx402</TT>
     </macros>
     <x>1120</x>
     <y>48</y>
@@ -663,7 +664,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT91</TT>
+      <TT>TTx403</TT>
     </macros>
     <x>1120</x>
     <y>87</y>
@@ -676,7 +677,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT92</TT>
+      <TT>TTx404</TT>
     </macros>
     <x>1120</x>
     <y>126</y>
@@ -689,7 +690,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT93</TT>
+      <TT>TTx405</TT>
     </macros>
     <x>1120</x>
     <y>165</y>
@@ -702,7 +703,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT94</TT>
+      <TT>TTx406</TT>
     </macros>
     <x>1120</x>
     <y>204</y>
@@ -715,7 +716,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT95</TT>
+      <TT>TTx407</TT>
     </macros>
     <x>1120</x>
     <y>242</y>
@@ -728,7 +729,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT97</TT>
+      <TT>TTx408</TT>
     </macros>
     <x>1120</x>
     <y>281</y>
@@ -741,7 +742,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT98</TT>
+      <TT>TTx409</TT>
     </macros>
     <x>1120</x>
     <y>320</y>
@@ -754,7 +755,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT02JM</TT>
+      <TT>TTx410</TT>
     </macros>
     <x>1120</x>
     <y>359</y>
@@ -767,7 +768,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT03JM</TT>
+      <TT>TTx411</TT>
     </macros>
     <x>1120</x>
     <y>398</y>
@@ -780,7 +781,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT09</TT>
+      <TT>TTx412</TT>
     </macros>
     <x>1120</x>
     <y>436</y>
@@ -793,7 +794,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TT10</TT>
+      <TT>TTx413</TT>
     </macros>
     <x>1120</x>
     <y>475</y>
@@ -806,7 +807,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx114</TT>
+      <TT>TTx414</TT>
     </macros>
     <x>1120</x>
     <y>514</y>
@@ -819,7 +820,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx115</TT>
+      <TT>TTx415</TT>
     </macros>
     <x>1120</x>
     <y>553</y>
@@ -832,7 +833,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx116</TT>
+      <TT>TTx416</TT>
     </macros>
     <x>1120</x>
     <y>592</y>
