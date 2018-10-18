@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Control valves</name>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated.svg</file>
+    <x>770</x>
+    <y>40</y>
+    <width>36</width>
+    <height>21</height>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_1</name>
+    <file>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated_w.svg</file>
+    <x>770</x>
+    <y>10</y>
+    <width>36</width>
+    <height>21</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV01</V>
+    </macros>
+    <y>45</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV02</V>
+    </macros>
+    <y>75</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV03</V>
+    </macros>
+    <y>105</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV04</V>
+    </macros>
+    <y>135</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_12</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_4</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV05</V>
+    </macros>
+    <y>165</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_5</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV07</V>
+    </macros>
+    <y>195</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_20</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_11</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_23</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_6</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV60</V>
+    </macros>
+    <y>225</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_24</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_26</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_12</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_13</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_27</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_6</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_7</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV61</V>
+    </macros>
+    <y>255</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_28</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_29</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_30</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_14</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_15</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_31</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_8</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV62</V>
+    </macros>
+    <y>285</y>
+    <width>610</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>$(V):</text>
+      <y>5</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_32</name>
+      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>70</width>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <wrap_words>true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_33</name>
+      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
+      <x>170</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_34</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>260</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_16</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
+      <text>Auto</text>
+      <x>350</x>
+      <width>60</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_17</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
+      <text>Manual</text>
+      <x>420</x>
+      <width>70</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_35</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>500</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>$(P)-VBox:$(V):cmdSet</pv_name>
+      <x>580</x>
+      <y>5</y>
+    </widget>
+  </widget>
+</display>

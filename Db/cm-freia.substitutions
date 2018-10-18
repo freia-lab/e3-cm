@@ -40,3 +40,19 @@ VB,	TTx115,   CX_LS_X104912
 VB,	TTx116,   CX_LS_X104912
 }
 
+file cm-AValves.template { pattern
+
+{SUBS,	DEV,       OFFS,   OFFS2}
+{VBox	CV01	   356	   68}
+{VBox	CV02	   370	   74}
+{VBox	CV03	   384	   80}
+{VBox	CV04	   398	   86}
+{VBox	CV05	   412	   92}
+{VBox	CV07	   426	   98}
+{VBox	CV60	   440	   104}
+{VBox	CV61	   454	   110}
+{VBox	CV62	   468	   116}
+{RHtr	CV550	   482	   122}
+{RHtr	CV551	   496	   128}
+{RHtr	CV552	   510	   134}
+}

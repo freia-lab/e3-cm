@@ -17,7 +17,7 @@ record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-manInitLink") {
 }
 
 record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
-  field(INPA, "CM-$(SUBS):$(DEV):sRdV.VAL PP")
+  field(INPA, "CM-$(SUBS):$(DEV):sSetV.VAL PP")
   field(CALC, "A")
   field(PINI, "YES")
   field(PHAS, "1")
@@ -25,7 +25,7 @@ record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
 }
 
 record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-link") {
-  field(INPA, "CM-$(SUBS):$(DEV):sRdV.VAL NPP")
+  field(INPA, "CM-$(SUBS):$(DEV):sSetV.VAL NPP")
   field(INPB, "CM-$(SUBS):$(DEV):sAuto PP")
   field(INPC, "CM-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0&&C=0)?VAL:A")
@@ -93,18 +93,18 @@ record(ai, "CM-$(SUBS):$(DEV):sSetV") {
   field(EGU, "%")
 }
 
-record(ai, "CM-$(SUBS):$(DEV):sRdV") {
+record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
   field(PREC, "2")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
   field(EGU, "%")
 }
 
-record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
+record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
   field(PREC, "2")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")

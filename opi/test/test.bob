@@ -3,7 +3,7 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1200</width>
+  <width>1700</width>
   <height>900</height>
   <background_color>
     <color red="240" green="240" blue="240">
@@ -263,7 +263,7 @@
     <x>288</x>
     <y>6</y>
     <width>273</width>
-    <height>48</height>
+    <height>46</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -287,303 +287,104 @@
       </color>
     </border_color>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT01</TT>
-    </macros>
-    <x>20</x>
-    <y>170</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Cernox</name>
+        <file>../helper-opi-files/cernox.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>CV</name>
+        <file>../helper-opi-files/control_valve.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <y>140</y>
+    <width>1590</width>
+    <height>690</height>
   </widget>
-  <widget type="digital_clock" version="2.0.0">
-    <name>Digital Clock</name>
-    <lcd_font>4</lcd_font>
-    <x>680</x>
-    <y>6</y>
-    <width>110</width>
-    <height>46</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Operation mode:</text>
+    <x>730</x>
+    <y>52</y>
+    <width>114</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_1</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT08</TT>
-    </macros>
-    <x>20</x>
-    <y>208</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
+    <x>860</x>
+    <y>52</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_2</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT91</TT>
-    </macros>
-    <x>20</x>
-    <y>247</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:opMode:cmdRemote</pv_name>
+    <text>Remote</text>
+    <x>740</x>
+    <y>80</y>
+    <tooltip>$(actions)</tooltip>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_3</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT92</TT>
-    </macros>
-    <x>20</x>
-    <y>286</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_4</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT93</TT>
-    </macros>
-    <x>20</x>
-    <y>325</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_5</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT94</TT>
-    </macros>
-    <x>20</x>
-    <y>364</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_6</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT95</TT>
-    </macros>
-    <x>20</x>
-    <y>402</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_7</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT97</TT>
-    </macros>
-    <x>20</x>
-    <y>441</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_8</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT98</TT>
-    </macros>
-    <x>20</x>
-    <y>480</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_9</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT02JM</TT>
-    </macros>
-    <x>20</x>
-    <y>519</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_10</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT03JM</TT>
-    </macros>
-    <x>20</x>
-    <y>558</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_11</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT09</TT>
-    </macros>
-    <x>20</x>
-    <y>596</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_12</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TT10</TT>
-    </macros>
-    <x>20</x>
-    <y>635</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_13</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TTx114</TT>
-    </macros>
-    <x>20</x>
-    <y>674</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_14</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TTx115</TT>
-    </macros>
-    <x>20</x>
-    <y>713</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_15</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VB</SUBS>
-      <TT>TTx116</TT>
-    </macros>
-    <x>20</x>
-    <y>752</y>
-    <width>352</width>
-    <height>42</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>690</x>
-    <y>126</y>
-    <width>226</width>
-    <height>64</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
-      <x>126</x>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_5</name>
-      <text>Operation mode:</text>
-      <width>114</width>
-      <height>21</height>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-Ctrl:opMode:cmdLocal</pv_name>
-      <text>Local</text>
-      <y>34</y>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_1</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-Ctrl:opMode:cmdRemote</pv_name>
-      <text>Remote</text>
-      <x>126</x>
-      <y>34</y>
-      <tooltip>$(actions)</tooltip>
-    </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:opMode:cmdLocal</pv_name>
+    <text>Local</text>
+    <x>860</x>
+    <y>80</y>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
