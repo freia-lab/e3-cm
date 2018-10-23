@@ -14,7 +14,9 @@
 #          1.1 181016 KF Added sorting and a combined file
 #          1.2 181017 KF Remove lines where temperature is not increasing
 
-# Create/recreate out 
+# Create/recreate out
+ 
+cd calibrations
 if [ -d out ]
 then
 rm -r out
@@ -67,6 +69,6 @@ echo -n -e " Number of generated files \t\t"
 ls -l out/C* | wc -l
 
 # Generate a combined file
-cd out
-cat * > CX_all
+#cd out
+#cat * > CX_all
 exit
