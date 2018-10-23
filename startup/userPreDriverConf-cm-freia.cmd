@@ -23,4 +23,4 @@
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 #s7plcConfigure PLC:CM,192.168.1.11,2000,812,400,1,1000,500
-s7plcConfigure PLC:CM,$(IP_ADDR),2000,812,400,1,2000,500
+s7plcConfigure PLC:CM,$(IP_ADDR),2000,2000,1000,1,2000,500

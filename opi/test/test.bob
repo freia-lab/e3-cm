@@ -264,7 +264,7 @@
     <x>288</x>
     <y>6</y>
     <width>273</width>
-    <height>46</height>
+    <height>48</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -305,6 +305,13 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>Heaters</name>
+        <file>../helper-opi-files/Heater1.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <y>140</y>
     <width>1590</width>
@@ -341,6 +348,10 @@
     <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
     <x>860</x>
     <y>52</y>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -349,12 +360,14 @@
       <color red="255" green="255" blue="255">
       </color>
     </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>4</border_width>
     <border_color>
-      <color red="0" green="128" blue="255">
+      <color red="240" green="240" blue="240">
       </color>
     </border_color>
   </widget>

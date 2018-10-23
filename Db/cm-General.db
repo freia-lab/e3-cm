@@ -15,6 +15,7 @@ record (bi, "CM-Ctrl:opMode:sLocal") {
   field (PHAS, "0")
   field (ONAM,  "Local")
   field (ZNAM,  "Remote")
+  field (OSV, MINOR)
   field (SCAN, "I/O Intr")
 }
 
