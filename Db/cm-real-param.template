@@ -1,0 +1,47 @@
+record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-link") {
+  field(INPA, "CM-$(SUBS):$(DEV):sSetV.VAL NPP")
+  field(INPC, "CM-Ctrl:opMode:sLocal PP")
+  field(CALC, "(C=0)?VAL:A")
+  field(OOPT, "On Change")
+  field(PHAS, "1")
+  field(OUT, "CM-$(SUBS):$(DEV):cSetV PP")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=0")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSet")
+  field(HIGH, "0.5")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdSet-link") {
+  field(DOL, "1")
+  field(OMSL, "closed_loop")
+  field(ONAM, "ON")
+  field(ZNAM, "OFF")
+  field(OUT, "CM-$(SUBS):$(DEV):cmdSet.VAL PP NMS")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(ao, "CM-$(SUBS):$(DEV):cSetV") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2)+2 T=FLOAT")
+  field(LOPR, "$(LOPR)")
+  field(HOPR, "$(HOPR)")
+  field(PINI, "NO")
+  field(PREC, "$(PREC)")
+  field(FLNK, "CM-$(SUBS):$(DEV):cmdSet-link")
+  field(EGU, "$(EGU)")
+}
+
+record(ai, "CM-$(SUBS):$(DEV):sSetV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
+  field(EGU, "$(EGU)")
+}

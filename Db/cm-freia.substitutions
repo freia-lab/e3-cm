@@ -39,3 +39,19 @@ file cm-Heater1.template { pattern
 {CM	EH-7	   762	   362}
 {CM	EH-8	   772	   372}
 }
+
+file cm-LT.template { pattern
+{SUBS,	DEV,       OFFS,  PREC, EGU}
+{VBox	LT03	   884	  1	"cm"}
+{CM	LT01	   876	  1	"cm"}
+}
+
+file cm-real-param.template { pattern
+{SUBS,	DEV,               OFFS,  OFFS2, LOPR,  HOPR, PREC, EGU}
+{Ctrl	TrigPID-CV01	   916	  472	 0	74    0	    "cm"}
+{Ctrl	SP_LIC01-CV01	   920	  478	 0	74    0	    "cm"}
+{Ctrl	TrigPID-CV02	   924	  484	 0	74    0	    "cm"}
+{Ctrl	SP_LIC01-CV02	   928	  490	 0	74    0	    "cm"}
+{Ctrl	TrigPID-CV03	   932	  496	 0	74    0	    "cm"}
+{Ctrl	SP_LIC03-CV03	   936	  502	 0	74    0	    "cm"}
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Grafcet</name>
+  <width>1480</width>
+  <height>645</height>
+  <widget type="group" version="2.0.0">
+    <name>LHe Level Control</name>
+    <width>440</width>
+    <height>157</height>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <L>PID CV02 (LT01):</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>25</y>
+      <width>405</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_1</name>
+        <text>$(L)</text>
+        <y>5</y>
+        <width>170</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group</name>
+        <macros>
+          <D>TrigPID-CV02</D>
+        </macros>
+        <x>150</x>
+        <y>5</y>
+        <width>105</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_1</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_1</name>
+        <macros>
+          <D>SP_LIC01-CV02</D>
+        </macros>
+        <x>280</x>
+        <y>5</y>
+        <width>120</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_4</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_5</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Trigger</text>
+      <x>150</x>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Set-point</text>
+      <x>290</x>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_2</name>
+      <macros>
+        <L>PID CV03 (LT03):</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>55</y>
+      <width>405</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_3</name>
+        <text>$(L)</text>
+        <y>5</y>
+        <width>170</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_3</name>
+        <macros>
+          <D>TrigPID-CV03</D>
+        </macros>
+        <x>150</x>
+        <y>5</y>
+        <width>105</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_2</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_3</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_4</name>
+        <macros>
+          <D>SP_LIC03-CV03</D>
+        </macros>
+        <x>280</x>
+        <y>5</y>
+        <width>120</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_6</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_7</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_5</name>
+      <macros>
+        <L>PID CV01 2K(LT01):</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>85</y>
+      <width>405</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_4</name>
+        <text>$(L)</text>
+        <y>5</y>
+        <width>170</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_6</name>
+        <macros>
+          <D>TrigPID-CV01</D>
+        </macros>
+        <x>150</x>
+        <y>5</y>
+        <width>105</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_8</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_9</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_7</name>
+        <macros>
+          <D>SP_LIC01-CV01</D>
+        </macros>
+        <x>280</x>
+        <y>5</y>
+        <width>120</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_10</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_11</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>50</width>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</display>

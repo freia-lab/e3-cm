@@ -87,7 +87,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -172,7 +172,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_2</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -256,7 +256,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -341,7 +341,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_6</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -425,7 +425,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -510,7 +510,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_9</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -594,7 +594,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -679,7 +679,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_12</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -763,7 +763,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -848,7 +848,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_15</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -932,7 +932,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1017,7 +1017,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_18</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1101,7 +1101,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1186,7 +1186,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_21</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1270,7 +1270,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1355,7 +1355,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_27</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1439,7 +1439,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1524,7 +1524,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_30</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1608,7 +1608,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1693,7 +1693,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_33</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1783,7 +1783,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -1868,7 +1868,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_23</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -1952,7 +1952,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2037,7 +2037,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_35</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2121,7 +2121,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2206,7 +2206,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_38</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2290,7 +2290,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2375,7 +2375,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_41</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2459,7 +2459,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2544,7 +2544,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_44</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2628,7 +2628,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2713,7 +2713,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_47</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2797,7 +2797,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -2882,7 +2882,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_50</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
@@ -2966,7 +2966,7 @@
         </points>
         <rules>
           <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="$pvInt0==1">
+            <exp bool_exp="pvInt0==1">
               <value>
                 <color name="RED" red="252" green="13" blue="27">
                 </color>
@@ -3051,7 +3051,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_53</name>
-        <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
         <x>700</x>
         <y>5</y>
       </widget>
