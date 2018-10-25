@@ -319,10 +319,18 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>PID</name>
+        <file>../helper-opi-files/pid.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <y>140</y>
     <width>1590</width>
-    <height>690</height>
+    <height>745</height>
+    <active_tab>3</active_tab>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_5</name>
@@ -492,5 +500,17 @@ by the PLC program</tooltip>
     <x>1170</x>
     <y>80</y>
     <tooltip>Select manual control</tooltip>
+  </widget>
+  <widget type="digital_clock" version="2.0.0">
+    <name>Digital Clock</name>
+    <lcd_design>32</lcd_design>
+    <lcd_font>4</lcd_font>
+    <x>1590</x>
+    <y>6</y>
+    <width>100</width>
+    <height>50</height>
+    <date_visible>true</date_visible>
+    <title>FREIA</title>
+    <title_visible>true</title_visible>
   </widget>
 </display>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PID</name>
+  <width>1480</width>
+  <height>750</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="picture" version="2.0.0">
+    <name>Cryomodule PID</name>
+    <file>../images/Cryomodule-PID.png</file>
+    <width>1030</width>
+    <height>745</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-VBox:PT01:sRdV</pv_name>
+    <x>320</x>
+    <y>250</y>
+    <width>80</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)-Vac:PT73:sRdV</pv_name>
+    <x>880</x>
+    <y>360</y>
+    <format>2</format>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)-Vac:PT71:sRdV</pv_name>
+    <x>100</x>
+    <y>650</y>
+    <format>2</format>
+  </widget>
+</display>

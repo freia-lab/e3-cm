@@ -13,6 +13,7 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
 # Fault bits (for GUI and for status propagation)
 #
 record(mbbi,"CM-$(SUBS):$(DEV):sVisu") {
+  field(DTYP, "S7plc")
   field(INP, "@PLC:CM/$(OFFS)+4 T=INT16")
   field(NOBT, 2)
   field(SHFT, 0)
@@ -21,10 +22,13 @@ record(mbbi,"CM-$(SUBS):$(DEV):sVisu") {
   field(ZRST, "OK")
   field(ONVL, 1)
   field(ONST, "Over-range")
+  field(ONSV, "MINOR")
   field(TWVL, 2)
   field(TWST, "Under-range")
+  field(TWSV, "MINOR")
   field(THVL, 3)
   field(THST, "Sensor fault")
+  field(THSV, "MAJOR")
   field(SCAN, "I/O Intr")
 }
 

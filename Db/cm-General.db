@@ -293,26 +293,26 @@ record(ai, "CM-CM:PT60:sRdV") {
   field(EGU, "mbar")
 }
 
-record(ai, "CM-CM:PT01:sRdV") {
+record(ai, "CM-VBox:PT01:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/896 T=FLOAT")
-  field(PREC, "3")
+  field(PREC, "1")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
 }
-record(ai, "CM-CM:PT73:sRdV") {
+record(ai, "CM-Vac:PT73:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/900 T=FLOAT")
-  field(PREC, "3")
+  field(PREC, "2")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
 }
-record(ai, "CM-CM:PT71:sRdV") {
+record(ai, "CM-Vac:PT71:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/904 T=FLOAT")
-  field(PREC, "3")
+  field(PREC, "2")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
