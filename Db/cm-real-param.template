@@ -7,6 +7,17 @@ record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-link") {
   field(OUT, "CM-$(SUBS):$(DEV):cSetV PP")
 }
 
+record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
+#  field(SDIS, "CM-Ctrl:opMode:sLocal PP")
+  field(INPA, "CM-$(SUBS):$(DEV):sSetV.VAL PP")
+#  field(INPB, "CM-$(SUBS):$(DEV):sAuto PP")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
+  field(PINI, "YES")
+  field(PHAS, "1")
+  field(OUT, "CM-$(SUBS):$(DEV):cSetV PP")
+}
+
 record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=0")
