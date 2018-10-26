@@ -1,0 +1,20 @@
+record (stringout, "$(PREFIX)-Ctrl:K3706A:debug") {
+  field(DESC,"Debugging interface")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto debug K_PORT")
+}
+
+record (waveform, "$(PREFIX)-Ctrl:K3706A:debug-in") {
+  field(DESC,"Listen to all replies")
+  field(DTYP, "stream")
+  field(NELM, "512")
+  field(FTVL, "CHAR")
+  field(SCAN, "I/O Intr")
+  field(INP,"@keithley3706A-pt100.proto debugin K_PORT")
+}
+
+record (stringin, "$(PREFIX)-Ctrl:K3706A:Id") {
+  field(DESC,"Instrument ID")
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getId K_PORT")
+}
