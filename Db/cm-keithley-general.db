@@ -19,6 +19,11 @@ record (stringin, "$(PREFIX)-Ctrl:K3706A:Id") {
   field(INP,"@keithley3706A-pt100.proto getId $(ASYN_PORT)")
 }
 
+record (event, "$(PREFIX)-Ctrl:K3706A:ScanEv") {
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(SCAN_EVNT)")
+}
+
 # Commands
 
 record (bo, "$(PREFIX)-Ctrl:K3706A:Init1") {

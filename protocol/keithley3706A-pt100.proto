@@ -3,8 +3,8 @@ ExtraInput=Ignore;
 
 getId {
         out "*idn?";
-        in "%#s";
-	@init { out "*idn?"; in "%#s"; }
+        in "KEITHLEY INSTRUMENTS INC.,%#s";
+	@init { out "*idn?"; in "KEITHLEY INSTRUMENTS INC.,%#s"; }
 }
 
 
