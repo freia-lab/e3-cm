@@ -8,93 +8,19 @@ getId {
 }
 
 
-getAdr {
-        out "R adr";
-        in "R adr %d";
-	@init { out "R adr"; in "R adr %d"; }
+getMeasurement {
+        out "channel.close(\"\$100\$2,\$103\$2,\$1911,\$1922\")";
+	wait 50;
+	out "print(dmm.measure())";
+        in "%g";
+        out "channel.open(\"allslots\")";
 }
 
-setAdr {
-        out "W adr %d";
-        in "W adr %d";
-    	@init { getAdr; }
-}
-
-getConfBuf {
-        out "R \$1";
-        in "R \$1 %d";
-	@init {  out "R \$1";  in "R \$1 %d"; }
-}
-
-setConfBuf {
-        out "W \$1 %d";
-        in "W \$1 %d";
-    	@init { getConfBuf; }
-}
-
-getCalibrFreq {
-        out "R sf\$1";
-        in "R sf\$1 %d";
-	@init {  out "R sf\$1";  in "R sf\$1 %d"; }
-}
-
-setCalibrFreq {
-        out "W sf\$1 %d";
-        in "W sf\$1 %d";
-    	@init { getCalibrFreq; }
-}
-
-isMaster {
-        out "R mst";
-        in "R mst %d";
-	@init { out "R mst"; in "R mst %d"; }
-}
-
-setMaster {
-        out "W mst %d";
-	in "W mst %d";
-   @init { isMaster; }
-}
-
-getConfSelf {
-        out "R crs";
-	in "R crs %d";
-  	 @init {out "R crs"; in "R crs %d"; }
-
-}
-
-getNofNodes {
-        out "R ncn";
-        in "R ncn %d";
-}
-
-getAan {
-        out "R aan";
-        in "R aan %d";
-}
-
-setAllowAllNodes {
-        out "W aan %d";
-        in "W aan %d";
-   @init { getAan; }
-}
 
 getConnNodes { separator = " ";
         out "R rci";
         in "R rci %d";
    	@init { out "R rci"; in "R rci %d"; }
-}
-
-getAllowedNodes { separator = " ";
-        out "R ani";
-        in "R ani %d";
-   	@init { out "R ani"; in "R ani %d"; }
-}
-
-
-getRFdata { separator = " ";
-        out "R rsd \$1";
-        in "R rsd \$1: %d";
 }
 
 getRFdataSelf { separator = " ";
@@ -105,9 +31,14 @@ getRFdataSelf { separator = " ";
 
 ## Write Only commands
 
-applyConfigBuf {
-    out "W acs";
-    in "W acs";
+doInit1 {
+    out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";
+    @init {out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";}
+}
+
+doInit2 {
+    out "dmm.offsetcompensation=0 dmm.drycircuit=1";
+    @init {out "dmm.offsetcompensation=0 dmm.drycircuit=1";}
 }
 
 reboot {
@@ -115,14 +46,9 @@ reboot {
 }
 
 reset {
-    out "W rst";
-    in "W rst";
+    out "*RST";
 }
 
-resetNetwork {
-    out "W rsn";
-    in "W rsn";
-}
 
 savConf {
     out "W scf";
@@ -144,7 +70,7 @@ addAllowedNode {
 # After processing finishes, the record contains the reply.
 debug {
 ExtraInput = Ignore;
-out "%s"; in "%#s"
+out "%s"; in "%#s;"
 }
 
 debugin {

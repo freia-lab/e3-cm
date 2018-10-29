@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>keithley</name>
+  <width>1480</width>
+  <height>750</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)-Ctrl:K3706A:debug</pv_name>
+    <x>400</x>
+    <y>100</y>
+    <width>440</width>
+    <height>30</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Command:</text>
+    <x>310</x>
+    <y>105</y>
+    <width>80</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Keithley 3706A</text>
+    <x>450</x>
+    <y>20</y>
+    <width>240</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-Ctrl:K3706A:debug-in</pv_name>
+    <x>340</x>
+    <y>700</y>
+    <width>480</width>
+    <format>6</format>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>/opt/epics/modules/asyn/4.31.0/opi/asynRecord.opi</file>
+        <macros>
+          <P>CM-Ctrl:K3607A</P>
+          <R>:asynRec</R>
+        </macros>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>asynRec</text>
+    <x>880</x>
+    <y>690</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)-Ctrl:K3706A:Id</pv_name>
+    <x>720</x>
+    <y>40</y>
+    <width>470</width>
+  </widget>
+</display>

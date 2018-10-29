@@ -1,0 +1,4 @@
+record(ai, "$(PREFIX)-$(SUBS):$(DEV):sRdV") {
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getMeasurement($(SLOT),$(CHAN)) $(ASYN_PORT)")
+}

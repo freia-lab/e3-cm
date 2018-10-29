@@ -260,11 +260,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_4</name>
-    <text>Cryo-module PLC </text>
-    <x>288</x>
-    <y>6</y>
-    <width>273</width>
-    <height>48</height>
+    <text>Cryo-module PLC &amp; Keithley 3706A</text>
+    <x>290</x>
+    <width>555</width>
+    <height>46</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -322,6 +321,13 @@
       <tab>
         <name>PID</name>
         <file>../helper-opi-files/pid.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Keithley</name>
+        <file>../helper-opi-files/keithley.bob</file>
         <macros>
         </macros>
         <group_name></group_name>

@@ -9,7 +9,7 @@ epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","cm:")
 
 requireSnippet(userPreDriverConf-cm-freia.cmd, "IP_ADDR=$(PLC_IPADDR), IP_ADDR2=$(KEITH_IPADDR)")
 sleep 2
-requireSnippet(dbToLoad-cm-freia.cmd)
+requireSnippet(dbToLoad-cm-freia.cmd, "K_PORT='K_PORT'"))
 #requireSnippet(cm-freia-preSaveRestore.cmd)
 
 #############################################

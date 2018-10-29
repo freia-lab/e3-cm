@@ -1,0 +1,5 @@
+file "cm-keithley.template" { pattern
+{ASYN_PORT, PREFIX, SUBS,  DEV,  SLOT, CHAN}
+{K_PORT	    CM	    VBox   PT11	 1     1 }
+{K_PORT	    CM	    VBox   PT12	 1     2 }
+}

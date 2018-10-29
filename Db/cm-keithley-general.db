@@ -1,0 +1,33 @@
+record (stringout, "$(PREFIX)-Ctrl:K3706A:debug") {
+  field(DESC,"Debugging interface")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto debug $(ASYN_PORT)")
+}
+
+record (waveform, "$(PREFIX)-Ctrl:K3706A:debug-in") {
+  field(DESC,"Listen to all replies")
+  field(DTYP, "stream")
+  field(NELM, "512")
+  field(FTVL, "CHAR")
+  field(SCAN, "I/O Intr")
+  field(INP,"@keithley3706A-pt100.proto debugin $(ASYN_PORT)")
+}
+
+record (stringin, "$(PREFIX)-Ctrl:K3706A:Id") {
+  field(DESC,"Instrument ID")
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getId $(ASYN_PORT)")
+}
+
+# Commands
+
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init1") {
+  field(DESC,"Apply configuration settings 1")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit1 $(ASYN_PORT)")
+}
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init2") {
+  field(DESC,"Apply configuration settings 2")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit2 $(ASYN_PORT)")
+}
