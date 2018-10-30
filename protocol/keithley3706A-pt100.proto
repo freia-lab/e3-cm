@@ -7,6 +7,10 @@ getId {
 	@init { out "*idn?"; in "KEITHLEY INSTRUMENTS INC.,%#s"; }
 }
 
+getUnits {
+        out "print(dmm.units)";
+        in "%d";
+}
 
 getMeasurement {
         out "channel.close(\"\$100\$2,\$103\$2,\$1911,\$1922\")";
@@ -39,6 +43,15 @@ doInit1 {
 doInit2 {
     out "dmm.offsetcompensation=0 dmm.drycircuit=1";
     @init {out "dmm.offsetcompensation=0 dmm.drycircuit=1";}
+}
+
+doInit3 {
+    out "dmm.func=dmm.TEMPERATURE dmm.autorange=1 dmm.autozero=dmmON";
+#    @init {;}
+}
+doInit4 {
+    out "dmm.transducer=dmm.TEMP_FOURRTD dmm.fourrtd=dmm.RTD_PT100 dmm.units=dmm.UNITS_KELVIN dmm.offsetcompensation=0 dmm.drycircuit=1";
+#    @init {;}
 }
 
 reboot {

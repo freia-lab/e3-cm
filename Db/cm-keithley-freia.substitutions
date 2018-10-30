@@ -1,5 +1,30 @@
 file "cm-keithley.template" { pattern
 {PREFIX, SUBS,  DEV,  SLOT, CHAN, EGU}
-{CM	    VBox   PT11	 1     1  "Ω"}
-{CM	    VBox   PT12	 1     2  "Ω"}
+{CM	 VBox   TT600 1     1  "Ω"}
+{CM	 VBox   TT610 1     2  "Ω"}
+{CM	 VBox   TT620 1     3  "Ω"}
+{CM	 VBox   TT670 1     4  "Ω"}
+{CM	 VBox   TT680 1     5  "Ω"}
+{CM	 VBox   TT690 1     6  "Ω"}
+{CM	 VBox   TT970 1     7  "Ω"}
+{CM	 VBox   TT980 1     8  "Ω"}
+{CM	 VBox   TT78  1     9  "Ω"}
+{CM	 VBox   TT76  1     10 "Ω"}
+{CM	 VBox   TT79  1     11 "Ω"}
+{CM	 VBox   TT80  1     12 "Ω"}
+{CM	 VBox   TT81  1     13 "Ω"}
+{CM	 VBox   TT630 1     14 "Ω"}
+{CM	 VBox   TT640 1     15 "Ω"}
+{CM	 VBox   TT650 1     16 "Ω"}
+{CM	 VBox   TT660 1     17 "Ω"}
+{CM	 VBox   TT700 1     18 "Ω"}
+{CM	 VBox   TT900 1     19 "Ω"}
+{CM	 CM   	TT910 1     20 "Ω"}
+{CM	 CM   	TT920 1     21 "Ω"}
+{CM	 CM   	TT930 1     22 "Ω"}
+{CM	 VBox   TT940 1     23 "Ω"}
+{CM	 VBox   TT950 1     24 "Ω"}
+{CM	 VBox   TT960 1     25 "Ω"}
+{CM	 VBox   TT990 1     26 "Ω"}
+{CM	 VBox   TT77  1     27 "Ω"}
 }
