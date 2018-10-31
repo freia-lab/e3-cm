@@ -12,6 +12,11 @@ getUnits {
         in "%d";
 }
 
+getfunc {
+        out "print(dmm.func)";
+        in "%s";	
+}
+
 getMeasurement {
         out "channel.close(\"\$100\$2,\$103\$2,\$1911,\$1922\")";
 	wait 50;
@@ -21,11 +26,11 @@ getMeasurement {
 }
 
 
-getConnNodes { separator = " ";
-        out "R rci";
-        in "R rci %d";
-   	@init { out "R rci"; in "R rci %d"; }
-}
+#getConnNodes { separator = " ";
+#        out "R rci";
+#        in "R rci %d";
+#   	@init { out "R rci"; in "R rci %d"; }
+#}
 
 getRFdataSelf { separator = " ";
         out "R rsd";
@@ -37,45 +42,25 @@ getRFdataSelf { separator = " ";
 
 doInit1 {
     out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";
-    @init {out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";}
+#    @init {out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";}
 }
 
 doInit2 {
     out "dmm.offsetcompensation=0 dmm.drycircuit=1";
-    @init {out "dmm.offsetcompensation=0 dmm.drycircuit=1";}
+#    @init {out "dmm.offsetcompensation=0 dmm.drycircuit=1";}
 }
 
 doInit3 {
     out "dmm.func=dmm.TEMPERATURE dmm.autorange=1 dmm.autozero=dmmON";
-#    @init {;}
+    @init {out "dmm.func=dmm.TEMPERATURE dmm.autorange=1 dmm.autozero=dmmON";}
 }
 doInit4 {
     out "dmm.transducer=dmm.TEMP_FOURRTD dmm.fourrtd=dmm.RTD_PT100 dmm.units=dmm.UNITS_KELVIN dmm.offsetcompensation=0 dmm.drycircuit=1";
-#    @init {;}
-}
-
-reboot {
-    out "W rbt";
+    @init {out "dmm.transducer=dmm.TEMP_FOURRTD dmm.fourrtd=dmm.RTD_PT100 dmm.units=dmm.UNITS_KELVIN dmm.offsetcompensation=0 dmm.drycircuit=1";}
 }
 
 reset {
     out "*RST";
-}
-
-
-savConf {
-    out "W scf";
-    in "W scf";
-}
-
-rmAllowedNode {
-    out "W rai %d";
-    in "W rai %d";
-}
-
-addAllowedNode {
-    out "W aai %d";
-    in "W aai %d";
 }
 
 # Connect a stringout record to this to get

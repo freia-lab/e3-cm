@@ -6,6 +6,8 @@ epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","cm:")
 epicsEnvSet("A_PORT"   "K_PORT")
 epicsEnvSet("SCAN_EV"  "8")
 
+addScan("30")
+
 #############################################
 ## Register all support components         ##
 #############################################

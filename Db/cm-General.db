@@ -57,6 +57,7 @@ record(bo, "CM-Ctrl:Archiving:On") {
   field(ZNAM, "Archiving off")
   field(ONAM, "Archiving on")
   field(ZSV, "MINOR")
+  field(PINI, "YES")
 }
 
 record(ao, "CM-test0:cSetV") {

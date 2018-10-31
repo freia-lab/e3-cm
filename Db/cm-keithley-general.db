@@ -7,7 +7,7 @@ record (stringout, "$(PREFIX)-Ctrl:K3706A:debug") {
 record (waveform, "$(PREFIX)-Ctrl:K3706A:debug-in") {
   field(DESC,"Listen to all replies")
   field(DTYP, "stream")
-  field(NELM, "512")
+  field(NELM, "2048")
   field(FTVL, "CHAR")
   field(SCAN, "I/O Intr")
   field(INP,"@keithley3706A-pt100.proto debugin $(ASYN_PORT)")
@@ -19,13 +19,24 @@ record (stringin, "$(PREFIX)-Ctrl:K3706A:Id") {
   field(INP,"@keithley3706A-pt100.proto getId $(ASYN_PORT)")
 }
 
+record (stringin, "$(PREFIX)-Ctrl:K3706A:sFunc") {
+  field(DESC,"dmm function")
+  field(SCAN, "Event")
+  field(EVNT, "$(SCAN_EVNT)")
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getFunc $(ASYN_PORT)")
+}
+
 record (event, "$(PREFIX)-Ctrl:K3706A:ScanEv") {
   field(DTYP, "Soft Channel")
   field(VAL, "$(SCAN_EVNT)")
+  field(PINI, "YES")
 }
 
 record (mbbi, "$(PREFIX)-Ctrl:K3706A:sEGU") {
   field(DESC,"Get units for dmm system")
+  field(SCAN, "Event")
+  field(EVNT, "$(SCAN_EVNT)")
   field(DTYP, "stream")
   field(INP,"@keithley3706A-pt100.proto getUnits $(ASYN_PORT)")
   field(NOBT, "3")

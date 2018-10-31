@@ -6,5 +6,6 @@ record(ai, "$(PREFIX)-$(SUBS):$(DEV):sRdV") {
   field(EVNT, "$(SCAN_EVNT)")
   field(EGU, "$(EGU)")
   field(PREC, "3")
+  field(DISS, "INVALID")
 }
 
