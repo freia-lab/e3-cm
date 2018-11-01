@@ -13,16 +13,23 @@
 # Version: 1.0 181012 KF
 #          1.1 181016 KF Added sorting and a combined file
 #          1.2 181017 KF Remove lines where temperature is not increasing
+#          2.0 181024 KF Adapt to Makefile use: Move tmp and out to /tmp
+#                        Write combined file to Db/cernox-breaktables.dbd
 
-# Create/recreate out
- 
-cd calibrations
-if [ -d out ]
+if [ -d calibrations ]
 then
-rm -r out
-mkdir out
+cd calibrations
 else
-mkdir out
+echo " calibration directory missing!"
+exit
+fi
+ 
+if [ -d /tmp/out ]
+then
+rm -r /tmp/out
+mkdir /tmp/out
+else
+mkdir /tmp/out
 fi
 
 # Loop over low temp files
@@ -35,26 +42,29 @@ for f in CX*\(1.5K*; do
     fdat=$(echo "$f" | awk -F, '{print $4}')
 
     # Create the breaktable and start line
-    echo "breaktable("$fout") {" | cat -> out/"$fout"
+    echo "breaktable("$fout") {" | cat -> /tmp/out/"$fout"
 
     # Remove "+" from exponentials and comment the header.
     cat "$f" | sed 's/+//' | awk 'NR < 16 {print "# "$0 }
-                                  NR == 16 {print "# "$1, $2}' >> out/"$fout"
+                                  NR == 16 {print "# "$1, $2}' >> /tmp/out/"$fout"
     # Print the data.
-    cat "$f" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' > temp
+    cat "$f" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' > /tmp/temp
                 
     # Add the high temp data without header
     f2=$(ls "$fout(10.0K"*"$fdat")
-    cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> temp
+    cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> /tmp/temp
 
     # Write the sorted file, removing duplicates, to the output file
     # Check for a monotonous dependence
-    sort -gru -k 1,1 temp | awk '$2 > prev {print $1, $2 ; prev = $2}' >> out/"$fout"
-    echo "}" | cat - >> out/"$fout"
+    sort -gru -k 1,1 /tmp/temp | awk '$2 > prev {print $1, $2 ; prev = $2}' >> /tmp/out/"$fout"
+    echo "}" | cat - >> /tmp/out/"$fout"
 
-    rm temp
+    rm /tmp/temp
     # echo "$f"; echo "$f2"; echo "$fout";  echo "$dat";
 done
+
+# Generate a combined file
+cat /tmp/out/* > ../Db/cernox-breaktables.dbd
 
 # Print some statistics
 echo -n -e " Total number of files \t\t\t"
@@ -66,9 +76,8 @@ ls C*\(10.0K* | awk '!seen[$0]++' | wc -l
 echo -n -e " Number of different Cernox's \t\t"  
 ls C*\(1.5K* | sed 's/(.*//' | awk '!seen[$0]++' | wc -l
 echo -n -e " Number of generated files \t\t"      
-ls -l out/C* | wc -l
+ls -l /tmp/out/C* | wc -l
 
-# Generate a combined file
-#cd out
-#cat * > CX_all
+# Clean up
+rm -r /tmp/out
 exit
