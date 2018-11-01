@@ -3,14 +3,13 @@
 # Bash script to create epics breaktables for CERNOX
 # temperature probes
 #
-# Usage: Run the script in the directory with the measurement files.
-#        The files needs to have names starting with "CX*(1.5K"  low
-#        temperature, and "CX*(10.0K" high temperature.
+# Usage: Run the script by running "make calibration" in the top directory of the project.
+#        The measurement files needs to receede in the calibrations directory with names
+#        starting with "CX*(1.5K"  low temperature, and "CX*(10.0K" high temperature.
 #        The date should be at the end.
-#        The directory "out" is created with the generated breaktables
-#        and a file with all tables combined
+#        The resulting combined files are written to Db/cernox-breaktables.dbd
 #
-# Version: 1.0 181012 KF
+# Version: 1.0 181012 KF 
 #          1.1 181016 KF Added sorting and a combined file
 #          1.2 181017 KF Remove lines where temperature is not increasing
 #          2.0 181024 KF Adapt to Makefile use: Move tmp and out to /tmp
