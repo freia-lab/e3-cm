@@ -19,6 +19,7 @@ OPIS= opi
 # The line below id the fix needed in environment <= 1.7.0
 #vpath %.req ../../src/main/ioc
 
+MISCS = $(AUTOMISCS)
 MISCS += misc/ioc-cm-freia.req
 DOC = doc
 TESTS = test/server-cm.tcl

@@ -73,3 +73,263 @@ record(ai, "CM-test0:sRdV") {
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
 }
+
+#######################################################
+#
+# Binary input/output data
+#
+
+record(bo, "CM-Ctrl:opMode:cmdAutoMode") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=2")
+  field(HIGH, "0.5")
+  field(ONAM, "Set Auto Mode")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:opMode:cmdManMode") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=3")
+  field(HIGH, "0.5")
+  field(ONAM, "Set Manual Mode")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bi, "CM-Ctrl:opMode:sManual") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=1")
+  field(ONAM, "Manual Mode")
+  field(ZNAM, "Auto Mode")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "CM-Ctrl:Grafcet:cmdInit") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=4")
+  field(HIGH, "0.5")
+  field(ONAM, "Init Grafcet")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-Ctrl:Grafcet:cmdErrRst") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=5")
+  field(HIGH, "0.5")
+  field(ONAM, "Reset Grafcet Error")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bi, "CM-Ctrl:Grafcet:sErr") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=2")
+  field(ONAM, "Grafcet Error")
+  field(ZNAM, "Grafcet OK")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-Ctrl:Grafcet:sState1") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=3")
+  field(ONAM, "S1")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState2") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=4")
+  field(ONAM, "S2")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState3") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=5")
+  field(ONAM, "S3")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState4") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=6")
+  field(ONAM, "S4")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState5") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/0 T=BYTE B=7")
+  field(ONAM, "S5")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState6") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=0")
+  field(ONAM, "S6")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState7") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=1")
+  field(ONAM, "S7")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState8") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=2")
+  field(ONAM, "S8")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sState10") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=3")
+  field(ONAM, "S10")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-Ctrl:Grafcet:sTransTempOK") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=4")
+  field(ONAM, "Transition temp. OK")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "CM-Ctrl:Grafcet:sTransMode4K") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1 T=BYTE B=5")
+  field(ONAM, "PIDs active CV02 & CV03")
+  field(ZNAM, "")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "CM-Ctrl:Grafcet:cmdStart") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=6")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step2")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdCondOK") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/0 T=BYTE B=7")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step3")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdCondErr") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=0")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step1")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStartLN2Cool") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=1")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step4")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStartLHeCool") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=2")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step5")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStart2KMode") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=3")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step8")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStop2KMode") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=4")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step6")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStartStby") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=5")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step7")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStopStby") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=6")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step5")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+###########################################################
+#
+# Analog inputs
+#
+record(ai, "CM-CM:PT60:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/892 T=FLOAT")
+  field(PREC, "3")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+
+record(ai, "CM-VBox:PT01:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/896 T=FLOAT")
+  field(PREC, "1")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+record(ai, "CM-Vac:PT73:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/900 T=FLOAT")
+  field(PREC, "2")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+record(ai, "CM-Vac:PT71:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/904 T=FLOAT")
+  field(PREC, "2")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+record(ai, "CM-CM:PT75:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/908 T=FLOAT")
+  field(PREC, "3")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+record(ai, "CM-CM:PT77:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/912 T=FLOAT")
+  field(PREC, "3")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}

@@ -1,0 +1,62 @@
+record(ai, "CM-$(SUBS):$(DEV):sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "$(EGU)")
+  field(SDIS, "CM-$(SUBS):$(DEV):sFlt.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+
+
+# Fault bits (for GUI and for status propagation)
+#
+record(mbbi,"CM-$(SUBS):$(DEV):sVisu") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+4 T=INT16")
+  field(NOBT, 2)
+  field(SHFT, 0)
+  field(PINI, "YES")
+  field(ZRVL, 0)
+  field(ZRST, "OK")
+  field(ONVL, 1)
+  field(ONST, "Over-range")
+  field(ONSV, "MINOR")
+  field(TWVL, 2)
+  field(TWST, "Under-range")
+  field(TWSV, "MINOR")
+  field(THVL, 3)
+  field(THST, "Sensor fault")
+  field(THSV, "MAJOR")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+6 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "INVALID")
+   field(OSV, "MAJOR")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sOVR") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+6 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "OverRange")
+   field(OSV, "MAJOR")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sUNR") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+6 T=BYTE B=2")
+   field(ZNAM, "OK")
+   field(ONAM, "UnderRange")
+   field(SCAN, "I/O Intr")
+   field(OSV, "MAJOR")
+}
+

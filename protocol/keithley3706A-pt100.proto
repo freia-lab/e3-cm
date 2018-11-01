@@ -1,0 +1,91 @@
+Terminator = LF;
+ExtraInput=Ignore;
+
+getId {
+        out "*idn?";
+        in "KEITHLEY INSTRUMENTS INC.,%#s";
+	@init { out "*idn?"; in "KEITHLEY INSTRUMENTS INC.,%#s"; }
+}
+
+getUnits {
+        out "print(dmm.units)";
+        in "%d";
+}
+
+getMeasurement {
+        out "channel.close(\"\$100\$2,\$103\$2,\$1911,\$1922\")";
+	wait 50;
+	out "print(dmm.measure())";
+        in "%g";
+        out "channel.open(\"allslots\")";
+}
+
+
+getConnNodes { separator = " ";
+        out "R rci";
+        in "R rci %d";
+   	@init { out "R rci"; in "R rci %d"; }
+}
+
+getRFdataSelf { separator = " ";
+        out "R rsd";
+        in "R rsd %*d: %d";
+}
+
+
+## Write Only commands
+
+doInit1 {
+    out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";
+    @init {out "dmm.func=dmm.FOUR_WIRE_OHMS dmm.autorange=1 dmm.autozero=dmmON";}
+}
+
+doInit2 {
+    out "dmm.offsetcompensation=0 dmm.drycircuit=1";
+    @init {out "dmm.offsetcompensation=0 dmm.drycircuit=1";}
+}
+
+doInit3 {
+    out "dmm.func=dmm.TEMPERATURE dmm.autorange=1 dmm.autozero=dmmON";
+#    @init {;}
+}
+doInit4 {
+    out "dmm.transducer=dmm.TEMP_FOURRTD dmm.fourrtd=dmm.RTD_PT100 dmm.units=dmm.UNITS_KELVIN dmm.offsetcompensation=0 dmm.drycircuit=1";
+#    @init {;}
+}
+
+reboot {
+    out "W rbt";
+}
+
+reset {
+    out "*RST";
+}
+
+
+savConf {
+    out "W scf";
+    in "W scf";
+}
+
+rmAllowedNode {
+    out "W rai %d";
+    in "W rai %d";
+}
+
+addAllowedNode {
+    out "W aai %d";
+    in "W aai %d";
+}
+
+# Connect a stringout record to this to get
+# a generic command interface.
+# After processing finishes, the record contains the reply.
+debug {
+ExtraInput = Ignore;
+out "%s"; in "%#s;"
+}
+
+debugin {
+in "%#s"
+}

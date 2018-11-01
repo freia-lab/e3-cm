@@ -1,0 +1,79 @@
+record (stringout, "$(PREFIX)-Ctrl:K3706A:debug") {
+  field(DESC,"Debugging interface")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto debug $(ASYN_PORT)")
+}
+
+record (waveform, "$(PREFIX)-Ctrl:K3706A:debug-in") {
+  field(DESC,"Listen to all replies")
+  field(DTYP, "stream")
+  field(NELM, "512")
+  field(FTVL, "CHAR")
+  field(SCAN, "I/O Intr")
+  field(INP,"@keithley3706A-pt100.proto debugin $(ASYN_PORT)")
+}
+
+record (stringin, "$(PREFIX)-Ctrl:K3706A:Id") {
+  field(DESC,"Instrument ID")
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getId $(ASYN_PORT)")
+}
+
+record (event, "$(PREFIX)-Ctrl:K3706A:ScanEv") {
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(SCAN_EVNT)")
+}
+
+record (mbbi, "$(PREFIX)-Ctrl:K3706A:sEGU") {
+  field(DESC,"Get units for dmm system")
+  field(DTYP, "stream")
+  field(INP,"@keithley3706A-pt100.proto getUnits $(ASYN_PORT)")
+  field(NOBT, "3")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(ZRST, "V")
+  field(ONST, "dB")
+  field(TWST, "°C")
+  field(THST, "K")
+  field(FRST, "F")
+ }
+
+# Commands
+
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init1") {
+  field(DESC,"Apply configuration settings 1")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit1 $(ASYN_PORT)")
+}
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init2") {
+  field(DESC,"Apply configuration settings 2")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit2 $(ASYN_PORT)")
+}
+
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init3") {
+  field(DESC,"Apply configuration settings 3")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit3 $(ASYN_PORT)")
+}
+record (bo, "$(PREFIX)-Ctrl:K3706A:Init4") {
+  field(DESC,"Apply configuration settings 4")
+  field(DTYP, "stream")
+  field(OUT,"@keithley3706A-pt100.proto doInit4 $(ASYN_PORT)")
+}
+
+record (fanout, "$(PREFIX)-Ctrl:K3706A:cmdOhm-4W") {
+  field(DESC, "Set 4W resistance measurement")
+  field(LNK1, "$(PREFIX)-Ctrl:K3706A:Init1")
+  field(LNK2, "$(PREFIX)-Ctrl:K3706A:Init2")
+  field(LNK3, "$(PREFIX)-Ctrl:K3706A:sEGU")
+}
+record (fanout, "$(PREFIX)-Ctrl:K3706A:cmdPT100-4W") {
+  field(DESC, "Set 4W pt100 measurement")
+  field(LNK1, "$(PREFIX)-Ctrl:K3706A:Init3")
+  field(LNK2, "$(PREFIX)-Ctrl:K3706A:Init4")
+  field(LNK3, "$(PREFIX)-Ctrl:K3706A:sEGU")
+}

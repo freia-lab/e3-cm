@@ -24,3 +24,7 @@
 
 #s7plcConfigure PLC:CM,192.168.1.11,2000,812,400,1,1000,500
 s7plcConfigure PLC:CM,$(IP_ADDR),2000,2000,1000,1,2000,500
+
+#drvAsynIPPortConfigure(K_PORT, $(IP_ADDR2),0,0,0)
+drvAsynIPPortConfigure(K_PORT, 192.168.1.12:5025,0,0,0)
+dbLoadRecords("asynRecord.db","P='CM-Ctrl:K3607A',R=:asynRec,PORT='K_PORT',ADDR='0',IMAX='1024',OMAX='256'")
