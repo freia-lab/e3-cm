@@ -94,7 +94,7 @@
     </points>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>LHe Level Control</name>
+    <name> LHe Level Control </name>
     <x>1030</x>
     <y>560</y>
     <width>440</width>
@@ -1012,6 +1012,244 @@ achieved</text>
       <height>130</height>
       <limits_from_pv>false</limits_from_pv>
       <maximum>80.0</maximum>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name> PT01 Pressure control (CV550) </name>
+    <x>1030</x>
+    <y>360</y>
+    <width>440</width>
+    <height>190</height>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_9</name>
+      <macros>
+        <L>PID CV550 (PT01) SP:</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>85</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>Group_11</name>
+        <macros>
+          <D>SP_PT01-CV550</D>
+        </macros>
+        <x>150</x>
+        <y>5</y>
+        <width>130</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_21</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>80</x>
+          <width>50</width>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_20</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>75</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <wrap_words>true</wrap_words>
+        </widget>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_7</name>
+        <text>$(L)</text>
+        <y>5</y>
+        <width>150</width>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Manual SP:</text>
+      <y>120</y>
+      <width>89</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_10</name>
+      <macros>
+        <D>CV550</D>
+        <S>RHtr</S>
+      </macros>
+      <x>150</x>
+      <y>120</y>
+      <width>140</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_18</name>
+        <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+        <width>61</width>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <wrap_words>true</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_19</name>
+        <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+        <x>80</x>
+        <width>50</width>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <CV>$(P)-RHtr:CV550</CV>
+      </macros>
+      <width>400</width>
+      <height>85</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>sSetVAuto</name>
+        <x>320</x>
+        <y>6</y>
+        <width>80</width>
+        <height>65</height>
+        <visible>false</visible>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="Visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pvInt0">
+              <value>true</value>
+            </exp>
+            <pv_name>$(CV):sAuto</pv_name>
+          </rule>
+        </rules>
+        <widget type="label" version="2.0.0">
+          <name>Label_10</name>
+          <text>PID Output
+CV550 Pos.</text>
+          <width>80</width>
+          <height>45</height>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_23</name>
+          <pv_name>$(CV):sAutoRdV</pv_name>
+          <y>45</y>
+          <width>72</width>
+          <precision>1</precision>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_15</name>
+        <pv_name>$(CV):sAuto</pv_name>
+        <x>180</x>
+        <y>19</y>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>4</border_width>
+        <border_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_13</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(CV):cmdMan</pv_name>
+        <text>Manual</text>
+        <x>90</x>
+        <y>45</y>
+        <width>80</width>
+        <tooltip>Select manual control</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_12</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(CV):cmdAuto</pv_name>
+        <text>Automatic</text>
+        <x>6</x>
+        <y>45</y>
+        <width>80</width>
+        <tooltip>Select process control
+by the PLC program</tooltip>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_14</name>
+        <pv_name>$(P)-VBox:PT01:sRdV</pv_name>
+        <x>180</x>
+        <y>51</y>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_16</name>
+      <x>307</x>
+      <y>6</y>
+      <width>1</width>
+      <height>135</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="135.0">
+        </point>
+        <point x="1.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>CV550 Pos.</text>
+      <x>320</x>
+      <y>85</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>CstatH-RHtr:CV550:sRdV</pv_name>
+      <x>320</x>
+      <y>108</y>
+      <width>72</width>
+      <precision>1</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Valve control mode:</text>
+      <y>19</y>
+      <width>151</width>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
 </display>

@@ -18,7 +18,7 @@ getfunc {
 }
 
 getMeasurement {
-        out "channel.close(\"\$100\$2,\$103\$2,\$1911,\$1922\")";
+        out "channel.close(\"\$10\$2,\$10\$3,\$1911,\$1922\")";
 	wait 50;
 	out "print(dmm.measure())";
         in "%g";

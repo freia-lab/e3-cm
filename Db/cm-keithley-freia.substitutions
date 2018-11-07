@@ -1,30 +1,30 @@
 file "cm-keithley.template" { pattern
-{PREFIX, SUBS,  DEV,  SLOT, CHAN, EGU}
-{CM	 VBox   TT600 1     1  "K"}
-{CM	 VBox   TT610 1     2  "K"}
-{CM	 VBox   TT620 1     3  "K"}
-{CM	 VBox   TT670 1     4  "K"}
-{CM	 VBox   TT680 1     5  "K"}
-{CM	 VBox   TT690 1     6  "K"}
-{CM	 VBox   TT970 1     7  "K"}
-{CM	 VBox   TT980 1     8  "K"}
-{CM	 VBox   TT78  1     9  "K"}
-{CM	 VBox   TT76  1     10 "K"}
-{CM	 VBox   TT79  1     11 "K"}
-{CM	 VBox   TT80  1     12 "K"}
-{CM	 VBox   TT81  1     13 "K"}
-{CM	 VBox   TT630 1     14 "K"}
-{CM	 VBox   TT640 1     15 "K"}
-{CM	 VBox   TT650 1     16 "K"}
-{CM	 VBox   TT660 1     17 "K"}
-{CM	 VBox   TT700 1     18 "K"}
-{CM	 VBox   TT900 1     19 "K"}
-{CM	 CM   	TT910 1     20 "K"}
-{CM	 CM   	TT920 1     21 "K"}
-{CM	 CM   	TT930 1     22 "K"}
-{CM	 VBox   TT940 1     23 "K"}
-{CM	 VBox   TT950 1     24 "K"}
-{CM	 VBox   TT960 1     25 "K"}
-{CM	 VBox   TT990 1     26 "K"}
-{CM	 VBox   TT77  1     27 "K"}
+{PREFIX, SUBS,  DEV,  SLOT, CHAN1, CHAN2, EGU}
+{CM	 VBox   TT600 1     01     31 	  "K"}
+{CM	 VBox   TT610 1     02     32	  "K"}
+{CM	 VBox   TT620 1     03     33	  "K"}
+{CM	 VBox   TT670 1     04     34 	  "K"}
+{CM	 VBox   TT680 1     05     35	  "K"}
+{CM	 VBox   TT690 1     06     36	  "K"}
+{CM	 VBox   TT970 1     07     37	  "K"}
+{CM	 VBox   TT980 1     08     38	  "K"}
+{CM	 VBox   TT78  1     09     39	  "K"}
+{CM	 VBox   TT76  1     10 	   40	  "K"}
+{CM	 VBox   TT79  1     11 	   41	  "K"}
+{CM	 VBox   TT80  1     12 	   42	  "K"}
+{CM	 VBox   TT81  1     13 	   43	  "K"}
+{CM	 VBox   TT630 1     14 	   44	  "K"}
+{CM	 VBox   TT640 1     15 	   45	  "K"}
+{CM	 VBox   TT650 1     16 	   46	  "K"}
+{CM	 VBox   TT660 1     17 	   47	  "K"}
+{CM	 VBox   TT700 1     18 	   48	  "K"}
+{CM	 VBox   TT900 1     19 	   49	  "K"}
+{CM	 CM   	TT910 1     20 	   50	  "K"}
+{CM	 CM   	TT920 1     21 	   51	  "K"}
+{CM	 CM   	TT930 1     22 	   52	  "K"}
+{CM	 VBox   TT940 1     23 	   53	  "K"}
+{CM	 VBox   TT950 1     24 	   54	  "K"}
+{CM	 VBox   TT960 1     25 	   55	  "K"}
+{CM	 VBox   TT990 1     26 	   56	  "K"}
+{CM	 VBox   TT77  1     27 	   57	  "K"}
 }

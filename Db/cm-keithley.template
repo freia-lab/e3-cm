@@ -1,7 +1,7 @@
 record(ai, "$(PREFIX)-$(SUBS):$(DEV):sRdV") {
-  field(DESC, "$(DEV) slot $(SLOT), chan: $(CHAN)")
+  field(DESC, "$(DEV) slot $(SLOT), chan: $(CHAN1)")
   field(DTYP, "stream")
-  field(INP,"@keithley3706A-pt100.proto getMeasurement($(SLOT),$(CHAN)) $(ASYN_PORT)")
+  field(INP,"@keithley3706A-pt100.proto getMeasurement($(SLOT),$(CHAN1),$(CHAN2)) $(ASYN_PORT)")
   field(SCAN,"Event")
   field(EVNT, "$(SCAN_EVNT)")
   field(EGU, "$(EGU)")

@@ -95,7 +95,7 @@ record(ai, "CM-$(SUBS):$(DEV):sSetV") {
 
 record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
+  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
   field(PREC, "2")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")

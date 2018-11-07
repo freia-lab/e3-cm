@@ -54,4 +54,5 @@ file cm-real-param.template { pattern
 {Ctrl	SP_LIC01-CV02	   928	  490	 0	74    0	    "cm"}
 {Ctrl	TrigPID-CV03	   932	  496	 0	74    0	    "cm"}
 {Ctrl	SP_LIC03-CV03	   936	  502	 0	74    0	    "cm"}
+{Ctrl	SP_PT01-CV550	   940	  508	 0	74    0	    "mbar"}
 }
