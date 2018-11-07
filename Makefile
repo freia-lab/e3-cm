@@ -24,3 +24,7 @@ MISCS += misc/ioc-cm-freia.req
 DOC = doc
 TESTS = test/server-cm.tcl
 
+calibration : ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv
+
+
