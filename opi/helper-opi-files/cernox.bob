@@ -638,7 +638,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx401</TT>
+      <TT>TT04</TT>
     </macros>
     <x>1120</x>
     <y>10</y>
@@ -651,7 +651,7 @@
     <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VB</SUBS>
-      <TT>TTx402</TT>
+      <TT>TT02</TT>
     </macros>
     <x>1120</x>
     <y>48</y>
