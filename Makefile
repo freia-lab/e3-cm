@@ -6,7 +6,7 @@ include ${EPICS_ENV_PATH}/module.Makefile
 
 EXCLUDE_ARCHS += eldk
 
-#PROJECT = ioc_cm_freia
+PROJECT = ioc_cm_freia
 
 #EPICSVERSION = 3.14.15.2
 #EPICS_VERSION = 3.14.15.2
