@@ -6,7 +6,8 @@ include ${EPICS_ENV_PATH}/module.Makefile
 
 EXCLUDE_ARCHS += eldk
 
-#PROJECT = xxxx
+#PROJECT = ioc_cm_freia
+
 #EPICSVERSION = 3.14.15.2
 #EPICS_VERSION = 3.14.15.2
 
@@ -23,6 +24,7 @@ MISCS = $(AUTOMISCS)
 MISCS += misc/ioc-cm-freia.req
 DOC = doc
 TESTS = test/server-cm.tcl
+#DBDS += Db/cernox-breaktables.dbd
 
 calibration : ./calibrations/*.fic ./tools/ficFileConv
 	./tools/ficFileConv

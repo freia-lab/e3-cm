@@ -1017,9 +1017,9 @@ achieved</text>
   <widget type="group" version="2.0.0">
     <name> PT01 Pressure control (CV550) </name>
     <x>1030</x>
-    <y>360</y>
+    <y>339</y>
     <width>440</width>
-    <height>190</height>
+    <height>205</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>Group_9</name>
@@ -1027,7 +1027,7 @@ achieved</text>
         <L>PID CV550 (PT01) SP:</L>
         <S>Ctrl</S>
       </macros>
-      <y>85</y>
+      <y>115</y>
       <width>290</width>
       <height>30</height>
       <style>3</style>
@@ -1070,7 +1070,7 @@ achieved</text>
     <widget type="label" version="2.0.0">
       <name>Label_8</name>
       <text>Manual SP:</text>
-      <y>120</y>
+      <y>150</y>
       <width>89</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
@@ -1081,7 +1081,7 @@ achieved</text>
         <S>RHtr</S>
       </macros>
       <x>150</x>
-      <y>120</y>
+      <y>150</y>
       <width>140</width>
       <height>20</height>
       <style>3</style>
@@ -1108,6 +1108,7 @@ achieved</text>
       <macros>
         <CV>$(P)-RHtr:CV550</CV>
       </macros>
+      <y>30</y>
       <width>400</width>
       <height>85</height>
       <style>3</style>
@@ -1215,7 +1216,7 @@ by the PLC program</tooltip>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_16</name>
       <x>307</x>
-      <y>6</y>
+      <y>36</y>
       <width>1</width>
       <height>135</height>
       <line_color>
@@ -1233,23 +1234,51 @@ by the PLC program</tooltip>
       <name>Label_5</name>
       <text>CV550 Pos.</text>
       <x>320</x>
-      <y>85</y>
+      <y>115</y>
       <width>80</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_22</name>
       <pv_name>CstatH-RHtr:CV550:sRdV</pv_name>
       <x>320</x>
-      <y>108</y>
+      <y>138</y>
       <width>72</width>
       <precision>1</precision>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_9</name>
       <text>Valve control mode:</text>
-      <y>19</y>
+      <y>49</y>
       <width>151</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
+      <y>5</y>
+      <width>180</width>
+      <height>25</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_11</name>
+      <pv_name>CstatH-MKS:MKS2:sAnalogSP</pv_name>
+      <x>220</x>
+      <y>5</y>
+      <width>180</width>
+      <height>25</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
     </widget>
   </widget>
 </display>
