@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Controller SV</name>
+  <macros>
+    <CTRLPRE>$(P)-$(VAR)C-$(IND)</CTRLPRE>
+    <ScreenName>Controller $(LINDEDEV)$(IND)</ScreenName>
+  </macros>
+  <width>1259</width>
+  <height>970</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>../../MainOPI/header_fp.bob</file>
+    <width>1261</width>
+    <height>167</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Actual Value</text>
+    <x>20</x>
+    <y>225</y>
+    <width>83</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Controller</text>
+    <x>20</x>
+    <y>185</y>
+    <width>73</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_35</name>
+    <text>Setpoint</text>
+    <x>20</x>
+    <y>265</y>
+    <width>58</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-$(VAR)I-$(IND):Val</pv_name>
+    <x>425</x>
+    <y>225</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(CTRLPRE):StateVis</pv_name>
+    <x>425</x>
+    <y>185</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_19</name>
+    <pv_name>$(CTRLPRE):Sp-RB</pv_name>
+    <x>425</x>
+    <y>265</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_19</name>
+    <text>$(LINDEDEV)$(IND)</text>
+    <x>305</x>
+    <y>185</y>
+    <width>136</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>$(VAR)I$(IND)</text>
+    <x>305</x>
+    <y>225</y>
+    <width>90</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_11</name>
+    <pv_name>$(CTRLPRE):Sp</pv_name>
+    <x>305</x>
+    <y>265</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Actual Setpoint</text>
+    <x>20</x>
+    <y>305</y>
+    <width>103</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>SP Ramp Down</text>
+    <x>20</x>
+    <y>385</y>
+    <width>103</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Integration Time</text>
+    <x>20</x>
+    <y>425</y>
+    <width>112</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Dead Band</text>
+    <x>20</x>
+    <y>465</y>
+    <width>74</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>SP Ramp Up</text>
+    <x>20</x>
+    <y>345</y>
+    <width>83</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>Gain</text>
+    <x>20</x>
+    <y>505</y>
+    <width>31</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>Low Limit</text>
+    <x>20</x>
+    <y>545</y>
+    <width>66</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_3</name>
+    <pv_name>$(CTRLPRE):RmpUp</pv_name>
+    <x>305</x>
+    <y>345</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_8</name>
+    <pv_name>$(CTRLPRE):LoLim</pv_name>
+    <x>305</x>
+    <y>545</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_9</name>
+    <pv_name>$(CTRLPRE):Gain-RB</pv_name>
+    <x>305</x>
+    <y>505</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(CTRLPRE):ActSp</pv_name>
+    <x>425</x>
+    <y>305</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(CTRLPRE):RmpUp-RB</pv_name>
+    <x>425</x>
+    <y>345</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(CTRLPRE):RmpDn-RB</pv_name>
+    <x>425</x>
+    <y>385</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(CTRLPRE):Tim-RB</pv_name>
+    <x>425</x>
+    <y>425</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(CTRLPRE):DeadB-RB</pv_name>
+    <x>425</x>
+    <y>465</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(CTRLPRE):Gain-RB</pv_name>
+    <x>425</x>
+    <y>505</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(CTRLPRE):LoLim-RB</pv_name>
+    <x>425</x>
+    <y>545</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_1</name>
+    <pv_name>$(CTRLPRE):DeadB</pv_name>
+    <x>305</x>
+    <y>465</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_1</name>
+    <pv_name>$(CTRLPRE):Tim</pv_name>
+    <x>305</x>
+    <y>425</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_2</name>
+    <pv_name>$(CTRLPRE):RmpDn</pv_name>
+    <x>305</x>
+    <y>385</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>High Limit</text>
+    <x>20</x>
+    <y>585</y>
+    <width>69</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_7</name>
+    <pv_name>$(CTRLPRE):HiLim</pv_name>
+    <x>305</x>
+    <y>585</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>$(CTRLPRE):HiLim-RB</pv_name>
+    <x>425</x>
+    <y>585</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>Controller Output</text>
+    <x>20</x>
+    <y>625</y>
+    <width>119</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>Actuator UY$(ACTIND)</text>
+    <x>20</x>
+    <y>665</y>
+    <width>148</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions execute_as_one="true">
+      <action type="execute">
+        <script file="../../Scripts/closeBob.py">
+        </script>
+        <description>Close Tab</description>
+      </action>
+    </actions>
+    <text>Exit</text>
+    <x>545</x>
+    <y>715</y>
+    <height>35</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_11</name>
+    <pv_name>$(CTRLPRE):Out</pv_name>
+    <x>425</x>
+    <y>625</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_12</name>
+    <pv_name>$(P)-$(FB)-$(ACTIND):Val</pv_name>
+    <x>425</x>
+    <y>665</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+</display>

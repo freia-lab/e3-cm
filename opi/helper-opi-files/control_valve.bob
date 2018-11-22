@@ -8,7 +8,7 @@
       <V>CV01</V>
     </macros>
     <y>45</y>
-    <width>670</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -54,7 +54,7 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -69,14 +69,14 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_3</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
@@ -84,39 +84,70 @@
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
     </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol</name>
-      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
-      <symbols>
-        <symbol>../../../../../ess-symbols/symbols/cryogenics/valve, control type continuosly operated.svg</symbol>
-      </symbols>
-      <x>610</x>
-      <y>8</y>
-      <width>50</width>
-      <height>15</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_40</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_2</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_1</name>
+    <name>Group_10</name>
     <macros>
       <S>VBox</S>
       <V>CV02</V>
     </macros>
     <y>75</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_2</name>
+      <name>Label_11</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_4</name>
+      <name>Text Update_41</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -128,21 +159,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_5</name>
+      <name>Text Update_42</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_6</name>
+      <name>Text Update_43</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_2</name>
+      <name>Action Button_20</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -152,12 +183,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_3</name>
+      <name>Action Button_21</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -167,43 +198,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_7</name>
+      <name>Text Update_44</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_1</name>
+      <name>LED_10</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_45</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_3</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_2</name>
+    <name>Group_11</name>
     <macros>
       <S>VBox</S>
       <V>CV03</V>
     </macros>
     <y>105</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_3</name>
+      <name>Label_12</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_8</name>
+      <name>Text Update_46</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -215,21 +288,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_9</name>
+      <name>Text Update_47</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_10</name>
+      <name>Text Update_48</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_4</name>
+      <name>Action Button_22</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -239,12 +312,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
+      <name>Action Button_23</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -254,43 +327,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_11</name>
+      <name>Text Update_49</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_2</name>
+      <name>LED_11</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_50</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_4</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_3</name>
+    <name>Group_12</name>
     <macros>
       <S>VBox</S>
       <V>CV04</V>
     </macros>
     <y>135</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_4</name>
+      <name>Label_13</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_12</name>
+      <name>Text Update_51</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -302,21 +417,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_13</name>
+      <name>Text Update_52</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_14</name>
+      <name>Text Update_53</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_6</name>
+      <name>Action Button_24</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -326,12 +441,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_7</name>
+      <name>Action Button_25</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -341,43 +456,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_15</name>
+      <name>Text Update_54</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_3</name>
+      <name>LED_12</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_55</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_5</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_4</name>
+    <name>Group_13</name>
     <macros>
       <S>VBox</S>
       <V>CV05</V>
     </macros>
     <y>165</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_5</name>
+      <name>Label_14</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_16</name>
+      <name>Text Update_56</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -389,21 +546,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_17</name>
+      <name>Text Update_57</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_18</name>
+      <name>Text Update_58</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_8</name>
+      <name>Action Button_26</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -413,12 +570,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_9</name>
+      <name>Action Button_27</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -428,43 +585,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_19</name>
+      <name>Text Update_59</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_4</name>
+      <name>LED_13</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_60</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_6</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_5</name>
+    <name>Group_14</name>
     <macros>
       <S>VBox</S>
       <V>CV07</V>
     </macros>
     <y>195</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_6</name>
+      <name>Label_15</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_20</name>
+      <name>Text Update_61</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -476,21 +675,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_21</name>
+      <name>Text Update_62</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_22</name>
+      <name>Text Update_63</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_10</name>
+      <name>Action Button_28</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -500,12 +699,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_11</name>
+      <name>Action Button_29</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -515,43 +714,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_23</name>
+      <name>Text Update_64</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_5</name>
+      <name>LED_14</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_65</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_7</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_6</name>
+    <name>Group_19</name>
     <macros>
       <S>VBox</S>
       <V>CV60</V>
     </macros>
     <y>225</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_7</name>
+      <name>Label_20</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_24</name>
+      <name>Text Update_82</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -563,21 +804,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_25</name>
+      <name>Text Update_83</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_26</name>
+      <name>Text Update_84</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_12</name>
+      <name>Action Button_38</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -587,12 +828,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_13</name>
+      <name>Action Button_39</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -602,43 +843,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_27</name>
+      <name>Text Update_85</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_6</name>
+      <name>LED_19</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_86</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_8</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_7</name>
+    <name>Group_20</name>
     <macros>
       <S>VBox</S>
       <V>CV61</V>
     </macros>
     <y>255</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_8</name>
+      <name>Label_21</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_28</name>
+      <name>Text Update_87</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -650,21 +933,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_29</name>
+      <name>Text Update_88</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_30</name>
+      <name>Text Update_89</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_14</name>
+      <name>Action Button_40</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -674,12 +957,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_15</name>
+      <name>Action Button_41</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -689,43 +972,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_31</name>
+      <name>Text Update_90</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_7</name>
+      <name>LED_20</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_91</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_9</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_8</name>
+    <name>Group_21</name>
     <macros>
       <S>VBox</S>
       <V>CV62</V>
     </macros>
     <y>285</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_9</name>
+      <name>Label_22</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_32</name>
+      <name>Text Update_92</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -737,21 +1062,21 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_33</name>
+      <name>Text Update_93</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_34</name>
+      <name>Text Update_94</name>
       <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_16</name>
+      <name>Action Button_42</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -761,12 +1086,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_17</name>
+      <name>Action Button_43</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -776,43 +1101,85 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_35</name>
+      <name>Text Update_95</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_8</name>
+      <name>LED_21</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_96</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_10</name>
+      <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <actions execute_as_one="true">
+      </actions>
+      <rules>
+        <rule name="ForegroundRule" prop_id="file" out_exp="false">
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+          </exp>
+          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <exp bool_exp="pv0==0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+          </exp>
+          <exp bool_exp="pv0!=0.0">
+            <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+          </exp>
+          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+          <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_9</name>
+    <name>Group_22</name>
     <macros>
       <S>RHtr</S>
       <V>CV550</V>
     </macros>
     <y>315</y>
-    <width>610</width>
+    <width>740</width>
     <height>30</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>Label_10</name>
+      <name>Label_23</name>
       <text>$(V):</text>
       <y>5</y>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Text Update_36</name>
+      <name>Text Update_97</name>
       <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
       <x>80</x>
       <y>5</y>
@@ -824,21 +1191,22 @@
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_37</name>
+      <name>Text Update_98</name>
       <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
       <x>170</x>
       <y>5</y>
       <width>70</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_38</name>
-      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <name>Text Update_99</name>
+      <pv_name>CstatH-$(S):$(V):sRdV</pv_name>
       <x>260</x>
       <y>5</y>
       <width>70</width>
+      <precision>2</precision>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_18</name>
+      <name>Action Button_44</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -848,12 +1216,12 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
       <text>Auto</text>
-      <x>350</x>
+      <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_19</name>
+      <name>Action Button_45</name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -863,23 +1231,169 @@
       </actions>
       <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
       <text>Manual</text>
-      <x>420</x>
+      <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_39</name>
+      <name>Text Update_100</name>
       <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>500</x>
+      <x>570</x>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>LED_9</name>
+      <name>LED_22</name>
       <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>580</x>
+      <x>650</x>
       <y>5</y>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_101</name>
+      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
+      <x>340</x>
+      <y>5</y>
+      <width>70</width>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <P>CstatH</P>
+      </macros>
+      <x>690</x>
+      <width>30</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="picture" version="2.0.0">
+        <name>Picture_1</name>
+        <file>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</file>
+        <width>30</width>
+        <height>30</height>
+        <actions execute_as_one="true">
+        </actions>
+        <rules>
+          <rule name="ForegroundRule" prop_id="file" out_exp="false">
+            <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+              <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Red.png</value>
+            </exp>
+            <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+              <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+            </exp>
+            <exp bool_exp="pv0==0.0">
+              <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 White.png</value>
+            </exp>
+            <exp bool_exp="pv0!=0.0">
+              <value>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+            </exp>
+            <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+              <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Green.png</value>
+            </exp>
+            <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+              <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC On-Off 2-way Control Valve 3 Grey.png</value>
+            </exp>
+            <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+            <pv_name>sim://ramp(0,1,1,1)</pv_name>
+          </rule>
+        </rules>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Valve</text>
+    <x>10</x>
+    <y>20</y>
+    <width>70</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>SetV</text>
+    <x>90</x>
+    <y>20</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>SetV-RB</text>
+    <x>170</x>
+    <y>20</y>
+    <width>70</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Acq</text>
+    <x>270</x>
+    <y>20</y>
+    <width>50</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>SetV-Auto-RB</text>
+    <x>320</x>
+    <y>20</y>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Mode</text>
+    <x>590</x>
+    <y>20</y>
+    <width>50</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Mode Select Cmd</text>
+    <x>430</x>
+    <y>20</y>
+    <width>130</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol</name>
+    <pv_name>CM-VBox:CV60:sAuto</pv_name>
+    <symbols>
+      <symbol>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Pneumatic Valve 3 Red.png</symbol>
+      <symbol>../symbols/PNG/Fluid/Valves/VC On-Off 2-way Pneumatic Valve 3 Green.png</symbol>
+    </symbols>
+    <x>700</x>
+    <y>370</y>
+    <width>30</width>
+    <height>30</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Symbol test</text>
+    <x>600</x>
+    <y>380</y>
   </widget>
 </display>

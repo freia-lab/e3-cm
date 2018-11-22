@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>MCD</name>
+  <width>84</width>
+  <height>70</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <width>84</width>
+    <height>70</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==0 &amp;&amp; pvInt1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==0 &amp;&amp; pvInt1==0">
+          <value>
+            <color name="GRAY" red="169" green="169" blue="169">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color name="GRAY" red="169" green="169" blue="169">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>
+            <color name="ON" red="22" green="222" blue="33">
+            </color>
+          </value>
+        </exp>
+        <pv_name>CrS-TMCP:CRYO-US-$(IND):Sta</pv_name>
+        <pv_name>sim://ramp(0,1,1,1)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>AE$(IND)</text>
+    <x>2</x>
+    <y>25</y>
+    <width>80</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>
+            <color name="MACHINE-PROTECTION" red="196" green="96" blue="140">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0==0">
+          <value>
+            <color name="BLUE" red="79" green="228" blue="250">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P)-US-$(IND):MM-RB</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../Faceplate/genericUSFP.bob</file>
+        <macros>
+          <DEV>US</DEV>
+        </macros>
+        <target>standalone</target>
+        <description>Open Generic USFP</description>
+      </action>
+    </actions>
+    <text></text>
+    <width>84</width>
+    <height>70</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

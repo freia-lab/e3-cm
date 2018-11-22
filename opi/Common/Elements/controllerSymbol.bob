@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Controller Symbol</name>
+  <width>72</width>
+  <height>27</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>1</x>
+    <y>1</y>
+    <width>71</width>
+    <height>26</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="GREEN-BORDER" red="40" green="140" blue="40">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="62.0" y="0.0">
+      </point>
+      <point x="70.0" y="13.0">
+      </point>
+      <point x="62.0" y="25.0">
+      </point>
+      <point x="8.0" y="25.0">
+      </point>
+      <point x="0.0" y="13.0">
+      </point>
+      <point x="0.0" y="13.0">
+      </point>
+      <point x="0.0" y="13.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(LINDEDEV)$(IND)</text>
+    <y>5</y>
+    <width>76</width>
+    <height>16</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="GREEN-BORDER" red="40" green="140" blue="40">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../Faceplate/Controller/$(SCREEN).bob</file>
+        <macros>
+          <ACTIND>$(ACTIND)</ACTIND>
+          <ACTIND2>$(ACTIND2)</ACTIND2>
+          <DEV>$(DEV)</DEV>
+          <FB>$(FB)</FB>
+          <IND>$(IND)</IND>
+          <LINDEDEV>$(LINDEDEV)</LINDEDEV>
+          <TAG>$(TAG)</TAG>
+          <VAR>$(VAR)</VAR>
+        </macros>
+        <target>tab</target>
+        <description>Open Controller $(SCREEN)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>1</y>
+    <width>71</width>
+    <height>25</height>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

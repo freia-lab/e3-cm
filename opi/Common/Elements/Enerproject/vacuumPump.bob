@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>vacuumPump</name>
+  <macros>
+    <PRE>$(P)-P-$(IND)</PRE>
+  </macros>
+  <width>118</width>
+  <height>129</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</file>
+    <x>10</x>
+    <y>10</y>
+    <width>100</width>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ForegroundRule" prop_id="file" out_exp="false">
+        <exp bool_exp="(pvInt1==1 || pvInt2==1) &amp;&amp; pvInt3==1">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Red.png</value>
+        </exp>
+        <exp bool_exp="(pvInt1==1 || pvInt2==1) &amp;&amp; pvInt3==0">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvInt0==0">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvInt0==1">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Green.png</value>
+        </exp>
+        <pv_name>$(P)-C-$(IND):StaRunFbSignal</pv_name>
+        <pv_name>$(P)-C-$(IND):TrpFault</pv_name>
+        <pv_name>$(P)-C-$(IND):Warning</pv_name>
+        <pv_name>sim://ramp(0,1,1,1)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>C$(IND)</text>
+    <x>1</x>
+    <y>1</y>
+    <width>116</width>
+    <height>19</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../../Faceplate/controllerEnerprojectCompressor.bob</file>
+        <macros>
+          <CNUM>$(CNUM)</CNUM>
+          <IND>$(IND)</IND>
+        </macros>
+        <target>tab</target>
+        <description>Open Compressor Faceplate</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <height>100</height>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+    <enabled>false</enabled>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text></text>
+    <x>1</x>
+    <y>109</y>
+    <width>116</width>
+    <height>19</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="StatesRule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>IDLE RUN</value>
+        </exp>
+        <exp bool_exp="pv1==1">
+          <value>IDLE RUN STABLE</value>
+        </exp>
+        <exp bool_exp="pv2==1">
+          <value>PROD RUN</value>
+        </exp>
+        <exp bool_exp="pv3==1">
+          <value>PROD RUN STABLE</value>
+        </exp>
+        <exp bool_exp="pv4==1">
+          <value>COMPR CONTROL</value>
+        </exp>
+        <pv_name>$(P)-C-$(IND):StaIdleRun</pv_name>
+        <pv_name>$(P)-C-$(IND):StaIdleRunStabl</pv_name>
+        <pv_name>$(P)-C-$(IND):StaProdRun</pv_name>
+        <pv_name>$(P)-C-$(IND):StaProdRunStabl</pv_name>
+        <pv_name>$(P)-C-$(IND):StaCtl</pv_name>
+      </rule>
+    </rules>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

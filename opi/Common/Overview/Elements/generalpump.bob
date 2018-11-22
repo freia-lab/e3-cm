@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>generalPump</name>
+  <macros>
+    <PRE>$(P)-UY-$(IND)</PRE>
+  </macros>
+  <width>35</width>
+  <height>35</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_2</name>
+    <file>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</file>
+    <width>35</width>
+    <height>35</height>
+    <rotation>90.0</rotation>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ForegroundRule" prop_id="file" out_exp="false">
+        <exp bool_exp="pvInt1==1 &amp;&amp; pvInt2==1">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Red.png</value>
+        </exp>
+        <exp bool_exp="pvInt1==1 &amp;&amp; pvInt2==0">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvInt0==0">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvInt0==1">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Pumps/PV Vacuum Pump 3 Green.png</value>
+        </exp>
+        <pv_name>$(P)-C-$(IND):StaCtl</pv_name>
+        <pv_name>$(P)-C-$(IND):Warning</pv_name>
+        <pv_name>sim://ramp(0,1,1,1)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../../../Compressor/processCompressor$(CNUM).bob</file>
+        <target>replace</target>
+        <description>Open Compressor$(CNUM)</description>
+      </action>
+    </actions>
+    <text></text>
+    <width>35</width>
+    <height>35</height>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

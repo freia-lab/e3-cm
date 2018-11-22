@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>heater</name>
+  <width>41</width>
+  <height>36</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="picture" version="2.0.0">
+    <name>Symbol Monitor</name>
+    <file>../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Heat_Exchangers/HT Electrical Heater 3 Grey.png</file>
+    <x>1</x>
+    <y>1</y>
+    <width>40</width>
+    <height>35</height>
+    <rotation>270.0</rotation>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ForegroundRule" prop_id="file" out_exp="false">
+        <exp bool_exp="(pvStr0==&quot;Error&quot;||pvStr2==&quot;Error&quot;) &amp;&amp; pv1==1">
+          <value>../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Heat_Exchangers/HT Electrical Heater 3 Red.png</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;Error&quot; &amp;&amp; pv1==0">
+          <value>../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Heat_Exchangers/HT Electrical Heater 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;Off&quot;">
+          <value>../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Heat_Exchangers/HT Electrical Heater 3 Grey.png</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;Power On&quot;">
+          <value>../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Heat_Exchangers/HT Electrical Heater 3 Green.png</value>
+        </exp>
+        <pv_name>$(P)-$(DEV)-$(IND):CntctrSta</pv_name>
+        <pv_name>sim://ramp(0,1,1,1)</pv_name>
+        <pv_name>$(P)-$(DEV)-$(IND):PwrSta</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../Faceplate/heaterFP.opi</file>
+        <macros>
+          <DEV>$(DEV)</DEV>
+          <IND>$(IND)</IND>
+          <USSTR>$(USSTR)</USSTR>
+          <UYSTR>$(UYSTR)</UYSTR>
+        </macros>
+        <target>standalone</target>
+        <description>Open EH Faceplate</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>1</y>
+    <width>39</width>
+    <height>34</height>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

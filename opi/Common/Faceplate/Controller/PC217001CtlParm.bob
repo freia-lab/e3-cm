@@ -1,0 +1,2625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Controller Parameters</name>
+  <macros>
+    <CTRLPRE>$(P)-$(VAR)C-$(IND)</CTRLPRE>
+    <ScreenName>Controller Parameters $(LINDEDEV)$(IND)</ScreenName>
+  </macros>
+  <width>1259</width>
+  <height>970</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>../../MainOPI/header_fp.bob</file>
+    <width>1261</width>
+    <height>167</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Controller Parameters</text>
+    <x>20</x>
+    <y>185</y>
+    <width>159</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>Mode</text>
+    <x>20</x>
+    <y>225</y>
+    <width>39</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions execute_as_one="true">
+      <action type="execute">
+        <script file="../../Scripts/closeBob.py">
+        </script>
+        <description>Close Tab</description>
+      </action>
+    </actions>
+    <text>Exit</text>
+    <x>880</x>
+    <y>875</y>
+    <height>35</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_41</name>
+    <text>Gain Unload</text>
+    <x>250</x>
+    <y>225</y>
+    <width>83</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_42</name>
+    <text>Gain Load</text>
+    <x>370</x>
+    <y>225</y>
+    <width>68</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_43</name>
+    <text>HP Value for Gain Load</text>
+    <x>490</x>
+    <y>225</y>
+    <width>90</width>
+    <height>42</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_44</name>
+    <text>Integr. Time Unload (s)</text>
+    <x>610</x>
+    <y>225</y>
+    <width>90</width>
+    <height>42</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_39</name>
+    <pv_name>$(CTRLPRE):PGainTim0001-RB</pv_name>
+    <x>370</x>
+    <y>315</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_35</name>
+    <pv_name>$(CTRLPRE):PGainTim0000</pv_name>
+    <x>250</x>
+    <y>275</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_36</name>
+    <pv_name>$(CTRLPRE):PGainTim0001</pv_name>
+    <x>370</x>
+    <y>275</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_40</name>
+    <pv_name>$(CTRLPRE):PGainTim0000-RB</pv_name>
+    <x>250</x>
+    <y>315</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text>1 Co, Prod, HP-Buffer</text>
+    <x>20</x>
+    <y>275</y>
+    <width>141</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>1 Co, Prod, LP-Buffer</text>
+    <x>20</x>
+    <y>355</y>
+    <width>139</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_27</name>
+    <text>1 Co, Div, LP-Buffer</text>
+    <x>20</x>
+    <y>515</y>
+    <width>128</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_25</name>
+    <text>1 Co, Div, HP-Buffer</text>
+    <x>20</x>
+    <y>435</y>
+    <width>130</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_37</name>
+    <text>2 Co, Prod, HP-Buffer</text>
+    <x>20</x>
+    <y>595</y>
+    <width>141</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_38</name>
+    <text>2 Co, Prod, LP-Buffer</text>
+    <x>20</x>
+    <y>675</y>
+    <width>139</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_39</name>
+    <text>2 Co, Div, LP-Buffer</text>
+    <x>20</x>
+    <y>835</y>
+    <width>128</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_40</name>
+    <text>2 Co, Div, HP-Buffer</text>
+    <x>20</x>
+    <y>755</y>
+    <width>130</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_41</name>
+    <pv_name>$(CTRLPRE):PGainTim0003-RB</pv_name>
+    <x>610</x>
+    <y>315</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_37</name>
+    <pv_name>$(CTRLPRE):PGainTim0002</pv_name>
+    <x>490</x>
+    <y>275</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_38</name>
+    <pv_name>$(CTRLPRE):PGainTim0003</pv_name>
+    <x>610</x>
+    <y>275</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_42</name>
+    <pv_name>$(CTRLPRE):PGainTim0002-RB</pv_name>
+    <x>490</x>
+    <y>315</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_45</name>
+    <text>Integr. Time Load (s)</text>
+    <x>730</x>
+    <y>225</y>
+    <width>90</width>
+    <height>42</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_43</name>
+    <pv_name>$(CTRLPRE):PGainTim0004-RB</pv_name>
+    <x>730</x>
+    <y>315</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_39</name>
+    <pv_name>$(CTRLPRE):PGainTim0004</pv_name>
+    <x>730</x>
+    <y>275</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_44</name>
+    <pv_name>$(CTRLPRE):PGainTim0011-RB</pv_name>
+    <x>370</x>
+    <y>395</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_40</name>
+    <pv_name>$(CTRLPRE):PGainTim0010</pv_name>
+    <x>250</x>
+    <y>355</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_41</name>
+    <pv_name>$(CTRLPRE):PGainTim0011</pv_name>
+    <x>370</x>
+    <y>355</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_45</name>
+    <pv_name>$(CTRLPRE):PGainTim0010-RB</pv_name>
+    <x>250</x>
+    <y>395</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_46</name>
+    <pv_name>$(CTRLPRE):PGainTim0013-RB</pv_name>
+    <x>610</x>
+    <y>395</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_42</name>
+    <pv_name>$(CTRLPRE):PGainTim0012</pv_name>
+    <x>490</x>
+    <y>355</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_43</name>
+    <pv_name>$(CTRLPRE):PGainTim0013</pv_name>
+    <x>610</x>
+    <y>355</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_47</name>
+    <pv_name>$(CTRLPRE):PGainTim0012-RB</pv_name>
+    <x>490</x>
+    <y>395</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_48</name>
+    <pv_name>$(CTRLPRE):PGainTim0014-RB</pv_name>
+    <x>730</x>
+    <y>395</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_44</name>
+    <pv_name>$(CTRLPRE):PGainTim0014</pv_name>
+    <x>730</x>
+    <y>355</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_49</name>
+    <pv_name>$(CTRLPRE):PGainTim0101-RB</pv_name>
+    <x>370</x>
+    <y>475</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_45</name>
+    <pv_name>$(CTRLPRE):PGainTim0100</pv_name>
+    <x>250</x>
+    <y>435</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_46</name>
+    <pv_name>$(CTRLPRE):PGainTim0101</pv_name>
+    <x>370</x>
+    <y>435</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_50</name>
+    <pv_name>$(CTRLPRE):PGainTim0100-RB</pv_name>
+    <x>250</x>
+    <y>475</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_51</name>
+    <pv_name>$(CTRLPRE):PGainTim0103-RB</pv_name>
+    <x>610</x>
+    <y>475</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_47</name>
+    <pv_name>$(CTRLPRE):PGainTim0102</pv_name>
+    <x>490</x>
+    <y>435</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_48</name>
+    <pv_name>$(CTRLPRE):PGainTim0103</pv_name>
+    <x>610</x>
+    <y>435</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_52</name>
+    <pv_name>$(CTRLPRE):PGainTim0102-RB</pv_name>
+    <x>490</x>
+    <y>475</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_53</name>
+    <pv_name>$(CTRLPRE):PGainTim0104-RB</pv_name>
+    <x>730</x>
+    <y>475</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_49</name>
+    <pv_name>$(CTRLPRE):PGainTim0104</pv_name>
+    <x>730</x>
+    <y>435</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_54</name>
+    <pv_name>$(CTRLPRE):PGainTim0111-RB</pv_name>
+    <x>370</x>
+    <y>555</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_50</name>
+    <pv_name>$(CTRLPRE):PGainTim0110</pv_name>
+    <x>250</x>
+    <y>515</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_51</name>
+    <pv_name>$(CTRLPRE):PGainTim0111</pv_name>
+    <x>370</x>
+    <y>515</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_55</name>
+    <pv_name>$(CTRLPRE):PGainTim0110-RB</pv_name>
+    <x>250</x>
+    <y>555</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_56</name>
+    <pv_name>$(CTRLPRE):PGainTim0113-RB</pv_name>
+    <x>610</x>
+    <y>555</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_52</name>
+    <pv_name>$(CTRLPRE):PGainTim0112</pv_name>
+    <x>490</x>
+    <y>515</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_53</name>
+    <pv_name>$(CTRLPRE):PGainTim0113</pv_name>
+    <x>610</x>
+    <y>515</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_57</name>
+    <pv_name>$(CTRLPRE):PGainTim0112-RB</pv_name>
+    <x>490</x>
+    <y>555</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_58</name>
+    <pv_name>$(CTRLPRE):PGainTim0114-RB</pv_name>
+    <x>730</x>
+    <y>555</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_54</name>
+    <pv_name>$(CTRLPRE):PGainTim0114</pv_name>
+    <x>730</x>
+    <y>515</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_55</name>
+    <pv_name>$(CTRLPRE):PGainTim1010</pv_name>
+    <x>250</x>
+    <y>675</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_56</name>
+    <pv_name>$(CTRLPRE):PGainTim1011</pv_name>
+    <x>370</x>
+    <y>675</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_59</name>
+    <pv_name>$(CTRLPRE):PGainTim1010-RB</pv_name>
+    <x>250</x>
+    <y>715</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_60</name>
+    <pv_name>$(CTRLPRE):PGainTim1013-RB</pv_name>
+    <x>610</x>
+    <y>715</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_57</name>
+    <pv_name>$(CTRLPRE):PGainTim1012</pv_name>
+    <x>490</x>
+    <y>675</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_58</name>
+    <pv_name>$(CTRLPRE):PGainTim1013</pv_name>
+    <x>610</x>
+    <y>675</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_61</name>
+    <pv_name>$(CTRLPRE):PGainTim1012-RB</pv_name>
+    <x>490</x>
+    <y>715</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_62</name>
+    <pv_name>$(CTRLPRE):PGainTim1014-RB</pv_name>
+    <x>730</x>
+    <y>715</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_59</name>
+    <pv_name>$(CTRLPRE):PGainTim1014</pv_name>
+    <x>730</x>
+    <y>675</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_63</name>
+    <pv_name>$(CTRLPRE):PGainTim1101-RB</pv_name>
+    <x>370</x>
+    <y>795</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_60</name>
+    <pv_name>$(CTRLPRE):PGainTim1100</pv_name>
+    <x>250</x>
+    <y>755</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_61</name>
+    <pv_name>$(CTRLPRE):PGainTim1101</pv_name>
+    <x>370</x>
+    <y>755</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_64</name>
+    <pv_name>$(CTRLPRE):PGainTim1100-RB</pv_name>
+    <x>250</x>
+    <y>795</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_65</name>
+    <pv_name>$(CTRLPRE):PGainTim1103-RB</pv_name>
+    <x>610</x>
+    <y>795</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_62</name>
+    <pv_name>$(CTRLPRE):PGainTim1102</pv_name>
+    <x>490</x>
+    <y>755</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_63</name>
+    <pv_name>$(CTRLPRE):PGainTim1103</pv_name>
+    <x>610</x>
+    <y>755</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_66</name>
+    <pv_name>$(CTRLPRE):PGainTim1102-RB</pv_name>
+    <x>490</x>
+    <y>795</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_67</name>
+    <pv_name>$(CTRLPRE):PGainTim1104-RB</pv_name>
+    <x>730</x>
+    <y>795</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_64</name>
+    <pv_name>$(CTRLPRE):PGainTim1104</pv_name>
+    <x>730</x>
+    <y>755</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_68</name>
+    <pv_name>$(CTRLPRE):PGainTim1111-RB</pv_name>
+    <x>370</x>
+    <y>875</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_65</name>
+    <pv_name>$(CTRLPRE):PGainTim1110</pv_name>
+    <x>250</x>
+    <y>835</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_66</name>
+    <pv_name>$(CTRLPRE):PGainTim1111</pv_name>
+    <x>370</x>
+    <y>835</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_69</name>
+    <pv_name>$(CTRLPRE):PGainTim1110-RB</pv_name>
+    <x>250</x>
+    <y>875</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_70</name>
+    <pv_name>$(CTRLPRE):PGainTim1113-RB</pv_name>
+    <x>610</x>
+    <y>875</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_67</name>
+    <pv_name>$(CTRLPRE):PGainTim1112</pv_name>
+    <x>490</x>
+    <y>835</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_68</name>
+    <pv_name>$(CTRLPRE):PGainTim1113</pv_name>
+    <x>610</x>
+    <y>835</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_71</name>
+    <pv_name>$(CTRLPRE):PGainTim1112-RB</pv_name>
+    <x>490</x>
+    <y>875</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_72</name>
+    <pv_name>$(CTRLPRE):PGainTim1114-RB</pv_name>
+    <x>730</x>
+    <y>875</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_69</name>
+    <pv_name>$(CTRLPRE):PGainTim1114</pv_name>
+    <x>730</x>
+    <y>835</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_73</name>
+    <pv_name>$(CTRLPRE):PGainTim1001-RB</pv_name>
+    <x>370</x>
+    <y>635</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_70</name>
+    <pv_name>$(CTRLPRE):PGainTim1000</pv_name>
+    <x>250</x>
+    <y>595</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_71</name>
+    <pv_name>$(CTRLPRE):PGainTim1001</pv_name>
+    <x>370</x>
+    <y>595</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_74</name>
+    <pv_name>$(CTRLPRE):PGainTim1000-RB</pv_name>
+    <x>250</x>
+    <y>635</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_75</name>
+    <pv_name>$(CTRLPRE):PGainTim1003-RB</pv_name>
+    <x>610</x>
+    <y>635</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_72</name>
+    <pv_name>$(CTRLPRE):PGainTim1002</pv_name>
+    <x>490</x>
+    <y>595</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_73</name>
+    <pv_name>$(CTRLPRE):PGainTim1003</pv_name>
+    <x>610</x>
+    <y>595</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_76</name>
+    <pv_name>$(CTRLPRE):PGainTim1002-RB</pv_name>
+    <x>490</x>
+    <y>635</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_77</name>
+    <pv_name>$(CTRLPRE):PGainTim1004-RB</pv_name>
+    <x>730</x>
+    <y>635</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_74</name>
+    <pv_name>$(CTRLPRE):PGainTim1004</pv_name>
+    <x>730</x>
+    <y>595</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Lock" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv1==1">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-SCREENLOCK</pv_name>
+        <pv_name>$(P)-LOCALSCREENLOCK$(LOCKID)</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_78</name>
+    <pv_name>$(CTRLPRE):PGainTim1011-RB</pv_name>
+    <x>370</x>
+    <y>715</y>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+</display>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Tabs &amp; Alarms</name>
+  <macros>
+    <P>CrS-TMCP:CRYO</P>
+  </macros>
+  <width>711</width>
+  <height>64</height>
+  <background_color>
+    <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="action_button" version="3.0.0">
+    <name>Warm Compressor Menu_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../../Compressor/processCompressor1.bob</file>
+        <target>replace</target>
+        <description>Process Compressor 1</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/processCompressor2.bob</file>
+        <target>replace</target>
+        <description>Process Compressor 2</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/processORS.bob</file>
+        <target>replace</target>
+        <description>Process ORS</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/processGMP.bob</file>
+        <target>replace</target>
+        <description>Process GMP</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/processGasImpMeasurement.bob</file>
+        <target>replace</target>
+        <description>Gas Impurity Measurements</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/panelGMP_safetyHeadersWCS.bob</file>
+        <target>replace</target>
+        <description>Panel GMP - Safety Headers WCS</description>
+      </action>
+    </actions>
+    <text>Warm Compressor Station</text>
+    <y>33</y>
+    <width>210</width>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>220</x>
+    <y>35</y>
+    <width>1</width>
+    <height>28</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_8</name>
+    <x>400</x>
+    <y>36</y>
+    <width>1</width>
+    <height>28</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Coldbox Menu_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../../Coldbox/processWarmEnd.bob</file>
+        <target>replace</target>
+        <description>Process Warm End</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/processParallelTurbines.bob</file>
+        <target>replace</target>
+        <description>Process Parallel Turbines</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/process20Kadsorber.bob</file>
+        <target>replace</target>
+        <description>Process 20K Adsorber</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/vacuumSystem.bob</file>
+        <target>replace</target>
+        <description>Vacuum System</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/processColdEnd.bob</file>
+        <target>replace</target>
+        <description>Process Cold End</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/processCoolingWater.bob</file>
+        <target>replace</target>
+        <description>Process Cooling Water</description>
+      </action>
+      <action type="open_display">
+        <file>../../Test_Jumper_Spool/processTJS.bob</file>
+        <target>replace</target>
+        <description>Process TJS</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/TIswitches.bob</file>
+        <target>replace</target>
+        <description>Temperature Switches</description>
+      </action>
+    </actions>
+    <text>Coldbox &amp; TJS</text>
+    <x>240</x>
+    <y>33</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>ORS Dryer Menu_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../../Compressor/Permissives/permissivesCompressor.bob</file>
+        <target>replace</target>
+        <description>Permissives Compressors</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/Permissives/shutdownsCompressor.bob</file>
+        <target>replace</target>
+        <description>Shutdowns Compressors</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/stepChain/stepChainMain.bob</file>
+        <target>replace</target>
+        <description>Compressor Step Chain</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/Modes/modesCompressor.bob</file>
+        <target>replace</target>
+        <description>Operation Modes Compressors</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesWarmup.bob</file>
+        <target>replace</target>
+        <description>Permissives Warmup</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesColdmode.bob</file>
+        <target>replace</target>
+        <description>Permissives Coldmode</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesCTLU.bob</file>
+        <target>replace</target>
+        <description>Permissives CTL Unload</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesCTLL.bob</file>
+        <target>replace</target>
+        <description>Permissives CTL Load</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesTJS.bob</file>
+        <target>replace</target>
+        <description>Permissives TJS</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Modes/modesColdbox1.bob</file>
+        <target>replace</target>
+        <description>Operation Modes Coldbox 1</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Modes/modesColdbox2.bob</file>
+        <target>replace</target>
+        <description>Operation Modes Coldbox 2</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Modes/modesVacuumJacket.bob</file>
+        <target>replace</target>
+        <description>Operation Modes Vacuum Jacket</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Adsorber/Sta20K.bob</file>
+        <target>replace</target>
+        <description>20K Adsorber Step Chain</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesTurbines1.bob</file>
+        <target>replace</target>
+        <description>Permissives Turbine 1</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesTurbines2.bob</file>
+        <target>replace</target>
+        <description>Permissives Turbine 2</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Permissives/permissivesTurbines3.bob</file>
+        <target>replace</target>
+        <description>Permissives Turbine 3</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Modes/modesColdboxTurbines.bob</file>
+        <target>replace</target>
+        <description>Operation Modes Turbines</description>
+      </action>
+    </actions>
+    <text>Operation Modes</text>
+    <x>420</x>
+    <y>33</y>
+    <width>150</width>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_9</name>
+    <x>590</x>
+    <y>36</y>
+    <width>1</width>
+    <height>28</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>ORS Dryer Menu_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../../Compressor/Trends/TrendCompressor1.bob</file>
+        <target>replace</target>
+        <description>Trends Compressor 1</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/Trends/TrendCompressor2.bob</file>
+        <target>replace</target>
+        <description>Trends Compressor 2</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/Trends/TrendGMP.bob</file>
+        <target>replace</target>
+        <description>Trends GMP</description>
+      </action>
+      <action type="open_display">
+        <file>../../Compressor/Trends/TrendORS.bob</file>
+        <target>replace</target>
+        <description>Trends ORS</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/TrendWarmEnd.bob</file>
+        <target>replace</target>
+        <description>Trends Warm End</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/TrendParallelTurbines.bob</file>
+        <target>replace</target>
+        <description>Trends Parallel Turbines</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/Trend20Kadsorber.bob</file>
+        <target>replace</target>
+        <description>Trends 20K Adsorber</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/Trend20KRegenerationPanel.bob</file>
+        <target>replace</target>
+        <description>Trends 20K Regeneration Panel</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/TrendColdEnd.bob</file>
+        <target>replace</target>
+        <description>Trends Cold End</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/TrendCoolingWater.bob</file>
+        <target>replace</target>
+        <description>Trends Cooling Water</description>
+      </action>
+      <action type="open_display">
+        <file>../../Coldbox/Trends/TrendVacuumSystem.bob</file>
+        <target>replace</target>
+        <description>Trends Vacuum System</description>
+      </action>
+      <action type="open_display">
+        <file>../../Test_Jumper_Spool/Trends/TrendTJS.bob</file>
+        <target>replace</target>
+        <description>Trends TJS</description>
+      </action>
+    </actions>
+    <text>Trends</text>
+    <x>610</x>
+    <y>33</y>
+    <width>90</width>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)-LASTALARM</pv_name>
+    <x>1</x>
+    <y>1</y>
+    <width>448</width>
+    <height>26</height>
+    <foreground_color>
+      <color name="TEXT-DARK" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-LASTALARM.DESC</pv_name>
+    <x>450</x>
+    <y>1</y>
+    <width>260</width>
+    <height>26</height>
+    <foreground_color>
+      <color name="TEXT-DARK" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_10</name>
+    <x>710</x>
+    <y>34</y>
+    <width>1</width>
+    <height>28</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+      <point x="0.0" y="27.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+</display>

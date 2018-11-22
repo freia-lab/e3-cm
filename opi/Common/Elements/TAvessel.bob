@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TA vessel</name>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="symbol" version="2.0.0">
+    <name>Boolean Symbol Monitor</name>
+    <symbols>
+      <symbol>../Symbols/ess-symbols-master/symbols-iter/SymbolLibrary_full_hd/SVG/Fluid/Vessels/TA Gas Cylinder.svg</symbol>
+      <symbol>../Symbols/ess-symbols-master/symbols-iter/SymbolLibrary_full_hd/SVG/Fluid/Vessels/TA Gas Cylinder.svg</symbol>
+    </symbols>
+    <width>60</width>
+    <height>120</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <preserve_ratio>false</preserve_ratio>
+  </widget>
+</display>
