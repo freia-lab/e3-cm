@@ -544,12 +544,12 @@
     <y>200</y>
     <width>140</width>
     <height>40</height>
-    <off_label>(S3)</off_label>
+    <off_label>Pausing (S3)</off_label>
     <off_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </off_color>
-    <on_label>(S3)</on_label>
+    <on_label>Pausing (S3)</on_label>
     <square>true</square>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
@@ -560,23 +560,23 @@
     <y>110</y>
     <width>140</width>
     <height>40</height>
-    <off_label>(S2)</off_label>
+    <off_label>Conditioning (S2)</off_label>
     <off_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </off_color>
-    <on_label>(S2)</on_label>
+    <on_label>Conditioning (S2)</on_label>
     <square>true</square>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_4</name>
     <pv_name>$(PG):sState4</pv_name>
-    <x>170</x>
+    <x>140</x>
     <y>280</y>
-    <width>140</width>
+    <width>200</width>
     <height>40</height>
-    <off_label>(S4)</off_label>
+    <off_label>Thermal screen cooling (S4)</off_label>
     <off_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -592,12 +592,12 @@
     <y>360</y>
     <width>140</width>
     <height>40</height>
-    <off_label>(S5)</off_label>
+    <off_label>LHe Cooling (S5)</off_label>
     <off_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </off_color>
-    <on_label>(S5)</on_label>
+    <on_label>LHe Cooling (S5)</on_label>
     <square>true</square>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
@@ -1280,5 +1280,43 @@ by the PLC program</tooltip>
       <square>true</square>
       <labels_from_pv>true</labels_from_pv>
     </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>TT77</name>
+    <macros>
+      <D>TT77</D>
+      <S>VBox</S>
+    </macros>
+    <x>340</x>
+    <y>140</y>
+    <width>141</width>
+    <height>90</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_24</name>
+      <pv_name>$(P)-$(S):$(D):sVisu</pv_name>
+      <y>4</y>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+      <y>30</y>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_17</name>
+    <x>304</x>
+    <y>189</y>
+    <width>46</width>
+    <height>88</height>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
+    <points>
+      <point x="46.0" y="0.0">
+      </point>
+      <point x="0.0" y="88.00001525878906">
+      </point>
+    </points>
   </widget>
 </display>

@@ -2,19 +2,19 @@
 
 file cm-AValves.template { pattern
 
-{SUBS,	DEV,       OFFS,   OFFS2}
-{VBox	CV01	   356	   68}
-{VBox	CV02	   370	   74}
-{VBox	CV03	   384	   80}
-{VBox	CV04	   398	   86}
-{VBox	CV05	   412	   92}
-{VBox	CV07	   426	   98}
-{VBox	CV60	   440	   104}
-{VBox	CV61	   454	   110}
-{VBox	CV62	   468	   116}
-{RHtr	CV550	   482	   122}
-{RHtr	CV551	   496	   128}
-{RHtr	CV552	   510	   134}
+{SUBS,	DEV,       OFFS,   OFFS2,   LINR,	     ASLO,   AOFF}
+{VBox	CV01	   356	   68	    "NO CONVERSION", 1.0     0}
+{VBox	CV02	   370	   74	    "NO CONVERSION", 1.0     0}
+{VBox	CV03	   384	   80	    "NO CONVERSION", 1.0     0}
+{VBox	CV04	   398	   86	    "NO CONVERSION", 1.0     0}
+{VBox	CV05	   412	   92	    "NO CONVERSION", 1.0     0}
+{VBox	CV07	   426	   98	    "NO CONVERSION", 1.0     0}
+{VBox	CV60	   440	   104	    "NO CONVERSION", 1.0     0}
+{VBox	CV61	   454	   110	    "LINEAR", 	    -1.0     100}
+{VBox	CV62	   468	   116	    "NO CONVERSION", 1.0     0}
+{RHtr	CV550	   482	   122	    "NO CONVERSION", 1.0     0}
+{RHtr	CV551	   496	   128	    "NO CONVERSION", 1.0     0}
+{RHtr	CV552	   510	   134	    "NO CONVERSION", 1.0     0}
 }
 
 file cm-Heater1.template { pattern
@@ -44,6 +44,7 @@ file cm-LT.template { pattern
 {SUBS,	DEV,       OFFS,  PREC, EGU}
 {VBox	LT03	   884	  1	"cm"}
 {CM	LT01	   876	  1	"cm"}
+{VBox	TT77	   944	  1	"K"}
 }
 
 file cm-real-param.template { pattern

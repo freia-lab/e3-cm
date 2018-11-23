@@ -1045,7 +1045,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_29</name>
     <macros>
-      <D>TT77</D>
+      <D>TT77x</D>
       <S>VBox</S>
     </macros>
     <x>21</x>
@@ -3208,7 +3208,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_80</name>
     <macros>
-      <D>TT77</D>
+      <D>TT77x</D>
       <S>VBox</S>
     </macros>
     <x>821</x>

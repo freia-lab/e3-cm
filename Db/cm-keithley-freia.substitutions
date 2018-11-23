@@ -26,7 +26,7 @@ file "cm-keithley.template" { pattern
 {CM	 VBox   TT950 1     24 	   54	  "K"}
 {CM	 VBox   TT960 1     25 	   55	  "K"}
 {CM	 VBox   TT990 1     26 	   56	  "K"}
-{CM	 VBox   TT77  1     27 	   57	  "K"}
+{CM	 VBox   TT77x 1     27 	   57	  "K"}
 {CM	 VBox   TT701 2     01     31 	  "K"}
 {CM	 VBox   TT702 2     02     32	  "K"}
 {CM	 VBox   TT2620 2     03     33	  "K"}

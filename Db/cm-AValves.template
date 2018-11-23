@@ -81,6 +81,9 @@ record(ao, "CM-$(SUBS):$(DEV):cSetV") {
   field(PREC, "1")
   field(FLNK, "CM-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "%")
+  field(LINR, "$(LINR)")
+  field(ASLO, "$(ASLO)")
+  field(AOFF, "$(AOFF)")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sSetV") {
@@ -91,6 +94,9 @@ record(ai, "CM-$(SUBS):$(DEV):sSetV") {
   field(PINI, "YES")
   field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
   field(EGU, "%")
+  field(LINR, "$(LINR)")
+  field(ASLO, "$(ASLO)")
+  field(AOFF, "$(AOFF)")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
@@ -100,6 +106,9 @@ record(ai, "CM-$(SUBS):$(DEV):sAutoRdV") {
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
   field(EGU, "%")
+  field(LINR, "$(LINR)")
+  field(ASLO, "$(ASLO)")
+  field(AOFF, "$(AOFF)")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sRdV") {
@@ -109,4 +118,7 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
   field(EGU, "%")
+  field(LINR, "$(LINR)")
+  field(ASLO, "$(ASLO)")
+  field(AOFF, "$(AOFF)")
 }
