@@ -60,13 +60,6 @@ record(bo, "CM-Ctrl:Archiving:On") {
   field(PINI, "YES")
 }
 
-record(ao, "CM-test0:cSetV") {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:CM/4 T=FLOAT")
-  field(PINI, "NO")
-  field(PREC, "6")
-}
-
 record(ai, "CM-test0:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/4 T=FLOAT")
@@ -285,7 +278,7 @@ record(bo, "CM-Ctrl:Grafcet:cmdStopStby") {
 #
 # Analog inputs
 #
-record(ai, "CM-CM:PT60:sRdV") {
+record(ai, "CM-VBox:PT60:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/892 T=FLOAT")
   field(PREC, "3")
@@ -318,7 +311,7 @@ record(ai, "CM-Vac:PT71:sRdV") {
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
 }
-record(ai, "CM-CM:PT75:sRdV") {
+record(ai, "CM-Vac:PT75:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/908 T=FLOAT")
   field(PREC, "3")
@@ -326,11 +319,41 @@ record(ai, "CM-CM:PT75:sRdV") {
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
 }
-record(ai, "CM-CM:PT77:sRdV") {
+record(ai, "CM-Vac:PT77:sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:CM/912 T=FLOAT")
   field(PREC, "3")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
+}
+
+############################################################
+# Data from Keithley
+############################################################
+
+# Fix it - select the right gauges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+record(ao, "CM-Ctrl:TTxx") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/4 T=FLOAT")
+  field(PINI, "NO")
+  field(PREC, "6")
+  field(OMSL, "closed_loop")
+  field(SCAN, "Event")
+  field(EVNT, "$(SCAN_EVNT)")
+  field(PHAS,"1")
+  field(DOL, "CM-VBox:TT610:sRdV")
+}
+
+record(ao, "CM-Ctrl:TTyy") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/4 T=FLOAT")
+  field(PINI, "NO")
+  field(PREC, "6")
+  field(OMSL, "closed_loop")
+  field(SCAN, "Event")
+  field(EVNT, "$(SCAN_EVNT)")
+  field(PHAS,"1")
+  field(DOL, "CM-VBox:TT620:sRdV")
 }

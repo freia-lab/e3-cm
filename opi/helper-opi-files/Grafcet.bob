@@ -581,7 +581,7 @@
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </off_color>
-    <on_label>(S4)</on_label>
+    <on_label>Thermal screen cooling (S4)</on_label>
     <square>true</square>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
@@ -689,7 +689,7 @@ achieved</text>
     <wrap_words>false</wrap_words>
     <rules>
       <rule name="Visibility" prop_id="visible" out_exp="false">
-        <exp bool_exp="pvInt0==1">
+        <exp bool_exp="pvInt0==0">
           <value>false</value>
         </exp>
         <pv_name>$(PG):sTransTempOK</pv_name>
