@@ -76,4 +76,18 @@
       </font>
     </font>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(P)-CM:PT03:sRdV</pv_name>
+    <x>730</x>
+    <y>288</y>
+    <width>80</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(P)-CM:PT02:sRdV</pv_name>
+    <x>730</x>
+    <y>308</y>
+    <width>80</width>
+  </widget>
 </display>

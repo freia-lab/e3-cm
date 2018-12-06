@@ -118,7 +118,7 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
   field(EGU, "%")
-  field(LINR, "$(LINR)")
-  field(ASLO, "$(ASLO)")
-  field(AOFF, "$(AOFF)")
+#  field(LINR, "$(LINR)")
+#  field(ASLO, "$(ASLO)")
+#  field(AOFF, "$(AOFF)")
 }

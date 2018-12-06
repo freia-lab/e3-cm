@@ -398,7 +398,7 @@
     <text>Proceed</text>
     <x>10</x>
     <y>70</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Start conditioning</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_3</name>
@@ -414,7 +414,7 @@
     <x>10</x>
     <y>130</y>
     <width>99</width>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Return to Initial state</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_4</name>
@@ -429,7 +429,7 @@
     <text>Proceed (OK)</text>
     <x>10</x>
     <y>170</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Exit conditioning state</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_5</name>
@@ -444,7 +444,8 @@
     <text>Proceed</text>
     <x>10</x>
     <y>245</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Start thermal screen cooling
+with LN2</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_6</name>
@@ -459,7 +460,7 @@
     <text>Proceed</text>
     <x>10</x>
     <y>330</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Start LHe cooling</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_7</name>
@@ -472,9 +473,9 @@
     </actions>
     <pv_name>$(PG):cmdStartStby</pv_name>
     <text>Proceed</text>
-    <x>10</x>
-    <y>400</y>
-    <tooltip>$(actions)</tooltip>
+    <x>20</x>
+    <y>515</y>
+    <tooltip>Goto Standby</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_8</name>
@@ -489,7 +490,7 @@
     <text>Proceed</text>
     <x>20</x>
     <y>591</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Exit Standby</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_9</name>
@@ -699,7 +700,8 @@ achieved</text>
   <widget type="label" version="2.0.0">
     <name>Label_6</name>
     <text>TransMode4K</text>
-    <y>370</y>
+    <x>10</x>
+    <y>415</y>
     <width>120</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="16.0">
@@ -719,6 +721,10 @@ achieved</text>
         <pv_name>$(PG):sTransMode4K</pv_name>
       </rule>
     </rules>
+    <tooltip>Automatic conditon for entering
+4K Operation state.
+Both LT01 and LT02 PID regulators (CV02/CV03)
+MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_1</name>
