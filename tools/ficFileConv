@@ -14,6 +14,9 @@
 #          1.2 181017 KF Remove lines where temperature is not increasing
 #          2.0 181024 KF Adapt to Makefile use: Move tmp and out to /tmp
 #                        Write combined file to Db/cernox-breaktables.dbd
+#          2.1 181207 KG Changed the lookup table so the input value is in mohms instead of
+#                        ohms. It was needed for ai Raw Soft Channel record to work properly
+#                        (RVAL is an integer)
 
 if [ -d calibrations ]
 then
@@ -47,11 +50,11 @@ for f in CX*\(1.5K*; do
     cat "$f" | sed 's/+//' | awk 'NR < 16 {print "# "$0 }
                                   NR == 16 {print "# "$1, $2}' >> /tmp/out/"$fout"
     # Print the data.
-    cat "$f" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' > /tmp/temp
+    cat "$f" | awk 'NR > 16 {print 1000.0*$1, $2 }' | sed 's/+//' > /tmp/temp
                 
     # Add the high temp data without header
     f2=$(ls "$fout(10.0K"*"$fdat")
-    cat "$f2" | sed 's/+//' | awk 'NR > 16 {print $1, $2 }' >> /tmp/temp
+    cat "$f2" | awk 'NR > 16 {print 1000.0*$1, $2 }' | sed 's/+//' >> /tmp/temp
 
     # Write the sorted file, removing duplicates, to the output file
     # Check for a monotonous dependence

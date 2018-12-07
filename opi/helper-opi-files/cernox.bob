@@ -221,8 +221,8 @@
     <name>Embedded Display_16</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx201</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT101</TT>
     </macros>
     <x>380</x>
     <y>10</y>
@@ -234,8 +234,8 @@
     <name>Embedded Display_17</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx202</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT102</TT>
     </macros>
     <x>380</x>
     <y>48</y>
@@ -247,8 +247,8 @@
     <name>Embedded Display_18</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx203</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT103</TT>
     </macros>
     <x>380</x>
     <y>87</y>
@@ -260,8 +260,8 @@
     <name>Embedded Display_19</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx204</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT104</TT>
     </macros>
     <x>380</x>
     <y>126</y>
@@ -273,8 +273,8 @@
     <name>Embedded Display_20</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx205</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT105</TT>
     </macros>
     <x>380</x>
     <y>165</y>
@@ -286,8 +286,8 @@
     <name>Embedded Display_21</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx206</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT110</TT>
     </macros>
     <x>380</x>
     <y>204</y>
@@ -299,8 +299,8 @@
     <name>Embedded Display_22</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx207</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT108</TT>
     </macros>
     <x>380</x>
     <y>242</y>
@@ -312,8 +312,8 @@
     <name>Embedded Display_23</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx208</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT109</TT>
     </macros>
     <x>380</x>
     <y>281</y>
@@ -338,8 +338,8 @@
     <name>Embedded Display_25</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx210</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT106</TT>
     </macros>
     <x>380</x>
     <y>359</y>
@@ -351,8 +351,8 @@
     <name>Embedded Display_26</name>
     <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx211</TT>
+      <SUBS>CM</SUBS>
+      <TT>TT107</TT>
     </macros>
     <x>380</x>
     <y>398</y>
