@@ -42,9 +42,9 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_12</name>
     <x>240</x>
-    <y>381</y>
-    <width>590</width>
-    <height>233</height>
+    <y>460</y>
+    <width>589</width>
+    <height>154</height>
     <line_width>2</line_width>
     <line_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -53,17 +53,17 @@
     <arrows>2</arrows>
     <arrow_length>10</arrow_length>
     <points>
-      <point x="0.0" y="116.0">
+      <point x="0.0" y="36.0">
       </point>
-      <point x="381.0" y="115.0">
+      <point x="382.0" y="36.0">
       </point>
-      <point x="382.0" y="233.0">
+      <point x="382.0" y="154.0">
       </point>
-      <point x="589.0" y="233.0">
+      <point x="589.0" y="154.0">
       </point>
-      <point x="590.0" y="0.0">
+      <point x="589.0" y="0.0">
       </point>
-      <point x="74.0" y="0.0">
+      <point x="75.0" y="0.0">
       </point>
     </points>
   </widget>
