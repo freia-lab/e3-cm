@@ -84,7 +84,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
       <x>650</x>
       <y>5</y>
     </widget>
@@ -213,7 +213,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_10</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
       <x>650</x>
       <y>5</y>
     </widget>
@@ -342,7 +342,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_11</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
       <x>650</x>
       <y>5</y>
     </widget>
@@ -469,12 +469,6 @@ $(pv_value)</tooltip>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_12</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>650</x>
-      <y>5</y>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_55</name>
       <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
@@ -598,12 +592,6 @@ $(pv_value)</tooltip>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_13</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>650</x>
-      <y>5</y>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_60</name>
       <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
@@ -726,12 +714,6 @@ $(pv_value)</tooltip>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_14</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>650</x>
-      <y>5</y>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_65</name>
@@ -858,7 +840,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_19</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
       <x>650</x>
       <y>5</y>
     </widget>
@@ -984,12 +966,6 @@ $(pv_value)</tooltip>
       <y>5</y>
       <width>70</width>
       <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_20</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
-      <x>650</x>
-      <y>5</y>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_91</name>
@@ -1117,7 +1093,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_22</name>
-      <pv_name>$(P)-$(S):$(V):cmdSet</pv_name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
       <x>650</x>
       <y>5</y>
     </widget>
@@ -1371,5 +1347,16 @@ internal PID controller (MKS2 "Regolator on").
       <height>253</height>
       <auto_size>true</auto_size>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_22</name>
+    <text>PID</text>
+    <x>645</x>
+    <y>20</y>
+    <width>40</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
   </widget>
 </display>
