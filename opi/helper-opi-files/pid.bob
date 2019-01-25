@@ -491,4 +491,18 @@
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)-LHe:PT04:sRdV</pv_name>
+    <x>742</x>
+    <y>330</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <format>2</format>
+    <wrap_words>false</wrap_words>
+  </widget>
 </display>

@@ -364,6 +364,15 @@ record(ai, "CM-Vac:PT77:sRdV") {
   field(EGU, "mbar")
 }
 
+record(ai, "CM-LHe:PT04:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/952 T=FLOAT")
+  field(PREC, "3")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "mbar")
+}
+
 ############################################################
 # Data from Keithley
 ############################################################
