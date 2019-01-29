@@ -1219,7 +1219,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_11</name>
     <macros>
-      <D>TT2620</D>
+      <D>TTpt16</D>
       <S>VBox</S>
     </macros>
     <x>421</x>
@@ -1256,48 +1256,9 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_30</name>
-    <macros>
-      <D>TT2990</D>
-      <S>VBox</S>
-    </macros>
-    <x>421</x>
-    <y>570</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_26</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_27</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>160</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_30</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Group_31</name>
     <macros>
-      <D>TTpt16</D>
+      <D>TT60</D>
       <S>VBox</S>
     </macros>
     <x>421</x>
@@ -1336,8 +1297,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_32</name>
     <macros>
-      <D>TT60</D>
-      <S>VBox</S>
+      <D>TT918</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>150</y>
@@ -1375,8 +1336,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_33</name>
     <macros>
-      <D>TT2690</D>
-      <S>VBox</S>
+      <D>TTpt26</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>170</y>
@@ -1414,8 +1375,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_34</name>
     <macros>
-      <D>TT2970</D>
-      <S>VBox</S>
+      <D>TT904</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>190</y>
@@ -1453,8 +1414,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_35</name>
     <macros>
-      <D>TT2980</D>
-      <S>VBox</S>
+      <D>TT903</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>210</y>
@@ -1492,8 +1453,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_36</name>
     <macros>
-      <D>TT278</D>
-      <S>VBox</S>
+      <D>TT607</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>230</y>
@@ -1531,8 +1492,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_37</name>
     <macros>
-      <D>TT276</D>
-      <S>VBox</S>
+      <D>TT916</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>250</y>
@@ -1570,8 +1531,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_38</name>
     <macros>
-      <D>TT279</D>
-      <S>VBox</S>
+      <D>TT914</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>270</y>
@@ -1609,8 +1570,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_39</name>
     <macros>
-      <D>TT280</D>
-      <S>VBox</S>
+      <D>TT915</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>290</y>
@@ -1648,8 +1609,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_40</name>
     <macros>
-      <D>TT281</D>
-      <S>VBox</S>
+      <D>TT607</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>310</y>
@@ -1687,8 +1648,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_41</name>
     <macros>
-      <D>TT2630</D>
-      <S>VBox</S>
+      <D>TT604</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>330</y>
@@ -1726,8 +1687,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_42</name>
     <macros>
-      <D>TT2640</D>
-      <S>VBox</S>
+      <D>TT913</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>350</y>
@@ -1765,8 +1726,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_43</name>
     <macros>
-      <D>TT2650</D>
-      <S>VBox</S>
+      <D>TTpt25</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>370</y>
@@ -1804,8 +1765,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_44</name>
     <macros>
-      <D>TT2660</D>
-      <S>VBox</S>
+      <D>TT609</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>390</y>
@@ -1843,8 +1804,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_45</name>
     <macros>
-      <D>TT2700</D>
-      <S>VBox</S>
+      <D>TT602</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>410</y>
@@ -1882,8 +1843,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_46</name>
     <macros>
-      <D>TT2900</D>
-      <S>VBox</S>
+      <D>TTpt39</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>430</y>
@@ -1921,7 +1882,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_47</name>
     <macros>
-      <D>TT2910</D>
+      <D>TTpt80</D>
       <S>CM</S>
     </macros>
     <x>421</x>
@@ -1960,7 +1921,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_48</name>
     <macros>
-      <D>TT2920</D>
+      <D>TT935</D>
       <S>CM</S>
     </macros>
     <x>421</x>
@@ -1999,7 +1960,7 @@
   <widget type="group" version="2.0.0">
     <name>Group_49</name>
     <macros>
-      <D>TT2930</D>
+      <D>TT936</D>
       <S>CM</S>
     </macros>
     <x>421</x>
@@ -2038,8 +1999,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_50</name>
     <macros>
-      <D>TT2940</D>
-      <S>VBox</S>
+      <D>TT614</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>510</y>
@@ -2077,8 +2038,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_51</name>
     <macros>
-      <D>TT2950</D>
-      <S>VBox</S>
+      <D>TT615</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>530</y>
@@ -2116,8 +2077,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_52</name>
     <macros>
-      <D>TT2960</D>
-      <S>VBox</S>
+      <D>TT931</D>
+      <S>CM</S>
     </macros>
     <x>421</x>
     <y>550</y>
@@ -2153,49 +2114,10 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_53</name>
-    <macros>
-      <D>TT277</D>
-      <S>VBox</S>
-    </macros>
-    <x>421</x>
-    <y>590</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_108</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_109</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>160</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_53</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Group_54</name>
     <macros>
-      <D>TT600</D>
-      <S>VBox</S>
+      <D>TT937</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>70</y>
@@ -2233,8 +2155,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_55</name>
     <macros>
-      <D>TT610</D>
-      <S>VBox</S>
+      <D>TT938</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>90</y>
@@ -2272,8 +2194,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_56</name>
     <macros>
-      <D>TT620</D>
-      <S>VBox</S>
+      <D>TT932</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>110</y>
@@ -2309,49 +2231,10 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_57</name>
-    <macros>
-      <D>TT990</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>570</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_116</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_117</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_57</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Group_58</name>
     <macros>
-      <D>TT670</D>
-      <S>VBox</S>
+      <D>TT617</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>130</y>
@@ -2389,8 +2272,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_59</name>
     <macros>
-      <D>TT680</D>
-      <S>VBox</S>
+      <D>TT934</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>150</y>
@@ -2428,8 +2311,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_60</name>
     <macros>
-      <D>TT690</D>
-      <S>VBox</S>
+      <D>TT933</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>170</y>
@@ -2467,8 +2350,8 @@
   <widget type="group" version="2.0.0">
     <name>Group_61</name>
     <macros>
-      <D>TT970</D>
-      <S>VBox</S>
+      <D>TT616</D>
+      <S>CM</S>
     </macros>
     <x>821</x>
     <y>190</y>
@@ -2490,747 +2373,6 @@
     </widget>
     <widget type="checkbox" version="2.0.0">
       <name>Check Box_61</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_62</name>
-    <macros>
-      <D>TT980</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>210</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_126</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_127</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_62</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_63</name>
-    <macros>
-      <D>TT78</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>230</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_128</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_129</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_63</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_64</name>
-    <macros>
-      <D>TT76</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>250</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_130</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_131</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_64</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_65</name>
-    <macros>
-      <D>TT79</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>270</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_132</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_133</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_65</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_66</name>
-    <macros>
-      <D>TT80</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>290</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_134</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_135</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_66</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_67</name>
-    <macros>
-      <D>TT81</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>310</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_136</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_137</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_67</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_68</name>
-    <macros>
-      <D>TT630</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>330</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_138</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_139</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_68</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_69</name>
-    <macros>
-      <D>TT640</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>350</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_140</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_141</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_69</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_70</name>
-    <macros>
-      <D>TT650</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>370</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_142</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_143</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_70</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_71</name>
-    <macros>
-      <D>TT660</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>390</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_144</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_145</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_71</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_72</name>
-    <macros>
-      <D>TT700</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>410</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_146</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_147</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_72</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_73</name>
-    <macros>
-      <D>TT900</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>430</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_148</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_149</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_73</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_74</name>
-    <macros>
-      <D>TT910</D>
-      <S>CM</S>
-    </macros>
-    <x>821</x>
-    <y>450</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_150</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_151</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_74</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_75</name>
-    <macros>
-      <D>TT920</D>
-      <S>CM</S>
-    </macros>
-    <x>821</x>
-    <y>470</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_152</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_153</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_75</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_76</name>
-    <macros>
-      <D>TT930</D>
-      <S>CM</S>
-    </macros>
-    <x>821</x>
-    <y>490</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_154</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_155</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_76</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_77</name>
-    <macros>
-      <D>TT940</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>510</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_156</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_157</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_77</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_78</name>
-    <macros>
-      <D>TT950</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>530</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_158</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_159</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_78</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_79</name>
-    <macros>
-      <D>TT960</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>550</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_160</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_161</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_79</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
-      <label>Disabled</label>
-      <x>270</x>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_80</name>
-    <macros>
-      <D>TT77x</D>
-      <S>VBox</S>
-    </macros>
-    <x>821</x>
-    <y>590</y>
-    <width>370</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_162</name>
-      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_163</name>
-      <pv_name>$(P)-$(S):$(D):sRdV.DESC</pv_name>
-      <x>110</x>
-      <width>150</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box_80</name>
       <pv_name>$(P)-$(S):$(D):sRdV.DISA</pv_name>
       <label>Disabled</label>
       <x>270</x>
