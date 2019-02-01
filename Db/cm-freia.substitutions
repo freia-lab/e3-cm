@@ -17,26 +17,26 @@ file cm-AValves.template { pattern
 }
 
 file cm-Heater1.template { pattern
-{SUBS,	DEV,       OFFS,   OFFS2}
-{VBox	EH-1	   552	   152}
-{VBox	EH-2	   562	   162}
-{VBox	EH-3	   572	   172}
-{VBox	EH-4	   582	   182}
-{VBox	EH-5	   592	   192}
-{VBox	EH-6	   602	   202}
-{VBox	EH-7	   612	   212}
-{VBox	EH-8	   622	   222}
-{VBox	EH-9	   632	   232}
-{VBox	EH-10	   642	   242}
-{VBox	EH-11	   652	   252}
-{CM	EH-1	   702	   302}
-{CM	EH-2	   712	   312}
-{CM	EH-3	   722	   322}
-{CM	EH-4	   732	   332}
-{CM	EH-5	   742	   342}
-{CM	EH-6	   752	   352}
-{CM	EH-7	   762	   362}
-{CM	EH-8	   772	   372}
+{SUBS,	DEV,       N,  OFFS,   OFFS2}
+{VBox	EH90	   1   552     152}
+{VBox	EH93-96	   2   562     162}
+{VBox	EH63_64_70 3   572     172}
+{VBox	EH61-62    4   582     182}
+{VBox	EH60_67-69 5   592     192}
+{VBox	EH97-98	   6   602     202}
+{VBox	EH-7	   7   612     212}
+{VBox	EH-8	   8   622     222}
+{VBox	EH-9	   9   632     232}
+{VBox	EH-10	   10  642     242}
+{VBox	EH-11	   11  652     252}
+{CM	EH-1	   1   702     302}
+{CM	EH-2	   2   712     312}
+{CM	EH-3	   3   722     322}
+{CM	EH-4	   4   732     332}
+{CM	EH-5	   5   742     342}
+{CM	EH-6	   6   752     352}
+{CM	EH-7	   7   762     362}
+{CM	EH-8	   8   772     372}
 }
 
 file cm-LT.template { pattern

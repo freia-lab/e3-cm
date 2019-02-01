@@ -309,6 +309,22 @@ record(bo, "CM-Ctrl:Grafcet:cmdStopStby") {
   field(ZNAM, "")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
+record(bo, "CM-Ctrl:Grafcet:cmdStartHeating") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/1 T=BYTE B=7")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step10")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:Grafcet:cmdStopHeating") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/2 T=BYTE B=0")
+  field(HIGH, "0.5")
+  field(ONAM, "Goto Step1")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
 
 ###########################################################
 #

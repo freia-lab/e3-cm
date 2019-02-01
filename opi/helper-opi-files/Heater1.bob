@@ -12,7 +12,7 @@
     <widget type="group" version="2.0.0">
       <name>Group</name>
       <macros>
-        <H>EH-1</H>
+        <H>EH90</H>
         <S>VBox</S>
       </macros>
       <width>1120</width>
@@ -180,7 +180,7 @@
     <widget type="group" version="2.0.0">
       <name>Group_1</name>
       <macros>
-        <H>EH-2</H>
+        <H>EH93-96</H>
         <S>VBox</S>
       </macros>
       <y>30</y>
@@ -349,7 +349,7 @@
     <widget type="group" version="2.0.0">
       <name>Group_2</name>
       <macros>
-        <H>EH-3</H>
+        <H>EH63_64_70</H>
         <S>VBox</S>
       </macros>
       <y>60</y>
@@ -518,7 +518,7 @@
     <widget type="group" version="2.0.0">
       <name>Group_3</name>
       <macros>
-        <H>EH-4</H>
+        <H>EH61-62</H>
         <S>VBox</S>
       </macros>
       <y>90</y>
@@ -687,7 +687,7 @@
     <widget type="group" version="2.0.0">
       <name>Group_4</name>
       <macros>
-        <H>EH-5</H>
+        <H>EH60_67-69</H>
         <S>VBox</S>
       </macros>
       <y>120</y>
@@ -856,7 +856,7 @@
     <widget type="group" version="2.0.0">
       <name>Group_5</name>
       <macros>
-        <H>EH-6</H>
+        <H>EH97-98</H>
         <S>VBox</S>
       </macros>
       <y>150</y>

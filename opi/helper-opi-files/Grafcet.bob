@@ -27,9 +27,9 @@
     <arrows>2</arrows>
     <arrow_length>10</arrow_length>
     <points>
-      <point x="119.0" y="456.0">
+      <point x="160.0" y="454.0">
       </point>
-      <point x="120.0" y="593.0">
+      <point x="160.0" y="593.0">
       </point>
       <point x="545.0" y="593.0">
       </point>
@@ -55,9 +55,9 @@
     <points>
       <point x="0.0" y="36.0">
       </point>
-      <point x="382.0" y="36.0">
+      <point x="420.0" y="35.0">
       </point>
-      <point x="382.0" y="154.0">
+      <point x="421.0" y="154.0">
       </point>
       <point x="589.0" y="154.0">
       </point>
@@ -71,8 +71,8 @@
     <name>Polyline</name>
     <x>144</x>
     <y>59</y>
-    <width>96</width>
-    <height>546</height>
+    <width>98</width>
+    <height>573</height>
     <line_width>2</line_width>
     <line_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -83,9 +83,9 @@
     <points>
       <point x="96.0" y="0.0">
       </point>
-      <point x="96.0" y="546.0">
+      <point x="98.0" y="573.0">
       </point>
-      <point x="1.0" y="545.0">
+      <point x="0.0" y="573.0">
       </point>
       <point x="0.0" y="319.0">
       </point>
@@ -503,8 +503,8 @@ with LN2</tooltip>
     </actions>
     <pv_name>$(PG):cmdStart2KMode</pv_name>
     <text>Proceed</text>
-    <x>670</x>
-    <y>501</y>
+    <x>710</x>
+    <y>500</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -518,8 +518,8 @@ with LN2</tooltip>
     </actions>
     <pv_name>$(PG):cmdStop2KMode</pv_name>
     <text>Proceed</text>
-    <x>670</x>
-    <y>581</y>
+    <x>710</x>
+    <y>580</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="led" version="2.0.0">
@@ -637,24 +637,24 @@ with LN2</tooltip>
   <widget type="led" version="2.0.0">
     <name>LED_8</name>
     <pv_name>$(PG):sState10</pv_name>
-    <x>360</x>
+    <x>400</x>
     <y>541</y>
     <width>140</width>
     <height>40</height>
-    <off_label>(S10)</off_label>
+    <off_label>Warm-up (S10)</off_label>
     <off_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </off_color>
-    <on_label>(S10)</on_label>
+    <on_label>Warm-up (S10)</on_label>
     <square>true</square>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_9</name>
     <pv_name>$(PG):sState8</pv_name>
-    <x>550</x>
-    <y>541</y>
+    <x>590</x>
+    <y>540</y>
     <width>140</width>
     <height>40</height>
     <off_label>2K Operation (S8)</off_label>
@@ -779,7 +779,7 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_4</name>
-    <x>414</x>
+    <x>454</x>
     <y>527</y>
     <width>33</width>
     <height>1</height>
@@ -864,8 +864,8 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_9</name>
-    <x>604</x>
-    <y>526</y>
+    <x>643</x>
+    <y>527</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -882,7 +882,7 @@ MUST be active.</tooltip>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_10</name>
     <x>224</x>
-    <y>595</y>
+    <y>615</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -922,7 +922,7 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_13</name>
-    <x>414</x>
+    <x>454</x>
     <y>596</y>
     <width>33</width>
     <height>1</height>
@@ -939,8 +939,8 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_14</name>
-    <x>604</x>
-    <y>596</y>
+    <x>643</x>
+    <y>597</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -1324,5 +1324,84 @@ by the PLC program</tooltip>
       <point x="0.0" y="88.00001525878906">
       </point>
     </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_18</name>
+    <x>242</x>
+    <y>561</y>
+    <width>154</width>
+    <height>44</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
+    <points>
+      <point x="0.0" y="44.0">
+      </point>
+      <point x="114.0" y="44.0">
+      </point>
+      <point x="114.0" y="0.0">
+      </point>
+      <point x="154.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_19</name>
+    <x>338</x>
+    <y>581</y>
+    <width>33</width>
+    <height>1</height>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="33.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_11</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(PG):cmdStartHeating
+</pv_name>
+    <text>Start Warm-up</text>
+    <x>310</x>
+    <y>505</y>
+    <width>120</width>
+    <tooltip>$(actions)</tooltip>
+    <show_confirm_dialog>true</show_confirm_dialog>
+    <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_14</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(PG):cmdStopHeating
+</pv_name>
+    <text>Stop Warm-up</text>
+    <x>310</x>
+    <y>615</y>
+    <width>120</width>
+    <tooltip>$(actions)</tooltip>
+    <show_confirm_dialog>true</show_confirm_dialog>
+    <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
 </display>
