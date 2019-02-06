@@ -1,0 +1,8 @@
+record(ao, "$(PREFIX)-$(SUBS):$(DEV):sRdV-INT") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM_K/$(OFFS) T=FLOAT")
+  field(PINI, "NO")
+  field(OMSL, "closed_loop")
+  field(SCAN, "10 second")
+  field(DOL, "$(PREFIX)-$(SUBS):$(DEV):sRdV")
+}

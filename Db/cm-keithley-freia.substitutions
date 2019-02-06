@@ -19,9 +19,9 @@ file "cm-keithley.template" { pattern
 {CM	 VBox   TT660 1     17 	   47	  "K"}
 {CM	 VBox   TT700 1     18 	   48	  "K"}
 {CM	 VBox   TT900 1     19 	   49	  "K"}
-{CM	 CM   	TT910 1     20 	   50	  "K"}
-{CM	 CM   	TT920 1     21 	   51	  "K"}
-{CM	 CM   	TT930 1     22 	   52	  "K"}
+{CM	 VBox  	TT910 1     20 	   50	  "K"}
+{CM	 VBox  	TT920 1     21 	   51	  "K"}
+{CM	 VBox  	TT930 1     22 	   52	  "K"}
 {CM	 VBox   TT940 1     23 	   53	  "K"}
 {CM	 VBox   TT950 1     24 	   54	  "K"}
 {CM	 VBox   TT960 1     25 	   55	  "K"}

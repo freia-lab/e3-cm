@@ -190,8 +190,8 @@
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(P)-Ctrl:s7-status</pv_name>
-    <x>86</x>
-    <y>51</y>
+    <x>88</x>
+    <y>52</y>
     <width>131</width>
     <height>22</height>
     <off_color>
@@ -470,5 +470,56 @@ by the PLC program</tooltip>
     <date_visible>true</date_visible>
     <title>FREIA</title>
     <title_visible>true</title_visible>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Epics-IOC Com. Status:</text>
+    <x>396</x>
+    <y>78</y>
+    <width>153</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(P)-Ctrl:EpicsCom:sOK
+</pv_name>
+    <x>560</x>
+    <y>78</y>
+    <width>62</width>
+    <height>22</height>
+    <off_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <actions>
+    </actions>
   </widget>
 </display>

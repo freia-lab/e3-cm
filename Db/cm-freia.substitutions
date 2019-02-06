@@ -44,6 +44,8 @@ file cm-LT.template { pattern
 {VBox	LT03	   884	  1	"cm"}
 {CM	LT01	   876	  1	"cm"}
 {VBox	TT77	   944	  1	"K"}
+{PwrCpl	FT11	   956	  1	"mg/s"}
+{PwrCpl	FT21	   964	  1	"mg/s"}
 }
 
 file cm-real-param.template { pattern
@@ -55,4 +57,29 @@ file cm-real-param.template { pattern
 {Ctrl	TrigPID-CV03	   932	  496	 0	74    0	    "cm"}
 {Ctrl	SP_LIC03-CV03	   936	  502	 0	74    0	    "cm"}
 {Ctrl	SP_PT01-CV550	   940	  508	 0	74    0	    "mbar"}
+}
+
+file cm-temp2plc-freia.template { pattern
+{PREFIX, SUBS, DEV,  OFFS}
+{CM	 VBox  TT900 2}
+{CM	 VBox  TT930 6}
+{CM	 VBox  TT940 10}
+{CM	 VBox  TT950 14}
+{CM	 VBox  TT960 18}
+{CM	 VBox  TT630 22}
+{CM	 VBox  TT640 26}
+{CM	 VBox  TT700 30}
+{CM	 VBox  TT650 34}
+{CM	 VBox  TT660 38}
+{CM	 VBox  TT610 42}
+{CM	 VBox  TT620 46}
+{CM	 VBox  TT600 50}
+{CM	 VBox  TT670 54}
+{CM	 VBox  TT680 58}
+{CM	 VBox  TT690 62}
+{CM	 VBox  TT970 66}
+{CM	 VBox  TT980 70}
+{CM	 VBox  TTpt16 74}
+{CM	 VBox  TT970 78}
+{CM	 VBox  TT990 82}
 }

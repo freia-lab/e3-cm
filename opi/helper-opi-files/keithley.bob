@@ -812,7 +812,7 @@
     <name>Group_23</name>
     <macros>
       <D>TT910</D>
-      <S>CM</S>
+      <S>VBox</S>
     </macros>
     <x>21</x>
     <y>450</y>
@@ -851,7 +851,7 @@
     <name>Group_24</name>
     <macros>
       <D>TT920</D>
-      <S>CM</S>
+      <S>VBox</S>
     </macros>
     <x>21</x>
     <y>470</y>
@@ -890,7 +890,7 @@
     <name>Group_25</name>
     <macros>
       <D>TT930</D>
-      <S>CM</S>
+      <S>VBox</S>
     </macros>
     <x>21</x>
     <y>490</y>
