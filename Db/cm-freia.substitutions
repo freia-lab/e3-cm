@@ -80,6 +80,6 @@ file cm-temp2plc-freia.template { pattern
 {CM	 VBox  TT970 66}
 {CM	 VBox  TT980 70}
 {CM	 VBox  TTpt16 74}
-{CM	 VBox  TT970 78}
+{CM	 VBox  TT60  78}
 {CM	 VBox  TT990 82}
 }

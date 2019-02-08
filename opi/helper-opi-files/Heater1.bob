@@ -6,7 +6,7 @@
   <widget type="group" version="2.0.0">
     <name>Valve Box</name>
     <y>20</y>
-    <width>1162</width>
+    <width>1200</width>
     <height>342</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
@@ -14,8 +14,9 @@
       <macros>
         <H>EH90</H>
         <S>VBox</S>
+        <T1>TT900</T1>
       </macros>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -30,7 +31,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -45,21 +46,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_3</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_1</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -107,7 +108,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -117,16 +118,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_1</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_2</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -136,9 +137,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_4</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_2</name>
@@ -151,8 +152,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -166,15 +167,29 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_2</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_90</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -182,9 +197,13 @@
       <macros>
         <H>EH93-96</H>
         <S>VBox</S>
+        <T1>TT930</T1>
+        <T2>TT940</T2>
+        <T3>TT950</T3>
+        <T4>TT960</T4>
       </macros>
       <y>30</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -199,7 +218,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -214,21 +233,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_5</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_2</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -276,7 +295,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -286,16 +305,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_7</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_8</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -305,9 +324,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_9</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_6</name>
@@ -320,8 +339,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -335,15 +354,47 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_6</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_24</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_118</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_119</name>
+          <pv_name>$(P)-$(S):$(T2):sRdV</pv_name>
+          <x>60</x>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_120</name>
+          <pv_name>$(P)-$(S):$(T3):sRdV</pv_name>
+          <x>120</x>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_121</name>
+          <pv_name>$(P)-$(S):$(T4):sRdV</pv_name>
+          <x>180</x>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -351,9 +402,12 @@
       <macros>
         <H>EH63_64_70</H>
         <S>VBox</S>
+        <T1>TT630</T1>
+        <T2>TT640</T2>
+        <T3>TT700</T3>
       </macros>
       <y>60</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -368,7 +422,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -383,21 +437,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_10</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_3</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -445,7 +499,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -455,16 +509,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_12</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_13</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -474,9 +528,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_14</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_10</name>
@@ -489,8 +543,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -504,15 +558,41 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_9</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_25</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_122</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_123</name>
+          <pv_name>$(P)-$(S):$(T2):sRdV</pv_name>
+          <x>60</x>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_124</name>
+          <pv_name>$(P)-$(S):$(T3):sRdV</pv_name>
+          <x>120</x>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -520,9 +600,11 @@
       <macros>
         <H>EH61-62</H>
         <S>VBox</S>
+        <T1>TT610</T1>
+        <T2>TT620</T2>
       </macros>
       <y>90</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -537,7 +619,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -552,21 +634,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_15</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_4</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -614,7 +696,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -624,16 +706,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_17</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_18</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -643,9 +725,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_19</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_14</name>
@@ -658,8 +740,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -673,15 +755,35 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_12</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_26</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_126</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_127</name>
+          <pv_name>$(P)-$(S):$(T2):sRdV</pv_name>
+          <x>60</x>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -689,9 +791,13 @@
       <macros>
         <H>EH60_67-69</H>
         <S>VBox</S>
+        <T1>TT600</T1>
+        <T2>TT670</T2>
+        <T3>TT680</T3>
+        <T4>TT690</T4>
       </macros>
       <y>120</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -706,7 +812,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -721,21 +827,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_20</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_5</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -783,7 +889,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -793,16 +899,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_22</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_23</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -812,9 +918,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_24</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_18</name>
@@ -827,8 +933,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -842,15 +948,47 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_15</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_27</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_130</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_131</name>
+          <pv_name>$(P)-$(S):$(T2):sRdV</pv_name>
+          <x>60</x>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_132</name>
+          <pv_name>$(P)-$(S):$(T3):sRdV</pv_name>
+          <x>120</x>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_133</name>
+          <pv_name>$(P)-$(S):$(T4):sRdV</pv_name>
+          <x>180</x>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -858,9 +996,11 @@
       <macros>
         <H>EH97-98</H>
         <S>VBox</S>
+        <T1>TT970</T1>
+        <T2>TT980</T2>
       </macros>
       <y>150</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -875,7 +1015,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -890,21 +1030,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_25</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_6</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -952,7 +1092,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -962,16 +1102,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_27</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_28</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -981,9 +1121,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_29</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_22</name>
@@ -996,8 +1136,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1011,15 +1151,35 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_18</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_19</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_98</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_99</name>
+          <pv_name>$(P)-$(S):$(T2):sRdV</pv_name>
+          <x>60</x>
+          <width>50</width>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -1029,7 +1189,7 @@
         <S>VBox</S>
       </macros>
       <y>180</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1044,7 +1204,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1059,21 +1219,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_30</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_7</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1121,7 +1281,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1131,16 +1291,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_32</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_33</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1150,9 +1310,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_34</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_26</name>
@@ -1165,8 +1325,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1180,14 +1340,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_21</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -1198,7 +1358,7 @@
         <S>VBox</S>
       </macros>
       <y>210</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1213,7 +1373,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1228,21 +1388,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_40</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_9</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1290,7 +1450,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1300,16 +1460,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_42</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_43</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1319,9 +1479,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_44</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_34</name>
@@ -1334,8 +1494,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1349,14 +1509,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_27</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -1367,7 +1527,7 @@
         <S>VBox</S>
       </macros>
       <y>240</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1382,7 +1542,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1397,21 +1557,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_45</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_10</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1459,7 +1619,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1469,16 +1629,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_47</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_48</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1488,9 +1648,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_49</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_38</name>
@@ -1503,8 +1663,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1518,14 +1678,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_30</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -1536,7 +1696,7 @@
         <S>VBox</S>
       </macros>
       <y>270</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1551,7 +1711,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1566,21 +1726,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_50</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_11</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1628,7 +1788,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1638,16 +1798,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_52</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_53</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1657,9 +1817,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_54</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_42</name>
@@ -1672,8 +1832,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1687,14 +1847,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_33</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -1702,7 +1862,7 @@
   <widget type="group" version="2.0.0">
     <name>Cryomodule</name>
     <y>360</y>
-    <width>1162</width>
+    <width>1200</width>
     <height>282</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
@@ -1711,7 +1871,7 @@
         <H>EH-1</H>
         <S>CM</S>
       </macros>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1726,7 +1886,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1741,21 +1901,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_35</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_8</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1803,7 +1963,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1813,16 +1973,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_37</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_38</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1832,9 +1992,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_39</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_30</name>
@@ -1847,8 +2007,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -1862,14 +2022,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_23</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -1880,7 +2040,7 @@
         <S>CM</S>
       </macros>
       <y>30</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -1895,7 +2055,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -1910,21 +2070,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_55</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_12</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -1972,7 +2132,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -1982,16 +2142,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_57</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_58</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2001,9 +2161,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_59</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_46</name>
@@ -2016,8 +2176,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2031,14 +2191,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_35</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2049,7 +2209,7 @@
         <S>CM</S>
       </macros>
       <y>60</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2064,7 +2224,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2079,21 +2239,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_60</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_13</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2141,7 +2301,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2151,16 +2311,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_62</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_63</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2170,9 +2330,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_64</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_50</name>
@@ -2185,8 +2345,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2200,14 +2360,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_38</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2218,7 +2378,7 @@
         <S>CM</S>
       </macros>
       <y>90</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2233,7 +2393,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2248,21 +2408,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_65</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_14</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2310,7 +2470,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2320,16 +2480,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_67</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_68</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2339,9 +2499,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_69</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_54</name>
@@ -2354,8 +2514,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2369,14 +2529,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_41</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2387,7 +2547,7 @@
         <S>CM</S>
       </macros>
       <y>120</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2402,7 +2562,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2417,21 +2577,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_70</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_15</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2479,7 +2639,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2489,16 +2649,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_72</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_73</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2508,9 +2668,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_74</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_58</name>
@@ -2523,8 +2683,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2538,14 +2698,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_44</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2556,7 +2716,7 @@
         <S>CM</S>
       </macros>
       <y>150</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2571,7 +2731,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2586,21 +2746,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_75</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_16</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2648,7 +2808,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2658,16 +2818,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_77</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_78</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2677,9 +2837,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_79</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_62</name>
@@ -2692,8 +2852,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2707,14 +2867,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_47</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2725,7 +2885,7 @@
         <S>CM</S>
       </macros>
       <y>180</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2740,7 +2900,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2755,21 +2915,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_80</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_17</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2817,7 +2977,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2827,16 +2987,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_82</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_83</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2846,9 +3006,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_84</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_66</name>
@@ -2861,8 +3021,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -2876,14 +3036,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_50</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
@@ -2894,7 +3054,7 @@
         <S>CM</S>
       </macros>
       <y>210</y>
-      <width>1120</width>
+      <width>1165</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -2909,7 +3069,7 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
         <text>Auto</text>
-        <x>820</x>
+        <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
       </widget>
@@ -2924,21 +3084,21 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
         <text>Manual</text>
-        <x>890</x>
+        <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_85</name>
         <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>970</x>
+        <x>1085</x>
         <y>5</y>
         <width>70</width>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_18</name>
-        <x>731</x>
+        <x>840</x>
         <y>1</y>
         <width>80</width>
         <height>29</height>
@@ -2986,7 +3146,7 @@
         <pv_name>$(P)-$(S):$(H):cLL</pv_name>
         <x>160</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -2996,16 +3156,16 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_87</name>
         <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>250</x>
+        <x>230</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_88</name>
         <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>340</x>
+        <x>300</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
@@ -3015,9 +3175,9 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_89</name>
         <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>430</x>
+        <x>370</x>
         <y>5</y>
-        <width>70</width>
+        <width>60</width>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_70</name>
@@ -3030,8 +3190,8 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
         <text>ON</text>
-        <x>530</x>
-        <width>60</width>
+        <x>710</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
@@ -3045,14 +3205,14 @@
         </actions>
         <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
         <text>OFF</text>
-        <x>600</x>
-        <width>70</width>
+        <x>760</x>
+        <width>40</width>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_53</name>
         <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>700</x>
+        <x>810</x>
         <y>5</y>
       </widget>
     </widget>
