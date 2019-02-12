@@ -59,4 +59,6 @@ file "cm-keithley.template" { pattern
 {CM	 CM   	TT934  4     05     35	  "K"}
 {CM	 CM   	TT933  4     06     36	  "K"}
 {CM	 CM   	TT616  4     07     37	  "K"}
+{CM	 CM   	TT701  4     08     38	  "K"}
+{CM	 CM   	TT702  4     09     39	  "K"}
 }

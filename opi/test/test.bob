@@ -5,7 +5,7 @@
     <P>CM</P>
   </macros>
   <width>1700</width>
-  <height>900</height>
+  <height>910</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -285,9 +285,9 @@
         <group_name></group_name>
       </tab>
     </tabs>
-    <y>140</y>
-    <width>1590</width>
-    <height>745</height>
+    <y>130</y>
+    <width>1690</width>
+    <height>780</height>
     <active_tab>3</active_tab>
   </widget>
   <widget type="label" version="2.0.0">
