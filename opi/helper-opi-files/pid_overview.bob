@@ -17,9 +17,9 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
-    <pv_name>$(P)-VBox:PT01:sRdV</pv_name>
-    <x>420</x>
-    <y>210</y>
+    <pv_name>CstatH-RHtr:PT550:sRdV</pv_name>
+    <x>385</x>
+    <y>215</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -27,6 +27,8 @@
       </font>
     </font>
     <wrap_words>false</wrap_words>
+    <tooltip>CM-VBox:PT01:sRdV (via MKS2)
+$(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
@@ -59,8 +61,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_4</name>
     <pv_name>$(P)-Vac:PT75:sRdV</pv_name>
-    <x>340</x>
-    <y>240</y>
+    <x>310</x>
+    <y>235</y>
     <width>75</width>
     <height>15</height>
     <font>

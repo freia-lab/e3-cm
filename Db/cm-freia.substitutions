@@ -46,6 +46,10 @@ file cm-LT.template { pattern
 {VBox	TT77	   944	  1	"K"}
 {PwrCpl	FT11	   956	  1	"mg/s"}
 {PwrCpl	FT21	   964	  1	"mg/s"}
+{GHe	TT102	   972	  1	"K"}
+{GHe	TT202	   980	  1	"K"}
+{PwrCpl	TT103	   988	  1	"K"}
+{PwrCpl	TT203	   996	  1	"K"}
 }
 
 file cm-real-param.template { pattern

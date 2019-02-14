@@ -100,8 +100,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_8</name>
     <pv_name>$(P)-CM:PT03:sRdV</pv_name>
-    <x>840</x>
-    <y>500</y>
+    <x>870</x>
+    <y>655</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -113,8 +113,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_9</name>
     <pv_name>$(P)-CM:PT02:sRdV</pv_name>
-    <x>840</x>
-    <y>520</y>
+    <x>870</x>
+    <y>674</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -269,8 +269,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_20</name>
     <pv_name>$(P)-CM:TT101:sRdV</pv_name>
-    <x>520</x>
-    <y>600</y>
+    <x>516</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -284,8 +284,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_21</name>
     <pv_name>$(P)-CM:TT102:sRdV</pv_name>
-    <x>520</x>
-    <y>620</y>
+    <x>516</x>
+    <y>694</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -299,8 +299,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_22</name>
     <pv_name>$(P)-CM:TT103:sRdV</pv_name>
-    <x>520</x>
-    <y>640</y>
+    <x>516</x>
+    <y>714</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -329,8 +329,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_24</name>
     <pv_name>$(P)-CM:TT106:sRdV</pv_name>
-    <x>573</x>
-    <y>550</y>
+    <x>590</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -344,8 +344,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_25</name>
     <pv_name>$(P)-CM:TT107:sRdV</pv_name>
-    <x>605</x>
-    <y>550</y>
+    <x>660</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -434,8 +434,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_31</name>
     <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
-    <x>630</x>
-    <y>515</y>
+    <x>782</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -449,8 +449,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_32</name>
     <pv_name>$(P)-VBox:TT02:sRdV</pv_name>
-    <x>570</x>
-    <y>515</y>
+    <x>722</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -464,8 +464,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_33</name>
     <pv_name>$(P)-VBox:TT04:sRdV</pv_name>
-    <x>601</x>
-    <y>515</y>
+    <x>753</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -479,8 +479,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_34</name>
     <pv_name>$(P)-VBox:TT10:sRdV</pv_name>
-    <x>660</x>
-    <y>515</y>
+    <x>812</x>
+    <y>709</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -523,5 +523,65 @@
     <y>620</y>
     <width>10</width>
     <height>10</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_35</name>
+    <pv_name>CM-PwrCpl:FT11:sRdV</pv_name>
+    <x>1080</x>
+    <y>525</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_36</name>
+    <pv_name>CM-PwrCpl:FT21:sRdV</pv_name>
+    <x>1080</x>
+    <y>585</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_37</name>
+    <pv_name>CM-GHe:TT102:sRdV</pv_name>
+    <x>890</x>
+    <y>440</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_38</name>
+    <pv_name>CM-GHe:TT202:sRdV</pv_name>
+    <x>675</x>
+    <y>440</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_39</name>
+    <pv_name>CM-PwrCpl:TT103:sRdV</pv_name>
+    <x>885</x>
+    <y>485</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_40</name>
+    <pv_name>CM-PwrCpl:TT203:sRdV</pv_name>
+    <x>675</x>
+    <y>485</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
   </widget>
 </display>
