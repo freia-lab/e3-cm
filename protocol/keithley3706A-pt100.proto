@@ -1,5 +1,16 @@
 Terminator = LF;
 ExtraInput=Ignore;
+LockTimeout=9900;
+
+@replytimeout {
+    	exec "echo \"reply timeout\""
+}
+@writetimeout {
+    	exec "echo \"write timeout\""
+}
+@readtimeout {
+    	exec "echo \"read timeout\""
+}
 
 getId {
         out "*idn?";
