@@ -32,10 +32,10 @@ file "cm-keithley.template" { pattern
 {CM	 VBox   TTpt16 3    03     33	  "K"}
 {CM	 VBox   TT60   3     04     34 	  "K"}
 {CM	 CM   	TT918  3     05     35	  "K"}
-{CM	 CM   	TTpt26 3     06     36	  "K"}
+{CM	 CM   	TT920  3     06     36	  "K"}
 {CM	 CM   	TT904  3     07     37	  "K"}
 {CM	 CM   	TT903  3     08     38	  "K"}
-{CM	 CM     TTpt82  3     09     39	  "K"}
+{CM	 CM     TTpt82 3     09     39	  "K"}
 {CM	 CM   	TT916  3     10     40	  "K"}
 {CM	 CM   	TT914  3     11	    41	  "K"}
 {CM	 CM   	TT915  3     12	    42	  "K"}

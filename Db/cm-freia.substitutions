@@ -29,14 +29,20 @@ file cm-Heater1.template { pattern
 {VBox	EH-9	   9   632     232}
 {VBox	EH-10	   10  642     242}
 {VBox	EH-11	   11  652     252}
-{CM	EH-1	   1   702     302}
-{CM	EH-2	   2   712     312}
-{CM	EH-3	   3   722     322}
-{CM	EH-4	   4   732     332}
-{CM	EH-5	   5   742     342}
-{CM	EH-6	   6   752     352}
-{CM	EH-7	   7   762     362}
-{CM	EH-8	   8   772     372}
+{CM	EH901_902  1   662     262}
+{CM	EH903	   2   672     272}
+{CM	EH920	   3   682     282}
+{CM	EH913_914  4   692     292}
+{CM	EH933_934  5   702     302}
+{CM	EH921	   6   712     312}
+{CM	EH931_932  7   722     322}
+{CM	EH915_916  8   732     332}
+{CM	EH918  	   9   742     342}
+{CM	EH937_938  10  752     352}
+{CM	EH904  	   11  762     362}
+{CM	EH935_936  12  772     372}
+{PwrCpl	EH13  	   13  782     382}
+{PwrCpl	EH43  	   14  792     392}
 }
 
 file cm-LT.template { pattern
@@ -86,4 +92,8 @@ file cm-temp2plc-freia.template { pattern
 {CM	 VBox  TTpt16 74}
 {CM	 VBox  TT60  78}
 {CM	 VBox  TT990 82}
+{CM	 CM    TT903 86}
+{CM	 CM    TT920 90}
+{CM	 CM    TT918 94}
+{CM	 CM    TT904 98}
 }
