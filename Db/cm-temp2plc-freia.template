@@ -4,5 +4,28 @@ record(ao, "$(PREFIX)-$(SUBS):$(DEV):sRdV-INT") {
   field(PINI, "NO")
   field(OMSL, "closed_loop")
   field(SCAN, "10 second")
+  field(TSEL, "$(PREFIX)-$(SUBS):$(DEV):sRdV.TIME")
   field(DOL, "$(PREFIX)-$(SUBS):$(DEV):sRdV")
+  field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc")
+}
+record(calc, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc") {
+  field (DESC,"Valid flag calulation")
+  field (INPA, "$(PREFIX)-$(SUBS):$(DEV):sRdV.VAL NMS")
+  field (INPB, "$(PREFIX)-$(SUBS):$(DEV):sRdV.SEVR NMS")
+#  field (INPC, "$(PREFIX)-$(SUBS):$(DEV):sRdV.DISA NMS")
+  field (INPD, "73")
+  field (INPE, "400")
+  field (CALC, "(B<3&A>D&A<E)?1:0")
+  field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid")
+}
+
+record(bo, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid") {
+  field (DESC,"Data valid")
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM_K/$(OFFS1) T=BYTE B=$(BIT)")
+  field(PINI, "NO")
+  field(OMSL, "closed_loop")
+  field(ONAM, "Data valid")
+  field(ONAM, "Data invalid")
+  field(DOL, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc NPP")
 }
