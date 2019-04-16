@@ -7,5 +7,6 @@ record(ai, "$(PREFIX)-$(SUBS):$(DEV):sRdV") {
   field(EGU, "$(EGU)")
   field(PREC, "3")
   field(DISS, "INVALID")
+  field(SIMS, "MINOR")
 }
 
