@@ -4,8 +4,8 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1700</width>
-  <height>910</height>
+  <width>1800</width>
+  <height>1000</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -236,10 +236,17 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>2K Operation</name>
+        <file>../helper-opi-files/2K_operation.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <y>130</y>
-    <width>1690</width>
-    <height>780</height>
+    <width>1800</width>
+    <height>900</height>
     <active_tab>3</active_tab>
   </widget>
   <widget type="label" version="2.0.0">

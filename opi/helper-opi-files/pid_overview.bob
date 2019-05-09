@@ -335,7 +335,7 @@ $(pv_value)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_24</name>
-    <pv_name>$(P)-CM:TT106:sRdV</pv_name>
+    <pv_name>WtrC-Dwtr:PwrCpl-TT01:sRdV</pv_name>
     <x>653</x>
     <y>720</y>
     <width>30</width>
@@ -347,10 +347,13 @@ $(pv_value)
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
+    <tooltip>TT106
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_25</name>
-    <pv_name>$(P)-CM:TT107:sRdV</pv_name>
+    <pv_name>WtrC-Dwtr:PwrCpl-TT03:sRdV</pv_name>
     <x>605</x>
     <y>670</y>
     <width>30</width>
@@ -362,6 +365,9 @@ $(pv_value)
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
+    <tooltip>TT107
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_26</name>
@@ -551,7 +557,7 @@ $(pv_value)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_36</name>
-    <pv_name>$(P)-CM:TT207:sRdV</pv_name>
+    <pv_name>WtrC-Dwtr:PwrCpl-TT04:sRdV</pv_name>
     <x>455</x>
     <y>670</y>
     <width>30</width>
@@ -563,10 +569,13 @@ $(pv_value)
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
+    <tooltip>TT207
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_37</name>
-    <pv_name>$(P)-CM:TT206:sRdV</pv_name>
+    <pv_name>WtrC-Dwtr:PwrCpl-TT02:sRdV</pv_name>
     <x>495</x>
     <y>720</y>
     <width>30</width>
@@ -578,5 +587,76 @@ $(pv_value)
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
+    <tooltip>TT206
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_38</name>
+    <pv_name>WtrC-Dwtr:PwrCpl-FT01:sRdV</pv_name>
+    <x>555</x>
+    <y>709</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(P)-CM:FT12:sRdV via WtrC-Dwtr:PwrCpl-FT01:sRdV
+$(pv_name)
+$(pv_value)
+</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_39</name>
+    <pv_name>WtrC-Dwtr:PwrCpl-FT02:sRdV</pv_name>
+    <x>405</x>
+    <y>709</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(P)-CM:FT22:sRdV via WtrC-Dwtr:PwrCpl-FT02:sRdV
+$(pv_name)
+$(pv_value)
+</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_40</name>
+    <pv_name>WtrC-Dwtr:PwrCpl-FT03:sRdV</pv_name>
+    <x>535</x>
+    <y>670</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(P)-CM:FT13:sRdV via WtrC-Dwtr:PwrCpl-FT03:sRdV
+$(pv_name)
+$(pv_value)
+</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_41</name>
+    <pv_name>WtrC-Dwtr:PwrCpl-FT04:sRdV</pv_name>
+    <x>395</x>
+    <y>670</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(P)-CM:FT23:sRdV via WtrC-Dwtr:PwrCpl-FT04:sRdV
+$(pv_name)
+$(pv_value)
+</tooltip>
   </widget>
 </display>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>2K_operation</name>
+  <width>1580</width>
+  <height>890</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Some Value:</text>
+    <x>1210</x>
+    <y>750</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>sim://sine</pv_name>
+    <x>1310</x>
+    <y>750</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <class>COMMENT</class>
+    <text>Some comment.</text>
+    <x>1430</x>
+    <y>750</y>
+    <width>140</width>
+    <font>
+      <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>Seq_2K_operation.bob</file>
+    <macros>
+      <seq_no>SQ9</seq_no>
+      <seq_title>SQ9 on HNOSS</seq_title>
+    </macros>
+    <width>590</width>
+    <height>830</height>
+  </widget>
+</display>

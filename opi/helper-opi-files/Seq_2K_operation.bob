@@ -1,0 +1,2674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>540</width>
+  <height>840</height>
+  <background_color>
+    <color name="IO Border" red="215" green="215" blue="215">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container Template</name>
+    <file>Seq_top3+.opi</file>
+    <width>540</width>
+    <height>140</height>
+    <resize>1</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_7</name>
+    <text>CV550:</text>
+    <x>244</x>
+    <y>338</y>
+    <width>46</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
+    <x>338</x>
+    <y>334</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_9</name>
+    <text>Warning pressure [mbar]:</text>
+    <x>241</x>
+    <y>217</y>
+    <width>170</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>PT101/PT102</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_10</name>
+    <text>Temparature setpoint [K]:</text>
+    <x>240</x>
+    <y>190</y>
+    <width>173</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_2</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
+    <x>422</x>
+    <y>215</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_3</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_SP_Tt</pv_name>
+    <x>422</x>
+    <y>188</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>Level:</text>
+    <x>36</x>
+    <y>246</y>
+    <width>47</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_14</name>
+    <text>Pressure control [mbar]</text>
+    <x>12</x>
+    <y>140</y>
+    <width>184</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_16</name>
+    <text>CV105</text>
+    <x>36</x>
+    <y>338</y>
+    <width>42</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_7</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV105</pv_name>
+    <x>98</x>
+    <y>334</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_17</name>
+    <text>Final pressure [mbar]:</text>
+    <x>241</x>
+    <y>246</y>
+    <width>147</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>PT101</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_8</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_Final_Pt</pv_name>
+    <x>422</x>
+    <y>244</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template</name>
+    <x>12</x>
+    <y>362</y>
+    <width>519</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="518.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_18</name>
+    <text>   Sequence parameters   </text>
+    <x>156</x>
+    <y>370</y>
+    <width>190</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_19</name>
+    <text>Automatic set-point CV551 (PT03/PT02):</text>
+    <x>20</x>
+    <y>403</y>
+    <width>268</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_9</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Reg</pv_name>
+    <x>326</x>
+    <y>403</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2</name>
+    <x>121</x>
+    <y>434</y>
+    <width>280</width>
+    <height>391</height>
+    <style>2</style>
+    <foreground_color>
+      <color name="IO Grid" red="215" green="215" blue="215">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt00</pv_name>
+      <x>17</x>
+      <y>25</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg00</pv_name>
+      <x>152</x>
+      <y>25</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_20</name>
+      <text>Pressure [mbar]</text>
+      <x>15</x>
+      <y>5</y>
+      <width>107</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_20</name>
+      <text>CV551 [%]</text>
+      <x>175</x>
+      <y>5</y>
+      <width>68</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt01</pv_name>
+      <x>17</x>
+      <y>53</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg01</pv_name>
+      <x>152</x>
+      <y>53</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt02</pv_name>
+      <x>17</x>
+      <y>81</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg02</pv_name>
+      <x>152</x>
+      <y>81</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt03</pv_name>
+      <x>17</x>
+      <y>109</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg03</pv_name>
+      <x>152</x>
+      <y>109</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt04</pv_name>
+      <x>17</x>
+      <y>137</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg04</pv_name>
+      <x>152</x>
+      <y>137</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt05</pv_name>
+      <x>17</x>
+      <y>165</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg05</pv_name>
+      <x>152</x>
+      <y>165</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt06</pv_name>
+      <x>17</x>
+      <y>193</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg06</pv_name>
+      <x>152</x>
+      <y>193</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_23</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt07</pv_name>
+      <x>17</x>
+      <y>221</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_24</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg07</pv_name>
+      <x>152</x>
+      <y>221</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt08</pv_name>
+      <x>17</x>
+      <y>249</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg08</pv_name>
+      <x>152</x>
+      <y>249</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt09</pv_name>
+      <x>17</x>
+      <y>277</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg09</pv_name>
+      <x>152</x>
+      <y>277</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt10</pv_name>
+      <x>17</x>
+      <y>305</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg10</pv_name>
+      <x>152</x>
+      <y>305</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt11</pv_name>
+      <x>17</x>
+      <y>333</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg11</pv_name>
+      <x>152</x>
+      <y>333</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_33</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt12</pv_name>
+      <x>17</x>
+      <y>361</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_34</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg12</pv_name>
+      <x>152</x>
+      <y>361</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt00</pv_name>
+      <x>77</x>
+      <y>27</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt01</pv_name>
+      <x>77</x>
+      <y>55</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt02</pv_name>
+      <x>77</x>
+      <y>83</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt03</pv_name>
+      <x>77</x>
+      <y>111</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt04</pv_name>
+      <x>77</x>
+      <y>139</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt05</pv_name>
+      <x>77</x>
+      <y>167</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt06</pv_name>
+      <x>77</x>
+      <y>195</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_28</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt07</pv_name>
+      <x>77</x>
+      <y>223</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt08</pv_name>
+      <x>77</x>
+      <y>251</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt09</pv_name>
+      <x>77</x>
+      <y>279</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt10</pv_name>
+      <x>77</x>
+      <y>307</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt11</pv_name>
+      <x>77</x>
+      <y>335</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_38</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt12</pv_name>
+      <x>77</x>
+      <y>363</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg00</pv_name>
+      <x>212</x>
+      <y>27</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg01</pv_name>
+      <x>212</x>
+      <y>55</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg02</pv_name>
+      <x>212</x>
+      <y>83</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg03</pv_name>
+      <x>212</x>
+      <y>111</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg04</pv_name>
+      <x>212</x>
+      <y>139</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg05</pv_name>
+      <x>212</x>
+      <y>167</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg06</pv_name>
+      <x>212</x>
+      <y>195</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_29</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg07</pv_name>
+      <x>212</x>
+      <y>223</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg08</pv_name>
+      <x>212</x>
+      <y>251</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg09</pv_name>
+      <x>212</x>
+      <y>279</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg10</pv_name>
+      <x>212</x>
+      <y>307</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg11</pv_name>
+      <x>212</x>
+      <y>335</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_39</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg12</pv_name>
+      <x>212</x>
+      <y>363</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_8</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_SP_Tt</pv_name>
+    <x>482</x>
+    <y>190</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_7</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
+    <x>482</x>
+    <y>217</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_13</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_Final_Pt</pv_name>
+    <x>482</x>
+    <y>246</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_14</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Reg</pv_name>
+    <x>386</x>
+    <y>405</y>
+    <width>74</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_5</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
+    <x>398</x>
+    <y>336</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_12</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV105</pv_name>
+    <x>158</x>
+    <y>336</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_20</name>
+    <text>Set Point [cm]:</text>
+    <x>12</x>
+    <y>277</y>
+    <width>99</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_10</name>
+    <pv_name>CM-Ctrl:SP_LIC01-CV01:cSetV</pv_name>
+    <x>111</x>
+    <y>277</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_2</name>
+    <pv_name>CM-Ctrl:CV01:sRegOn</pv_name>
+    <bit>0</bit>
+    <x>422</x>
+    <y>279</y>
+    <width>25</width>
+    <height>25</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="IO PV OFF" red="77" green="77" blue="77">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="IO PV ON" red="0" green="0" blue="225">
+      </color>
+    </on_color>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_17</name>
+    <pv_name>CM-Ctrl:SP_LIC01-CV01:sSetV</pv_name>
+    <x>171</x>
+    <y>279</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_21</name>
+    <text>PT01 SP [mbar]:
+(CV550)</text>
+    <x>12</x>
+    <y>164</y>
+    <width>107</width>
+    <height>45</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_6</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CM_SP_MKS2</pv_name>
+    <x>137</x>
+    <y>168</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_11</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CM_SP_MKS2</pv_name>
+    <x>197</x>
+    <y>168</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>MKS2</name>
+    <actions>
+      <action type="open_display">
+        <file>CstatH-MKS.bob</file>
+        <macros>
+          <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+          <GLO>CstatH-RHtr:PT100:sRdV</GLO>
+          <MKS>CstatH-MKS:MKS2</MKS>
+          <MKSname>MKS2</MKSname>
+        </macros>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
+    <text>MKS2</text>
+    <x>273</x>
+    <y>150</y>
+    <rules>
+      <rule name="background_color" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

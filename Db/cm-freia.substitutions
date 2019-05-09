@@ -67,6 +67,10 @@ file cm-real-param.template { pattern
 {Ctrl	TrigPID-CV03	   932	  496	 0	74    0	    "cm"}
 {Ctrl	SP_LIC03-CV03	   936	  502	 0	74    0	    "cm"}
 {Ctrl	SP_PT01-CV550	   940	  508	 0	74    0	    "mbar"}
+{Ctrl	S5_P_FT552_MIN_GB  1004	  514	 0	74    0	    "m3/h"}
+{Ctrl	S5_P_FT552_MAX_GB  1008	  520	 0	74    0	    "m3/h"}
+{Ctrl	S5_P_FT552_MIN_C   1012	  526	 0	74    0	    "m3/h"}
+{Ctrl	S5_P_FT552_MAX_C   1016	  532	 0	74    0	    "m3/h"}
 }
 
 file cm-temp2plc-freia.template { pattern

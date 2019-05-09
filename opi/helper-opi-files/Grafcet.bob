@@ -1404,4 +1404,198 @@ by the PLC program</tooltip>
     <show_confirm_dialog>true</show_confirm_dialog>
     <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
+  <widget type="group" version="2.0.0">
+    <name> LHe Cooling Settings</name>
+    <x>991</x>
+    <y>60</y>
+    <width>290</width>
+    <height>230</height>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_8</name>
+      <macros>
+        <D>S5_P_FT552_MIN_GB</D>
+        <L>FT552_Min_GB</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>25</y>
+      <width>259</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_11</name>
+        <text>FT552_Max_GB</text>
+        <y>5</y>
+        <width>129</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_12</name>
+        <x>129</x>
+        <y>5</y>
+        <width>121</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_26</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_27</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>66</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>Limits</text>
+      <x>150</x>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_20</name>
+      <macros>
+        <D>S5_P_FT552_MAX_GB</D>
+        <L>FT552_Max_GB</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>55</y>
+      <width>259</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_16</name>
+        <text>FT552_Max_GB</text>
+        <y>5</y>
+        <width>129</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_21</name>
+        <x>129</x>
+        <y>5</y>
+        <width>121</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_38</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_39</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>66</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_22</name>
+      <macros>
+        <D>S5_P_FT552_MIN_C</D>
+        <L>FT552_Min_C</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>85</y>
+      <width>259</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_17</name>
+        <text>FT552_Max_GB</text>
+        <y>5</y>
+        <width>129</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_23</name>
+        <x>129</x>
+        <y>5</y>
+        <width>121</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_40</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_41</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>66</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_24</name>
+      <macros>
+        <D>S5_P_FT552_MAX_C</D>
+        <L>FT552_Max_C</L>
+        <S>Ctrl</S>
+      </macros>
+      <y>115</y>
+      <width>259</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_18</name>
+        <text>FT552_Max_GB</text>
+        <y>5</y>
+        <width>129</width>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_25</name>
+        <x>129</x>
+        <y>5</y>
+        <width>121</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_42</name>
+          <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+          <width>50</width>
+          <background_color>
+            <color name="Read_Background" red="230" green="235" blue="232">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_43</name>
+          <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+          <x>55</x>
+          <width>66</width>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
 </display>

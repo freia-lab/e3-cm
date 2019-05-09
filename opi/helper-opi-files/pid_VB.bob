@@ -18,8 +18,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>$(P)-VBox:PT01:sRdV</pv_name>
-    <x>420</x>
-    <y>210</y>
+    <x>840</x>
+    <y>775</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -31,8 +31,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
     <pv_name>$(P)-Vac:PT73:sRdV</pv_name>
-    <x>960</x>
-    <y>360</y>
+    <x>1290</x>
+    <y>615</y>
     <format>2</format>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -45,8 +45,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
     <pv_name>$(P)-VBox:PT60:sRdV</pv_name>
-    <x>770</x>
-    <y>180</y>
+    <x>910</x>
+    <y>205</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -59,8 +59,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_4</name>
     <pv_name>$(P)-Vac:PT75:sRdV</pv_name>
-    <x>340</x>
-    <y>240</y>
+    <x>370</x>
+    <y>420</y>
     <width>75</width>
     <height>15</height>
     <font>
@@ -73,8 +73,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
     <pv_name>$(P)-Vac:PT77:sRdV</pv_name>
-    <x>310</x>
-    <y>430</y>
+    <x>410</x>
+    <y>600</y>
     <width>75</width>
     <height>15</height>
     <font>
@@ -85,23 +85,10 @@
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Text Update_7</name>
-    <pv_name>$(P)-VBox:TT60:sRdV</pv_name>
-    <x>440</x>
-    <y>500</y>
-    <width>50</width>
-    <height>15</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <wrap_words>false</wrap_words>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
     <name>Text Update_8</name>
     <pv_name>$(P)-CM:PT03:sRdV</pv_name>
-    <x>840</x>
-    <y>500</y>
+    <x>932</x>
+    <y>515</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -113,8 +100,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_9</name>
     <pv_name>$(P)-CM:PT02:sRdV</pv_name>
-    <x>840</x>
-    <y>520</y>
+    <x>932</x>
+    <y>540</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -126,121 +113,134 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_10</name>
     <pv_name>$(P)-VBox:CV01:sRdV</pv_name>
-    <x>602</x>
-    <y>365</y>
+    <x>687</x>
+    <y>615</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_11</name>
     <pv_name>$(P)-VBox:CV02:sRdV</pv_name>
-    <x>550</x>
-    <y>335</y>
+    <x>612</x>
+    <y>565</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_12</name>
     <pv_name>$(P)-VBox:CV03:sRdV</pv_name>
-    <x>527</x>
-    <y>160</y>
+    <x>582</x>
+    <y>261</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_13</name>
     <pv_name>$(P)-VBox:CV04:sRdV</pv_name>
-    <x>640</x>
-    <y>225</y>
+    <x>730</x>
+    <y>261</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_14</name>
     <pv_name>$(P)-VBox:CV61:sRdV</pv_name>
-    <x>690</x>
-    <y>140</y>
+    <x>830</x>
+    <y>276</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_15</name>
     <pv_name>$(P)-VBox:CV07:sRdV</pv_name>
-    <x>570</x>
-    <y>350</y>
+    <x>650</x>
+    <y>565</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_16</name>
     <pv_name>$(P)-VBox:CV60:sRdV</pv_name>
-    <x>495</x>
-    <y>160</y>
+    <x>535</x>
+    <y>195</y>
     <width>32</width>
     <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
     </font>
+    <background_color>
+      <color name="BLUE" red="79" green="228" blue="250">
+      </color>
+    </background_color>
     <precision>0</precision>
-    <wrap_words>false</wrap_words>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_17</name>
-    <pv_name>$(P)-CM:LT01:sRdV</pv_name>
-    <x>612</x>
-    <y>600</y>
-    <width>30</width>
-    <height>15</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <precision>1</precision>
-    <show_units>false</show_units>
     <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_18</name>
     <pv_name>$(P)-VBox:LT03:sRdV</pv_name>
-    <x>535</x>
-    <y>250</y>
+    <x>600</x>
+    <y>435</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -254,8 +254,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_19</name>
     <pv_name>$(P)-CM:TT104:sRdV</pv_name>
-    <x>560</x>
-    <y>674</y>
+    <x>565</x>
+    <y>775</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -269,8 +269,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_20</name>
     <pv_name>$(P)-CM:TT101:sRdV</pv_name>
-    <x>520</x>
-    <y>600</y>
+    <x>390</x>
+    <y>775</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -284,8 +284,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_21</name>
     <pv_name>$(P)-CM:TT102:sRdV</pv_name>
-    <x>520</x>
-    <y>620</y>
+    <x>445</x>
+    <y>775</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -299,8 +299,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_22</name>
     <pv_name>$(P)-CM:TT103:sRdV</pv_name>
-    <x>520</x>
-    <y>640</y>
+    <x>535</x>
+    <y>720</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -314,8 +314,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_23</name>
     <pv_name>$(P)-CM:TT105:sRdV</pv_name>
-    <x>592</x>
-    <y>674</y>
+    <x>642</x>
+    <y>775</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -329,8 +329,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_24</name>
     <pv_name>$(P)-CM:TT106:sRdV</pv_name>
-    <x>573</x>
-    <y>550</y>
+    <x>550</x>
+    <y>760</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -344,8 +344,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_25</name>
     <pv_name>$(P)-CM:TT107:sRdV</pv_name>
-    <x>605</x>
-    <y>550</y>
+    <x>710</x>
+    <y>775</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -359,8 +359,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_26</name>
     <pv_name>$(P)-VBox:TT77:sRdV</pv_name>
-    <x>675</x>
-    <y>275</y>
+    <x>810</x>
+    <y>480</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -374,8 +374,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_27</name>
     <pv_name>$(P)-VBox:TT60:sRdV</pv_name>
-    <x>486</x>
-    <y>480</y>
+    <x>520</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -389,8 +389,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_28</name>
     <pv_name>$(P)-VBox:TT650:sRdV</pv_name>
-    <x>495</x>
-    <y>445</y>
+    <x>560</x>
+    <y>535</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -404,8 +404,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_29</name>
     <pv_name>$(P)-VBox:TT900:sRdV</pv_name>
-    <x>520</x>
-    <y>310</y>
+    <x>540</x>
+    <y>495</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -419,8 +419,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_30</name>
     <pv_name>$(P)-VBox:TT01:sRdV</pv_name>
-    <x>540</x>
-    <y>140</y>
+    <x>565</x>
+    <y>300</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -434,8 +434,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_31</name>
     <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
-    <x>630</x>
-    <y>515</y>
+    <x>710</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -449,8 +449,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_32</name>
     <pv_name>$(P)-VBox:TT02:sRdV</pv_name>
-    <x>570</x>
-    <y>515</y>
+    <x>642</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -464,8 +464,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_33</name>
     <pv_name>$(P)-VBox:TT04:sRdV</pv_name>
-    <x>601</x>
-    <y>515</y>
+    <x>673</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -479,8 +479,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_34</name>
     <pv_name>$(P)-VBox:TT10:sRdV</pv_name>
-    <x>660</x>
-    <y>515</y>
+    <x>745</x>
+    <y>674</y>
     <width>30</width>
     <height>15</height>
     <font>
@@ -494,8 +494,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_6</name>
     <pv_name>$(P)-LHe:PT04:sRdV</pv_name>
-    <x>722</x>
-    <y>234</y>
+    <x>870</x>
+    <y>420</y>
     <width>70</width>
     <height>15</height>
     <font>
@@ -523,5 +523,20 @@
     <y>620</y>
     <width>10</width>
     <height>10</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_17</name>
+    <pv_name>$(P)-CM:LT01:sRdV</pv_name>
+    <x>775</x>
+    <y>775</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
   </widget>
 </display>

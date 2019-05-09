@@ -454,3 +454,88 @@ record(ao, "CM-Ctrl:TTyy") {
   field(PHAS,"1")
   field(DOL, "CM-VBox:TT620:sRdV")
 }
+
+############################################################
+# Grafcet steps
+############################################################
+
+record (mbbi, "CM-Ctrl:S4:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1020 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
+record (mbbi, "CM-Ctrl:S5:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1021 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+  field (ONVL, "4")
+  field (ONST, "Setting-up valves")
+  field (TWVL, "6")
+  field (TWST, "Filling 2K tank...")
+  field (TWVL, "8")
+  field (TWST, "Filling 4K tank...")
+}
+record (mbbi, "CM-Ctrl:S6:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1022 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
+record (mbbi, "CM-Ctrl:S7:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1023 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
+record (mbbi, "CM-Ctrl:S8:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1024 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+  field (ONVL, "4")
+  field (ONST, "2K operation")
+}
+record (mbbi, "CM-Ctrl:S9:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1025 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
+record (mbbi, "CM-Ctrl:S10:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1026 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
+record (mbbi, "CM-Ctrl:SX:sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/1027 T=BYTE")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "Idle")
+}
