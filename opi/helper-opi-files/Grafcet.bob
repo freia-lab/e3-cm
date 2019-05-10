@@ -1189,7 +1189,7 @@ CV550 Pos.</text>
           </action>
         </actions>
         <pv_name>$(CV):cmdMan</pv_name>
-        <text>Manual</text>
+        <text>PID Off</text>
         <x>90</x>
         <y>45</y>
         <width>80</width>
@@ -1205,7 +1205,7 @@ CV550 Pos.</text>
           </action>
         </actions>
         <pv_name>$(CV):cmdAuto</pv_name>
-        <text>Automatic</text>
+        <text>PID On</text>
         <x>6</x>
         <y>45</y>
         <width>80</width>

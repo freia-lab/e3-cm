@@ -23,6 +23,9 @@ requireSnippet(cm-freia-preSaveRestore.cmd)
 
 iocInit
 
+dbpf CM-RHtr:CV550:sAuto.ONAM "PID Reg. On"
+dbpf CM-RHtr:CV550:sAuto.ZNAM "PID Reg. Off"
+
 requireSnippet(cm-freia-postSaveRestore.cmd)
 requireSnippet(userPostDriverConf-cm-freia.cmd)
 
