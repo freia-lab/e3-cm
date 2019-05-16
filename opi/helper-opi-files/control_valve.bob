@@ -1262,12 +1262,12 @@ CV05 is not present and can't be switched into Auto mode
 
 CV04 and CV61 are "Normally Open" (NO) valves. All others are "Normally Closed"
 
-CV550 can be operated in different modes. It can be controlled from CM PLC or from HNOSS PLC
+CV550 is operated via MKS2 connected to HNOSS PLC.
 
 </text>
     <x>20</x>
     <y>380</y>
-    <width>638</width>
+    <width>542</width>
     <height>168</height>
     <auto_size>true</auto_size>
   </widget>
@@ -1290,8 +1290,9 @@ CV550 can be operated in different modes. It can be controlled from CM PLC or fr
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_17</name>
-      <text>From CM PLC</text>
+      <text>Automatic operation (not all steps yet)</text>
       <y>30</y>
+      <width>279</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="16.0">
         </font>
@@ -1299,9 +1300,10 @@ CV550 can be operated in different modes. It can be controlled from CM PLC or fr
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_18</name>
-      <text>From HNOSS PLC</text>
+      <text>Manual operation</text>
       <x>360</x>
       <y>30</y>
+      <width>189</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="16.0">
         </font>
@@ -1310,41 +1312,18 @@ CV550 can be operated in different modes. It can be controlled from CM PLC or fr
     <widget type="label" version="2.0.0">
       <name>Label_19</name>
       <text>Set up the MKS2 (HNOSS):
-* manual control 
-* set "Regulator off"
-* set "Analog SP on"
+* Set "Auto" mode 
 
-Make sure that HNOS is operating in 
-"Cryomodule mode" and is controlled from Epics.
+Make sure that HNOSS is operating in 
+"Cryomodule mode" and the 
+"Analog SetPoint" is turned off.
 
-The CV550 is now controlled from CM PLC. 
-It can be controlled manually or in 
-the automatic mode by the PID controller 
-in the PLC program
-.</text>
+The CV550 is now controlled from 
+HNOSS PLC based on the data received 
+directly from the CM PLC.</text>
       <y>60</y>
-      <width>332</width>
-      <height>274</height>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_24</name>
-      <text>Set up the MKS2 (HNOSS):
-* manual control 
-* set "Analog SP off"
-
-Make sure that HNOS is operating in 
-"Cryomodule mode" and is controlled from Epics.
-
-The CV550 is now controlled from HNOSS PLC. 
-It can be controlled manually (MKS2 "Regulator 
-off") or in the automatic mode by the MKS's 
-internal PID controller (MKS2 "Regolator on").
-</text>
-      <x>360</x>
-      <y>60</y>
-      <width>332</width>
-      <height>253</height>
+      <width>265</width>
+      <height>211</height>
       <auto_size>true</auto_size>
     </widget>
   </widget>
@@ -1358,5 +1337,26 @@ internal PID controller (MKS2 "Regolator on").
       <font family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
     </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_24</name>
+    <text>Set up the MKS2:
+* manual control 
+* set "Analog SP off"
+
+Make sure that HNOS is operating in 
+"Cryomodule mode" and is controlled from Epics.
+
+The CV550 is now manually controlled from MKS2 control
+panel.
+The valve can be controlled directly (MKS2 "Regulator 
+off") or in the automatic mode by the MKS's 
+internal PID controller (MKS2 "Regulator on").
+</text>
+    <x>1070</x>
+    <y>291</y>
+    <width>382</width>
+    <height>274</height>
+    <auto_size>true</auto_size>
   </widget>
 </display>

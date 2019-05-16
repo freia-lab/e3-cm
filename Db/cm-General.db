@@ -480,8 +480,8 @@ record (mbbi, "CM-Ctrl:S5:sStep") {
   field (ONST, "Setting-up valves")
   field (TWVL, "6")
   field (TWST, "Filling 2K tank...")
-  field (TWVL, "8")
-  field (TWST, "Filling 4K tank...")
+  field (THVL, "8")
+  field (THST, "Filling 4K tank...")
 }
 record (mbbi, "CM-Ctrl:S6:sStep") {
   field(DTYP, "S7plc")
@@ -500,6 +500,14 @@ record (mbbi, "CM-Ctrl:S7:sStep") {
   field(NOBT, "8")
   field (SHFT, "0")
   field (ZRST, "Idle")
+  field (ONVL, "4")
+  field (ONST, "Setting-up valves")
+  field (TWVL, "6")
+  field (TWST, "Outgasing LHe...")
+  field (THVL, "8")
+  field (THST, "Passive warm-up...")
+  field (FRVL, "10")
+  field (FRST, "Cool-down...")
 }
 record (mbbi, "CM-Ctrl:S8:sStep") {
   field(DTYP, "S7plc")

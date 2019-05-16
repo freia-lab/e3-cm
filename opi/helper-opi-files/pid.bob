@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>PID</name>
-  <width>1590</width>
-  <height>765</height>
+  <width>1700</width>
+  <height>870</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -34,7 +34,7 @@
         <group_name></group_name>
       </tab>
     </tabs>
-    <width>1575</width>
-    <height>765</height>
+    <width>1665</width>
+    <height>855</height>
   </widget>
 </display>

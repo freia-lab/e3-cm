@@ -167,7 +167,7 @@
     <text>Cryo-module PLC &amp; Keithley 3706A</text>
     <x>290</x>
     <width>531</width>
-    <height>46</height>
+    <height>48</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -246,7 +246,7 @@
     </tabs>
     <y>130</y>
     <width>1800</width>
-    <height>900</height>
+    <height>870</height>
     <active_tab>3</active_tab>
   </widget>
   <widget type="label" version="2.0.0">

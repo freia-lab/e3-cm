@@ -101,3 +101,9 @@ file cm-temp2plc-freia.template { pattern
 {CM	 CM    TT918 94    132    7}
 {CM	 CM    TT904 98    133    0}
 }
+
+file cm-cernox2plc-freia.template { pattern
+{PREFIX, SUBS, DEV,  OFFS, OFFS1, BIT}
+{CM	 CM    TT118 102   133    1}
+{CM	 CM    TT218 106   133    2}
+}

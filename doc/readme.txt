@@ -29,9 +29,14 @@ TestEssProtoFreia_20190429 - KG, Some code clean-up (deleted unused symbols). Ad
 			     during the cool-down sequence.
 TestEssProtoFreia_20190509 - KG,Defined new fields in DB DataFromHNOSS. Added parameters for S5 (Cool-down). Added step number 
 			     variable in states S4-S10
+TestEssProtoFreia_20190510 - KG, Updated CV550:sSetV from CV550:cSetV. sSetV is read by HNOSS MKS2 when the PID regulator is off.
+TestEssProtoFreia_20190515 - KG, Added sending data for MKS2 (CV550 set value and PID set point).
+			     Fixed changing the steps in the warm-up procedure (grafcet)
+			     Changed CYC_INT5 object block to keep the PID for CV02/CV03 active in steps 4 & 6 of the standby state. 
+			     Changed the PID parameters for CV03.
+			     Added logic forthe standby state in grafcet. 
 
-Added sending data for MKS2 (CV550 set value and PID set point)
-
+TestEssProtoFreia_20190516 - KG, Standby state: changed the logic of the transition from cooling to heating
 
 
 

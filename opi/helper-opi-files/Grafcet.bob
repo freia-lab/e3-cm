@@ -4,7 +4,7 @@
   <macros>
     <PG>$(P)-Ctrl:Grafcet</PG>
   </macros>
-  <width>1480</width>
+  <width>1580</width>
   <height>745</height>
   <actions>
     <action type="write_pv">
@@ -53,11 +53,11 @@
     <arrows>2</arrows>
     <arrow_length>10</arrow_length>
     <points>
-      <point x="0.0" y="36.0">
+      <point x="0.0" y="35.0">
       </point>
-      <point x="420.0" y="35.0">
+      <point x="400.0" y="35.0">
       </point>
-      <point x="421.0" y="154.0">
+      <point x="400.0" y="154.0">
       </point>
       <point x="589.0" y="154.0">
       </point>
@@ -136,6 +136,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -164,6 +165,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -222,6 +224,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -250,6 +253,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -296,6 +300,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -324,6 +329,7 @@
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
         <widget type="textupdate" version="2.0.0">
@@ -600,13 +606,14 @@ with LN2</tooltip>
     </off_color>
     <on_label>LHe Cooling (S5)</on_label>
     <square>true</square>
+    <tooltip>$(pv_name)$(pv_value)</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_6</name>
     <pv_name>$(PG):sState6</pv_name>
     <x>170</x>
-    <y>440</y>
+    <y>435</y>
     <width>140</width>
     <height>40</height>
     <off_label>4K Operation (S6)</off_label>
@@ -622,7 +629,7 @@ with LN2</tooltip>
     <name>LED_7</name>
     <pv_name>$(PG):sState7</pv_name>
     <x>170</x>
-    <y>541</y>
+    <y>535</y>
     <width>140</width>
     <height>40</height>
     <off_label>Stand-by (S7)</off_label>
@@ -638,7 +645,7 @@ with LN2</tooltip>
     <name>LED_8</name>
     <pv_name>$(PG):sState10</pv_name>
     <x>400</x>
-    <y>541</y>
+    <y>535</y>
     <width>140</width>
     <height>40</height>
     <off_label>Warm-up (S10)</off_label>
@@ -653,8 +660,8 @@ with LN2</tooltip>
   <widget type="led" version="2.0.0">
     <name>LED_9</name>
     <pv_name>$(PG):sState8</pv_name>
-    <x>590</x>
-    <y>540</y>
+    <x>570</x>
+    <y>535</y>
     <width>140</width>
     <height>40</height>
     <off_label>2K Operation (S8)</off_label>
@@ -780,7 +787,7 @@ MUST be active.</tooltip>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_4</name>
     <x>454</x>
-    <y>527</y>
+    <y>520</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -848,7 +855,7 @@ MUST be active.</tooltip>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_8</name>
     <x>224</x>
-    <y>526</y>
+    <y>520</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -864,8 +871,8 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_9</name>
-    <x>643</x>
-    <y>527</y>
+    <x>623</x>
+    <y>520</y>
     <width>33</width>
     <height>1</height>
     <line_color>
@@ -939,7 +946,7 @@ MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_14</name>
-    <x>643</x>
+    <x>623</x>
     <y>597</y>
     <width>33</width>
     <height>1</height>
@@ -1023,9 +1030,9 @@ MUST be active.</tooltip>
   <widget type="group" version="2.0.0">
     <name> PT01 Pressure control (CV550) </name>
     <x>1030</x>
-    <y>339</y>
-    <width>440</width>
-    <height>205</height>
+    <y>290</y>
+    <width>530</width>
+    <height>245</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>Group_9</name>
@@ -1033,7 +1040,7 @@ MUST be active.</tooltip>
         <L>PID CV550 (PT01) SP:</L>
         <S>Ctrl</S>
       </macros>
-      <y>115</y>
+      <y>150</y>
       <width>290</width>
       <height>30</height>
       <style>3</style>
@@ -1052,17 +1059,18 @@ MUST be active.</tooltip>
         <widget type="textupdate" version="2.0.0">
           <name>Text Update_21</name>
           <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-          <x>80</x>
-          <width>50</width>
+          <x>55</x>
+          <width>80</width>
         </widget>
         <widget type="textentry" version="3.0.0">
           <name>Text Update_20</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-          <width>75</width>
+          <width>50</width>
           <background_color>
             <color name="Read_Background" red="230" green="235" blue="232">
             </color>
           </background_color>
+          <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
       </widget>
@@ -1076,7 +1084,7 @@ MUST be active.</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_8</name>
       <text>Manual SP:</text>
-      <y>150</y>
+      <y>187</y>
       <width>89</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
@@ -1087,7 +1095,7 @@ MUST be active.</tooltip>
         <S>RHtr</S>
       </macros>
       <x>150</x>
-      <y>150</y>
+      <y>187</y>
       <width>140</width>
       <height>20</height>
       <style>3</style>
@@ -1095,18 +1103,19 @@ MUST be active.</tooltip>
       <widget type="textentry" version="3.0.0">
         <name>Text Update_18</name>
         <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-        <width>61</width>
+        <width>50</width>
         <background_color>
           <color name="Read_Background" red="230" green="235" blue="232">
           </color>
         </background_color>
+        <show_units>false</show_units>
         <wrap_words>true</wrap_words>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_19</name>
         <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-        <x>80</x>
-        <width>50</width>
+        <x>55</x>
+        <width>80</width>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -1114,43 +1123,11 @@ MUST be active.</tooltip>
       <macros>
         <CV>$(P)-RHtr:CV550</CV>
       </macros>
-      <y>30</y>
-      <width>400</width>
-      <height>85</height>
+      <y>59</y>
+      <width>307</width>
+      <height>91</height>
       <style>3</style>
       <transparent>true</transparent>
-      <widget type="group" version="2.0.0">
-        <name>sSetVAuto</name>
-        <x>320</x>
-        <y>6</y>
-        <width>80</width>
-        <height>65</height>
-        <visible>false</visible>
-        <style>3</style>
-        <transparent>true</transparent>
-        <rules>
-          <rule name="Visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pvInt0">
-              <value>true</value>
-            </exp>
-            <pv_name>$(CV):sAuto</pv_name>
-          </rule>
-        </rules>
-        <widget type="label" version="2.0.0">
-          <name>Label_10</name>
-          <text>PID Output
-CV550 Pos.</text>
-          <width>80</width>
-          <height>45</height>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_23</name>
-          <pv_name>$(CV):sAutoRdV</pv_name>
-          <y>45</y>
-          <width>72</width>
-          <precision>1</precision>
-        </widget>
-      </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_15</name>
         <pv_name>$(CV):sAuto</pv_name>
@@ -1218,51 +1195,36 @@ by the PLC program</tooltip>
         <x>180</x>
         <y>51</y>
       </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_9</name>
+        <text>Valve control mode:</text>
+        <y>19</y>
+        <width>151</width>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_16</name>
-      <x>307</x>
-      <y>36</y>
+      <x>306</x>
+      <y>59</y>
       <width>1</width>
-      <height>135</height>
+      <height>147</height>
       <line_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <points>
-        <point x="0.0" y="135.0">
+        <point x="0.0" y="147.0">
         </point>
-        <point x="1.0" y="0.0">
+        <point x="0.0" y="0.0">
         </point>
       </points>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_5</name>
-      <text>CV550 Pos.</text>
-      <x>320</x>
-      <y>115</y>
-      <width>80</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_22</name>
-      <pv_name>CstatH-RHtr:CV550:sRdV</pv_name>
-      <x>320</x>
-      <y>138</y>
-      <width>72</width>
-      <precision>1</precision>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_9</name>
-      <text>Valve control mode:</text>
-      <y>49</y>
-      <width>151</width>
-      <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_10</name>
       <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
       <y>5</y>
-      <width>180</width>
+      <width>170</width>
       <height>25</height>
       <off_color>
         <color name="ERROR" red="252" green="13" blue="27">
@@ -1275,9 +1237,9 @@ by the PLC program</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_11</name>
       <pv_name>CstatH-MKS:MKS2:sAnalogSP</pv_name>
-      <x>220</x>
+      <x>194</x>
       <y>5</y>
-      <width>180</width>
+      <width>126</width>
       <height>25</height>
       <off_color>
         <color name="ERROR" red="252" green="13" blue="27">
@@ -1285,6 +1247,118 @@ by the PLC program</tooltip>
       </off_color>
       <square>true</square>
       <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Settings</text>
+      <x>109</x>
+      <y>30</y>
+      <width>85</width>
+      <height>25</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>MKS2 Actual Values</name>
+      <x>319</x>
+      <y>53</y>
+      <width>171</width>
+      <height>155</height>
+      <style>1</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_5</name>
+        <text>SP:</text>
+        <x>5</x>
+        <y>80</y>
+        <width>65</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_22</name>
+        <pv_name>CstatH-MKS:MKS2:sOutV</pv_name>
+        <x>85</x>
+        <y>110</y>
+        <width>72</width>
+        <precision>1</precision>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_34</name>
+        <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
+        <x>5</x>
+        <y>35</y>
+        <width>160</width>
+        <height>25</height>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_35</name>
+        <pv_name>CstatH-MKS:MKS2:sRegOn</pv_name>
+        <x>5</x>
+        <y>5</y>
+        <width>160</width>
+        <height>25</height>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_36</name>
+        <pv_name>CstatH-MKS:MKS2:sSetP</pv_name>
+        <x>85</x>
+        <y>80</y>
+        <width>72</width>
+        <precision>1</precision>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_19</name>
+        <text>CV550:</text>
+        <x>5</x>
+        <y>110</y>
+        <width>65</width>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>MKS2_1</name>
+      <actions>
+        <action type="open_display">
+          <file>CstatH-MKS.bob</file>
+          <macros>
+            <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+            <GLO>CstatH-RHtr:PT100:sRdV</GLO>
+            <MKS>CstatH-MKS:MKS2</MKS>
+            <MKSname>MKS2</MKSname>
+          </macros>
+          <target>standalone</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
+      <text>MKS2</text>
+      <x>359</x>
+      <y>5</y>
+      <height>25</height>
+      <rules>
+        <rule name="background_color" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="WARNING" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1379,7 +1453,7 @@ by the PLC program</tooltip>
 </pv_name>
     <text>Start Warm-up</text>
     <x>310</x>
-    <y>505</y>
+    <y>500</y>
     <width>120</width>
     <tooltip>$(actions)</tooltip>
     <show_confirm_dialog>true</show_confirm_dialog>
@@ -1406,10 +1480,10 @@ by the PLC program</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name> LHe Cooling Settings</name>
-    <x>991</x>
-    <y>60</y>
+    <x>1040</x>
+    <y>91</y>
     <width>290</width>
-    <height>230</height>
+    <height>185</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>Group_8</name>
@@ -1425,7 +1499,7 @@ by the PLC program</tooltip>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_11</name>
-        <text>FT552_Max_GB</text>
+        <text>$(L)</text>
         <y>5</y>
         <width>129</width>
       </widget>
@@ -1476,7 +1550,7 @@ by the PLC program</tooltip>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_16</name>
-        <text>FT552_Max_GB</text>
+        <text>$(L)</text>
         <y>5</y>
         <width>129</width>
       </widget>
@@ -1521,7 +1595,7 @@ by the PLC program</tooltip>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_17</name>
-        <text>FT552_Max_GB</text>
+        <text>$(L)</text>
         <y>5</y>
         <width>129</width>
       </widget>
@@ -1566,7 +1640,7 @@ by the PLC program</tooltip>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_18</name>
-        <text>FT552_Max_GB</text>
+        <text>$(L)</text>
         <y>5</y>
         <width>129</width>
       </widget>
@@ -1597,5 +1671,181 @@ by the PLC program</tooltip>
         </widget>
       </widget>
     </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_28</name>
+    <pv_name>$(P)-Ctrl:S5:sStep</pv_name>
+    <x>170</x>
+    <y>400</y>
+    <width>140</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_29</name>
+    <pv_name>$(P)-Ctrl:S8:sStep</pv_name>
+    <x>570</x>
+    <y>575</y>
+    <width>140</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_30</name>
+    <pv_name>$(P)-Ctrl:S7:sStep</pv_name>
+    <x>170</x>
+    <y>575</y>
+    <width>140</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_31</name>
+    <pv_name>$(P)-Ctrl:S10:sStep</pv_name>
+    <x>400</x>
+    <y>575</y>
+    <width>140</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_32</name>
+    <pv_name>$(P)-Ctrl:S6:sStep</pv_name>
+    <x>170</x>
+    <y>475</y>
+    <width>140</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_33</name>
+    <pv_name>$(P)-Ctrl:S4:sStep</pv_name>
+    <x>144</x>
+    <y>320</y>
+    <width>196</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TT118</name>
+    <pv_name>$(P)-CM:TT118:sRdV</pv_name>
+    <x>310</x>
+    <y>535</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <precision>1</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TT218</name>
+    <pv_name>$(P)-CM:TT218:sRdV</pv_name>
+    <x>310</x>
+    <y>550</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <precision>1</precision>
   </widget>
 </display>
