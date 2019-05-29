@@ -513,129 +513,6 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group_13</name>
-    <macros>
-      <S>VBox</S>
-      <V>CV05</V>
-    </macros>
-    <y>165</y>
-    <width>740</width>
-    <height>30</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_14</name>
-      <text>$(V):</text>
-      <y>5</y>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Update_56</name>
-      <pv_name>$(P)-$(S):$(V):cSetV</pv_name>
-      <x>80</x>
-      <y>5</y>
-      <width>70</width>
-      <background_color>
-        <color name="Read_Background" red="230" green="235" blue="232">
-        </color>
-      </background_color>
-      <wrap_words>true</wrap_words>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_57</name>
-      <pv_name>$(P)-$(S):$(V):sSetV</pv_name>
-      <x>170</x>
-      <y>5</y>
-      <width>70</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_58</name>
-      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-      <x>260</x>
-      <y>5</y>
-      <width>70</width>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_26</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
-      <text>Auto</text>
-      <x>420</x>
-      <width>60</width>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_27</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
-      <text>Manual</text>
-      <x>490</x>
-      <width>70</width>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_59</name>
-      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>570</x>
-      <y>5</y>
-      <width>70</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_60</name>
-      <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
-      <x>340</x>
-      <y>5</y>
-      <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_6</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Group_14</name>
     <macros>
       <S>VBox</S>
@@ -1258,7 +1135,6 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_10</name>
     <text>CV61 can be operated manually in every step of the grafcet.
-CV05 is not present and can't be switched into Auto mode
 
 CV04 and CV61 are "Normally Open" (NO) valves. All others are "Normally Closed"
 
@@ -1268,7 +1144,7 @@ CV550 is operated via MKS2 connected to HNOSS PLC.
     <x>20</x>
     <y>380</y>
     <width>542</width>
-    <height>168</height>
+    <height>147</height>
     <auto_size>true</auto_size>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1311,7 +1187,7 @@ CV550 is operated via MKS2 connected to HNOSS PLC.
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_19</name>
-      <text>Set up the MKS2 (HNOSS):
+      <text>Set up the MKS2:
 * Set "Auto" mode 
 
 Make sure that HNOSS is operating in 
@@ -1344,7 +1220,7 @@ directly from the CM PLC.</text>
 * manual control 
 * set "Analog SP off"
 
-Make sure that HNOS is operating in 
+Make sure that HNOSS is operating in 
 "Cryomodule mode" and is controlled from Epics.
 
 The CV550 is now manually controlled from MKS2 control

@@ -37,6 +37,13 @@ TestEssProtoFreia_20190515 - KG, Added sending data for MKS2 (CV550 set value an
 			     Added logic forthe standby state in grafcet. 
 
 TestEssProtoFreia_20190516 - KG, Standby state: changed the logic of the transition from cooling to heating
+TestEssProtoFreia_20190528 - KG, Changed limits for the stand/by temperature from constants to memory locations
+
+TestEssProtoFreia_20190529 - KG, Modified the 1 s interrupt block OB32 - changed the local symbol to memory location in the
+			     network genereting OneMinute bit.
+			     Modified logic in the grafcet function block Network 21 (controlling CV03 according to the FT552 limits).
+			     Added initialization of temporary variables missing for standby mode. 
+
 
 
 

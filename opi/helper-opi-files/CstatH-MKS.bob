@@ -309,7 +309,7 @@ $(pv_value)</tooltip>
     <name>Label Template_11</name>
     <text>Gauge [mbar]</text>
     <x>5</x>
-    <y>193</y>
+    <y>203</y>
     <width>72</width>
     <height>13</height>
     <font>
@@ -337,7 +337,7 @@ $(pv_value)</tooltip>
     <name>Label Template_12</name>
     <text>High</text>
     <x>116</x>
-    <y>170</y>
+    <y>180</y>
     <width>24</width>
     <height>13</height>
     <font>
@@ -399,7 +399,7 @@ $(pv_value)</tooltip>
     <name>Text Update Template_6</name>
     <pv_name>$(GHI)</pv_name>
     <x>108</x>
-    <y>192</y>
+    <y>202</y>
     <width>66</width>
     <height>17</height>
     <font>
@@ -606,7 +606,7 @@ Fault verif status
     <pv_name>$(MKS):cmdMan</pv_name>
     <text>Manual</text>
     <x>70</x>
-    <y>70</y>
+    <y>80</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -623,7 +623,7 @@ Fault verif status
     <pv_name>$(MKS):cmdAuto</pv_name>
     <text>Auto</text>
     <x>5</x>
-    <y>70</y>
+    <y>80</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -632,7 +632,7 @@ Fault verif status
     <name>Text Update</name>
     <pv_name>$(MKS):sAuto</pv_name>
     <x>145</x>
-    <y>70</y>
+    <y>80</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -655,7 +655,7 @@ Fault verif status
     <pv_name>$(MKS):cmdRegOn</pv_name>
     <text>Reg On</text>
     <x>5</x>
-    <y>100</y>
+    <y>110</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -672,7 +672,7 @@ Fault verif status
     <pv_name>$(MKS):cmdRegOff</pv_name>
     <text>Reg Off</text>
     <x>70</x>
-    <y>100</y>
+    <y>110</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -681,7 +681,7 @@ Fault verif status
     <name>Text Update_1</name>
     <pv_name>$(MKS):sRegOn</pv_name>
     <x>145</x>
-    <y>100</y>
+    <y>110</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -704,7 +704,7 @@ Fault verif status
     <pv_name>$(MKS):cmdASPon</pv_name>
     <text>ASP On</text>
     <x>5</x>
-    <y>130</y>
+    <y>140</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -721,7 +721,7 @@ Fault verif status
     <pv_name>$(MKS):cmdASPoff</pv_name>
     <text>ASP Off</text>
     <x>70</x>
-    <y>130</y>
+    <y>140</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -730,7 +730,7 @@ Fault verif status
     <name>Text Update_2</name>
     <pv_name>$(MKS):sAnalogSP</pv_name>
     <x>145</x>
-    <y>130</y>
+    <y>140</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -741,5 +741,29 @@ Fault verif status
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Commands</text>
+    <x>23</x>
+    <y>53</y>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Status</text>
+    <x>145</x>
+    <y>53</y>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
 </display>

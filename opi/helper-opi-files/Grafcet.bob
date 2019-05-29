@@ -97,7 +97,7 @@
     <name> LHe Level Control </name>
     <x>1030</x>
     <y>560</y>
-    <width>440</width>
+    <width>475</width>
     <height>157</height>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
@@ -105,9 +105,10 @@
       <macros>
         <L>PID CV02 (LT01):</L>
         <S>Ctrl</S>
+        <V>CV02</V>
       </macros>
       <y>25</y>
-      <width>405</width>
+      <width>435</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -175,6 +176,12 @@
           <width>50</width>
         </widget>
       </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_12</name>
+        <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+        <x>410</x>
+        <y>5</y>
+      </widget>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
@@ -193,9 +200,10 @@
       <macros>
         <L>PID CV03 (LT03):</L>
         <S>Ctrl</S>
+        <V>CV03</V>
       </macros>
       <y>55</y>
-      <width>405</width>
+      <width>435</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -263,15 +271,22 @@
           <width>50</width>
         </widget>
       </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_13</name>
+        <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+        <x>410</x>
+        <y>5</y>
+      </widget>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group_5</name>
       <macros>
         <L>PID CV01 2K(LT01):</L>
         <S>Ctrl</S>
+        <V>CV01</V>
       </macros>
       <y>85</y>
-      <width>405</width>
+      <width>435</width>
       <height>30</height>
       <style>3</style>
       <transparent>true</transparent>
@@ -339,6 +354,19 @@
           <width>50</width>
         </widget>
       </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_14</name>
+        <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+        <x>410</x>
+        <y>5</y>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>PID</text>
+      <x>405</x>
+      <width>30</width>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -511,7 +539,7 @@ with LN2</tooltip>
     <text>Proceed</text>
     <x>710</x>
     <y>500</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Goto 2K Operation</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_10</name>
@@ -526,7 +554,7 @@ with LN2</tooltip>
     <text>Proceed</text>
     <x>710</x>
     <y>580</y>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Goto 4K Operation</tooltip>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
@@ -1189,12 +1217,6 @@ MUST be active.</tooltip>
         <tooltip>Select process control
 by the PLC program</tooltip>
       </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_14</name>
-        <pv_name>$(P)-VBox:PT01:sRdV</pv_name>
-        <x>180</x>
-        <y>51</y>
-      </widget>
       <widget type="label" version="2.0.0">
         <name>Label_9</name>
         <text>Valve control mode:</text>
@@ -1455,7 +1477,7 @@ by the PLC program</tooltip>
     <x>310</x>
     <y>500</y>
     <width>120</width>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Start the Warm-up</tooltip>
     <show_confirm_dialog>true</show_confirm_dialog>
     <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
@@ -1474,7 +1496,8 @@ by the PLC program</tooltip>
     <x>310</x>
     <y>615</y>
     <width>120</width>
-    <tooltip>$(actions)</tooltip>
+    <tooltip>Stop the Warm-up 
+and return to the Initial State</tooltip>
     <show_confirm_dialog>true</show_confirm_dialog>
     <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
@@ -1847,5 +1870,59 @@ by the PLC program</tooltip>
       </font>
     </font>
     <precision>1</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_23</name>
+    <pv_name>CstatH-RHtr:FT552:sRdV</pv_name>
+    <x>1330</x>
+    <y>142</y>
+    <precision>1</precision>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <S>VBox</S>
+      <V>CV60</V>
+    </macros>
+    <x>481</x>
+    <y>165</y>
+    <width>100</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_84</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <width>70</width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_19</name>
+      <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+      <x>80</x>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>CV60</text>
+    <x>481</x>
+    <y>140</y>
+    <width>70</width>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>PID</text>
+    <x>551</x>
+    <y>140</y>
+    <width>40</width>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_20</name>
+    <text>FT552</text>
+    <x>1330</x>
+    <y>120</y>
+    <width>99</width>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
 </display>
