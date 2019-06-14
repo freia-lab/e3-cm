@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>540</width>
+  <width>600</width>
   <height>840</height>
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215">
@@ -10,7 +10,21 @@
   </actions>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container Template</name>
-    <file>Seq_top3+.opi</file>
+    <file>Seq_top3+.bob</file>
+    <macros>
+      <step0>Not running</step0>
+      <step1>Checking equipment</step1>
+      <step12>Keeping cold</step12>
+      <step14>Stopping - waiting for PT02/PT03 to rise to Final Pressure</step14>
+      <step16>Stopping - delaying 10 s</step16>
+      <step18>Waiting for stopping 2K pumps. Press Accept to go on</step18>
+      <step2>Checking parameters</step2>
+      <step20>Stopping - venting 2K Pumps. Press Accept to go on</step20>
+      <step30>Waiting for CM's transition from 2K to 2K operation</step30>
+      <step4>Waiting for switching the 2K exhaust to Kaeser</step4>
+      <step6>Waiting for 2K pumps running for 10 minutes at full speed. Press Accept to go on</step6>
+      <step8>Waiting 10s for closing CV552 and FV552</step8>
+    </macros>
     <width>540</width>
     <height>140</height>
     <resize>1</resize>
@@ -24,8 +38,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>CV550:</text>
-    <x>274</x>
-    <y>334</y>
+    <x>110</x>
+    <y>330</y>
     <width>46</width>
     <height>21</height>
     <foreground_color>
@@ -48,8 +62,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
-    <x>338</x>
-    <y>334</y>
+    <x>174</x>
+    <y>330</y>
     <width>52</width>
     <height>21</height>
     <font>
@@ -102,67 +116,11 @@
       </color>
     </border_color>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_10</name>
-    <text>Temparature setpoint [K]:</text>
-    <x>223</x>
-    <y>208</y>
-    <width>173</width>
-    <height>21</height>
-    <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_2</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
     <x>405</x>
     <y>233</y>
-    <width>50</width>
-    <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="255" green="255" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_3</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):cP_SP_Tt</pv_name>
-    <x>405</x>
-    <y>206</y>
     <width>50</width>
     <height>21</height>
     <font>
@@ -196,7 +154,7 @@
     <x>30</x>
     <y>250</y>
     <width>47</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -224,7 +182,7 @@
     <x>12</x>
     <y>140</y>
     <width>184</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -306,7 +264,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
     <x>12</x>
-    <y>362</y>
+    <y>365</y>
     <width>519</width>
     <height>1</height>
     <line_width>2</line_width>
@@ -331,7 +289,7 @@ $(pv_value)</tooltip>
     <x>156</x>
     <y>370</y>
     <width>190</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -2195,40 +2153,6 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_8</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sP_SP_Tt</pv_name>
-    <x>465</x>
-    <y>208</y>
-    <width>60</width>
-    <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_7</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
     <x>465</x>
@@ -2316,6 +2240,7 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <precision>0</precision>
+    <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -2332,8 +2257,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_5</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
-    <x>398</x>
-    <y>336</y>
+    <x>240</x>
+    <y>331</y>
     <width>52</width>
     <height>18</height>
     <font>
@@ -2661,5 +2586,130 @@ $(pv_value)</tooltip>
       <point x="0.0" y="0.0">
       </point>
     </points>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>463</x>
+    <y>405</y>
+    <width>100</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>pt101</name>
+      <pv_name>CstatH-LHe:PT101:sRdV</pv_name>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0=3">
+            <value>false</value>
+          </exp>
+          <pv_name>$(pv_name).SEVR</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>pt102</name>
+      <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0=3">
+            <value>false</value>
+          </exp>
+          <pv_name>$(pv_name).SEVR</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Current presure</text>
+    <x>460</x>
+    <y>380</y>
+    <width>113</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>CstatH-MKS:MKS3:sRegOn</pv_name>
+    <x>431</x>
+    <y>328</y>
+    <width>25</width>
+    <height>25</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_23</name>
+    <text>PID Reg Status:</text>
+    <x>313</x>
+    <y>330</y>
+    <width>102</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>PT101</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_24</name>
+    <text>CV01</text>
+    <x>20</x>
+    <y>210</y>
+    <width>39</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>The final opening of the valve during cooling 
+the 2K line going through HX01 (Precooling).
+
+The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_23</name>
+    <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+    <x>80</x>
+    <y>210</y>
+    <width>50</width>
+    <background_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <wrap_words>true</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_24</name>
+    <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+    <x>135</x>
+    <y>210</y>
+    <width>80</width>
   </widget>
 </display>

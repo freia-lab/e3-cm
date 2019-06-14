@@ -45,7 +45,7 @@
     <x>7</x>
     <y>103</y>
     <width>36</width>
-    <height>12</height>
+    <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -66,82 +66,6 @@
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_2</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sStep</pv_name>
-    <x>96</x>
-    <y>102</y>
-    <width>347</width>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-      <rule name="TextRule" prop_id="text" out_exp="false">
-        <exp bool_exp="pv0== 0">
-          <value>$(step0)</value>
-        </exp>
-        <exp bool_exp="pv0== 1">
-          <value>$(step1)</value>
-        </exp>
-        <exp bool_exp="pv0== 2">
-          <value>$(step2)</value>
-        </exp>
-        <exp bool_exp="pv0== 3">
-          <value>$(step3)</value>
-        </exp>
-        <exp bool_exp="pv0== 4">
-          <value>$(step4)</value>
-        </exp>
-        <exp bool_exp="pv0== 6">
-          <value>$(step6)</value>
-        </exp>
-        <exp bool_exp="pv0== 8">
-          <value>$(step8)</value>
-        </exp>
-        <exp bool_exp="pv0== 10">
-          <value>$(step10)</value>
-        </exp>
-        <exp bool_exp="pv0== 12">
-          <value>$(step12)</value>
-        </exp>
-        <exp bool_exp="pv0== 14">
-          <value>$(step14)</value>
-        </exp>
-        <exp bool_exp="pv0== 16">
-          <value>$(step16)</value>
-        </exp>
-        <exp bool_exp="pv0== 18">
-          <value>$(step18)</value>
-        </exp>
-        <exp bool_exp="pv0== 20">
-          <value>$(step20)</value>
-        </exp>
-        <exp bool_exp="pv0== 30">
-          <value>$(step30)</value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template</name>
@@ -522,6 +446,78 @@ in the web browser</tooltip>
       </script>
     </scripts>
     <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Text Update Template_3</name>
+    <x>95</x>
+    <y>102</y>
+    <width>347</width>
+    <height>33</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="TextRule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0== 0">
+          <value>$(step0)</value>
+        </exp>
+        <exp bool_exp="pv0== 1">
+          <value>$(step1)</value>
+        </exp>
+        <exp bool_exp="pv0== 2">
+          <value>$(step2)</value>
+        </exp>
+        <exp bool_exp="pv0== 3">
+          <value>$(step3)</value>
+        </exp>
+        <exp bool_exp="pv0== 4">
+          <value>$(step4)</value>
+        </exp>
+        <exp bool_exp="pv0== 6">
+          <value>$(step6)</value>
+        </exp>
+        <exp bool_exp="pv0== 8">
+          <value>$(step8)</value>
+        </exp>
+        <exp bool_exp="pv0== 10">
+          <value>$(step10)</value>
+        </exp>
+        <exp bool_exp="pv0== 12">
+          <value>$(step12)</value>
+        </exp>
+        <exp bool_exp="pv0== 14">
+          <value>$(step14)</value>
+        </exp>
+        <exp bool_exp="pv0== 16">
+          <value>$(step16)</value>
+        </exp>
+        <exp bool_exp="pv0== 18">
+          <value>$(step18)</value>
+        </exp>
+        <exp bool_exp="pv0== 20">
+          <value>$(step20)</value>
+        </exp>
+        <exp bool_exp="pv0== 30">
+          <value>$(step30)</value>
+        </exp>
+        <pv_name>CstatH-Ctrl:$(seq_no):sStep</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     <border_width>2</border_width>
   </widget>
 </display>
