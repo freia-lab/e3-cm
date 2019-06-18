@@ -71,6 +71,7 @@ file cm-real-param.template { pattern
 {Ctrl	S5_P_FT552_MAX_GB  1008	  520	 0	74    0	    "m3/h"}
 {Ctrl	S5_P_FT552_MIN_C   1012	  526	 0	74    0	    "m3/h"}
 {Ctrl	S5_P_FT552_MAX_C   1016	  532	 0	74    0	    "m3/h"}
+{Ctrl	S8_P_CV01   	   1028	  538	 0	100   0	    "%"}
 }
 
 file cm-temp2plc-freia.template { pattern

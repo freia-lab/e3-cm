@@ -42,8 +42,10 @@ TestEssProtoFreia_20190528 - KG, Changed limits for the stand/by temperature fro
 TestEssProtoFreia_20190529 - KG, Modified the 1 s interrupt block OB32 - changed the local symbol to memory location in the
 			     network genereting OneMinute bit.
 			     Modified logic in the grafcet function block Network 21 (controlling CV03 according to the FT552 limits).
-			     Added initialization of temporary variables missing for standby mode. 
+			     Added initialization of temporary variables missing for standby mode.
 
+TestEssProtoFreia_20190617 - KG, Added state of 2K operation sequence (SQ9_state) from HNOSS to DB102.
+			     Added parameter S8_P_CV01 in db100/db101 and FC33.
 
 
 
