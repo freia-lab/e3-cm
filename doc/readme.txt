@@ -34,7 +34,7 @@ TestEssProtoFreia_20190515 - KG, Added sending data for MKS2 (CV550 set value an
 			     Fixed changing the steps in the warm-up procedure (grafcet)
 			     Changed CYC_INT5 object block to keep the PID for CV02/CV03 active in steps 4 & 6 of the standby state. 
 			     Changed the PID parameters for CV03.
-			     Added logic forthe standby state in grafcet. 
+			     Added logic for the standby state in grafcet. 
 
 TestEssProtoFreia_20190516 - KG, Standby state: changed the logic of the transition from cooling to heating
 TestEssProtoFreia_20190528 - KG, Changed limits for the stand/by temperature from constants to memory locations
@@ -47,6 +47,9 @@ TestEssProtoFreia_20190529 - KG, Modified the 1 s interrupt block OB32 - changed
 TestEssProtoFreia_20190617 - KG, Added state of 2K operation sequence (SQ9_state) from HNOSS to DB102.
 			     Added parameter S8_P_CV01 in db100/db101 and FC33.
 
+TestEssProtoFreia_20190619 - KG, Added S8_paprameters data block. Disabled LT01 PID in step4 (precooling) of2K operation (OB35).
+			     Fixed bug: LT01 PID showed status on even if CV01 was in manual mode (OB35).
+			     Added VBox:TT03 and CM:TT02 to IOC2PLC db. Added all functions in grafcet to handle the 2K operation.
 
 
 

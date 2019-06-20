@@ -518,7 +518,11 @@ record (mbbi, "CM-Ctrl:S8:sStep") {
   field (SHFT, "0")
   field (ZRST, "Idle")
   field (ONVL, "4")
-  field (ONST, "2K operation")
+  field (ONST, "Precooling 2K line...")
+  field (TWVL, "6")
+  field (TWST, "2K operation...")
+  field (THVL, "8")
+  field (THST, "Stopping...")
 }
 record (mbbi, "CM-Ctrl:S9:sStep") {
   field(DTYP, "S7plc")

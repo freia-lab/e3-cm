@@ -107,4 +107,6 @@ file cm-cernox2plc-freia.template { pattern
 {PREFIX, SUBS, DEV,  OFFS, OFFS1, BIT}
 {CM	 CM    TT118 102   133    1}
 {CM	 CM    TT218 106   133    2}
+{CM	 VBox  TT03  110   133    3}
+{CM	 CM    TT02  114   133    4}
 }
