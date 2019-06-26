@@ -1925,4 +1925,30 @@ and return to the Initial State</tooltip>
     <width>99</width>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TT118_1</name>
+    <pv_name>$(P)-CM:TT02:sRdV</pv_name>
+    <x>710</x>
+    <y>535</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <precision>1</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TT218_1</name>
+    <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+    <x>710</x>
+    <y>550</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Source Serif Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <precision>1</precision>
+  </widget>
 </display>

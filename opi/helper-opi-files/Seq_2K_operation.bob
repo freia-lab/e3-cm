@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>600</width>
+  <width>900</width>
   <height>840</height>
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215">
@@ -15,12 +15,12 @@
       <step0>Not running</step0>
       <step1>Checking equipment</step1>
       <step12>Keeping cold</step12>
-      <step14>Stopping - waiting for PT02/PT03 to rise to Final Pressure</step14>
+      <step14>Stopping - waiting for PT02/PT03 to rise to Final Pressure. You can stop the 2K pumps.</step14>
       <step16>Stopping - delaying 10 s</step16>
-      <step18>Waiting for stopping 2K pumps. Press Accept to go on</step18>
+      <step18>Waiting for 2K pumps to stop rotate. Press Accept to go on</step18>
       <step2>Checking parameters</step2>
-      <step20>Stopping - venting 2K Pumps. Press Accept to go on</step20>
-      <step30>Waiting for CM's transition from 2K to 2K operation</step30>
+      <step20>Stopping - venting 2K Pumps. When CstatH-2Kpumps:PT552:sRdV is ~1000 mbar press Accept to go on</step20>
+      <step30>Waiting for CM's transition from 2K to 4K operation</step30>
       <step4>Waiting for switching the 2K exhaust to Kaeser</step4>
       <step6>Waiting for 2K pumps running for 10 minutes at full speed. Press Accept to go on</step6>
       <step8>Waiting 10s for closing CV552 and FV552</step8>
@@ -38,7 +38,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>CV550:</text>
-    <x>110</x>
+    <x>20</x>
     <y>330</y>
     <width>46</width>
     <height>21</height>
@@ -62,7 +62,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
-    <x>174</x>
+    <x>84</x>
     <y>330</y>
     <width>52</width>
     <height>21</height>
@@ -2257,7 +2257,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_5</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
-    <x>240</x>
+    <x>150</x>
     <y>331</y>
     <width>52</width>
     <height>18</height>
@@ -2637,10 +2637,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_23</name>
-    <text>PID Reg Status:</text>
-    <x>313</x>
+    <text>CV551 PID Reg Status:</text>
+    <x>280</x>
     <y>330</y>
-    <width>102</width>
+    <width>146</width>
     <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
