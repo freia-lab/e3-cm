@@ -51,8 +51,13 @@ TestEssProtoFreia_20190619 - KG, Added S8_paprameters data block. Disabled LT01 
 			     Fixed bug: LT01 PID showed status on even if CV01 was in manual mode (OB35).
 			     Added VBox:TT03 and CM:TT02 to IOC2PLC db. Added all functions in grafcet to handle the 2K operation.
 
-
-
+TestEssProtoFreia_20190626 - KG, Enabled CV02 LT01 PID regulator on at S8 step4 (precooling).
+			     TEMPORARY - bypassing "IOC2PLC"."VBox:TT03_VALID" condition (fault bit set in CBTF Cernox controller (in all
+			     boxes channels 9-11 indicate errors - check it!!!!!!!!
+			     Changed the threshold for proecooling 2K line (VBox:TT03) from 8 to 9K
+			     
+TestEssProtoFreia_20190627 - KG, I'm not sure if there are any changes since the last archive but just in case saved
+			     the last version that has been succesfully tested 2K operation. Works with HNOSS version 20190627.
 
 
 

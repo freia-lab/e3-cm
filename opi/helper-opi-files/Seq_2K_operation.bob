@@ -22,7 +22,7 @@
       <step20>Stopping - venting 2K Pumps. When CstatH-2Kpumps:PT552:sRdV is ~1000 mbar press Accept to go on</step20>
       <step30>Waiting for CM's transition from 2K to 4K operation</step30>
       <step4>Waiting for switching the 2K exhaust to Kaeser</step4>
-      <step6>Waiting for 2K pumps running for 10 minutes at full speed. Press Accept to go on</step6>
+      <step6>Set WH pumps freq. to 100%. Start 2K pumps and let them running for 10 min. at full speed. Set WH freq. to 50% then press Accept to go on</step6>
       <step8>Waiting 10s for closing CV552 and FV552</step8>
     </macros>
     <width>540</width>
@@ -2288,43 +2288,6 @@ $(pv_value)</tooltip>
     </rules>
     <border_width>2</border_width>
   </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_2</name>
-    <pv_name>CM-Ctrl:CV01:sRegOn</pv_name>
-    <bit>0</bit>
-    <x>431</x>
-    <y>295</y>
-    <width>25</width>
-    <height>25</height>
-    <off_label>OFF</off_label>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_label>ON</on_label>
-    <on_color>
-      <color name="ON" red="22" green="222" blue="33">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="OFF" red="169" green="169" blue="169">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>MKS2</name>
     <actions>
@@ -2725,5 +2688,13 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
       <x>210</x>
       <width>80</width>
     </widget>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>CM-Ctrl:CV01:sRegOn</pv_name>
+    <x>431</x>
+    <y>295</y>
+    <width>25</width>
+    <height>25</height>
   </widget>
 </display>

@@ -41,11 +41,11 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_1</name>
-    <text>State:</text>
+    <text>State</text>
     <x>7</x>
     <y>103</y>
-    <width>36</width>
-    <height>13</height>
+    <width>30</width>
+    <height>12</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -410,9 +410,9 @@ in the web browser</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sStep</pv_name>
-    <x>53</x>
-    <y>102</y>
-    <width>32</width>
+    <x>10</x>
+    <y>116</y>
+    <width>20</width>
     <height>17</height>
     <font>
       <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
@@ -450,9 +450,9 @@ in the web browser</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Text Update Template_3</name>
-    <x>95</x>
-    <y>102</y>
-    <width>347</width>
+    <x>45</x>
+    <y>103</y>
+    <width>413</width>
     <height>33</height>
     <font>
       <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">

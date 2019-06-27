@@ -42,12 +42,12 @@
     <x>579</x>
     <y>39</y>
     <width>362</width>
-    <height>124</height>
+    <height>161</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label Template_10</name>
       <text>Pressure @ 2K pumps input</text>
-      <y>40</y>
+      <y>80</y>
       <width>184</width>
       <height>21</height>
       <foreground_color>
@@ -72,12 +72,12 @@
       <name>Text Update_28</name>
       <pv_name>CstatH-2Kpumps:PT552:sRdV</pv_name>
       <x>220</x>
-      <y>40</y>
+      <y>80</y>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_11</name>
       <text>2K pumps mean rotation speed</text>
-      <y>61</y>
+      <y>101</y>
       <width>210</width>
       <height>21</height>
       <foreground_color>
@@ -102,7 +102,7 @@
       <name>Text Update_29</name>
       <pv_name>CstatH-2Kpumps:AllPumps:sFreq-calc</pv_name>
       <x>220</x>
-      <y>61</y>
+      <y>101</y>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
@@ -118,6 +118,37 @@
       <name>Label Template_12</name>
       <text>2K pumps ON/OFF switch</text>
       <x>30</x>
+      <width>170</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>PT101/PT102</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>CstatH-2Kpumps:Ctrl-WH:cSetV</pv_name>
+      <x>220</x>
+      <y>40</y>
+      <show_units>false</show_units>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_13</name>
+      <text>WH pumps frequency [%]</text>
+      <y>40</y>
       <width>170</width>
       <height>21</height>
       <foreground_color>
