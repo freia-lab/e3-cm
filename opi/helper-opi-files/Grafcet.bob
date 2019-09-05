@@ -541,21 +541,6 @@ with LN2</tooltip>
     <y>500</y>
     <tooltip>Goto 2K Operation</tooltip>
   </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>Action Button_10</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(pv_name)</pv_name>
-        <value>1</value>
-        <description>Write PV</description>
-      </action>
-    </actions>
-    <pv_name>$(PG):cmdStop2KMode</pv_name>
-    <text>Proceed</text>
-    <x>710</x>
-    <y>580</y>
-    <tooltip>Goto 4K Operation</tooltip>
-  </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
     <pv_name>$(PG):sState1</pv_name>
@@ -1950,5 +1935,23 @@ and return to the Initial State</tooltip>
       </font>
     </font>
     <precision>1</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text> To proceed stop 
+ 2K Operation </text>
+    <x>710</x>
+    <y>570</y>
+    <width>110</width>
+    <height>39</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
   </widget>
 </display>
