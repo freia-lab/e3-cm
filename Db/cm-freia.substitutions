@@ -101,6 +101,7 @@ file cm-temp2plc-freia.template { pattern
 {CM	 CM    TT920 90    132    6}
 {CM	 CM    TT918 94    132    7}
 {CM	 CM    TT904 98    133    0}
+{CM	 CM    TT609 118   133    5}
 }
 
 file cm-cernox2plc-freia.template { pattern

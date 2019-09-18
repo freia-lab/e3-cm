@@ -2374,175 +2374,6 @@
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>Group_15</name>
-      <macros>
-        <H>EH921</H>
-        <S>CM</S>
-      </macros>
-      <y>150</y>
-      <width>1165</width>
-      <height>30</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_60</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(pv_name)</pv_name>
-            <value>1</value>
-            <description>Write PV</description>
-          </action>
-        </actions>
-        <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
-        <text>Auto</text>
-        <x>930</x>
-        <width>60</width>
-        <tooltip>$(actions)</tooltip>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_61</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(pv_name)</pv_name>
-            <value>1</value>
-            <description>Write PV</description>
-          </action>
-        </actions>
-        <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
-        <text>Manual</text>
-        <x>1000</x>
-        <width>70</width>
-        <tooltip>$(actions)</tooltip>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_75</name>
-        <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
-        <x>1085</x>
-        <y>5</y>
-        <width>70</width>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_16</name>
-        <x>840</x>
-        <y>1</y>
-        <width>80</width>
-        <height>29</height>
-        <points>
-          <point x="0.0" y="12.0">
-          </point>
-          <point x="5.0" y="12.0">
-          </point>
-          <point x="10.0" y="2.0">
-          </point>
-          <point x="20.0" y="24.0">
-          </point>
-          <point x="30.0" y="2.0">
-          </point>
-          <point x="40.0" y="24.0">
-          </point>
-          <point x="50.0" y="2.0">
-          </point>
-          <point x="60.0" y="24.0">
-          </point>
-          <point x="65.0" y="12.0">
-          </point>
-          <point x="70.0" y="12.0">
-          </point>
-        </points>
-        <rules>
-          <rule name="New Rule" prop_id="line_color" out_exp="false">
-            <exp bool_exp="pvInt0==1">
-              <value>
-                <color name="RED" red="252" green="13" blue="27">
-                </color>
-              </value>
-            </exp>
-            <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_16</name>
-        <text>$(H):</text>
-        <y>5</y>
-      </widget>
-      <widget type="textentry" version="3.0.0">
-        <name>Text Update_76</name>
-        <pv_name>$(P)-$(S):$(H):cLL</pv_name>
-        <x>160</x>
-        <y>5</y>
-        <width>60</width>
-        <background_color>
-          <color name="Read_Background" red="230" green="235" blue="232">
-          </color>
-        </background_color>
-        <wrap_words>true</wrap_words>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_77</name>
-        <pv_name>$(P)-$(S):$(H):sLL</pv_name>
-        <x>230</x>
-        <y>5</y>
-        <width>60</width>
-      </widget>
-      <widget type="textentry" version="3.0.0">
-        <name>Text Update_78</name>
-        <pv_name>$(P)-$(S):$(H):cHL</pv_name>
-        <x>300</x>
-        <y>5</y>
-        <width>60</width>
-        <background_color>
-          <color name="Read_Background" red="230" green="235" blue="232">
-          </color>
-        </background_color>
-        <wrap_words>true</wrap_words>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_79</name>
-        <pv_name>$(P)-$(S):$(H):sHL</pv_name>
-        <x>370</x>
-        <y>5</y>
-        <width>60</width>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_62</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(pv_name)</pv_name>
-            <value>1</value>
-            <description>Write PV</description>
-          </action>
-        </actions>
-        <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
-        <text>ON</text>
-        <x>710</x>
-        <width>40</width>
-        <tooltip>$(actions)</tooltip>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_63</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(pv_name)</pv_name>
-            <value>1</value>
-            <description>Write PV</description>
-          </action>
-        </actions>
-        <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
-        <text>OFF</text>
-        <x>760</x>
-        <width>40</width>
-        <tooltip>$(actions)</tooltip>
-      </widget>
-      <widget type="led" version="2.0.0">
-        <name>LED_47</name>
-        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
-        <x>810</x>
-        <y>5</y>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
       <name>Group_16</name>
       <macros>
         <H>EH931_932</H>
@@ -4021,6 +3852,190 @@
         <transparent>true</transparent>
         <widget type="textupdate" version="2.0.0">
           <name>Text Update_173</name>
+          <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
+          <width>50</width>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_43</name>
+      <macros>
+        <H>EH921</H>
+        <S>CM</S>
+        <T1>TT609</T1>
+      </macros>
+      <y>150</y>
+      <width>1165</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_104</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P)-$(S):$(H):cmdAuto</pv_name>
+        <text>Auto</text>
+        <x>930</x>
+        <width>60</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_105</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P)-$(S):$(H):cmdMan</pv_name>
+        <text>Manual</text>
+        <x>1000</x>
+        <width>70</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_180</name>
+        <pv_name>$(P)-$(S):$(H):sAuto</pv_name>
+        <x>1085</x>
+        <y>5</y>
+        <width>70</width>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_27</name>
+        <x>840</x>
+        <y>1</y>
+        <width>80</width>
+        <height>29</height>
+        <points>
+          <point x="0.0" y="12.0">
+          </point>
+          <point x="5.0" y="12.0">
+          </point>
+          <point x="10.0" y="2.0">
+          </point>
+          <point x="20.0" y="24.0">
+          </point>
+          <point x="30.0" y="2.0">
+          </point>
+          <point x="40.0" y="24.0">
+          </point>
+          <point x="50.0" y="2.0">
+          </point>
+          <point x="60.0" y="24.0">
+          </point>
+          <point x="65.0" y="12.0">
+          </point>
+          <point x="70.0" y="12.0">
+          </point>
+        </points>
+        <rules>
+          <rule name="New Rule" prop_id="line_color" out_exp="false">
+            <exp bool_exp="pvInt0==1">
+              <value>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </value>
+            </exp>
+            <pv_name>$(P)-$(S):$(H):sHtrOn</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_27</name>
+        <text>$(H):</text>
+        <y>5</y>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_181</name>
+        <pv_name>$(P)-$(S):$(H):cLL</pv_name>
+        <x>160</x>
+        <y>5</y>
+        <width>60</width>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <wrap_words>true</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_182</name>
+        <pv_name>$(P)-$(S):$(H):sLL</pv_name>
+        <x>230</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_183</name>
+        <pv_name>$(P)-$(S):$(H):cHL</pv_name>
+        <x>300</x>
+        <y>5</y>
+        <width>60</width>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <wrap_words>true</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_184</name>
+        <pv_name>$(P)-$(S):$(H):sHL</pv_name>
+        <x>370</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_106</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P)-$(S):$(H):cmdSet</pv_name>
+        <text>ON</text>
+        <x>710</x>
+        <width>40</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_107</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P)-$(S):$(H):cmdRst</pv_name>
+        <text>OFF</text>
+        <x>760</x>
+        <width>40</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_19</name>
+        <pv_name>$(P)-$(S):$(H):sCmd</pv_name>
+        <x>810</x>
+        <y>5</y>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_44</name>
+        <x>449</x>
+        <y>5</y>
+        <width>230</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_185</name>
           <pv_name>$(P)-$(S):$(T1):sRdV</pv_name>
           <width>50</width>
         </widget>
