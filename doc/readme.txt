@@ -35,7 +35,6 @@ TestEssProtoFreia_20190515 - KG, Added sending data for MKS2 (CV550 set value an
 			     Changed CYC_INT5 object block to keep the PID for CV02/CV03 active in steps 4 & 6 of the standby state. 
 			     Changed the PID parameters for CV03.
 			     Added logic for the standby state in grafcet. 
-
 TestEssProtoFreia_20190516 - KG, Standby state: changed the logic of the transition from cooling to heating
 TestEssProtoFreia_20190528 - KG, Changed limits for the stand/by temperature from constants to memory locations
 
@@ -58,6 +57,9 @@ TestEssProtoFreia_20190626 - KG, Enabled CV02 LT01 PID regulator on at S8 step4 
 			     
 TestEssProtoFreia_20190627 - KG, I'm not sure if there are any changes since the last archive but just in case saved
 			     the last version that has been succesfully tested 2K operation. Works with HNOSS version 20190627.
-
+TestEssProtoFreia_20190905 - KG, Changed the PID parameters for CV01 controller in 2K mode (Gain: 2->15,I: 2->3s)
+TestEssProtoFreia_20190918 - KG, Added instance of heater EH921 and the corresponding temperature sensor TT609.
+TestEssProtoFreia_20191003 - KG, Added support for the automatic warm-up (changes only in grafcet). Works only with Cryostat_2019_10_03
+			     or later. Not testet fully yet.
 
 

@@ -541,6 +541,14 @@ record (mbbi, "CM-Ctrl:S10:sStep") {
   field(NOBT, "8")
   field (SHFT, "0")
   field (ZRST, "Idle")
+  field (ONVL, "4")
+  field (ONST, "Closing CV5202 & FV401...")
+  field (TWVL, "6")
+  field (TWST, "Emptying 4K tank...")
+  field (THVL, "8")
+  field (THST, "Emptying the CM...")
+  field (FRVL, "10")
+  field (FRST, "Heating-up...")
 }
 record (mbbi, "CM-Ctrl:SX:sStep") {
   field(DTYP, "S7plc")
