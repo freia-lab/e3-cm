@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>overview_op</name>
+  <width>1490</width>
+  <height>920</height>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_2</name>
+    <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
+    <x>630</x>
+    <y>20</y>
+    <width>30</width>
+    <height>30</height>
+    <actions execute_as_one="true">
+    </actions>
+    <rules>
+      <rule name="ForegroundRule" prop_id="file" out_exp="false">
+        <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
+          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
+        </exp>
+        <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
+          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
+        </exp>
+        <exp bool_exp="pv0==0.0">
+          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
+        </exp>
+        <exp bool_exp="pv0!=0.0">
+          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
+          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
+        </exp>
+        <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+        <pv_name>sim://ramp(0,1,1,1)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank</name>
+    <pv_name>Cryo-Dwr:LHe:LI5200-PercOut</pv_name>
+    <x>20</x>
+    <y>90</y>
+    <width>40</width>
+    <fill_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </fill_color>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank_1</name>
+    <pv_name>Cryo-CBox:LN2:LI3685-PercOut</pv_name>
+    <x>90</x>
+    <y>90</y>
+    <width>40</width>
+    <fill_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </fill_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>ICB</name>
+    <x>180</x>
+    <y>90</y>
+    <width>130</width>
+    <height>170</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>PurgingS</name>
+    <x>370</x>
+    <y>30</y>
+    <width>130</width>
+    <height>44</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>ValveBox</name>
+    <x>400</x>
+    <y>110</y>
+    <width>330</width>
+    <height>300</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Jumper</name>
+    <x>400</x>
+    <y>420</y>
+    <width>320</width>
+    <height>50</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>ValveBox_2</name>
+    <x>230</x>
+    <y>480</y>
+    <width>670</width>
+    <height>250</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Reheater</name>
+    <x>810</x>
+    <y>20</y>
+    <width>230</width>
+    <height>70</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>2K_Pumps</name>
+    <x>1070</x>
+    <y>190</y>
+    <width>152</width>
+    <height>234</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Compressor</name>
+    <x>1320</x>
+    <y>30</y>
+    <width>112</width>
+    <height>80</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>GasBag</name>
+    <x>1320</x>
+    <y>424</y>
+    <width>112</width>
+    <height>80</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>BauerComp</name>
+    <x>1320</x>
+    <y>560</y>
+    <width>112</width>
+    <height>80</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>RF1</name>
+    <x>710</x>
+    <y>780</y>
+    <width>112</width>
+    <height>60</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>RF2</name>
+    <x>350</x>
+    <y>780</y>
+    <width>112</width>
+    <height>60</height>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <P>CstatH</P>
+      <S>RHtr</S>
+      <V>FV553</V>
+    </macros>
+    <x>60</x>
+    <y>20</y>
+    <width>40</width>
+    <height>35</height>
+    <style>3</style>
+    <actions>
+      <action type="open_display">
+        <file>../CmdPanels/CstatH-Valve.bob</file>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
+      </symbols>
+      <width>40</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>$(V)</text>
+      <y>20</y>
+      <width>40</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatH-Valve.bob</file>
+          <macros>
+            <v_name>$(P)-$(S):$(V)</v_name>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text></text>
+      <width>40</width>
+      <height>35</height>
+      <transparent>true</transparent>
+      <tooltip>$(V)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <P>CstatH</P>
+      <S>RHtr</S>
+      <V>FV557</V>
+    </macros>
+    <x>190</x>
+    <y>33</y>
+    <width>40</width>
+    <height>35</height>
+    <style>3</style>
+    <actions>
+      <action type="open_display">
+        <file>../CmdPanels/CstatH-Valve.bob</file>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_1</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
+      </symbols>
+      <width>40</width>
+      <height>30</height>
+      <rotation>-90.0</rotation>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(V)</text>
+      <y>20</y>
+      <width>40</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatH-Valve.bob</file>
+          <macros>
+            <v_name>$(P)-$(S):$(V)</v_name>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text></text>
+      <width>40</width>
+      <height>35</height>
+      <transparent>true</transparent>
+      <tooltip>$(V)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <P>CstatH</P>
+      <S>RHtr</S>
+      <V>FV557</V>
+    </macros>
+    <x>278</x>
+    <y>48</y>
+    <width>60</width>
+    <height>35</height>
+    <style>3</style>
+    <actions>
+      <action type="open_display">
+        <file>../CmdPanels/CstatH-Valve.bob</file>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_2</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
+        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
+      </symbols>
+      <width>40</width>
+      <height>30</height>
+      <rotation>-90.0</rotation>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatH-Valve.bob</file>
+          <macros>
+            <v_name>$(P)-$(S):$(V)</v_name>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text></text>
+      <width>40</width>
+      <height>35</height>
+      <transparent>true</transparent>
+      <tooltip>$(V)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>$(V)</text>
+      <x>22</x>
+      <y>8</y>
+      <width>32</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+</display>

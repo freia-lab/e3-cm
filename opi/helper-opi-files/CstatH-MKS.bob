@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>420</width>
-  <height>420</height>
+  <width>450</width>
+  <height>450</height>
   <background_color>
     <color name="IO Shape Fill" red="188" green="188" blue="188">
     </color>
@@ -78,7 +78,7 @@
     <text>Kp [%]</text>
     <x>37</x>
     <y>320</y>
-    <width>36</width>
+    <width>34</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
@@ -106,7 +106,7 @@
     <text>Ti [%]</text>
     <x>112</x>
     <y>320</y>
-    <width>36</width>
+    <width>30</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
@@ -212,7 +212,7 @@
     <text>Setpoint [mbar]</text>
     <x>6</x>
     <y>273</y>
-    <width>90</width>
+    <width>79</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
@@ -240,7 +240,7 @@
     <text>Output [%]:</text>
     <x>25</x>
     <y>240</y>
-    <width>66</width>
+    <width>59</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
@@ -310,7 +310,7 @@ $(pv_value)</tooltip>
     <text>Gauge [mbar]</text>
     <x>5</x>
     <y>203</y>
-    <width>72</width>
+    <width>70</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
@@ -338,7 +338,7 @@ $(pv_value)</tooltip>
     <text>High</text>
     <x>116</x>
     <y>180</y>
-    <width>24</width>
+    <width>23</width>
     <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">

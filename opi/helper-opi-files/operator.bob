@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>operator</name>
+  <width>1490</width>
+  <height>940</height>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Overview</name>
+        <file>overview_op.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Grafcet</name>
+        <file>Grafcet_op.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <width>1490</width>
+    <height>940</height>
+    <direction>0</direction>
+  </widget>
+</display>

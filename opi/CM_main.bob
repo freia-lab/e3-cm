@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Cryomodule_top</name>
+  <macros>
+    <P>CM</P>
+  </macros>
+  <width>1600</width>
+  <height>1000</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Cryomodule</text>
+    <x>50</x>
+    <width>200</width>
+    <height>50</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Operator</name>
+        <file>helper-opi-files/operator.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Engineer</name>
+        <file>test/test.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <y>58</y>
+    <width>1590</width>
+    <height>940</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Epics-IOC Com. Status:</text>
+    <x>340</x>
+    <y>10</y>
+    <width>153</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(P)-Ctrl:EpicsCom:sOK
+</pv_name>
+    <x>509</x>
+    <y>10</y>
+    <width>62</width>
+    <height>22</height>
+    <off_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>CM-HNOSS Com. Status:</text>
+    <x>340</x>
+    <y>37</y>
+    <width>163</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(P)-Ctrl:HNOSSCom:sOK</pv_name>
+    <x>509</x>
+    <y>35</y>
+    <width>62</width>
+    <height>22</height>
+    <off_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(P)-Ctrl:s7-status</pv_name>
+    <x>770</x>
+    <y>35</y>
+    <width>100</width>
+    <height>22</height>
+    <off_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>CM PLC Com. Status:</text>
+    <x>610</x>
+    <y>35</y>
+    <width>139</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>CM Operation mode:</text>
+    <x>610</x>
+    <y>10</y>
+    <width>138</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="digital_clock" version="2.0.0">
+    <name>Digital Clock</name>
+    <lcd_design>30</lcd_design>
+    <lcd_font>4</lcd_font>
+    <x>1470</x>
+    <width>120</width>
+    <height>60</height>
+    <date_visible>true</date_visible>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>images/FREIAlogo-v3_March19.png</file>
+    <y>930</y>
+    <width>100</width>
+    <height>60</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>Bunker Status:</text>
+    <x>920</x>
+    <y>10</y>
+    <width>99</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>Env-Safety:Bunker1:VisuState</pv_name>
+    <x>1040</x>
+    <y>10</y>
+    <width>100</width>
+    <height>22</height>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <actions>
+    </actions>
+    <states>
+      <state>
+        <value>0</value>
+        <label>Cleared</label>
+        <color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>Not Cleared</label>
+        <color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_5</name>
+    <pv_name>$(P)-Ctrl:opMode:sManual</pv_name>
+    <x>770</x>
+    <y>10</y>
+    <width>100</width>
+    <height>22</height>
+    <off_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="RED" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Liquefier status:</text>
+    <x>910</x>
+    <y>35</y>
+    <width>108</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED_7</name>
+    <pv_name>Cryo-System:Operation:VisuState</pv_name>
+    <x>1040</x>
+    <y>35</y>
+    <width>100</width>
+    <height>22</height>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <square>true</square>
+    <actions>
+    </actions>
+    <states>
+      <state>
+        <value>1</value>
+        <label>OFF</label>
+        <color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>Standby</label>
+        <color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>State 3</label>
+        <color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+</display>
