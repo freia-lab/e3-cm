@@ -40,7 +40,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template</name>
-    <pv_name>$(v_name):sOn</pv_name>
+    <pv_name>$(v_name):sAuto</pv_name>
     <bit>0</bit>
     <x>10</x>
     <y>60</y>
@@ -48,7 +48,7 @@
     <height>35</height>
     <off_label>OFF</off_label>
     <off_color>
-      <color name="IO Default" red="255" green="0" blue="0">
+      <color name="MINOR" red="252" green="242" blue="17">
       </color>
     </off_color>
     <on_label>ON</on_label>
@@ -672,7 +672,7 @@
       <height>30</height>
       <off_label>OFF</off_label>
       <off_color>
-        <color name="OFF" red="90" green="110" blue="90">
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
         </color>
       </off_color>
       <on_label>ON</on_label>
@@ -730,5 +730,12 @@
         </color>
       </border_color>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto</text>
+    <x>10</x>
+    <y>40</y>
+    <width>45</width>
   </widget>
 </display>

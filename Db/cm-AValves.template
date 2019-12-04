@@ -118,7 +118,14 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
   field(EGU, "%")
+  field(FLNK, "CM-$(SUBS):$(DEV):sOpen")
 #  field(LINR, "$(LINR)")
 #  field(ASLO, "$(ASLO)")
 #  field(AOFF, "$(AOFF)")
+}
+
+record(calc, "CM-$(SUBS):$(DEV):sOpen") {
+  field(INPA, "CM-$(SUBS):$(DEV):sRdV")
+  field(INPB, "1.5")
+  field(CALC, "A<B?0:1")
 }

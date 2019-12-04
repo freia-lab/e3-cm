@@ -348,19 +348,13 @@
     </border_color>
   </widget>
   <widget type="multi_state_led" version="2.0.0">
-    <name>LED_7</name>
+    <name>LED (Multi State)_1</name>
     <pv_name>Cryo-System:Operation:VisuState</pv_name>
     <x>1040</x>
     <y>35</y>
     <width>100</width>
     <height>22</height>
-    <foreground_color>
-      <color red="192" green="192" blue="192">
-      </color>
-    </foreground_color>
     <square>true</square>
-    <actions>
-    </actions>
     <states>
       <state>
         <value>1</value>
@@ -372,20 +366,21 @@
       </state>
       <state>
         <value>2</value>
-        <label>Standby</label>
+        <label>STANDBY</label>
         <color>
-          <color name="PRIMARY" red="0" green="148" blue="202">
+          <color name="BLUE" red="79" green="228" blue="250">
           </color>
         </color>
       </state>
       <state>
-        <value>2</value>
-        <label>State 3</label>
+        <value>3</value>
+        <label>ON</label>
         <color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          <color name="ON" red="70" green="255" blue="70">
           </color>
         </color>
       </state>
     </states>
+    <fallback_label>Invalid</fallback_label>
   </widget>
 </display>
