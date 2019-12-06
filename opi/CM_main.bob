@@ -5,11 +5,11 @@
     <P>CM</P>
   </macros>
   <width>1600</width>
-  <height>1000</height>
+  <height>1150</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Cryomodule</text>
-    <x>50</x>
+    <x>120</x>
     <width>200</width>
     <height>50</height>
     <font>
@@ -35,7 +35,7 @@
       </tab>
       <tab>
         <name>Engineer</name>
-        <file>test/test.bob</file>
+        <file>engineer/test.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
@@ -43,7 +43,7 @@
     </tabs>
     <y>58</y>
     <width>1590</width>
-    <height>940</height>
+    <height>1092</height>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_7</name>
@@ -226,7 +226,7 @@
     <name>Digital Clock</name>
     <lcd_design>30</lcd_design>
     <lcd_font>4</lcd_font>
-    <x>1470</x>
+    <x>1350</x>
     <width>120</width>
     <height>60</height>
     <date_visible>true</date_visible>
@@ -234,7 +234,7 @@
   <widget type="picture" version="2.0.0">
     <name>Picture</name>
     <file>images/FREIAlogo-v3_March19.png</file>
-    <y>930</y>
+    <x>10</x>
     <width>100</width>
     <height>60</height>
   </widget>

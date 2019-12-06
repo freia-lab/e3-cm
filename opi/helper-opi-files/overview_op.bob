@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>overview_op</name>
-  <width>1490</width>
-  <height>920</height>
+  <width>1466</width>
+  <height>1038</height>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_1</name>
     <x>451</x>
@@ -15,42 +15,6 @@
       <point x="0.0" y="60.0">
       </point>
     </points>
-  </widget>
-  <widget type="picture" version="2.0.0">
-    <name>Picture_2</name>
-    <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-    <x>630</x>
-    <y>20</y>
-    <width>30</width>
-    <height>30</height>
-    <actions execute_as_one="true">
-    </actions>
-    <rules>
-      <rule name="ForegroundRule" prop_id="file" out_exp="false">
-        <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-        </exp>
-        <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-        </exp>
-        <exp bool_exp="pv0==0.0">
-          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-        </exp>
-        <exp bool_exp="pv0!=0.0">
-          <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-        </exp>
-        <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-        </exp>
-        <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-          <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-        </exp>
-        <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-        <pv_name>sim://ramp(0,1,1,1)</pv_name>
-      </rule>
-    </rules>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
   </widget>
   <widget type="tank" version="2.0.0">
     <name>Tank</name>
@@ -89,6 +53,7 @@ $(pv_value)</tooltip>
     </background_color>
     <corner_width>10</corner_width>
     <corner_height>10</corner_height>
+    <tooltip>Jumper</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>CM</name>
@@ -106,13 +71,13 @@ $(pv_value)</tooltip>
     </background_color>
     <corner_width>10</corner_width>
     <corner_height>10</corner_height>
+    <tooltip>Cryomodule</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Reheater</name>
-    <x>810</x>
-    <y>20</y>
-    <width>230</width>
-    <height>70</height>
+    <x>830</x>
+    <width>111</width>
+    <height>100</height>
     <line_color>
       <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
@@ -160,8 +125,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>BauerComp</name>
-    <x>1320</x>
-    <y>560</y>
+    <x>1350</x>
+    <y>958</y>
     <width>112</width>
     <height>80</height>
     <line_color>
@@ -174,454 +139,6 @@ $(pv_value)</tooltip>
     </background_color>
     <corner_width>10</corner_width>
     <corner_height>10</corner_height>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>RF1</name>
-    <x>710</x>
-    <y>780</y>
-    <width>112</width>
-    <height>60</height>
-    <line_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </background_color>
-    <corner_width>10</corner_width>
-    <corner_height>10</corner_height>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>RF2</name>
-    <x>350</x>
-    <y>780</y>
-    <width>112</width>
-    <height>60</height>
-    <line_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </background_color>
-    <corner_width>10</corner_width>
-    <corner_height>10</corner_height>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV553</V>
-    </macros>
-    <x>20</x>
-    <y>770</y>
-    <width>40</width>
-    <height>35</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
-      </symbols>
-      <width>40</width>
-      <height>30</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_1</name>
-      <text>$(V)</text>
-      <y>20</y>
-      <width>40</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>40</width>
-      <height>35</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_1</name>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV557</V>
-    </macros>
-    <x>77</x>
-    <y>770</y>
-    <width>40</width>
-    <height>35</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_1</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
-      </symbols>
-      <width>40</width>
-      <height>30</height>
-      <rotation>-90.0</rotation>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_2</name>
-      <text>$(V)</text>
-      <y>20</y>
-      <width>40</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_1</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>40</width>
-      <height>35</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_2</name>
-    <macros>
-      <P>CstatV</P>
-      <S>SHe</S>
-      <V>FV380</V>
-    </macros>
-    <x>130</x>
-    <y>770</y>
-    <width>60</width>
-    <height>35</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_2</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
-      </symbols>
-      <width>40</width>
-      <height>30</height>
-      <rotation>-90.0</rotation>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_3</name>
-      <text>$(V)</text>
-      <x>22</x>
-      <y>8</y>
-      <width>32</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_2</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>40</width>
-      <height>35</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_3</name>
-    <macros>
-      <P>CstatV</P>
-      <S>SHe</S>
-      <V>FV380</V>
-    </macros>
-    <x>579</x>
-    <y>584</y>
-    <width>60</width>
-    <height>35</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_3</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Hand_Valve_3_Red.png</symbol>
-        <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Hand_Valve_3_Green.png</symbol>
-      </symbols>
-      <width>40</width>
-      <height>30</height>
-      <rotation>-90.0</rotation>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_4</name>
-      <text>$(V)</text>
-      <x>22</x>
-      <y>8</y>
-      <width>32</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_3</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>40</width>
-      <height>35</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_4</name>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV553</V>
-    </macros>
-    <x>440</x>
-    <y>619</y>
-    <width>45</width>
-    <height>20</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_4</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../../../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <y>3</y>
-      <width>20</width>
-      <height>15</height>
-      <rotation>-90.0</rotation>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_4</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>45</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_5</name>
-      <text>$(V)</text>
-      <x>15</x>
-      <y>3</y>
-      <width>32</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <wrap_words>false</wrap_words>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_7</name>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV557</V>
-    </macros>
-    <x>440</x>
-    <y>658</y>
-    <width>45</width>
-    <height>20</height>
-    <style>3</style>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatH-Valve.bob</file>
-        <target>standalone</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_7</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
-      <symbols>
-        <symbol>../../../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <y>3</y>
-      <width>20</width>
-      <height>15</height>
-      <rotation>-90.0</rotation>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_7</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatH-Valve.bob</file>
-          <macros>
-            <v_name>$(P)-$(S):$(V)</v_name>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text></text>
-      <width>45</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(V)</tooltip>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_8</name>
-      <text>$(V)</text>
-      <x>15</x>
-      <y>3</y>
-      <width>32</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <wrap_words>false</wrap_words>
-    </widget>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_2</name>
-    <x>70</x>
-    <y>540</y>
-    <width>1</width>
-    <height>146</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="1.0" y="146.0">
-      </point>
-    </points>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>valve-v-l</name>
-    <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-ll.bob</file>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV553</V>
-    </macros>
-    <x>36</x>
-    <y>560</y>
-    <width>45</width>
-    <height>24</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>valve-v-r</name>
-    <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-lr.bob</file>
-    <macros>
-      <P>CstatH</P>
-      <S>RHtr</S>
-      <V>FV553</V>
-    </macros>
-    <x>60</x>
-    <y>640</y>
-    <width>45</width>
-    <height>24</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>cvalve-h</name>
-    <file>../../../../../bob/freia-symbols/display-builder/CstatH-CtrlValve-h.bob</file>
-    <x>148</x>
-    <y>520</y>
-    <width>46</width>
-    <height>50</height>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
@@ -855,6 +372,7 @@ $(pv_value)</tooltip>
       </background_color>
       <corner_width>10</corner_width>
       <corner_height>10</corner_height>
+      <tooltip>Inter-Connection Box</tooltip>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline</name>
@@ -922,7 +440,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l_1</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-ll.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV501</V>
@@ -934,7 +452,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_1</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV501</V>
@@ -966,7 +484,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_2</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV502</V>
@@ -978,7 +496,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_3</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>FV401</V>
@@ -990,7 +508,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>evalve-v-r</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatEvalve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CstatEvalve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>EV400</V>
@@ -1014,7 +532,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CstatValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>FV400</V>
@@ -1288,6 +806,7 @@ System</text>
       </background_color>
       <corner_width>10</corner_width>
       <corner_height>10</corner_height>
+      <tooltip>Valve Box</tooltip>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_14</name>
@@ -1343,7 +862,7 @@ System</text>
       <width>1</width>
       <height>300</height>
       <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
         </color>
       </line_color>
       <points>
@@ -1353,16 +872,18 @@ System</text>
         </point>
       </points>
     </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Tank_2</name>
-      <pv_name>$(P)-$(S):LT03:sRdV</pv_name>
-      <x>75</x>
-      <y>140</y>
-      <width>40</width>
-      <height>50</height>
-      <scale_visible>false</scale_visible>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>80.0</maximum>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_20</name>
+      <x>215</x>
+      <y>225</y>
+      <width>1</width>
+      <height>45</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="75.0">
+        </point>
+      </points>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_18</name>
@@ -1370,7 +891,7 @@ System</text>
       <width>1</width>
       <height>140</height>
       <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
         </color>
       </line_color>
       <points>
@@ -1382,9 +903,9 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
-        <V>CV02</V>
+        <V>CV04</V>
       </macros>
       <x>215</x>
       <y>5</y>
@@ -1393,9 +914,9 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
-        <V>CV01</V>
+        <V>CV61</V>
       </macros>
       <x>285</x>
       <y>5</y>
@@ -1404,7 +925,7 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll_1</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
         <V>CV60</V>
       </macros>
@@ -1415,7 +936,7 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll_2</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
         <V>CV03</V>
       </macros>
@@ -1426,7 +947,7 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr_1</name>
-      <file>../../../../../bob/freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
         <V>CV02</V>
       </macros>
@@ -1435,13 +956,822 @@ System</text>
       <width>55</width>
       <height>50</height>
     </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>205</x>
+      <y>160</y>
+      <width>45</width>
+      <height>65</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle</name>
+        <width>45</width>
+        <height>65</height>
+        <line_color>
+          <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="BLACK-TEXT" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_6</name>
+        <y>11</y>
+        <width>45</width>
+        <height>52</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="35.0" y="0.0">
+          </point>
+          <point x="35.0" y="10.0">
+          </point>
+          <point x="10.0" y="10.0">
+          </point>
+          <point x="10.0" y="20.0">
+          </point>
+          <point x="35.0" y="20.0">
+          </point>
+          <point x="35.0" y="30.0">
+          </point>
+          <point x="10.0" y="30.0">
+          </point>
+          <point x="10.0" y="52.0">
+          </point>
+        </points>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>cm-valve-v-lr_2</name>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <macros>
+        <V>CV01</V>
+      </macros>
+      <x>199</x>
+      <y>255</y>
+      <width>55</width>
+      <height>50</height>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_19</name>
+      <x>105</x>
+      <y>156</y>
+      <width>103</width>
+      <height>13</height>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="100.0" y="15.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank_2</name>
+      <pv_name>$(P)-$(S):LT03:sRdV</pv_name>
+      <x>75</x>
+      <y>110</y>
+      <width>40</width>
+      <height>50</height>
+      <scale_visible>false</scale_visible>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>80.0</maximum>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_21</name>
+      <x>85</x>
+      <y>219</y>
+      <width>63</width>
+      <height>82</height>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="65.0" y="0.0">
+        </point>
+        <point x="65.0" y="80.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>cm-valve-v-lr_3</name>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <macros>
+        <V>CV07</V>
+      </macros>
+      <x>134</x>
+      <y>255</y>
+      <width>55</width>
+      <height>50</height>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse</name>
+      <x>81</x>
+      <y>63</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)-$(S):TT01:sRdV</pv_name>
+      <x>45</x>
+      <y>55</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_1</name>
+      <x>296</x>
+      <y>63</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO LN2 lines" red="255" green="153" blue="204">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)-$(S):TT77:sRdV</pv_name>
+      <x>305</x>
+      <y>55</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_2</name>
+      <x>246</x>
+      <y>150</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P)-$(S):TT94:sRdV</pv_name>
+      <x>255</x>
+      <y>145</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_3</name>
+      <x>246</x>
+      <y>223</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P)-$(S):TT93:sRdV</pv_name>
+      <x>255</x>
+      <y>220</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_4</name>
+      <x>211</x>
+      <y>233</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P)-$(S):TT92:sRdV</pv_name>
+      <x>175</x>
+      <y>225</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_5</name>
+      <x>189</x>
+      <y>167</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P)-$(S):TT91:sRdV</pv_name>
+      <x>175</x>
+      <y>140</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_6</name>
+      <x>101</x>
+      <y>164</y>
+      <width>8</width>
+      <height>8</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P)-$(S):TT95:sRdV</pv_name>
+      <x>90</x>
+      <y>175</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>VBox</text>
+      <x>125</x>
+      <y>19</y>
+      <width>40</width>
+      <height>24</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <D>PT01</D>
+      </macros>
+      <x>120</x>
+      <y>89</y>
+      <width>35</width>
+      <height>28</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_12</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <show_units>false</show_units>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_1</name>
+        <text>$(D)</text>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>cvalve-v-lr</name>
-    <file>../../../../../bob/freia-symbols/display-builder/CstatH-CtrlValve-v-lr.bob</file>
-    <x>70</x>
-    <y>450</y>
-    <width>60</width>
-    <height>50</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>740</x>
+    <y>778</y>
+    <width>112</width>
+    <height>135</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>RF2</name>
+      <macros>
+        <P>HPRF</P>
+      </macros>
+      <width>112</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>RF2</name>
+        <width>112</width>
+        <height>60</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+        <tooltip>DBE RF station</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_1</name>
+        <pv_name>$(P)-DBE:Ampl:VisuState</pv_name>
+        <x>9</x>
+        <y>4</y>
+        <width>95</width>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label>Mains OFF</label>
+            <color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label>Off</label>
+            <color>
+              <color name="STOP" red="222" green="33" blue="22">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label>Standby</label>
+            <color>
+              <color name="BLUE" red="79" green="228" blue="250">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label>On</label>
+            <color>
+              <color name="On" red="70" green="255" blue="70">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_1</name>
+        <pv_name>$(P)-DBE1:Ampl:sTotFwdPwr</pv_name>
+        <x>6</x>
+        <y>24</y>
+        <height>30</height>
+        <font>
+          <font family="Source Code Pro" style="BOLD" size="21.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <x>6</x>
+      <y>60</y>
+      <width>100</width>
+      <height>75</height>
+      <style>3</style>
+      <background_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </background_color>
+      <widget type="embedded" version="2.0.0">
+        <name>Display</name>
+        <file>../../freia-symbols/display-builder/rf-switch-v.bob</file>
+        <x>22</x>
+        <width>20</width>
+        <height>30</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_10</name>
+        <pv_name>LLRF-$(N)</pv_name>
+        <x>2</x>
+        <y>30</y>
+        <width>98</width>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Background" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 == 4">
+              <value>
+                <color name="ON" red="70" green="255" blue="70">
+                </color>
+              </value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_4</name>
+        <text>RF Switch</text>
+        <x>42</x>
+        <y>15</y>
+        <width>41</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_6</name>
+        <text>LLRF-$(N)</text>
+        <x>2</x>
+        <y>50</y>
+        <width>96</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>304</x>
+    <y>778</y>
+    <width>112</width>
+    <height>135</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>RF2_1</name>
+      <macros>
+        <P>HPRF</P>
+      </macros>
+      <width>112</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>RF2_2</name>
+        <width>112</width>
+        <height>60</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+        <tooltip>Electrosys RF Station</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_2</name>
+        <pv_name>$(P)-Esys:Ampl:VisuState</pv_name>
+        <x>9</x>
+        <y>4</y>
+        <width>95</width>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label>Mains OFF</label>
+            <color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label>Off</label>
+            <color>
+              <color name="STOP" red="222" green="33" blue="22">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label>Standby</label>
+            <color>
+              <color name="BLUE" red="79" green="228" blue="250">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label>On</label>
+            <color>
+              <color name="On" red="70" green="255" blue="70">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_2</name>
+        <pv_name>$(P)-Esys:Ampl:sFwdPwr</pv_name>
+        <x>6</x>
+        <y>24</y>
+        <height>30</height>
+        <font>
+          <font family="Source Code Pro" style="BOLD" size="21.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <x>6</x>
+      <y>60</y>
+      <width>100</width>
+      <height>75</height>
+      <style>3</style>
+      <background_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </background_color>
+      <widget type="embedded" version="2.0.0">
+        <name>Display_1</name>
+        <file>../../freia-symbols/display-builder/rf-switch-v.bob</file>
+        <x>22</x>
+        <width>20</width>
+        <height>30</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_11</name>
+        <pv_name>LLRF-$(N)</pv_name>
+        <x>2</x>
+        <y>30</y>
+        <width>98</width>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Background" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 == 4">
+              <value>
+                <color name="ON" red="70" green="255" blue="70">
+                </color>
+              </value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_7</name>
+        <text>RF Switch</text>
+        <x>42</x>
+        <y>15</y>
+        <width>41</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_10</name>
+        <text>LLRF-$(N)</text>
+        <x>2</x>
+        <y>50</y>
+        <width>96</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <D>PT02</D>
+      <S>CM</S>
+    </macros>
+    <x>810</x>
+    <y>410</y>
+    <width>35</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+      <y>13</y>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(D)</text>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <D>PT03</D>
+      <S>CM</S>
+    </macros>
+    <x>810</x>
+    <y>438</y>
+    <width>35</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+      <y>13</y>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>$(D)</text>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol</name>
+    <pv_name>CstatH-RHtr:FV562:VisuState</pv_name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_open_GREEN.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+    </symbols>
+    <x>957</x>
+    <y>16</y>
+    <width>20</width>
+    <height>15</height>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_1</name>
+    <pv_name>CstatH-RHtr:FV561:VisuState</pv_name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_open_GREEN.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+    </symbols>
+    <x>957</x>
+    <y>65</y>
+    <width>20</width>
+    <height>15</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>FV562</text>
+    <x>950</x>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>FV561</text>
+    <x>950</x>
+    <y>50</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>Reheater</text>
+    <x>850</x>
+    <y>10</y>
+    <width>71</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
   </widget>
 </display>

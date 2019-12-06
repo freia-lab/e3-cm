@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>operator</name>
-  <width>1490</width>
-  <height>940</height>
+  <width>1590</width>
+  <height>1092</height>
   <widget type="navtabs" version="2.0.0">
     <name>Navigation Tabs</name>
     <tabs>
@@ -21,8 +21,8 @@
         <group_name></group_name>
       </tab>
     </tabs>
-    <width>1490</width>
-    <height>940</height>
+    <width>1478</width>
+    <height>1080</height>
     <direction>0</direction>
   </widget>
 </display>

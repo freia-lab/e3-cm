@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Control valves</name>
-  <width>1480</width>
+  <width>1466</width>
+  <height>1068</height>
   <widget type="group" version="2.0.0">
     <name>Group</name>
     <macros>
@@ -1149,8 +1150,7 @@ CV550 is operated via MKS2 connected to HNOSS PLC.
   </widget>
   <widget type="group" version="2.0.0">
     <name> CV550 </name>
-    <x>740</x>
-    <y>210</y>
+    <y>510</y>
     <width>734</width>
     <height>376</height>
     <transparent>true</transparent>
@@ -1202,21 +1202,9 @@ directly from the CM PLC.</text>
       <height>211</height>
       <auto_size>true</auto_size>
     </widget>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_22</name>
-    <text>PID</text>
-    <x>645</x>
-    <y>20</y>
-    <width>40</width>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_24</name>
-    <text>Set up the MKS2:
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>Set up the MKS2:
 * manual control 
 * set "Analog SP off"
 
@@ -1229,10 +1217,22 @@ The valve can be controlled directly (MKS2 "Regulator
 off") or in the automatic mode by the MKS's 
 internal PID controller (MKS2 "Regulator on").
 </text>
-    <x>1070</x>
-    <y>291</y>
-    <width>382</width>
-    <height>274</height>
-    <auto_size>true</auto_size>
+      <x>309</x>
+      <y>50</y>
+      <width>382</width>
+      <height>274</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_22</name>
+    <text>PID</text>
+    <x>645</x>
+    <y>20</y>
+    <width>40</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
   </widget>
 </display>
