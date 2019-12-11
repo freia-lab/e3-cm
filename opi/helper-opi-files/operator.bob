@@ -20,9 +20,66 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>Purging</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>LN2 Cooling</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Cooling to 4K</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Cooling to 2K</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Warm Coupler Cond.</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Cold Coupler Cond.</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Cavity Conditioning</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Cavity Tests</name>
+        <file></file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <width>1478</width>
     <height>1080</height>
     <direction>0</direction>
+    <tab_width>130</tab_width>
   </widget>
 </display>
