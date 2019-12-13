@@ -557,5 +557,5 @@ record (mbbi, "CM-Ctrl:SX:sStep") {
   field(PINI, "YES")
   field(NOBT, "8")
   field (SHFT, "0")
-  field (ZRST, "Idle")
+  field (ZRST, " ")
 }

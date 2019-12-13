@@ -226,7 +226,7 @@
     <name>Digital Clock</name>
     <lcd_design>30</lcd_design>
     <lcd_font>4</lcd_font>
-    <x>1350</x>
+    <x>1470</x>
     <width>120</width>
     <height>60</height>
     <date_visible>true</date_visible>
@@ -382,5 +382,139 @@
       </state>
     </states>
     <fallback_label>Invalid</fallback_label>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>GrafcetState</name>
+    <x>1160</x>
+    <y>1</y>
+    <width>200</width>
+    <height>55</height>
+    <style>3</style>
+    <background_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>State
+Machine</text>
+      <x>10</x>
+      <y>5</y>
+      <width>57</width>
+      <height>50</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P)-Ctrl:SX:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>110</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="pv_name" out_exp="false">
+          <exp bool_exp="pv0=1">
+            <value>$(P)-Ctrl:S4:sStep</value>
+          </exp>
+          <exp bool_exp="pv1=1">
+            <value>$(P)-Ctrl:S5:sStep</value>
+          </exp>
+          <exp bool_exp="pv2=1">
+            <value>$(P)-Ctrl:S6:sStep</value>
+          </exp>
+          <exp bool_exp="pv3=1">
+            <value>$(P)-Ctrl:S7:sStep</value>
+          </exp>
+          <exp bool_exp="pv4=1">
+            <value>$(P)-Ctrl:S8:sStep</value>
+          </exp>
+          <exp bool_exp="pv5=1">
+            <value>$(P)-Ctrl:S10:sStep</value>
+          </exp>
+          <pv_name>$(P)-Ctrl:Grafcet:sState4</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState5</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState6</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState7</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState8</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState10</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text></text>
+      <x>80</x>
+      <y>5</y>
+      <width>110</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="Text" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0=1">
+            <value>Initial State</value>
+          </exp>
+          <exp bool_exp="pv1=1">
+            <value>Conditioning</value>
+          </exp>
+          <exp bool_exp="pv2=1">
+            <value>Pausing</value>
+          </exp>
+          <exp bool_exp="pv3=1">
+            <value>LN2 Cooling</value>
+          </exp>
+          <exp bool_exp="pv4=1">
+            <value>LHe Cooling</value>
+          </exp>
+          <exp bool_exp="pv5=1">
+            <value>4K Operation</value>
+          </exp>
+          <exp bool_exp="pv6=1">
+            <value>Stand-by</value>
+          </exp>
+          <exp bool_exp="pv7=1">
+            <value>2K Operation</value>
+          </exp>
+          <exp bool_exp="pv8=1">
+            <value>Warm-up</value>
+          </exp>
+          <pv_name>$(P)-Ctrl:Grafcet:sState1</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState2</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState3</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState4</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState5</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState6</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState7</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState8</pv_name>
+          <pv_name>$(P)-Ctrl:Grafcet:sState10</pv_name>
+        </rule>
+      </rules>
+    </widget>
   </widget>
 </display>

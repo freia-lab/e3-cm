@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -2451,7 +2451,7 @@ Storage</text>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>23</height>
+          <height>24</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -2473,6 +2473,8 @@ Storage</text>
             <color red="0" green="0" blue="0" alpha="0">
             </color>
           </background_color>
+          <actions>
+          </actions>
           <rules>
             <rule name="Border" prop_id="line_color" out_exp="false">
               <exp bool_exp="pv0==0">
@@ -2535,6 +2537,25 @@ Storage</text>
             </font>
           </font>
           <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>OpenEH550CmdPanel</name>
+          <actions>
+            <action type="open_display">
+              <file>../CmdPanels/CstatH-Heater2.bob</file>
+              <macros>
+                <Heater2>CstatH-RHtr:EH550</Heater2>
+              </macros>
+              <target>standalone</target>
+            </action>
+          </actions>
+          <text></text>
+          <x>25</x>
+          <y>30</y>
+          <width>60</width>
+          <height>60</height>
+          <transparent>true</transparent>
+          <tooltip>$(actions)</tooltip>
         </widget>
       </widget>
     </widget>
