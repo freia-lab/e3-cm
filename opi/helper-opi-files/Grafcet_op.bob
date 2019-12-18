@@ -587,6 +587,12 @@ with LN2</tooltip>
     </off_color>
     <on_label>Conditioning (S2)</on_label>
     <square>true</square>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/Gersemi/G7_SQ1.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
@@ -1939,5 +1945,85 @@ and return to the Initial State</tooltip>
       </color>
     </background_color>
     <transparent>false</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S5HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Cool-down.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>170</x>
+    <y>360</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S8HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/2K-operation.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>570</x>
+    <y>535</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S6HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/4K-operation.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>170</x>
+    <y>435</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S7HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Standby-operation.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>170</x>
+    <y>535</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S10HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Warm-up.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>400</x>
+    <y>535</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
   </widget>
 </display>
