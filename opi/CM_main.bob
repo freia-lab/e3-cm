@@ -421,11 +421,26 @@ Machine</text>
       </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update</name>
-      <pv_name>$(P)-Ctrl:SX:sStep</pv_name>
+      <name>Text Update_GrafcetState</name>
+      <pv_name>$(P)-Ctrl:Grafcet:sStateStr</pv_name>
+      <x>80</x>
+      <y>5</y>
+      <width>120</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S4</name>
+      <pv_name>$(P)-Ctrl:S4:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>110</width>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="12.0">
         </font>
@@ -436,82 +451,166 @@ Machine</text>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <rules>
-        <rule name="Show_State" prop_id="pv_name" out_exp="false">
-          <exp bool_exp="pv0=1">
-            <value>$(P)-Ctrl:S4:sStep</value>
-          </exp>
-          <exp bool_exp="pv1=1">
-            <value>$(P)-Ctrl:S5:sStep</value>
-          </exp>
-          <exp bool_exp="pv2=1">
-            <value>$(P)-Ctrl:S6:sStep</value>
-          </exp>
-          <exp bool_exp="pv3=1">
-            <value>$(P)-Ctrl:S7:sStep</value>
-          </exp>
-          <exp bool_exp="pv4=1">
-            <value>$(P)-Ctrl:S8:sStep</value>
-          </exp>
-          <exp bool_exp="pv5=1">
-            <value>$(P)-Ctrl:S10:sStep</value>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
           </exp>
           <pv_name>$(P)-Ctrl:Grafcet:sState4</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState5</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState6</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState7</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState8</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState10</pv_name>
         </rule>
       </rules>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_14</name>
-      <text></text>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S5</name>
+      <pv_name>$(P)-Ctrl:S5:sStep</pv_name>
       <x>80</x>
-      <y>5</y>
-      <width>110</width>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
         </font>
       </font>
+      <format>6</format>
+      <show_units>false</show_units>
       <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
       <rules>
-        <rule name="Text" prop_id="text" out_exp="false">
-          <exp bool_exp="pv0=1">
-            <value>Initial State</value>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
           </exp>
-          <exp bool_exp="pv1=1">
-            <value>Conditioning</value>
-          </exp>
-          <exp bool_exp="pv2=1">
-            <value>Pausing</value>
-          </exp>
-          <exp bool_exp="pv3=1">
-            <value>LN2 Cooling</value>
-          </exp>
-          <exp bool_exp="pv4=1">
-            <value>LHe Cooling</value>
-          </exp>
-          <exp bool_exp="pv5=1">
-            <value>4K Operation</value>
-          </exp>
-          <exp bool_exp="pv6=1">
-            <value>Stand-by</value>
-          </exp>
-          <exp bool_exp="pv7=1">
-            <value>2K Operation</value>
-          </exp>
-          <exp bool_exp="pv8=1">
-            <value>Warm-up</value>
-          </exp>
-          <pv_name>$(P)-Ctrl:Grafcet:sState1</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState2</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState3</pv_name>
-          <pv_name>$(P)-Ctrl:Grafcet:sState4</pv_name>
           <pv_name>$(P)-Ctrl:Grafcet:sState5</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S6</name>
+      <pv_name>$(P)-Ctrl:S6:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
+          </exp>
           <pv_name>$(P)-Ctrl:Grafcet:sState6</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S7</name>
+      <pv_name>$(P)-Ctrl:S7:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
+          </exp>
           <pv_name>$(P)-Ctrl:Grafcet:sState7</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S8</name>
+      <pv_name>$(P)-Ctrl:S8:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
+          </exp>
           <pv_name>$(P)-Ctrl:Grafcet:sState8</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S9</name>
+      <pv_name>$(P)-Ctrl:S9:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(P)-Ctrl:Grafcet:sState9</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_S10</name>
+      <pv_name>$(P)-Ctrl:S10:sStep</pv_name>
+      <x>80</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Show_State" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>true</value>
+          </exp>
           <pv_name>$(P)-Ctrl:Grafcet:sState10</pv_name>
         </rule>
       </rules>

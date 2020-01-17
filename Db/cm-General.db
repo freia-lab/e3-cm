@@ -560,6 +560,48 @@ record (mbbi, "CM-Ctrl:SX:sStep") {
   field (ZRST, " ")
 }
 
+record (calc, "CM-Ctrl:Grafcet:sStateNum") {
+  field (SCAN, "1 second")
+  field (INPA, "CM-Ctrl:Grafcet:sState1.VAL")
+  field (INPB, "CM-Ctrl:Grafcet:sState2.VAL")
+  field (INPC, "CM-Ctrl:Grafcet:sState3.VAL")
+  field (INPD, "CM-Ctrl:Grafcet:sState4.VAL")
+  field (INPE, "CM-Ctrl:Grafcet:sState5.VAL")
+  field (INPF, "CM-Ctrl:Grafcet:sState6.VAL")
+  field (INPG, "CM-Ctrl:Grafcet:sState7.VAL")
+  field (INPH, "CM-Ctrl:Grafcet:sState8.VAL")
+  field (INPJ, "CM-Ctrl:Grafcet:sState10.VAL")
+  field (CALC, "A+B*2+C*3+D*4+E*5+F*6+G*7+H*8+J*10")
+  field (FLNK, "CM-Ctrl:Grafcet:sStateStr")
+}
+
+record (mbbi, "CM-Ctrl:Grafcet:sStateStr") {
+  field (DTYP, "Raw Soft Channel")
+  field (INP, "CM-Ctrl:Grafcet:sStateNum")
+  field (NOBT, "8")
+  field (SHFT, "0")
+  field (ZRST, "INVALID")
+  field (ZRSV, "INVALID")
+  field (ONVL, "1")
+  field (ONST, "Initial State")
+  field (TWVL, "2")
+  field (TWST, "Conditioning")
+  field (THVL, "3")
+  field (THST, "Pausing")
+  field (FRVL, "4")
+  field (FRST, "LN2 Cooling")
+  field (FVVL, "5")
+  field (FVST, "LHe Cooling")
+  field (SXVL, "6")
+  field (SXST, "4K Operation")
+  field (SVVL, "7")
+  field (SVST, "Stand-by")
+  field (EIVL, "8")
+  field (EIST, "2K Operation")
+  field (NIVL, "10")
+  field (NIST, "Warm-up")
+}
+
 # Records for the alarm manager
 
 record(calcout, "CM-CM:LT01:cLLSV") {
