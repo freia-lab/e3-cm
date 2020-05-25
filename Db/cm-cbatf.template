@@ -1,0 +1,707 @@
+record(ai, "CM-$(SUBS1):$(DEV1)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS1):$(DEV1)-R:sTmp")
+  field(SDIS, "CM-$(SUBS1):$(DEV1):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS1):$(DEV1)-R:sTmp") {
+  field (DESC,"$(STYP1) $(ID1) R[mΩ]")
+  field (INPA, "CM-$(SUBS1):$(DEV1)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS1):$(DEV1):sRdV")
+}
+record(ai, "CM-$(SUBS1):$(DEV1):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP1) sensor $(ID1)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR1)")
+   field (HOPR, "$(HOPR1)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS1):$(DEV1)-R:sTmp MS")
+   field (LINR, "$(ID1)")
+}
+
+record(ai, "CM-$(SUBS2):$(DEV2)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+4 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS2):$(DEV2)-R:sTmp")
+  field(SDIS, "CM-$(SUBS2):$(DEV2):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS2):$(DEV2)-R:sTmp") {
+  field (DESC,"$(STYP2) $(ID2) R[mΩ]")
+  field (INPA, "CM-$(SUBS2):$(DEV2)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS2):$(DEV2):sRdV")
+}
+record(ai, "CM-$(SUBS2):$(DEV2):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP2) sensor $(ID2)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR2)")
+   field (HOPR, "$(HOPR2)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS2):$(DEV2)-R:sTmp MS")
+   field (LINR, "$(ID2)")
+}
+
+record(ai, "CM-$(SUBS3):$(DEV3)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+8 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS3):$(DEV3)-R:sTmp")
+  field(SDIS, "CM-$(SUBS3):$(DEV3):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS3):$(DEV3)-R:sTmp") {
+  field (DESC,"$(STYP3) $(ID3) R[mΩ]")
+  field (INPA, "CM-$(SUBS3):$(DEV3)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS3):$(DEV3):sRdV")
+}
+record(ai, "CM-$(SUBS3):$(DEV3):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP3) sensor $(ID3)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR3)")
+   field (HOPR, "$(HOPR3)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS3):$(DEV3)-R:sTmp MS")
+   field (LINR, "$(ID3)")
+}
+
+record(ai, "CM-$(SUBS4):$(DEV4)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+12 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS4):$(DEV4)-R:sTmp")
+  field(SDIS, "CM-$(SUBS4):$(DEV4):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS4):$(DEV4)-R:sTmp") {
+  field (DESC,"$(STYP4) $(ID4) R[mΩ]")
+  field (INPA, "CM-$(SUBS4):$(DEV4)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS4):$(DEV4):sRdV")
+}
+record(ai, "CM-$(SUBS4):$(DEV4):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP4) sensor $(ID4)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR4)")
+   field (HOPR, "$(HOPR4)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS4):$(DEV4)-R:sTmp MS")
+   field (LINR, "$(ID4)")
+}
+
+record(ai, "CM-$(SUBS5):$(DEV5)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+16 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS5):$(DEV5)-R:sTmp")
+  field(SDIS, "CM-$(SUBS5):$(DEV5):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS5):$(DEV5)-R:sTmp") {
+  field (DESC,"$(STYP5) $(ID5) R[mΩ]")
+  field (INPA, "CM-$(SUBS5):$(DEV5)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS5):$(DEV5):sRdV")
+}
+record(ai, "CM-$(SUBS5):$(DEV5):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP5) sensor $(ID5)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR5)")
+   field (HOPR, "$(HOPR5)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS5):$(DEV5)-R:sTmp MS")
+   field (LINR, "$(ID5)")
+}
+
+record(ai, "CM-$(SUBS6):$(DEV6)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+20 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS6):$(DEV6)-R:sTmp")
+  field(SDIS, "CM-$(SUBS6):$(DEV6):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS6):$(DEV6)-R:sTmp") {
+  field (DESC,"$(STYP6) $(ID6) R[mΩ]")
+  field (INPA, "CM-$(SUBS6):$(DEV6)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS6):$(DEV6):sRdV")
+}
+record(ai, "CM-$(SUBS6):$(DEV6):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP6) sensor $(ID6)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR6)")
+   field (HOPR, "$(HOPR6)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS6):$(DEV6)-R:sTmp MS")
+   field (LINR, "$(ID6)")
+}
+
+record(ai, "CM-$(SUBS7):$(DEV7)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+24 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS7):$(DEV7)-R:sTmp")
+  field(SDIS, "CM-$(SUBS7):$(DEV7):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS7):$(DEV7)-R:sTmp") {
+  field (DESC,"$(STYP7) $(ID7) R[mΩ]")
+  field (INPA, "CM-$(SUBS7):$(DEV7)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS7):$(DEV7):sRdV")
+}
+record(ai, "CM-$(SUBS7):$(DEV7):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP7) sensor $(ID7)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR7)")
+   field (HOPR, "$(HOPR7)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS7):$(DEV7)-R:sTmp MS")
+   field (LINR, "$(ID7)")
+}
+
+record(ai, "CM-$(SUBS8):$(DEV8)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+28 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS8):$(DEV8)-R:sTmp")
+  field(SDIS, "CM-$(SUBS8):$(DEV8):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS8):$(DEV8)-R:sTmp") {
+  field (DESC,"$(STYP8) $(ID8) R[mΩ]")
+  field (INPA, "CM-$(SUBS8):$(DEV8)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS8):$(DEV8):sRdV")
+}
+record(ai, "CM-$(SUBS8):$(DEV8):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP8) sensor $(ID8)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR8)")
+   field (HOPR, "$(HOPR8)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS8):$(DEV8)-R:sTmp MS")
+   field (LINR, "$(ID8)")
+}
+
+record(ai, "CM-$(SUBS9):$(DEV9)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+32 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS9):$(DEV9)-R:sTmp")
+  field(SDIS, "CM-$(SUBS9):$(DEV9):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS9):$(DEV9)-R:sTmp") {
+  field (DESC,"$(STYP9) $(ID9) R[mΩ]")
+  field (INPA, "CM-$(SUBS9):$(DEV9)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS9):$(DEV9):sRdV")
+}
+record(ai, "CM-$(SUBS9):$(DEV9):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP9) sensor $(ID9)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR9)")
+   field (HOPR, "$(HOPR9)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS9):$(DEV9)-R:sTmp MS")
+   field (LINR, "$(ID9)")
+}
+
+record(ai, "CM-$(SUBS10):$(DEV10)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+36 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS10):$(DEV10)-R:sTmp")
+  field(SDIS, "CM-$(SUBS10):$(DEV10):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS10):$(DEV10)-R:sTmp") {
+  field (DESC,"$(STYP10) $(ID10) R[mΩ]")
+  field (INPA, "CM-$(SUBS10):$(DEV10)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS10):$(DEV10):sRdV")
+}
+record(ai, "CM-$(SUBS10):$(DEV10):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP10) sensor $(ID10)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR10)")
+   field (HOPR, "$(HOPR10)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS10):$(DEV10)-R:sTmp MS")
+   field (LINR, "$(ID10)")
+}
+
+record(ai, "CM-$(SUBS11):$(DEV11)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+40 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS11):$(DEV11)-R:sTmp")
+  field(SDIS, "CM-$(SUBS11):$(DEV11):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS11):$(DEV11)-R:sTmp") {
+  field (DESC,"$(STYP11) $(ID11) R[mΩ]")
+  field (INPA, "CM-$(SUBS11):$(DEV11)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS11):$(DEV11):sRdV")
+}
+record(ai, "CM-$(SUBS11):$(DEV11):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP11) sensor $(ID11)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR11)")
+   field (HOPR, "$(HOPR11)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS11):$(DEV11)-R:sTmp MS")
+   field (LINR, "$(ID11)")
+}
+
+record(ai, "CM-$(SUBS12):$(DEV12)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+44 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS12):$(DEV12)-R:sTmp")
+  field(SDIS, "CM-$(SUBS12):$(DEV12):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS12):$(DEV12)-R:sTmp") {
+  field (DESC,"$(STYP12) $(ID12) R[mΩ]")
+  field (INPA, "CM-$(SUBS12):$(DEV12)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS12):$(DEV12):sRdV")
+}
+record(ai, "CM-$(SUBS12):$(DEV12):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP12) sensor $(ID12)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR12)")
+   field (HOPR, "$(HOPR12)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS12):$(DEV12)-R:sTmp MS")
+   field (LINR, "$(ID12)")
+}
+
+record(ai, "CM-$(SUBS13):$(DEV13)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+48 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS13):$(DEV13)-R:sTmp")
+  field(SDIS, "CM-$(SUBS13):$(DEV13):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS13):$(DEV13)-R:sTmp") {
+  field (DESC,"$(STYP13) $(ID13) R[mΩ]")
+  field (INPA, "CM-$(SUBS13):$(DEV13)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS13):$(DEV13):sRdV")
+}
+record(ai, "CM-$(SUBS13):$(DEV13):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP13) sensor $(ID13)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR13)")
+   field (HOPR, "$(HOPR13)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS13):$(DEV13)-R:sTmp MS")
+   field (LINR, "$(ID13)")
+}
+
+record(ai, "CM-$(SUBS14):$(DEV14)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+52 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS14):$(DEV14)-R:sTmp")
+  field(SDIS, "CM-$(SUBS14):$(DEV14):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS14):$(DEV14)-R:sTmp") {
+  field (DESC,"$(STYP14) $(ID14) R[mΩ]")
+  field (INPA, "CM-$(SUBS14):$(DEV14)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS14):$(DEV14):sRdV")
+}
+record(ai, "CM-$(SUBS14):$(DEV14):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP14) sensor $(ID14)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR14)")
+   field (HOPR, "$(HOPR14)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS14):$(DEV14)-R:sTmp MS")
+   field (LINR, "$(ID14)")
+}
+
+record(ai, "CM-$(SUBS15):$(DEV15)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+56 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS15):$(DEV15)-R:sTmp")
+  field(SDIS, "CM-$(SUBS15):$(DEV15):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS15):$(DEV15)-R:sTmp") {
+  field (DESC,"$(STYP15) $(ID15) R[mΩ]")
+  field (INPA, "CM-$(SUBS15):$(DEV15)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS15):$(DEV15):sRdV")
+}
+record(ai, "CM-$(SUBS15):$(DEV15):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP15) sensor $(ID15)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR15)")
+   field (HOPR, "$(HOPR15)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS15):$(DEV15)-R:sTmp MS")
+   field (LINR, "$(ID15)")
+}
+
+record(ai, "CM-$(SUBS16):$(DEV16)-R:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+60 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(EGU, "Ω")
+  field (FLNK, "CM-$(SUBS16):$(DEV16)-R:sTmp")
+  field(SDIS, "CM-$(SUBS16):$(DEV16):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+record(calc,"CM-$(SUBS16):$(DEV16)-R:sTmp") {
+  field (DESC,"$(STYP16) $(ID16) R[mΩ]")
+  field (INPA, "CM-$(SUBS16):$(DEV16)-R:sRdV MS")
+  field (CALC, "1000.0*A")
+  field (EGU, "mΩ")
+  field (FLNK, "CM-$(SUBS16):$(DEV16):sRdV")
+}
+record(ai, "CM-$(SUBS16):$(DEV16):sRdV") {
+   field (DTYP,"Raw Soft Channel")
+   field (DESC,"$(STYP16) sensor $(ID16)")
+   field (EGU, "K")
+   field(PREC, "$(PREC)")
+   field (LOPR, "$(LOPR16)")
+   field (HOPR, "$(HOPR16)")
+   field (SCAN, "Passive")
+   field (INP,"CM-$(SUBS16):$(DEV16)-R:sTmp MS")
+   field (LINR, "$(ID16)")
+}
+
+# Fault bits (for GUI and for status propagation)
+#
+record(bi, "CM-$(SUBS1):$(DEV1):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS2):$(DEV2):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS3):$(DEV3):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS4):$(DEV4):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS5):$(DEV5):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS6):$(DEV6):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS7):$(DEV7):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS8):$(DEV8):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS9):$(DEV9):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS10):$(DEV10):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS11):$(DEV11):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS12):$(DEV12):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS13):$(DEV13):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS14):$(DEV14):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS15):$(DEV15):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+record(bi, "CM-$(SUBS16):$(DEV16):sFlt") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "OK")
+   field(ONAM, "Err")
+   field(OSV, "MAJOR")
+}
+
+record(bi, "CM-$(SUBS1):$(DEV1):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+  field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS2):$(DEV2):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS3):$(DEV3):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS4):$(DEV4):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS5):$(DEV5):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS6):$(DEV6):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS7):$(DEV7):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS8):$(DEV8):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+66 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS9):$(DEV9):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=0")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS10):$(DEV10):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=1")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS11):$(DEV11):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=2")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS12):$(DEV12):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=3")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS13):$(DEV13):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=4")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS14):$(DEV14):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=5")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS15):$(DEV15):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=6")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
+record(bi, "CM-$(SUBS16):$(DEV16):sRdV-stat") {
+   field(DTYP, "S7plc")
+   field(INP, "@PLC:CM/$(OFFS)+68 T=BYTE B=7")
+   field(SCAN, "I/O Intr")
+   field(OSV, "INVALID")
+}
