@@ -1085,10 +1085,29 @@ System</text>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
     </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_41</name>
+      <x>60</x>
+      <y>100</y>
+      <width>25</width>
+      <height>200</height>
+      <line_color>
+        <color red="153" green="102" blue="153">
+        </color>
+      </line_color>
+      <points>
+        <point x="25.000004768371582" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="200.0">
+        </point>
+      </points>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>610</x>
+    <name>Group-LLRF-1</name>
+    <x>625</x>
     <y>900</y>
     <width>112</width>
     <height>135</height>
@@ -1248,8 +1267,8 @@ System</text>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>380</x>
+    <name>Group-LLRF-2</name>
+    <x>370</x>
     <y>900</y>
     <width>112</width>
     <height>135</height>
@@ -3140,20 +3159,6 @@ Storage</text>
       <wrap_words>false</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_32</name>
-      <pv_name>$(P)-$(S):TT21:sRdV</pv_name>
-      <x>83</x>
-      <y>3</y>
-      <width>35</width>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <precision>1</precision>
-      <show_units>false</show_units>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
       <name>Text Update_33</name>
       <pv_name>$(P)-$(S):TT10:sRdV</pv_name>
       <x>75</x>
@@ -3267,7 +3272,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_42</name>
-      <pv_name>$(P)-$(S):TT220:sRdV</pv_name>
+      <pv_name>$(P)-$(S):TT120:sRdV</pv_name>
       <x>570</x>
       <y>375</y>
       <width>35</width>
@@ -3352,6 +3357,918 @@ Storage</text>
         </font>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_32</name>
+      <pv_name>$(P)-$(S):TT21:sRdV</pv_name>
+      <x>50</x>
+      <y>28</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_44</name>
+      <x>370</x>
+      <y>245</y>
+      <width>235</width>
+      <height>14</height>
+      <line_color>
+        <color red="153" green="102" blue="153">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="235.00000000000006" y="0.0">
+        </point>
+        <point x="235.00000000000006" y="14.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_55</name>
+      <x>337</x>
+      <y>205</y>
+      <width>166</width>
+      <height>30</height>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+        <point x="166.0" y="30.0">
+        </point>
+        <point x="166.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>$(P)-PwrCpl:EH12:sCmd</pv_name>
+      <x>560</x>
+      <y>325</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>$(P)-PwrCpl:EH22:sCmd</pv_name>
+      <x>325</x>
+      <y>325</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_43</name>
+    <x>158</x>
+    <y>375</y>
+    <width>347</width>
+    <height>361</height>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <points>
+      <point x="252.0000114440918" y="0.0">
+      </point>
+      <point x="252.0000114440918" y="120.0">
+      </point>
+      <point x="0.0" y="120.0">
+      </point>
+      <point x="0.0" y="351.0">
+      </point>
+      <point x="347.0000114440918" y="350.0">
+      </point>
+      <point x="347.0000114440918" y="361.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_45</name>
+    <x>504</x>
+    <y>860</y>
+    <width>500</width>
+    <height>30</height>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>10</arrow_length>
+    <points>
+      <point x="500.0" y="30.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_46</name>
+    <x>738</x>
+    <y>860</y>
+    <width>1</width>
+    <height>30</height>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_45</name>
+    <pv_name>$(P)-PwrCpl:FT21:sRdV</pv_name>
+    <x>510</x>
+    <y>868</y>
+    <width>64</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_46</name>
+    <pv_name>$(P)-PwrCpl:FT11:sRdV</pv_name>
+    <x>741</x>
+    <y>868</y>
+    <width>64</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_47</name>
+    <x>389</x>
+    <y>373</y>
+    <width>1</width>
+    <height>105</height>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="106.02939605712889">
+      </point>
+      <point x="1.33331298828125" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_48</name>
+    <x>649</x>
+    <y>375</y>
+    <width>1</width>
+    <height>105</height>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="106.02939605712889">
+      </point>
+      <point x="1.33331298828125" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>492</x>
+    <y>375</y>
+    <width>15</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_51</name>
+      <y>37</y>
+      <width>15</width>
+      <height>7</height>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="7.0">
+        </point>
+        <point x="15.0" y="7.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_49</name>
+      <x>8</x>
+      <width>1</width>
+      <height>45</height>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="45.0">
+        </point>
+      </points>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_47</name>
+    <pv_name>$(P)-VBox:TT61:sRdV</pv_name>
+    <x>620</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_48</name>
+    <pv_name>$(P)-VBox:TT60:sRdV</pv_name>
+    <x>350</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_52</name>
+    <x>600</x>
+    <y>375</y>
+    <width>8</width>
+    <height>115</height>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="99.31818181818181">
+      </point>
+      <point x="8.0" y="99.31818181818181">
+      </point>
+      <point x="8.0" y="114.99999999999999">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_53</name>
+    <x>565</x>
+    <y>374</y>
+    <width>1</width>
+    <height>132</height>
+    <points>
+      <point x="0.5" y="0.0">
+      </point>
+      <point x="0.0" y="132.5">
+      </point>
+    </points>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_49</name>
+    <pv_name>$(P)-VBox:TT01:sRdV</pv_name>
+    <x>525</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_50</name>
+    <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+    <x>395</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_51</name>
+    <pv_name>$(P)-VBox:TT02:sRdV</pv_name>
+    <x>440</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_54</name>
+    <x>170</x>
+    <y>374</y>
+    <width>382</width>
+    <height>341</height>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+    <points>
+      <point x="265.0" y="0.0">
+      </point>
+      <point x="265.0" y="130.0">
+      </point>
+      <point x="0.0" y="130.0">
+      </point>
+      <point x="0.0" y="341.0">
+      </point>
+      <point x="382.0" y="341.0">
+      </point>
+      <point x="382.0" y="320.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_57</name>
+    <x>649</x>
+    <y>460</y>
+    <width>1</width>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_8</name>
+    <x>561</x>
+    <y>420</y>
+    <width>8</width>
+    <height>8</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>HPRF-PwrCpl:WtrCIntlk:sOutput</pv_name>
+    <x>495</x>
+    <y>954</y>
+    <width>120</width>
+    <height>30</height>
+    <off_label>Fault</off_label>
+    <off_color>
+      <color name="LED-RED-ON" red="255" green="60" blue="46">
+      </color>
+    </off_color>
+    <on_label>OK</on_label>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <tooltip>Interlock signal from power coupler's 
+water cooling system
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_39</name>
+    <text>Power Coupler's
+Water Cooling</text>
+    <x>500</x>
+    <y>904</y>
+    <width>110</width>
+    <height>42</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <xa>01</xa>
+      <xc>03</xc>
+      <ya>13</ya>
+      <yc>14</yc>
+    </macros>
+    <x>755</x>
+    <y>895</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>91</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_40</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_59</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_41</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_60</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_12</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>22</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_42</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_61</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_43</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_62</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_44</name>
+      <text>Antenna</text>
+      <y>70</y>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_45</name>
+      <text>Power Coupler</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1_1</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <xa>02</xa>
+      <xc>04</xc>
+      <ya>23</ya>
+      <yc>24</yc>
+    </macros>
+    <x>160</x>
+    <y>895</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_13</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>91</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_46</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_63</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_47</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_64</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_14</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>22</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_48</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_65</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_49</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_66</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <text>Antenna</text>
+      <y>70</y>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <text>Power Coupler</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
 </display>
