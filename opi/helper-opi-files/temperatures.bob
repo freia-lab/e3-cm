@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Temperatures</name>
+  <width>1500</width>
+  <height>750</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>cernox.bob</file>
+    <width>1090</width>
+    <height>665</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>keithley.bob</file>
+    <x>1100</x>
+    <width>390</width>
+    <height>740</height>
+  </widget>
+</display>

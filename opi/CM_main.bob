@@ -4,7 +4,7 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1600</width>
+  <width>1700</width>
   <height>1150</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -42,7 +42,7 @@
       </tab>
     </tabs>
     <y>58</y>
-    <width>1590</width>
+    <width>1690</width>
     <height>1092</height>
   </widget>
   <widget type="label" version="2.0.0">
@@ -51,7 +51,7 @@
     <x>340</x>
     <y>10</y>
     <width>153</width>
-    <height>21</height>
+    <height>23</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -102,7 +102,7 @@
     <x>340</x>
     <y>37</y>
     <width>163</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -176,7 +176,7 @@
     <x>610</x>
     <y>35</y>
     <width>139</width>
-    <height>21</height>
+    <height>23</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -202,7 +202,7 @@
     <x>610</x>
     <y>10</y>
     <width>138</width>
-    <height>21</height>
+    <height>23</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -244,7 +244,7 @@
     <x>920</x>
     <y>10</y>
     <width>99</width>
-    <height>21</height>
+    <height>23</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -327,7 +327,7 @@
     <x>910</x>
     <y>35</y>
     <width>108</width>
-    <height>21</height>
+    <height>23</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>

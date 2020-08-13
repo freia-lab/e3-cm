@@ -4,7 +4,7 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1478</width>
+  <width>1578</width>
   <height>1080</height>
   <background_color>
     <color red="240" green="240" blue="240">
@@ -18,7 +18,7 @@
     <x>90</x>
     <y>32</y>
     <width>103</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -44,7 +44,7 @@
     <x>90</x>
     <y>60</y>
     <width>135</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -166,8 +166,8 @@
     <name>Navigation Tabs</name>
     <tabs>
       <tab>
-        <name>Cernox</name>
-        <file>../helper-opi-files/cernox.bob</file>
+        <name>Temperatures</name>
+        <file>../helper-opi-files/temperatures.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
@@ -201,13 +201,6 @@
         <group_name></group_name>
       </tab>
       <tab>
-        <name>Keithley</name>
-        <file>../helper-opi-files/keithley.bob</file>
-        <macros>
-        </macros>
-        <group_name></group_name>
-      </tab>
-      <tab>
         <name>2K Operation</name>
         <file>../helper-opi-files/2K_operation.bob</file>
         <macros>
@@ -216,7 +209,7 @@
       </tab>
     </tabs>
     <y>90</y>
-    <width>1478</width>
+    <width>1578</width>
     <height>980</height>
     <direction>0</direction>
     <active_tab>3</active_tab>
@@ -227,7 +220,7 @@
     <x>792</x>
     <y>6</y>
     <width>55</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -311,7 +304,7 @@
     <x>1042</x>
     <y>6</y>
     <width>114</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>

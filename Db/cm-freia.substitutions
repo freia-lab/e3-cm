@@ -76,6 +76,13 @@ file cm-real-param.template { pattern
 
 file cm-temp2plc-freia.template { pattern
 {PREFIX, SUBS, DEV,  OFFS, OFFS1, BIT}
+{CM	 VBox  TT650 34    131    0}
+{CM	 VBox  TT660 38    131    1}
+{CM	 VBox  TT990 82    132    4}
+}
+
+file cm-cernox2plc-freia.template { pattern
+{PREFIX, SUBS, DEV,  OFFS, OFFS1, BIT}
 {CM	 VBox  TT900 2	   130    0}	
 {CM	 VBox  TT930 6     130    1}
 {CM	 VBox  TT940 10    130    2}
@@ -84,8 +91,6 @@ file cm-temp2plc-freia.template { pattern
 {CM	 VBox  TT630 22    130    5}
 {CM	 VBox  TT640 26    130    6}
 {CM	 VBox  TT700 30    130    7}
-{CM	 VBox  TT650 34    131    0}
-{CM	 VBox  TT660 38    131    1}
 {CM	 VBox  TT610 42    131    2}
 {CM	 VBox  TT620 46    131    3}
 {CM	 VBox  TT600 50    131    4}
@@ -94,20 +99,10 @@ file cm-temp2plc-freia.template { pattern
 {CM	 VBox  TT690 62    131    7}
 {CM	 VBox  TT970 66    132    0}
 {CM	 VBox  TT980 70    132    1}
-{CM	 VBox  TTpt16 74    132    2}
+{CM	 VBox  TT16  74    132    2}
 {CM	 VBox  TT60  78    132    3}
-{CM	 VBox  TT990 82    132    4}
-{CM	 CM    TT903 86    132    5}
-{CM	 CM    TT920 90    132    6}
-{CM	 CM    TT918 94    132    7}
-{CM	 CM    TT904 98    133    0}
-{CM	 CM    TT609 118   133    5}
-}
-
-file cm-cernox2plc-freia.template { pattern
-{PREFIX, SUBS, DEV,  OFFS, OFFS1, BIT}
-{CM	 CM    TT118 102   133    1}
-{CM	 CM    TT218 106   133    2}
+{CM	 CM    TT06  102   133    1}
+{CM	 CM    TT07  106   133    2}
 {CM	 VBox  TT03  110   133    3}
-{CM	 CM    TT02  114   133    4}
+{CM	 CM    TT08  114   133    4}
 }

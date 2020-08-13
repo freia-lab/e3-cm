@@ -31,61 +31,64 @@ VBox,	TT97, 	  CX_LS_X106595, Cernox, 1.5,  310
 VBox,	TT98, 	  CX_LS_X106793, Cernox, 1.5,  310
 VBox,	TT09,     CX_LS_X106956, Cernox, 1.5,  310
 VBox,	TT03,     CX_LS_X107493, Cernox, 1.5,  310
-VBox,	TT10,     CX_LS_X105035, Cernox, 1.5,  310
-VBox,	TTx113,   CX_LS_X107475, Cernox, 1.5,  310
+VBox,	TTx112,   "NO CONVERSION", Unknown, 1.5,  310
+VBox,	TT10,     CX_LS_X107475, Cernox, 1.5,  310
 VBox,	TTx114,   "NO CONVERSION", Unknown, 1.5,  310
-VBox,	TTx115,   "NO CONVERSION", Unknown, 1.5,  310
+VBox,	TT02,     CX_LS_X106644, Cernox, 1.5,  310
 VBox,	TTx116,   "NO CONVERSION", Unknown, 1.5,  310}
 {140,   3,    
-CM      TT115,    "CX_LS_X107473", Cernox, 1.5,  310	
-CM	TT118,	  "CX_LS_X107478", Cernox, 1.5,  310
-CM	TT215,    "CX_LS_X106589", Cernox, 1.5,  310
-CM	TT218,    "CX_LS_X104944", Cernox, 1.5,  310	  
-CM	TT114,    "CX_LS_X106787", Cernox, 1.5,  310	  
-CM	TT113,    "CX_LS_X106795", Cernox, 1.5,  310	  
-CM	TT214,    "CX_LS_X105016", Cernox, 1.5,  310
-CM	TT213,    "CX_LS_X106575", Cernox, 1.5,  310
-CM	TT205,    "CX_LS_X106588", Cernox, 1.5,  310
-CM	TT204,    "CX_LS_X106952", Cernox, 1.5,  310
-CM	TT203,    "CX_LS_X106587", Cernox, 1.5,  310
-CM	TT202,    "CX_LS_X106582", Cernox, 1.5,  310
-CM	TT101,    "CX_LS_X106796", Cernox, 1.5,  310
-CM	TT201,    "CX_LS_X107474", Cernox, 1.5,  310
-CM	TT04,     "CX_LS_X106537", Cernox, 1.5,  310
-VBox	TTx216,   "pt100", "", 70,  400}
-{212,   3,    
-CM      TT02,	  "CX_LS_X107491", Cernox, 1.5,  310	
-CM  	TT03,	  "CX_LS_X107489", Cernox, 1.5,  310
-CM  	TT01,     "CX_LS_X106501", Cernox, 1.5,  310
-CM  	TT05,     "CX_LS_X106590", Cernox, 1.5,  310	  
-CM  	TT06,     "CX_LS_X106576", Cernox, 1.5,  310	  
-CM  	TT105,    "CX_LS_X106581", Cernox, 1.5,  310	  
-CM  	TT104,    "CX_LS_X107121", Cernox, 1.5,  310 
-CM  	TT103,    "CX_LS_X106580", Cernox, 1.5,  310
-CM  	TT102,    "CX_LS_X106574", Cernox, 1.5,  310
-VBox  	TTx310,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx311,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx312,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx313,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx314,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx315,   "NO CONVERSION", Unknown, 1.5,  310
-VBox  	TTx316,   "NO CONVERSION", Unknown, 1.5,  310}
-{284,   3,    
-VBox    TT04,     "CX_LS_X104943", Cernox, 1.5,  310	
-VBox	TT02,	  "CX_LS_X106644", Cernox, 1.5,  310
-CM	TTx403,   "CX_LS_X106792", Cernox, 1.5,  310
-VBox	TTx404,   "NO CONVERSION", Unknown, 1.5,  310	  
-CM	TT210,    "CX_LS_X106794", Cernox, 1.5,  310	  
-CM	TT110,    "CX_LS_X106789", Cernox, 1.5,  310	  
-VBox	TTx407,   "NO CONVERSION", Unknown, 1.5,  310  
-VBox	TTx408,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx409,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx410,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx411,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx412,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx413,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx414,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx415,   "NO CONVERSION", Unknown, 1.5,  310
-VBox	TTx416,   "NO CONVERSION", Unknown, 1.5,  310}
+VBox    TT900,    "pt100", "", 70  400	
+VBox	TT930,	  "pt100", "", 70  400
+VBox	TT940,    "pt100", "", 70  400
+VBox	TT950,    "pt100", "", 70  400
+VBox	TT960,    "pt100", "", 70  400	  
+VBox	TT630,    "pt100", "", 70  400
+VBox	TT640,    "pt100", "", 70  400
+VBox	TT700,    "pt100", "", 70  400
+CM	TT04,     "NO CONVERSION", Cernox, 1.5,  310
+CM	TT05,     "NO CONVERSION", Cernox, 1.5,  310
+CM	TT06,     "NO CONVERSION", Cernox, 1.5,  310
+CM	TT07,     "NO CONVERSION", Cernox, 1.5,  310
+CM	TT08,     "NO CONVERSION", Cernox, 1.5,  310
+CM	TT09,     "NO CONVERSION", Cernox, 1.5,  310
+PwrCpl	TT12,     "NO CONVERSION", Cernox, 1.5,  310
+PwrCpl	TT22,     "NO CONVERSION", Cernox, 1.5,  310}
 }
 
+file "cm-cbatf-pt100.template" { pattern
+{OFFS, PREC, 
+SUBS1,  DEV1,     ID1
+SUBS2,	DEV2, 	  ID2
+SUBS3,	DEV3, 	  ID3
+SUBS4,	DEV4, 	  ID4
+SUBS5,	DEV5, 	  ID5	
+SUBS6,	DEV6, 	  ID6
+SUBS7,	DEV7, 	  ID7
+SUBS8,	DEV8, 	  ID8
+SUBS9,	DEV9, 	  ID9
+SUBS10,	DEV10, 	  ID10
+SUBS11,	DEV11, 	  ID11
+SUBS12,	DEV12, 	  ID12	
+SUBS13,	DEV13, 	  ID13
+SUBS14,	DEV14, 	  ID14
+SUBS15,	DEV15, 	  ID15
+SUBS16,	DEV16, 	  ID16
+}
+{212,   3,    
+CTS     TT10,	  TT10
+CTS     TT11,	  TT11
+CTS     TT20,	  TT20
+CTS     TT21,	  TT21
+VBox  	TT75,	  TT75
+VBox  	TT16,	  TT16
+VBox  	TT60,	  TT60
+VBox  	TT600,	  TT600
+VBox  	TT610,	  TT610
+VBox  	TT620,	  TT620
+VBox  	TT670,	  TT670
+VBox  	TT680,	  TT680
+VBox  	TT690,	  TT690
+VBox  	TT970,	  TT970
+VBox  	TT980,	  TT980
+VBox  	TT78,	  TT78}
+}

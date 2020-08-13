@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>cernox-table</name>
-  <width>1468</width>
+  <width>1100</width>
   <height>665</height>
   <background_color>
     <color red="240" green="240" blue="240">
@@ -66,32 +66,13 @@
     <transparent use_class="true">true</transparent>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_3</name>
-    <class>HEADER3</class>
-    <text>CABTF4</text>
-    <x>1105</x>
-    <y>5</y>
-    <width>350</width>
-    <height>25</height>
-    <font use_class="true">
-      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-      </font>
-    </font>
-    <background_color use_class="true">
-      <color name="Background" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent use_class="true">true</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT01</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>30</y>
     <width>350</width>
@@ -100,11 +81,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT08</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>68</y>
     <width>350</width>
@@ -113,11 +94,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT91</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>107</y>
     <width>350</width>
@@ -126,11 +107,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_3</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT92</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>146</y>
     <width>350</width>
@@ -139,11 +120,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_4</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT93</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>185</y>
     <width>350</width>
@@ -152,11 +133,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_5</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT94</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>224</y>
     <width>350</width>
@@ -165,11 +146,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT95</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>262</y>
     <width>350</width>
@@ -178,11 +159,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_7</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT97</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>301</y>
     <width>350</width>
@@ -191,11 +172,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_8</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT98</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>340</y>
     <width>350</width>
@@ -204,11 +185,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT09</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>379</y>
     <width>350</width>
@@ -217,11 +198,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TT03</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>418</y>
     <width>350</width>
@@ -230,11 +211,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TT10</TT>
+      <TT>TTx112</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>456</y>
     <width>350</width>
@@ -243,11 +224,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx113</TT>
+      <TT>TT10</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>495</y>
     <width>350</width>
@@ -256,11 +237,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TTx114</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>534</y>
     <width>350</width>
@@ -269,11 +250,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_14</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx115</TT>
+      <TT>TT02</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>573</y>
     <width>350</width>
@@ -282,11 +263,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_15</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
       <TT>TTx116</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>10</x>
     <y>612</y>
     <width>350</width>
@@ -295,11 +276,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_16</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT115</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT900</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>30</y>
     <width>350</width>
@@ -308,11 +289,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_17</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT118</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT930</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>68</y>
     <width>350</width>
@@ -321,11 +302,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_18</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT215</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT940</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>107</y>
     <width>350</width>
@@ -334,11 +315,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_19</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT218</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT950</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>146</y>
     <width>350</width>
@@ -347,11 +328,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_20</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT114</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT960</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>185</y>
     <width>350</width>
@@ -360,11 +341,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_21</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT113</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT630</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>224</y>
     <width>350</width>
@@ -373,11 +354,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_22</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT214</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT640</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>262</y>
     <width>350</width>
@@ -386,11 +367,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_23</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT213</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT700</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>301</y>
     <width>350</width>
@@ -399,11 +380,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT205</TT>
+      <TT>TT04</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>340</y>
     <width>350</width>
@@ -412,11 +393,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_25</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT204</TT>
+      <TT>TT05</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>379</y>
     <width>350</width>
@@ -425,11 +406,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_26</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT203</TT>
+      <TT>TT06</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>418</y>
     <width>350</width>
@@ -438,11 +419,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_27</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT202</TT>
+      <TT>TT07</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>456</y>
     <width>350</width>
@@ -451,11 +432,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_28</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT101</TT>
+      <TT>TT08</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>495</y>
     <width>350</width>
@@ -464,11 +445,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_29</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>CM</SUBS>
-      <TT>TT201</TT>
+      <TT>TT09</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>534</y>
     <width>350</width>
@@ -477,11 +458,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_30</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT04</TT>
+      <SUBS>PwrCpl</SUBS>
+      <TT>TT12</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>573</y>
     <width>350</width>
@@ -490,11 +471,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_31</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx216</TT>
+      <SUBS>PwrCpl</SUBS>
+      <TT>TT22</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>375</x>
     <y>612</y>
     <width>350</width>
@@ -503,11 +484,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_32</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT02</TT>
+      <SUBS>CTS</SUBS>
+      <TT>TT10</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>30</y>
     <width>350</width>
@@ -516,11 +497,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_33</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT03</TT>
+      <SUBS>CTS</SUBS>
+      <TT>TT11</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>68</y>
     <width>350</width>
@@ -529,11 +510,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT01</TT>
+      <SUBS>CTS</SUBS>
+      <TT>TT20</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>107</y>
     <width>350</width>
@@ -542,11 +523,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT05</TT>
+      <SUBS>CTS</SUBS>
+      <TT>TT21</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>146</y>
     <width>350</width>
@@ -555,11 +536,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_36</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT06</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT75</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>185</y>
     <width>350</width>
@@ -568,11 +549,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_37</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT105</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT16</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>224</y>
     <width>350</width>
@@ -581,11 +562,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_38</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT104</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT60</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>262</y>
     <width>350</width>
@@ -594,11 +575,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_39</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT103</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT600</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>301</y>
     <width>350</width>
@@ -607,11 +588,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_40</name>
-    <file>cernox-chan.bob</file>
     <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT102</TT>
+      <SUBS>VBox</SUBS>
+      <TT>TT610</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>340</y>
     <width>350</width>
@@ -620,11 +601,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_41</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx310</TT>
+      <TT>TT620</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>379</y>
     <width>350</width>
@@ -633,11 +614,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_42</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx311</TT>
+      <TT>TT670</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>418</y>
     <width>350</width>
@@ -646,11 +627,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_43</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx312</TT>
+      <TT>TT680</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>456</y>
     <width>350</width>
@@ -659,11 +640,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_44</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx313</TT>
+      <TT>TT690</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>495</y>
     <width>350</width>
@@ -672,11 +653,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_45</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx314</TT>
+      <TT>TT970</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>534</y>
     <width>350</width>
@@ -685,11 +666,11 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_46</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx315</TT>
+      <TT>TT980</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>573</y>
     <width>350</width>
@@ -698,220 +679,12 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_47</name>
-    <file>cernox-chan.bob</file>
     <macros>
       <SUBS>VBox</SUBS>
-      <TT>TTx316</TT>
+      <TT>TT78</TT>
     </macros>
+    <file>cernox-chan.bob</file>
     <x>740</x>
-    <y>612</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_48</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TT04</TT>
-    </macros>
-    <x>1105</x>
-    <y>30</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_49</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TT02</TT>
-    </macros>
-    <x>1105</x>
-    <y>68</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_50</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>CM</SUBS>
-      <TT>TTx403</TT>
-    </macros>
-    <x>1105</x>
-    <y>107</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_51</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx404</TT>
-    </macros>
-    <x>1105</x>
-    <y>146</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_52</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT210</TT>
-    </macros>
-    <x>1105</x>
-    <y>185</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_53</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>CM</SUBS>
-      <TT>TT110</TT>
-    </macros>
-    <x>1105</x>
-    <y>224</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_54</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx407</TT>
-    </macros>
-    <x>1105</x>
-    <y>262</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_55</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx408</TT>
-    </macros>
-    <x>1105</x>
-    <y>301</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_56</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx409</TT>
-    </macros>
-    <x>1105</x>
-    <y>340</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_57</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx410</TT>
-    </macros>
-    <x>1105</x>
-    <y>379</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_58</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx411</TT>
-    </macros>
-    <x>1105</x>
-    <y>418</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_59</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx412</TT>
-    </macros>
-    <x>1105</x>
-    <y>456</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_60</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx413</TT>
-    </macros>
-    <x>1105</x>
-    <y>495</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_61</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx414</TT>
-    </macros>
-    <x>1105</x>
-    <y>534</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_62</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx415</TT>
-    </macros>
-    <x>1105</x>
-    <y>573</y>
-    <width>350</width>
-    <height>40</height>
-    <resize>2</resize>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_63</name>
-    <file>cernox-chan.bob</file>
-    <macros>
-      <SUBS>VBox</SUBS>
-      <TT>TTx416</TT>
-    </macros>
-    <x>1105</x>
     <y>612</y>
     <width>350</width>
     <height>40</height>
