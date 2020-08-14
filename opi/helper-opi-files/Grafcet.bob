@@ -384,6 +384,7 @@
     <y>140</y>
     <width>120</width>
     <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
@@ -418,6 +419,7 @@
     <y>110</y>
     <width>120</width>
     <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_2</name>
@@ -433,6 +435,7 @@
     <x>10</x>
     <y>70</y>
     <tooltip>Start conditioning</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_3</name>
@@ -449,6 +452,7 @@
     <y>130</y>
     <width>99</width>
     <tooltip>Return to Initial state</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_4</name>
@@ -464,6 +468,7 @@
     <x>10</x>
     <y>170</y>
     <tooltip>Exit conditioning state</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_5</name>
@@ -480,6 +485,7 @@
     <y>245</y>
     <tooltip>Start thermal screen cooling
 with LN2</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_6</name>
@@ -495,6 +501,7 @@ with LN2</tooltip>
     <x>10</x>
     <y>330</y>
     <tooltip>Start LHe cooling</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_7</name>
@@ -510,6 +517,7 @@ with LN2</tooltip>
     <x>20</x>
     <y>515</y>
     <tooltip>Goto Standby</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_8</name>
@@ -525,6 +533,7 @@ with LN2</tooltip>
     <x>20</x>
     <y>591</y>
     <tooltip>Exit Standby</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_9</name>
@@ -540,6 +549,7 @@ with LN2</tooltip>
     <x>710</x>
     <y>500</y>
     <tooltip>Goto 2K Operation</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
@@ -1184,6 +1194,7 @@ MUST be active.</tooltip>
         <y>45</y>
         <width>80</width>
         <tooltip>Select manual control</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_12</name>
@@ -1201,6 +1212,7 @@ MUST be active.</tooltip>
         <width>80</width>
         <tooltip>Select process control
 by the PLC program</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_9</name>
@@ -1259,7 +1271,7 @@ by the PLC program</tooltip>
       <name>Label_13</name>
       <text>Settings</text>
       <x>109</x>
-      <y>30</y>
+      <y>40</y>
       <width>85</width>
       <height>25</height>
     </widget>
@@ -1463,6 +1475,7 @@ by the PLC program</tooltip>
     <y>500</y>
     <width>120</width>
     <tooltip>Start the Warm-up</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_confirm_dialog>true</show_confirm_dialog>
     <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
@@ -1483,6 +1496,7 @@ by the PLC program</tooltip>
     <width>120</width>
     <tooltip>Stop the Warm-up 
 and return to the Initial State</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_confirm_dialog>true</show_confirm_dialog>
     <confirm_message>Are your sure you want to start the warm-up??</confirm_message>
   </widget>
@@ -1832,7 +1846,7 @@ and return to the Initial State</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>TT118</name>
-    <pv_name>$(P)-CM:TT118:sRdV</pv_name>
+    <pv_name>$(P)-CM:TT04:sRdV</pv_name>
     <x>310</x>
     <y>535</y>
     <width>40</width>
@@ -1845,7 +1859,7 @@ and return to the Initial State</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>TT218</name>
-    <pv_name>$(P)-CM:TT218:sRdV</pv_name>
+    <pv_name>$(P)-CM:TT05:sRdV</pv_name>
     <x>310</x>
     <y>550</y>
     <width>40</width>
@@ -1912,7 +1926,7 @@ and return to the Initial State</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>TT118_1</name>
-    <pv_name>$(P)-CM:TT02:sRdV</pv_name>
+    <pv_name>$(P)-CM:TT08:sRdV</pv_name>
     <x>710</x>
     <y>535</y>
     <width>40</width>
@@ -1942,7 +1956,7 @@ and return to the Initial State</tooltip>
  2K Operation </text>
     <x>710</x>
     <y>570</y>
-    <width>110</width>
+    <width>101</width>
     <height>39</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -1953,5 +1967,6 @@ and return to the Initial State</tooltip>
       </color>
     </background_color>
     <transparent>false</transparent>
+    <auto_size>true</auto_size>
   </widget>
 </display>

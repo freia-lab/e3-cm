@@ -4052,9 +4052,9 @@
     <widget type="group" version="2.0.0">
       <name>Group_39</name>
       <macros>
-        <H>EH13</H>
+        <H>EH12</H>
         <S>PwrCpl</S>
-        <T1>TT103</T1>
+        <T1>TT120</T1>
       </macros>
       <width>1165</width>
       <height>30</height>
@@ -4235,9 +4235,9 @@
     <widget type="group" version="2.0.0">
       <name>Group_41</name>
       <macros>
-        <H>EH43</H>
+        <H>EH22</H>
         <S>PwrCpl</S>
-        <T1>TT203</T1>
+        <T1>TT220</T1>
       </macros>
       <y>30</y>
       <width>1165</width>

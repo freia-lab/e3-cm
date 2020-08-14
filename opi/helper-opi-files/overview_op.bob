@@ -168,11 +168,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l_1</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV501</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <x>131</x>
       <y>100</y>
       <width>45</width>
@@ -180,11 +180,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_1</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV501</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <x>75</x>
       <y>100</y>
       <width>45</width>
@@ -212,11 +212,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_2</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxHe</S>
         <V>FV502</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <x>30</x>
       <y>25</y>
       <width>45</width>
@@ -224,11 +224,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_3</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>FV401</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <x>116</x>
       <y>60</y>
       <width>45</width>
@@ -236,11 +236,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>evalve-v-r</name>
-      <file>../../freia-symbols/display-builder/CstatEvalve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>EV400</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatEvalve-v-lr.bob</file>
       <x>5</x>
       <y>5</y>
       <width>45</width>
@@ -260,11 +260,11 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <macros>
         <S>IBoxN2</S>
         <V>FV400</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <x>55</x>
       <y>60</y>
       <width>45</width>
@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -631,10 +631,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
         <V>CV04</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <x>215</x>
       <y>5</y>
       <width>55</width>
@@ -642,10 +642,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
         <V>CV61</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <x>285</x>
       <y>5</y>
       <width>55</width>
@@ -653,10 +653,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll_1</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
         <V>CV60</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <x>5</x>
       <y>5</y>
       <width>55</width>
@@ -664,10 +664,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll_2</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <macros>
         <V>CV03</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-ll.bob</file>
       <x>50</x>
       <y>5</y>
       <width>55</width>
@@ -675,10 +675,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr_1</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
         <V>CV02</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <x>70</x>
       <y>255</y>
       <width>55</width>
@@ -734,10 +734,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr_2</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
         <V>CV01</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <x>199</x>
       <y>255</y>
       <width>55</width>
@@ -794,10 +794,10 @@ System</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr_3</name>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <macros>
         <V>CV07</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
       <x>134</x>
       <y>255</y>
       <width>55</width>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1048,6 +1048,25 @@ System</text>
         </color>
       </background_color>
     </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_41</name>
+      <x>60</x>
+      <y>100</y>
+      <width>45</width>
+      <height>200</height>
+      <line_color>
+        <color red="153" green="102" blue="153">
+        </color>
+      </line_color>
+      <points>
+        <point x="45.00000858306885" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="200.0">
+        </point>
+      </points>
+    </widget>
     <widget type="group" version="2.0.0">
       <name>Group_9</name>
       <macros>
@@ -1084,25 +1103,6 @@ System</text>
         </font>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_41</name>
-      <x>60</x>
-      <y>100</y>
-      <width>25</width>
-      <height>200</height>
-      <line_color>
-        <color red="153" green="102" blue="153">
-        </color>
-      </line_color>
-      <points>
-        <point x="25.000004768371582" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="200.0">
-        </point>
-      </points>
     </widget>
     <widget type="group" version="2.0.0">
       <name>PT04</name>
@@ -1846,11 +1846,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-v-l</name>
-        <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
         <macros>
           <S>RHtr</S>
           <V>FV556</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
         <x>5</x>
         <y>140</y>
         <width>45</width>
@@ -1989,11 +1989,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u</name>
-        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <macros>
           <S>RHtr</S>
           <V>FV551</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <x>3</x>
         <y>78</y>
         <width>32</width>
@@ -2018,11 +2018,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u_1</name>
-        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <macros>
           <S>RHtr</S>
           <V>FV555</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <x>173</x>
         <y>78</y>
         <width>32</width>
@@ -2128,11 +2128,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u_2</name>
-        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <macros>
           <S>RHtr</S>
           <V>FV554</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
         <x>93</x>
         <width>32</width>
         <height>32</height>
@@ -2311,7 +2311,7 @@ Storage</text>
         <x>465</x>
         <y>180</y>
         <width>40</width>
-        <height>32</height>
+        <height>34</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="12.0">
           </font>
@@ -2466,7 +2466,7 @@ Storage</text>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>24</height>
+          <height>23</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -2823,12 +2823,12 @@ Storage</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-h-u</name>
-      <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
       <macros>
         <P>CstatH</P>
         <S>RHtr</S>
         <V>FV558</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
       <x>539</x>
       <y>6</y>
       <width>32</width>
@@ -2859,12 +2859,12 @@ Storage</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <macros>
         <P>CstatH</P>
         <S>RHtr</S>
         <V>FV552</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <x>554</x>
       <y>50</y>
       <width>45</width>
@@ -3006,12 +3006,12 @@ Storage</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l_2</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <macros>
         <P>CstatH</P>
         <S>RHtr</S>
         <V>FV550</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <x>489</x>
       <y>50</y>
       <width>45</width>
@@ -3044,12 +3044,12 @@ Storage</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l</name>
-      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <macros>
         <P>CstatH</P>
         <S>RHtr</S>
         <V>FV553</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
       <x>339</x>
       <y>140</y>
       <width>45</width>
@@ -3280,6 +3280,10 @@ Storage</text>
     <name>Cryomodule</name>
     <macros>
       <S>CM</S>
+      <S1>CTS</S1>
+      <S2>PwrCpl</S2>
+      <S3>GHe</S3>
+      <S4>Vac</S4>
     </macros>
     <x>130</x>
     <y>480</y>
@@ -3367,7 +3371,7 @@ Storage</text>
       <name>Text Update_28</name>
       <pv_name>$(P)-$(S):TT08:sRdV</pv_name>
       <x>373</x>
-      <y>10</y>
+      <y>15</y>
       <width>35</width>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -3380,8 +3384,8 @@ Storage</text>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_29</name>
       <pv_name>$(P)-$(S):TT09:sRdV</pv_name>
-      <x>510</x>
-      <y>10</y>
+      <x>505</x>
+      <y>15</y>
       <width>35</width>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -3393,7 +3397,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_33</name>
-      <pv_name>$(P)-$(S):TT10:sRdV</pv_name>
+      <pv_name>$(P)-$(S1):TT10:sRdV</pv_name>
       <x>75</x>
       <y>62</y>
       <width>35</width>
@@ -3435,7 +3439,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_36</name>
-      <pv_name>$(P)-$(S):TT12:sRdV</pv_name>
+      <pv_name>$(P)-$(S2):TT12:sRdV</pv_name>
       <x>650</x>
       <y>248</y>
       <width>35</width>
@@ -3449,7 +3453,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_37</name>
-      <pv_name>$(P)-$(S):TT22:sRdV</pv_name>
+      <pv_name>$(P)-$(S2):TT22:sRdV</pv_name>
       <x>415</x>
       <y>248</y>
       <width>35</width>
@@ -3463,7 +3467,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_39</name>
-      <pv_name>$(P)-$(S):TT110:sRdV</pv_name>
+      <pv_name>$(P)-$(S3):TT110:sRdV</pv_name>
       <x>611</x>
       <y>285</y>
       <width>35</width>
@@ -3477,7 +3481,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_40</name>
-      <pv_name>$(P)-$(S):TT210:sRdV</pv_name>
+      <pv_name>$(P)-$(S3):TT210:sRdV</pv_name>
       <x>375</x>
       <y>285</y>
       <width>35</width>
@@ -3491,7 +3495,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_41</name>
-      <pv_name>$(P)-$(S):TT220:sRdV</pv_name>
+      <pv_name>$(P)-$(S2):TT220:sRdV</pv_name>
       <x>335</x>
       <y>375</y>
       <width>35</width>
@@ -3505,7 +3509,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_42</name>
-      <pv_name>$(P)-$(S):TT120:sRdV</pv_name>
+      <pv_name>$(P)-$(S2):TT120:sRdV</pv_name>
       <x>570</x>
       <y>375</y>
       <width>35</width>
@@ -3530,7 +3534,7 @@ Storage</text>
       <transparent>true</transparent>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_43</name>
-        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <pv_name>$(P)-$(S4):$(D):sRdV</pv_name>
         <y>13</y>
         <width>35</width>
         <height>15</height>
@@ -3538,6 +3542,7 @@ Storage</text>
           <font family="Source Sans Pro" style="REGULAR" size="12.0">
           </font>
         </font>
+        <format>2</format>
         <precision>1</precision>
         <show_units>false</show_units>
         <wrap_words>false</wrap_words>
@@ -3567,7 +3572,7 @@ Storage</text>
       <transparent>true</transparent>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_44</name>
-        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <pv_name>$(P)-$(S4):$(D):sRdV</pv_name>
         <y>13</y>
         <width>35</width>
         <height>15</height>
@@ -3575,6 +3580,7 @@ Storage</text>
           <font family="Source Sans Pro" style="REGULAR" size="12.0">
           </font>
         </font>
+        <format>2</format>
         <precision>1</precision>
         <show_units>false</show_units>
         <wrap_words>false</wrap_words>
@@ -3593,7 +3599,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_32</name>
-      <pv_name>$(P)-$(S):TT21:sRdV</pv_name>
+      <pv_name>$(P)-$(S1):TT21:sRdV</pv_name>
       <x>50</x>
       <y>28</y>
       <width>35</width>
@@ -3647,7 +3653,7 @@ Storage</text>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
-      <pv_name>$(P)-PwrCpl:EH12:sCmd</pv_name>
+      <pv_name>$(P)-$(S2):EH12:sCmd</pv_name>
       <x>560</x>
       <y>325</y>
       <width>15</width>
@@ -3655,7 +3661,7 @@ Storage</text>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_3</name>
-      <pv_name>$(P)-PwrCpl:EH22:sCmd</pv_name>
+      <pv_name>$(P)-$(S2):EH22:sCmd</pv_name>
       <x>325</x>
       <y>325</y>
       <width>15</width>
@@ -3663,7 +3669,7 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_31</name>
-      <pv_name>$(P)-$(S):TT11:sRdV</pv_name>
+      <pv_name>$(P)-$(S1):TT11:sRdV</pv_name>
       <x>733</x>
       <y>3</y>
       <width>35</width>
@@ -3677,9 +3683,37 @@ Storage</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_30</name>
-      <pv_name>$(P)-$(S):TT10:sRdV</pv_name>
+      <pv_name>$(P)-$(S1):TT10:sRdV</pv_name>
       <x>725</x>
       <y>62</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_54</name>
+      <pv_name>$(P)-$(S):LT02:sRdV</pv_name>
+      <x>365</x>
+      <y>105</y>
+      <width>35</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_55</name>
+      <pv_name>$(P)-$(S):LT01:sRdV</pv_name>
+      <x>445</x>
+      <y>105</y>
       <width>35</width>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -3862,8 +3896,8 @@ Storage</text>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_47</name>
-    <pv_name>$(P)-VBox:TT61:sRdV</pv_name>
-    <x>620</x>
+    <pv_name>$(P)-VBox:TT75:sRdV</pv_name>
+    <x>630</x>
     <y>415</y>
     <width>35</width>
     <font>
@@ -3924,9 +3958,9 @@ Storage</text>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_49</name>
-    <pv_name>$(P)-VBox:TT01:sRdV</pv_name>
-    <x>525</x>
-    <y>415</y>
+    <pv_name>$(P)-VBox:TT10:sRdV</pv_name>
+    <x>580</x>
+    <y>405</y>
     <width>35</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -3938,7 +3972,7 @@ Storage</text>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_50</name>
-    <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+    <pv_name>$(P)-VBox:TT09:sRdV</pv_name>
     <x>395</x>
     <y>415</y>
     <width>35</width>
@@ -3992,8 +4026,9 @@ Storage</text>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_57</name>
     <x>649</x>
-    <y>460</y>
+    <y>455</y>
     <width>1</width>
+    <height>25</height>
     <line_color>
       <color name="IO LN2 lines" red="255" green="153" blue="204">
       </color>
@@ -4003,7 +4038,7 @@ Storage</text>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="20.0">
+      <point x="0.0" y="25.0">
       </point>
     </points>
   </widget>
@@ -4524,7 +4559,7 @@ $(pv_value)</tooltip>
 Water Cooling</text>
       <x>10</x>
       <width>110</width>
-      <height>42</height>
+      <height>44</height>
       <horizontal_alignment>1</horizontal_alignment>
       <auto_size>true</auto_size>
     </widget>
@@ -4548,5 +4583,104 @@ water cooling system
 $(pv_name)
 $(pv_value)</tooltip>
     </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_37</name>
+    <x>410</x>
+    <y>449</y>
+    <width>1</width>
+    <height>30</height>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_40</name>
+    <x>435</x>
+    <y>449</y>
+    <width>1</width>
+    <height>30</height>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_42</name>
+    <x>565</x>
+    <y>449</y>
+    <width>1</width>
+    <height>30</height>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_58</name>
+    <x>600</x>
+    <y>450</y>
+    <width>1</width>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_52</name>
+    <pv_name>$(P)-VBox:TT16:sRdV</pv_name>
+    <x>580</x>
+    <y>425</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_53</name>
+    <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+    <x>525</x>
+    <y>415</y>
+    <width>35</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
   </widget>
 </display>

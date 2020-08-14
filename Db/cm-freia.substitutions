@@ -41,8 +41,8 @@ file cm-Heater1.template { pattern
 {CM	EH937_938  10  752     352}
 {CM	EH904  	   11  762     362}
 {CM	EH935_936  12  772     372}
-{PwrCpl	EH13  	   13  782     382}
-{PwrCpl	EH43  	   14  792     392}
+{PwrCpl	EH12  	   13  782     382}
+{PwrCpl	EH22  	   14  792     392}
 }
 
 file cm-LT.template { pattern
@@ -52,10 +52,10 @@ file cm-LT.template { pattern
 {VBox	TT77	   944	  1	"K"}
 {PwrCpl	FT11	   956	  1	"mg/s"}
 {PwrCpl	FT21	   964	  1	"mg/s"}
-{GHe	TT102	   972	  1	"K"}
-{GHe	TT202	   980	  1	"K"}
-{PwrCpl	TT103	   988	  1	"K"}
-{PwrCpl	TT203	   996	  1	"K"}
+{GHe	TT110	   972	  1	"K"}
+{GHe	TT210	   980	  1	"K"}
+{PwrCpl	TT120	   988	  1	"K"}
+{PwrCpl	TT220	   996	  1	"K"}
 }
 
 file cm-real-param.template { pattern
@@ -101,8 +101,8 @@ file cm-cernox2plc-freia.template { pattern
 {CM	 VBox  TT980 70    132    1}
 {CM	 VBox  TT16  74    132    2}
 {CM	 VBox  TT60  78    132    3}
-{CM	 CM    TT06  102   133    1}
-{CM	 CM    TT07  106   133    2}
+{CM	 CM    TT04  102   133    1}
+{CM	 CM    TT05  106   133    2}
 {CM	 VBox  TT03  110   133    3}
 {CM	 CM    TT08  114   133    4}
 }
