@@ -442,7 +442,6 @@
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
       <text>Sampling period [s]:</text>
-      <x>-1</x>
       <y>139</y>
       <width>140</width>
       <height>30</height>
@@ -469,6 +468,7 @@
       <y>79</y>
       <tooltip>Set-up 4-wire resistance measurements
 ($pv_name)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_2</name>
@@ -484,6 +484,7 @@
       <y>79</y>
       <tooltip>Set-up 4-wire PT100 measurements
 ($pv_name)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group</name>
@@ -523,7 +524,6 @@
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group</name>
-      <x>-1</x>
       <y>10</y>
       <width>239</width>
       <height>30</height>

@@ -35,6 +35,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_1</name>
@@ -50,6 +51,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_3</name>
@@ -156,6 +158,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_3</name>
@@ -171,6 +174,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_2</name>
@@ -222,6 +226,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_5</name>
@@ -237,6 +242,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_5</name>
@@ -343,6 +349,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_7</name>
@@ -358,6 +365,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_6</name>
@@ -426,6 +434,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_9</name>
@@ -441,6 +450,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_10</name>
@@ -547,6 +557,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_11</name>
@@ -562,6 +573,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_9</name>
@@ -623,6 +635,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_13</name>
@@ -638,6 +651,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_15</name>
@@ -744,6 +758,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_15</name>
@@ -759,6 +774,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_12</name>
@@ -816,6 +832,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_17</name>
@@ -831,6 +848,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_20</name>
@@ -937,6 +955,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_19</name>
@@ -952,6 +971,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_15</name>
@@ -1019,6 +1039,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_21</name>
@@ -1034,6 +1055,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_25</name>
@@ -1140,6 +1162,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_23</name>
@@ -1155,6 +1178,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_18</name>
@@ -1208,6 +1232,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_25</name>
@@ -1223,6 +1248,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_30</name>
@@ -1329,6 +1355,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_27</name>
@@ -1344,6 +1371,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_21</name>
@@ -1377,6 +1405,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_33</name>
@@ -1392,6 +1421,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_40</name>
@@ -1498,6 +1528,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_35</name>
@@ -1513,6 +1544,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_27</name>
@@ -1546,6 +1578,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_37</name>
@@ -1561,6 +1594,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_45</name>
@@ -1667,6 +1701,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_39</name>
@@ -1682,6 +1717,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_30</name>
@@ -1715,6 +1751,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_41</name>
@@ -1730,6 +1767,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_50</name>
@@ -1836,6 +1874,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_43</name>
@@ -1851,6 +1890,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_33</name>
@@ -1891,6 +1931,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_29</name>
@@ -1906,6 +1947,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_35</name>
@@ -2012,6 +2054,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_31</name>
@@ -2027,6 +2070,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_23</name>
@@ -2060,6 +2104,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_53</name>
@@ -2075,6 +2120,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_65</name>
@@ -2181,6 +2227,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_55</name>
@@ -2196,6 +2243,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_41</name>
@@ -2229,6 +2277,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_57</name>
@@ -2244,6 +2293,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_70</name>
@@ -2350,6 +2400,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_59</name>
@@ -2365,6 +2416,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_44</name>
@@ -2398,6 +2450,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_65</name>
@@ -2413,6 +2466,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_80</name>
@@ -2519,6 +2573,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_67</name>
@@ -2534,6 +2589,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_50</name>
@@ -2567,6 +2623,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_69</name>
@@ -2582,6 +2639,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_85</name>
@@ -2688,6 +2746,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_71</name>
@@ -2703,6 +2762,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_53</name>
@@ -2737,6 +2797,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_77</name>
@@ -2752,6 +2813,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_135</name>
@@ -2858,6 +2920,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_79</name>
@@ -2873,6 +2936,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_8</name>
@@ -2924,6 +2988,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_81</name>
@@ -2939,6 +3004,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_144</name>
@@ -3045,6 +3111,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_83</name>
@@ -3060,6 +3127,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_10</name>
@@ -3126,6 +3194,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_85</name>
@@ -3141,6 +3210,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_153</name>
@@ -3247,6 +3317,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_87</name>
@@ -3262,6 +3333,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_11</name>
@@ -3313,6 +3385,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_73</name>
@@ -3328,6 +3401,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_91</name>
@@ -3434,6 +3508,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_75</name>
@@ -3449,6 +3524,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_7</name>
@@ -3515,6 +3591,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_89</name>
@@ -3530,6 +3607,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_162</name>
@@ -3636,6 +3714,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_91</name>
@@ -3651,6 +3730,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_13</name>
@@ -3699,6 +3779,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_93</name>
@@ -3714,6 +3795,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_168</name>
@@ -3820,6 +3902,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_95</name>
@@ -3835,6 +3918,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_14</name>
@@ -3883,6 +3967,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_105</name>
@@ -3898,6 +3983,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_180</name>
@@ -4004,6 +4090,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_107</name>
@@ -4019,6 +4106,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_19</name>
@@ -4074,6 +4162,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_97</name>
@@ -4089,6 +4178,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_141</name>
@@ -4195,6 +4285,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_99</name>
@@ -4210,6 +4301,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_16</name>
@@ -4258,6 +4350,7 @@
         <x>930</x>
         <width>60</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_101</name>
@@ -4273,6 +4366,7 @@
         <x>1000</x>
         <width>70</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_174</name>
@@ -4379,6 +4473,7 @@
         <x>710</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_103</name>
@@ -4394,6 +4489,7 @@
         <x>760</x>
         <width>40</width>
         <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_17</name>

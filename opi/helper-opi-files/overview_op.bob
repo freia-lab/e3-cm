@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1820,6 +1820,23 @@ $(pv_value)</tooltip>
       <height>235</height>
       <style>3</style>
       <transparent>true</transparent>
+      <widget type="tank" version="2.0.0">
+        <name>Tank_5</name>
+        <pv_name>=(360-`Cryo-Rec:LP:GasBagLidar`)/1.62
+</pv_name>
+        <x>350</x>
+        <y>20</y>
+        <height>110</height>
+        <fill_color>
+          <color name="YELLOW-BORDER" red="150" green="144" blue="10">
+          </color>
+        </fill_color>
+        <tooltip>Scale: % between the switches controlling the HP storage comperssor.
+$(pv_name)
+$(pv_value)</tooltip>
+        <limits_from_pv>false</limits_from_pv>
+        <maximum>115.0</maximum>
+      </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_23</name>
         <x>39</x>
@@ -2084,7 +2101,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="picture" version="2.0.0">
         <name>Picture</name>
-        <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Hand_Valve_3_Grey.png</file>
+        <file>../../freia-symbols/Fluid/Valves/VC On-Off 2-way Hand Valve 3 White.svg</file>
         <x>301</x>
         <y>85</y>
         <width>40</width>
@@ -2272,19 +2289,6 @@ $(pv_value)</tooltip>
           <square>true</square>
         </widget>
       </widget>
-      <widget type="tank" version="2.0.0">
-        <name>Tank_3</name>
-        <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
-        <x>350</x>
-        <y>20</y>
-        <height>110</height>
-        <fill_color>
-          <color name="YELLOW-BORDER" red="150" green="144" blue="10">
-          </color>
-        </fill_color>
-        <scale_visible>false</scale_visible>
-        <limits_from_pv>false</limits_from_pv>
-      </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_26</name>
         <x>435</x>
@@ -2322,7 +2326,7 @@ Storage</text>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_22</name>
-        <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+        <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
         <x>380</x>
         <width>90</width>
         <height>15</height>
@@ -2337,23 +2341,30 @@ Storage</text>
       </widget>
       <widget type="rectangle" version="2.0.0">
         <name>Rectangle_1</name>
-        <x>380</x>
-        <y>30</y>
-        <height>100</height>
+        <x>500</x>
+        <y>45</y>
+        <width>10</width>
+        <height>80</height>
+        <line_color>
+          <color red="30" green="144" blue="255">
+          </color>
+        </line_color>
         <rules>
           <rule name="FillPerc" prop_id="height" out_exp="true">
             <exp bool_exp="True">
-              <expression>(200-pv0)/2.0</expression>
+              <expression>(165-pv0)*0.8</expression>
             </exp>
             <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
           </rule>
           <rule name="Position" prop_id="y" out_exp="true">
             <exp bool_exp="True">
-              <expression>pv0/2.0+30</expression>
+              <expression>125-(165-pv0)*0.8</expression>
             </exp>
             <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
           </rule>
         </rules>
+        <tooltip>Gas Bag height calculated from
+Cryo-Rec:LP:GasBagSonar</tooltip>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_25</name>
@@ -2466,7 +2477,7 @@ Storage</text>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>23</height>
+          <height>24</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>

@@ -35,7 +35,7 @@
       </tab>
       <tab>
         <name>Engineer</name>
-        <file>engineer/test.bob</file>
+        <file>engineer/engineer.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
@@ -51,7 +51,7 @@
     <x>340</x>
     <y>10</y>
     <width>153</width>
-    <height>23</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -102,7 +102,7 @@
     <x>340</x>
     <y>37</y>
     <width>163</width>
-    <height>25</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -176,7 +176,7 @@
     <x>610</x>
     <y>35</y>
     <width>139</width>
-    <height>23</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -202,7 +202,7 @@
     <x>610</x>
     <y>10</y>
     <width>138</width>
-    <height>23</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -222,15 +222,6 @@
       </color>
     </border_color>
   </widget>
-  <widget type="digital_clock" version="2.0.0">
-    <name>Digital Clock</name>
-    <lcd_design>30</lcd_design>
-    <lcd_font>4</lcd_font>
-    <x>1470</x>
-    <width>120</width>
-    <height>60</height>
-    <date_visible>true</date_visible>
-  </widget>
   <widget type="picture" version="2.0.0">
     <name>Picture</name>
     <file>images/FREIAlogo-v3_March19.png</file>
@@ -244,7 +235,7 @@
     <x>920</x>
     <y>10</y>
     <width>99</width>
-    <height>23</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>
@@ -327,7 +318,7 @@
     <x>910</x>
     <y>35</y>
     <width>108</width>
-    <height>23</height>
+    <height>21</height>
     <foreground_color>
       <color red="0" green="0" blue="0">
       </color>

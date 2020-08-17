@@ -1345,11 +1345,11 @@ by the PLC program</tooltip>
           <file>CstatH-MKS.bob</file>
           <macros>
             <GHI>CstatH-RHtr:PT550:sRdV</GHI>
-            <GLO>CstatH-RHtr:PT100:sRdV</GLO>
+            <GLO>CstatH-LHe:PT100:sRdV</GLO>
             <MKS>CstatH-MKS:MKS2</MKS>
             <MKSname>MKS2</MKSname>
           </macros>
-          <target>standalone</target>
+          <target>window</target>
           <description>Open Display</description>
         </action>
       </actions>

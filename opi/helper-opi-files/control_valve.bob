@@ -55,6 +55,7 @@
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_1</name>
@@ -70,6 +71,7 @@
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_3</name>
@@ -91,41 +93,6 @@
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_2</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -180,6 +147,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_21</name>
@@ -195,6 +163,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_44</name>
@@ -216,41 +185,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_3</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -305,6 +239,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_23</name>
@@ -320,6 +255,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_49</name>
@@ -341,41 +277,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_4</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -430,6 +331,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_25</name>
@@ -445,6 +347,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_54</name>
@@ -460,41 +363,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_5</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -549,6 +417,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_29</name>
@@ -564,6 +433,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_64</name>
@@ -579,41 +449,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_7</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -668,6 +503,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_39</name>
@@ -683,6 +519,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_85</name>
@@ -704,41 +541,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_8</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -793,6 +595,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_41</name>
@@ -808,6 +611,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_90</name>
@@ -823,41 +627,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="picture" version="2.0.0">
-      <name>Picture_9</name>
-      <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <actions execute_as_one="true">
-      </actions>
-      <rules>
-        <rule name="ForegroundRule" prop_id="file" out_exp="false">
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-          </exp>
-          <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <exp bool_exp="pv0==0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-          </exp>
-          <exp bool_exp="pv0!=0.0">
-            <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-          </exp>
-          <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-            <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-          </exp>
-          <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-          <pv_name>sim://ramp(0,1,1,1)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -913,6 +682,7 @@ $(pv_value)</tooltip>
       <x>420</x>
       <width>60</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_45</name>
@@ -928,6 +698,7 @@ $(pv_value)</tooltip>
       <x>490</x>
       <width>70</width>
       <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_100</name>
@@ -949,51 +720,6 @@ $(pv_value)</tooltip>
       <x>340</x>
       <y>5</y>
       <width>70</width>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <macros>
-        <P>CstatH</P>
-      </macros>
-      <x>690</x>
-      <width>30</width>
-      <height>30</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="picture" version="2.0.0">
-        <name>Picture_1</name>
-        <file>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</file>
-        <width>30</width>
-        <height>30</height>
-        <actions execute_as_one="true">
-        </actions>
-        <rules>
-          <rule name="ForegroundRule" prop_id="file" out_exp="false">
-            <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==1">
-              <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Red.png</value>
-            </exp>
-            <exp bool_exp="pvSev0!=0 &amp;&amp; pv1==0">
-              <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-            </exp>
-            <exp bool_exp="pv0==0.0">
-              <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_White.png</value>
-            </exp>
-            <exp bool_exp="pv0!=0.0">
-              <value>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-            </exp>
-            <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==1">
-              <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Green.png</value>
-            </exp>
-            <exp bool_exp="pvStr0==&quot;Move&quot; &amp;&amp; pv1==0">
-              <value>../../Symbols/ess-symbols-master/symbols-iter-modified/SymbolLibrary_full_hd/PNG/Fluid/Valves/VC_On-Off_2-way_Control_Valve_3_Grey.png</value>
-            </exp>
-            <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
-            <pv_name>sim://ramp(0,1,1,1)</pv_name>
-          </rule>
-        </rules>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      </widget>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -1072,25 +798,6 @@ $(pv_value)</tooltip>
       </font>
     </font>
   </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Symbol</name>
-    <pv_name>CM-VBox:CV60:sAuto</pv_name>
-    <symbols>
-      <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Red.png</symbol>
-      <symbol>../symbols/PNG/Fluid/Valves/VC_On-Off_2-way_Pneumatic_Valve_3_Green.png</symbol>
-    </symbols>
-    <x>690</x>
-    <y>370</y>
-    <width>30</width>
-    <height>30</height>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_8</name>
-    <text>Symbol test</text>
-    <x>658</x>
-    <y>390</y>
-    <width>80</width>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label_9</name>
     <text>Notes:</text>
@@ -1113,7 +820,7 @@ CV550 is operated via MKS2 connected to HNOSS PLC.
     <x>20</x>
     <y>380</y>
     <width>542</width>
-    <height>147</height>
+    <height>159</height>
     <auto_size>true</auto_size>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1167,7 +874,7 @@ HNOSS PLC based on the data received
 directly from the CM PLC.</text>
       <y>60</y>
       <width>265</width>
-      <height>211</height>
+      <height>229</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
@@ -1188,7 +895,7 @@ internal PID controller (MKS2 "Regulator on").
       <x>309</x>
       <y>50</y>
       <width>382</width>
-      <height>274</height>
+      <height>298</height>
       <auto_size>true</auto_size>
     </widget>
   </widget>
