@@ -61,5 +61,10 @@ TestEssProtoFreia_20190905 - KG, Changed the PID parameters for CV01 controller 
 TestEssProtoFreia_20190918 - KG, Added instance of heater EH921 and the corresponding temperature sensor TT609.
 TestEssProtoFreia_20191003 - KG, Added support for the automatic warm-up (changes only in grafcet). Works only with Cryostat_2019_10_03
 			     or later. Not testet fully yet.
+TestEssProtoFreia_20200818 - KG, Changed some names to be the same as in the series CM PID. No change in the functionality. Changes made in 
+			     db100, db101, db313, db105, db228 and tags for the hardware. Recompiled and reloaded all blocks showed in the 
+			     Download panel (stopped the CPU). See http://freia.physics.uu.se/Cntrlelog/show.jsp?dir=/2020/08&pos=2020-08-14T14:55:45
+                             which names have been changed.
+
 
 
