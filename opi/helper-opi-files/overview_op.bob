@@ -58,32 +58,32 @@
       <x>40</x>
       <width>1</width>
       <height>51</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="51.499996185302734">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_11</name>
       <x>15</x>
       <width>1</width>
       <height>51</height>
-      <line_color>
-        <color name="IO Warm GN2 lines" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="51.499996185302734">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Warm GN2 lines" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>ICB</name>
@@ -107,12 +107,6 @@
       <x>65</x>
       <width>62</width>
       <height>157</height>
-      <line_color>
-        <color name="IO LN2 lines" red="255" green="153" blue="204">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
-      <arrow_length>10</arrow_length>
       <points>
         <point x="0.0" y="15.0">
         </point>
@@ -123,16 +117,18 @@
         <point x="62.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO LN2 lines" red="255" green="153" blue="204">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>10</arrow_length>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_3</name>
       <x>15</x>
       <width>48</width>
       <height>225</height>
-      <line_color>
-        <color name="IO LN2 lines" red="255" green="153" blue="204">
-        </color>
-      </line_color>
       <points>
         <point x="50.0" y="225.0">
         </point>
@@ -143,18 +139,16 @@
         <point x="0.0" y="50.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO LN2 lines" red="255" green="153" blue="204">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_4</name>
       <x>85</x>
       <width>78</width>
       <height>184</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
-      <arrow_length>10</arrow_length>
       <points>
         <point x="0.0" y="15.0">
         </point>
@@ -165,6 +159,12 @@
         <point x="80.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>10</arrow_length>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l_1</name>
@@ -195,10 +195,6 @@
       <x>40</x>
       <width>45</width>
       <height>225</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="45.0" y="225.0">
         </point>
@@ -209,6 +205,10 @@
         <point x="0.0" y="50.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-r_2</name>
@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -316,10 +316,6 @@ of UY$(V).</tooltip>
     <y>275</y>
     <width>92</width>
     <height>37</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="20.0">
       </point>
@@ -330,6 +326,10 @@ of UY$(V).</tooltip>
       <point x="92.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_9</name>
@@ -337,10 +337,6 @@ of UY$(V).</tooltip>
     <y>274</y>
     <width>200</width>
     <height>67</height>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="22.0">
       </point>
@@ -351,6 +347,10 @@ of UY$(V).</tooltip>
       <point x="200.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>valve-h-u</name>
@@ -373,17 +373,17 @@ of UY$(V).</tooltip>
       <y>15</y>
       <width>1</width>
       <height>6</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="6.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_8</name>
@@ -452,18 +452,18 @@ of UY$(V).</tooltip>
     <y>26</y>
     <width>1</width>
     <height>23</height>
-    <line_color>
-      <color name="IO Warm GN2 lines" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="0.0" y="25.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO Warm GN2 lines" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_12</name>
@@ -471,17 +471,17 @@ of UY$(V).</tooltip>
     <y>26</y>
     <width>1</width>
     <height>23</height>
-    <line_color>
-      <color name="IO 300K GHe" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="0.0" y="25.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO 300K GHe" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
@@ -541,64 +541,64 @@ System</text>
       <x>40</x>
       <width>1</width>
       <height>300</height>
-      <line_color>
-        <color name="IO LN2 lines" red="255" green="153" blue="204">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="300.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO LN2 lines" red="255" green="153" blue="204">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_15</name>
       <x>85</x>
       <width>1</width>
       <height>300</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="300.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_16</name>
       <x>300</x>
       <width>1</width>
       <height>300</height>
-      <line_color>
-        <color name="IO LN2 lines" red="255" green="153" blue="204">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="300.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO LN2 lines" red="255" green="153" blue="204">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_17</name>
       <x>250</x>
       <width>1</width>
       <height>300</height>
-      <line_color>
-        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="300.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_20</name>
@@ -618,16 +618,16 @@ System</text>
       <x>105</x>
       <width>1</width>
       <height>140</height>
-      <line_color>
-        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="140.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-ll</name>
@@ -749,10 +749,6 @@ System</text>
       <y>156</y>
       <width>103</width>
       <height>13</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -761,6 +757,10 @@ System</text>
         <point x="100.0" y="15.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="tank" version="2.0.0">
       <name>Tank_2</name>
@@ -779,10 +779,6 @@ System</text>
       <y>219</y>
       <width>63</width>
       <height>82</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -791,6 +787,10 @@ System</text>
         <point x="65.0" y="80.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>cm-valve-v-lr_3</name>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1054,10 +1054,6 @@ System</text>
       <y>100</y>
       <width>45</width>
       <height>200</height>
-      <line_color>
-        <color red="153" green="102" blue="153">
-        </color>
-      </line_color>
       <points>
         <point x="45.00000858306885" y="0.0">
         </point>
@@ -1066,6 +1062,10 @@ System</text>
         <point x="0.0" y="200.0">
         </point>
       </points>
+      <line_color>
+        <color red="153" green="102" blue="153">
+        </color>
+      </line_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group_9</name>
@@ -1559,18 +1559,18 @@ System</text>
     <y>10</y>
     <width>1</width>
     <height>40</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="0.0" y="65.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_25</name>
@@ -1591,10 +1591,6 @@ System</text>
     <y>40</y>
     <width>106</width>
     <height>37</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="10.0">
       </point>
@@ -1605,6 +1601,10 @@ System</text>
       <point x="106.0" y="37.000003814697266">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_29</name>
@@ -1612,10 +1612,6 @@ System</text>
     <y>20</y>
     <width>113</width>
     <height>55</height>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="30.0">
       </point>
@@ -1626,6 +1622,10 @@ System</text>
       <point x="113.0" y="55.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Recovery</name>
@@ -1684,15 +1684,6 @@ System</text>
           <name>Polygon Template</name>
           <width>61</width>
           <height>46</height>
-          <line_width>2</line_width>
-          <line_color>
-            <color name="BLACK" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="GRAY" red="169" green="169" blue="169">
-            </color>
-          </background_color>
           <points>
             <point x="60.0" y="9.0">
             </point>
@@ -1703,6 +1694,15 @@ System</text>
             <point x="60.0" y="36.0">
             </point>
           </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="GRAY" red="169" green="169" blue="169">
+            </color>
+          </background_color>
           <actions>
           </actions>
           <tooltip>$(pv_name)
@@ -1714,11 +1714,6 @@ $(pv_value)</tooltip>
           <y>10</y>
           <width>13</width>
           <height>22</height>
-          <line_width>2</line_width>
-          <line_color>
-            <color name="BLACK" red="0" green="0" blue="0">
-            </color>
-          </line_color>
           <points>
             <point x="0.0" y="0.0">
             </point>
@@ -1727,6 +1722,11 @@ $(pv_value)</tooltip>
             <point x="0.0" y="21.0">
             </point>
           </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
           <actions>
           </actions>
           <tooltip>$(pv_name)
@@ -1738,11 +1738,6 @@ $(pv_value)</tooltip>
           <y>10</y>
           <width>13</width>
           <height>22</height>
-          <line_width>2</line_width>
-          <line_color>
-            <color name="BLACK" red="0" green="0" blue="0">
-            </color>
-          </line_color>
           <points>
             <point x="0.0" y="0.0">
             </point>
@@ -1751,6 +1746,11 @@ $(pv_value)</tooltip>
             <point x="0.0" y="21.0">
             </point>
           </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
           <actions>
           </actions>
           <tooltip>$(pv_name)
@@ -1843,11 +1843,6 @@ $(pv_value)</tooltip>
         <y>100</y>
         <width>172</width>
         <height>78</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="310.0" y="10.0">
           </point>
@@ -1860,6 +1855,11 @@ $(pv_value)</tooltip>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-v-l</name>
@@ -1993,16 +1993,16 @@ $(pv_value)</tooltip>
         <y>100</y>
         <width>80</width>
         <height>1</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="85.0" y="0.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u</name>
@@ -2022,16 +2022,16 @@ $(pv_value)</tooltip>
         <y>100</y>
         <width>183</width>
         <height>1</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="220.0" y="0.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u_1</name>
@@ -2128,10 +2128,6 @@ $(pv_value)</tooltip>
         <y>22</y>
         <width>172</width>
         <height>78</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="78.0">
           </point>
@@ -2142,6 +2138,10 @@ $(pv_value)</tooltip>
           <point x="172.0" y="78.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>valve-h-u_2</name>
@@ -2205,15 +2205,6 @@ $(pv_value)</tooltip>
             <name>Polygon Template_1</name>
             <width>61</width>
             <height>46</height>
-            <line_width>2</line_width>
-            <line_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </line_color>
-            <background_color>
-              <color name="GRAY" red="169" green="169" blue="169">
-              </color>
-            </background_color>
             <points>
               <point x="60.0" y="9.0">
               </point>
@@ -2224,6 +2215,15 @@ $(pv_value)</tooltip>
               <point x="60.0" y="36.0">
               </point>
             </points>
+            <line_width>2</line_width>
+            <line_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </line_color>
+            <background_color>
+              <color name="GRAY" red="169" green="169" blue="169">
+              </color>
+            </background_color>
             <actions>
             </actions>
             <tooltip>$(pv_name)
@@ -2235,11 +2235,6 @@ $(pv_value)</tooltip>
             <y>10</y>
             <width>13</width>
             <height>22</height>
-            <line_width>2</line_width>
-            <line_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </line_color>
             <points>
               <point x="0.0" y="0.0">
               </point>
@@ -2248,6 +2243,11 @@ $(pv_value)</tooltip>
               <point x="0.0" y="21.0">
               </point>
             </points>
+            <line_width>2</line_width>
+            <line_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </line_color>
             <actions>
             </actions>
             <tooltip>$(pv_name)
@@ -2259,11 +2259,6 @@ $(pv_value)</tooltip>
             <y>10</y>
             <width>13</width>
             <height>22</height>
-            <line_width>2</line_width>
-            <line_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </line_color>
             <points>
               <point x="0.0" y="0.0">
               </point>
@@ -2272,6 +2267,11 @@ $(pv_value)</tooltip>
               <point x="0.0" y="21.0">
               </point>
             </points>
+            <line_width>2</line_width>
+            <line_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </line_color>
             <actions>
             </actions>
             <tooltip>$(pv_name)
@@ -2295,18 +2295,18 @@ $(pv_value)</tooltip>
         <y>173</y>
         <width>56</width>
         <height>1</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <arrows>2</arrows>
-        <arrow_length>10</arrow_length>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="55.0" y="0.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
+        <arrow_length>10</arrow_length>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_22</name>
@@ -2372,12 +2372,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <y>120</y>
         <width>17</width>
         <height>54</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <arrows>2</arrows>
-        <arrow_length>10</arrow_length>
         <points>
           <point x="14.0" y="0.0">
           </point>
@@ -2388,6 +2382,12 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
           <point x="35.0" y="54.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
+        <arrow_length>10</arrow_length>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -2404,32 +2404,32 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <y>63</y>
         <width>158</width>
         <height>1</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="160.0" y="0.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_30</name>
         <y>28</y>
         <width>158</width>
         <height>1</height>
-        <line_color>
-          <color name="IO 300K GHe" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="160.0" y="0.0">
           </point>
         </points>
+        <line_color>
+          <color name="IO 300K GHe" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="group" version="2.0.0">
         <name>Group</name>
@@ -2477,7 +2477,7 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>24</height>
+          <height>23</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -2719,16 +2719,16 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>28</y>
       <width>454</width>
       <height>2</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="454.99993896484375" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>CV550</name>
@@ -2851,10 +2851,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>28</y>
       <width>431</width>
       <height>70</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="35.0">
         </point>
@@ -2867,6 +2863,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <point x="430.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l</name>
@@ -2987,16 +2987,16 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>28</y>
       <width>1</width>
       <height>63</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="65.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_38</name>
@@ -3004,16 +3004,16 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>103</y>
       <width>1</width>
       <height>224</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="225.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l_2</name>
@@ -3034,10 +3034,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>97</y>
       <width>226</width>
       <height>234</height>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="200.0" y="0.0">
         </point>
@@ -3052,6 +3048,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <point x="15.0" y="233.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l</name>
@@ -3255,10 +3255,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>28</y>
     <width>275</width>
     <height>47</height>
-    <line_color>
-      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="47.99999809265137">
       </point>
@@ -3267,6 +3263,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="275.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_32</name>
@@ -3274,10 +3274,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>63</y>
     <width>132</width>
     <height>12</height>
-    <line_color>
-      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="12.999996185302734">
       </point>
@@ -3286,6 +3282,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="132.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Cryomodule</name>
@@ -3408,7 +3408,7 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_33</name>
-      <pv_name>$(P)-$(S1):TT10:sRdV</pv_name>
+      <pv_name>$(P)-$(S1):TT20:sRdV</pv_name>
       <x>75</x>
       <y>62</y>
       <width>35</width>
@@ -3422,7 +3422,7 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_34</name>
-      <pv_name>$(P)-$(S):TT10:sRdV</pv_name>
+      <pv_name>$(P)-$(S):TT07:sRdV</pv_name>
       <x>275</x>
       <y>74</y>
       <width>35</width>
@@ -3436,7 +3436,7 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_35</name>
-      <pv_name>$(P)-$(S):TT10:sRdV</pv_name>
+      <pv_name>$(P)-$(S):TT06:sRdV</pv_name>
       <x>528</x>
       <y>74</y>
       <width>35</width>
@@ -3628,10 +3628,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>245</y>
       <width>235</width>
       <height>14</height>
-      <line_color>
-        <color red="153" green="102" blue="153">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -3640,6 +3636,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <point x="235.00000000000006" y="14.0">
         </point>
       </points>
+      <line_color>
+        <color red="153" green="102" blue="153">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_55</name>
@@ -3647,10 +3647,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>205</y>
       <width>166</width>
       <height>30</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -3661,6 +3657,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <point x="166.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
@@ -3734,6 +3734,38 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
     </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>$(P)-$(S1):EH10:sCmd</pv_name>
+      <x>670</x>
+      <y>85</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>$(P)-$(S1):EH20:sCmd</pv_name>
+      <x>155</x>
+      <y>85</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>$(P)-$(S):EH01:sCmd</pv_name>
+      <x>580</x>
+      <y>65</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>$(P)-$(S):EH02:sCmd</pv_name>
+      <x>235</x>
+      <y>65</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_43</name>
@@ -3741,10 +3773,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>375</y>
     <width>347</width>
     <height>361</height>
-    <line_color>
-      <color red="153" green="102" blue="153">
-      </color>
-    </line_color>
     <points>
       <point x="252.0000114440918" y="0.0">
       </point>
@@ -3759,6 +3787,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="347.0000114440918" y="361.0">
       </point>
     </points>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_45</name>
@@ -3766,12 +3798,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>860</y>
     <width>500</width>
     <height>30</height>
-    <line_color>
-      <color red="153" green="102" blue="153">
-      </color>
-    </line_color>
-    <arrows>1</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="500.0" y="30.0">
       </point>
@@ -3780,6 +3806,12 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_46</name>
@@ -3787,16 +3819,16 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>860</y>
     <width>1</width>
     <height>30</height>
-    <line_color>
-      <color red="153" green="102" blue="153">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="30.0">
       </point>
     </points>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_45</name>
@@ -3830,18 +3862,18 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>373</y>
     <width>1</width>
     <height>105</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
-    <arrows>1</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="106.02939605712889">
       </point>
       <point x="1.33331298828125" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_48</name>
@@ -3849,16 +3881,16 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>375</y>
     <width>1</width>
     <height>105</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="106.02939605712889">
       </point>
       <point x="1.33331298828125" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
@@ -3873,10 +3905,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <y>37</y>
       <width>15</width>
       <height>7</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -3887,22 +3915,26 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <point x="15.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_49</name>
       <x>8</x>
       <width>1</width>
       <height>45</height>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="45.0">
         </point>
       </points>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -3939,10 +3971,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>375</y>
     <width>8</width>
     <height>115</height>
-    <line_color>
-      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -3953,6 +3981,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="8.0" y="114.99999999999999">
       </point>
     </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_53</name>
@@ -4015,10 +4047,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>374</y>
     <width>382</width>
     <height>341</height>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
-      </color>
-    </line_color>
     <points>
       <point x="265.0" y="0.0">
       </point>
@@ -4033,6 +4061,10 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
       <point x="382.0" y="320.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_57</name>
@@ -4040,18 +4072,18 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
     <y>455</y>
     <width>1</width>
     <height>25</height>
-    <line_color>
-      <color name="IO LN2 lines" red="255" green="153" blue="204">
-      </color>
-    </line_color>
-    <arrows>1</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="25.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO LN2 lines" red="255" green="153" blue="204">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="ellipse" version="2.0.0">
     <name>Ellipse_8</name>
@@ -4601,18 +4633,18 @@ $(pv_value)</tooltip>
     <y>449</y>
     <width>1</width>
     <height>30</height>
-    <line_color>
-      <color red="153" green="102" blue="153">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="30.0">
       </point>
     </points>
+    <line_color>
+      <color red="153" green="102" blue="153">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_40</name>
@@ -4620,18 +4652,18 @@ $(pv_value)</tooltip>
     <y>449</y>
     <width>1</width>
     <height>30</height>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="30.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_42</name>
@@ -4639,32 +4671,32 @@ $(pv_value)</tooltip>
     <y>449</y>
     <width>1</width>
     <height>30</height>
-    <arrows>2</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="30.0">
       </point>
     </points>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_58</name>
     <x>600</x>
     <y>450</y>
     <width>1</width>
-    <line_color>
-      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
-      </color>
-    </line_color>
-    <arrows>1</arrows>
-    <arrow_length>15</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="20.0">
       </point>
     </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
+    <arrow_length>15</arrow_length>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_52</name>
