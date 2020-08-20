@@ -67,4 +67,7 @@ TestEssProtoFreia_20200818 - KG, Changed some names to be the same as in the ser
                              which names have been changed.
 TestEssProtoFreia_20200819 - KG, Changed the control of the heaters for the series cryomodule. Added data buffers for LT02 (not filled with data yet).
 			     Changes made in db100, db101, db313, db105 anf CSs for the heater control (instantiate and manage).
+TestEssProtoFreia_20200820 - KG, Added support for reading LT02 (only the cabling to between the level measurement system and the PLC AI is missing).
+			     At the moment the value from LT02 is not used in the process control. Maybe later I will make it possible to choose which
+			     probe should be used in the process control.
 

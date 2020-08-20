@@ -26,6 +26,6 @@ record(bo, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid") {
   field(PINI, "NO")
   field(OMSL, "closed_loop")
   field(ONAM, "Data valid")
-  field(ONAM, "Data invalid")
+  field(ZNAM, "Data invalid")
   field(DOL, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc NPP")
 }
