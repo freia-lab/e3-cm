@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1940,14 +1940,6 @@ $(pv_value)</tooltip>
           <square>true</square>
           <actions>
           </actions>
-          <rules>
-            <rule name="BorderRule" prop_id="border_style" out_exp="false">
-              <exp bool_exp="pv0==1">
-                <value>9</value>
-              </exp>
-              <pv_name>$(pv_name).SIMM</pv_name>
-            </rule>
-          </rules>
         </widget>
         <widget type="label" version="2.0.0">
           <name>Label_20</name>
@@ -2477,7 +2469,7 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>23</height>
+          <height>24</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -2619,12 +2611,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <widget type="symbol" version="2.0.0">
           <name>Symbol</name>
           <pv_name>CstatH-RHtr:FV562:VisuState</pv_name>
-          <symbols>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_open_GREEN.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-          </symbols>
           <x>11</x>
           <y>15</y>
           <width>20</width>
@@ -2683,12 +2669,6 @@ Cryo-Rec:LP:GasBagSonar</tooltip>
         <widget type="symbol" version="2.0.0">
           <name>Symbol_1</name>
           <pv_name>CstatH-RHtr:FV563:VisuState</pv_name>
-          <symbols>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_open_GREEN.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-            <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-          </symbols>
           <x>11</x>
           <y>15</y>
           <width>20</width>

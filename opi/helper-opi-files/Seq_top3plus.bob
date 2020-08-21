@@ -45,7 +45,7 @@
     <x>7</x>
     <y>103</y>
     <width>27</width>
-    <height>13</height>
+    <height>12</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -93,14 +93,6 @@
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button Template_4</name>
@@ -222,14 +214,6 @@
       <square>true</square>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED Template_2</name>
@@ -259,14 +243,6 @@
       <square>true</square>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -293,14 +269,6 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -409,14 +377,6 @@ in the web browser</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <scripts>
       <script file="EmbeddedPy">
         <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
@@ -525,14 +485,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_4</name>
@@ -560,14 +512,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_5</name>
@@ -595,14 +539,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_6</name>
@@ -630,14 +566,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_7</name>
@@ -665,14 +593,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_8</name>
@@ -700,13 +620,5 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
 </display>

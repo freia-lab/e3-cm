@@ -15,8 +15,8 @@ record(bi, "CM-$(SUBS):$(DEV):sTsw") {
   field(INP, "@PLC:CM/$(OFFS) T=BYTE B=1")
   field(DESC, "$(SUBS) channel $(N)")
   field(OSV, "MAJOR")
-  field(ONAM, "True")
-  field(ZNAM, "False")
+  field(ONAM, "Fault")
+  field(ZNAM, "OK")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
 }

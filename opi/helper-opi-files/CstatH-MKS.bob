@@ -154,12 +154,6 @@
     <actions>
     </actions>
     <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
       <rule name="Rule" prop_id="visible" out_exp="false">
         <exp bool_exp="pv0">
           <value>false</value>
@@ -193,12 +187,6 @@
     <actions>
     </actions>
     <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
       <rule name="Rule" prop_id="visible" out_exp="false">
         <exp bool_exp="pv0">
           <value>false</value>
@@ -386,14 +374,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -420,14 +400,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -454,14 +426,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -488,14 +452,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -522,14 +478,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="led" version="2.0.0">
@@ -797,14 +745,6 @@ Fault verif status
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">

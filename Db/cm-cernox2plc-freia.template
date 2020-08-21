@@ -15,7 +15,7 @@ record(calc, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc") {
 #  field (INPC, "$(PREFIX)-$(SUBS):$(DEV):sRdV.DISA NMS")
 #  field (INPD, "73")
 #  field (INPE, "400")
-  field (CALC, "A?0:1")
+  field (CALC, "(A?0:1)||L")
   field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid")
 }
 

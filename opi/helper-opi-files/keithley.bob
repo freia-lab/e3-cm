@@ -458,32 +458,32 @@
       <name>Action Button_1</name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
           <description>4W resistance</description>
         </action>
       </actions>
-      <pv_name>$(P)-Ctrl:K3706A:cmdOhm-4W.PROC</pv_name>
+      <pv_name>$(P)-Ctrl:K3706A:cmdOhm-4W</pv_name>
       <x>59</x>
       <y>79</y>
       <tooltip>Set-up 4-wire resistance measurements
-($pv_name)</tooltip>
+$(pv_name)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_2</name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
           <description>4W PT100</description>
         </action>
       </actions>
-      <pv_name>$(P)-Ctrl:K3706A:cmdPT100-4W.PROC</pv_name>
+      <pv_name>$(P)-Ctrl:K3706A:cmdPT100-4W</pv_name>
       <x>168</x>
       <y>79</y>
       <tooltip>Set-up 4-wire PT100 measurements
-($pv_name)</tooltip>
+$(pv_name)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="group" version="2.0.0">

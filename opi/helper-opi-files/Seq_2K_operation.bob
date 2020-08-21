@@ -13,12 +13,14 @@
     <macros>
       <step0>Not running</step0>
       <step1>Checking equipment</step1>
+      <step10>Starting 2K operation</step10>
       <step12>Keeping cold</step12>
       <step14>Stopping - waiting for PT02/PT03 to rise to Final Pressure. You can stop the 2K pumps.</step14>
       <step16>Stopping - delaying 10 s</step16>
       <step18>Waiting for 2K pumps to stop rotate. Press Accept to go on</step18>
       <step2>Checking parameters</step2>
       <step20>Stopping - venting 2K Pumps. When CstatH-2Kpumps:PT552:sRdV is ~1000 mbar press Accept to go on</step20>
+      <step3></step3>
       <step30>Waiting for CM's transition from 2K to 4K operation</step30>
       <step4>Waiting for switching the 2K exhaust to Kaeser</step4>
       <step6>Set WH pumps freq. to 100%. Start 2K pumps and let them running for 10 min. at full speed. Set WH freq. to 50% then press Accept to go on</step6>
@@ -81,14 +83,6 @@
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -138,14 +132,6 @@
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -154,7 +140,7 @@
     <x>30</x>
     <y>250</y>
     <width>47</width>
-    <height>24</height>
+    <height>23</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -182,7 +168,7 @@
     <x>12</x>
     <y>140</y>
     <width>184</width>
-    <height>24</height>
+    <height>23</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -251,14 +237,6 @@
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -267,17 +245,17 @@
     <y>365</y>
     <width>519</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="IO Background" red="255" green="255" blue="205">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="518.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -289,7 +267,7 @@ $(pv_value)</tooltip>
     <x>156</x>
     <y>370</y>
     <width>190</width>
-    <height>24</height>
+    <height>23</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -359,14 +337,6 @@ $(pv_value)</tooltip>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="group" version="2.0.0">
@@ -409,14 +379,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -441,14 +403,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -473,14 +427,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -505,14 +451,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -537,14 +475,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -569,14 +499,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -601,14 +523,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -633,14 +547,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -665,14 +571,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -697,14 +595,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -729,14 +619,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -761,14 +643,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -793,14 +667,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -825,14 +691,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -857,14 +715,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -889,14 +739,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -921,14 +763,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -953,14 +787,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -985,14 +811,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -1017,14 +835,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -1049,14 +859,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -1081,14 +883,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -1113,14 +907,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="label" version="2.0.0">
@@ -1193,14 +979,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -1225,14 +1003,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1259,14 +1029,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1293,14 +1055,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1327,14 +1081,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1361,14 +1107,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1395,14 +1133,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1429,14 +1159,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1463,14 +1185,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1497,14 +1211,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1531,14 +1237,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1565,14 +1263,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1599,14 +1289,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1633,14 +1315,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1667,14 +1341,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1701,14 +1367,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1735,14 +1393,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1769,14 +1419,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1803,14 +1445,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1837,14 +1471,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1871,14 +1497,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1905,14 +1523,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1939,14 +1549,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -1973,14 +1575,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2007,14 +1601,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2041,14 +1627,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2075,14 +1653,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2109,14 +1679,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -2141,14 +1703,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
   </widget>
@@ -2176,14 +1730,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -2210,14 +1756,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -2244,14 +1782,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -2278,14 +1808,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -2492,14 +2014,6 @@ $(pv_value)</tooltip>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2526,14 +2040,6 @@ $(pv_value)</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
     </widget>
   </widget>
@@ -2638,7 +2144,7 @@ $(pv_value)</tooltip>
       <name>Label Template_24</name>
       <text>CV01</text>
       <width>39</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
