@@ -44,6 +44,10 @@ file cm-Heater1.template { pattern
 {PwrCpl	EH12  	   13  782     382}
 {PwrCpl	EH22  	   14  792     392}
 }
+file "cm-Valves.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2}
+{Vac,	GV72,      1040,   544}
+}
 
 file cm-LT.template { pattern
 {SUBS,	DEV,       OFFS,  PREC, EGU}

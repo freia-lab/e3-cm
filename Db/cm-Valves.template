@@ -1,0 +1,199 @@
+record(bi, "CM-$(SUBS):$(DEV):sAuto")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=0")
+  field(ZSV, "MINOR")
+  field(ONAM, "Auto")
+  field(ZNAM, "Manual")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sSim")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=1")
+  field(OSV, "MINOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sCmd")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=2")
+  field(ONAM, "CmdOpen")
+  field(ZNAM, "CmdClose")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sCmdAuto")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+1 T=BYTE B=1")
+  field(ONAM, "CmdAutoOpen")
+  field(ZNAM, "CmdAutoClose")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sOn")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=3")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(SDIS, "CM-$(SUBS):$(DEV):SEV.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sOff")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=4")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sNO")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=5")
+  field(ONAM, "Normally Open")
+  field(ZNAM, "Normally Closed")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sOnFlt")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=6")
+  field(OSV, "MAJOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sOffFlt")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS) T=BYTE B=7")
+  field(OSV, "MAJOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CM-$(SUBS):$(DEV):sFlt")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/$(OFFS)+1 T=BYTE B=0")
+  field(OSV, "MAJOR")
+  field(ONAM, "Fault")
+  field(ZNAM, "No fault")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(FLNK, "CM-$(SUBS):$(DEV):VisSev")
+}
+
+record(calc, "CM-$(SUBS):$(DEV):VisSev") {
+  field(INPA, "CM-$(SUBS):$(DEV):sAuto")
+  field(INPB, "CM-$(SUBS):$(DEV):sFlt")
+  field(CALC, "A+2*B")
+  field(FLNK, "CM-$(SUBS):$(DEV):SEV")
+}
+
+record (mbbi, "CM-$(SUBS):$(DEV):SEV") {
+   field (DESC, "PV to propagate the severity")
+   field (INP, "CM-$(SUBS):$(DEV):VisSev MSS")
+   field(VAL, "0")
+   field(ZRVL, "0")
+   field(ZRST, "MANUAL")
+   field(ZRSV, "MINOR")
+   field(ONVL, "1")
+   field(ONST, "OK")
+   field(ONSV, "NO_ALARM")
+   field(TWVL, "2")
+   field(TWST, "FAULT & MANUAL")
+   field(TWSV, "MAJOR")
+   field(THVL, "3")
+   field(THST, "FAULT")
+   field(THSV, "MAJOR")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdAuto") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=0")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdAuto")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdMan") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=1")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdMan")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=2")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdOpen")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdRst") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=3")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdClose")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdAck") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=4")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdAck")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdSimSet") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSimSet")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CM-$(SUBS):$(DEV):cmdSimRst") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/$(OFFS2) T=BYTE B=6")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSimRst")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}

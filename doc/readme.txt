@@ -70,4 +70,6 @@ TestEssProtoFreia_20200819 - KG, Changed the control of the heaters for the seri
 TestEssProtoFreia_20200820 - KG, Added support for reading LT02 (only the cabling to between the level measurement system and the PLC AI is missing).
 			     At the moment the value from LT02 is not used in the process control. Maybe later I will make it possible to choose which
 			     probe should be used in the process control.
+TestEssProtoFreia_20200918 - KG, Added support for the valves (same object valve as in Gersemi).
+			     Added GV72. 
 

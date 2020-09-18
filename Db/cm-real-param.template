@@ -24,6 +24,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
   field(ZNAM, "Iddle")
   field(ONAM, "CmdSet")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 

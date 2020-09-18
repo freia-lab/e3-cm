@@ -124,6 +124,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdAuto") {
   field(ONAM, "CmdAuto")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
@@ -135,6 +136,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdMan") {
   field(ONAM, "CmdMan")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
@@ -146,6 +148,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdSet") {
   field(ONAM, "CmdSet")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
@@ -157,6 +160,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdRst") {
   field(ONAM, "CmdRst")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
@@ -168,6 +172,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdHL") {
   field(ONAM, "CmdHL")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
@@ -179,6 +184,7 @@ record(bo, "CM-$(SUBS):$(DEV):cmdLL") {
   field(ONAM, "CmdLL")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
 
