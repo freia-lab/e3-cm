@@ -45,14 +45,14 @@ VBox	TT960,    "pt100", "", 70  400
 VBox	TT630,    "pt100", "", 70  400
 VBox	TT640,    "pt100", "", 70  400
 VBox	TT700,    "pt100", "", 70  400
-CM	TT04,     "NO CONVERSION", Cernox, 1.5,  310
-CM	TT05,     "NO CONVERSION", Cernox, 1.5,  310
-CM	TT06,     "NO CONVERSION", Cernox, 1.5,  310
-CM	TT07,     "NO CONVERSION", Cernox, 1.5,  310
-CM	TT08,     "NO CONVERSION", Cernox, 1.5,  310
-CM	TT09,     "NO CONVERSION", Cernox, 1.5,  310
-PwrCpl	TT12,     "NO CONVERSION", Cernox, 1.5,  310
-PwrCpl	TT22,     "NO CONVERSION", Cernox, 1.5,  310}
+CM	TT04,     "CX_LS_X133969", Cernox, 1.5,  310
+CM	TT05,     "CX_LS_X133970", Cernox, 1.5,  310
+CM	TT06,     "CX_LS_X133971", Cernox, 1.5,  310
+CM	TT07,     "CX_LS_X133972", Cernox, 1.5,  310
+CM	TT08,     "CX_LS_X134425", Cernox, 1.5,  310
+CM	TT09,     "CX_LS_X134426", Cernox, 1.5,  310
+PwrCpl	TT12,     "CX_LS_X134427", Cernox, 1.5,  310
+PwrCpl	TT22,     "CX_LS_X134428", Cernox, 1.5,  310}
 }
 
 file "cm-cbatf-pt100.template" { pattern

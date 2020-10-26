@@ -775,4 +775,21 @@ Fault verif status
       </color>
     </border_color>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>CstatH-Ctrl:opMode:cmdSetAck</pv_name>
+    <text>Reset Errors</text>
+    <x>270</x>
+    <y>410</y>
+    <width>120</width>
+    <tooltip>Reset "Fault on send" error bit.
+$(pv_name)</tooltip>
+  </widget>
 </display>

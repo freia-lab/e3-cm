@@ -2203,4 +2203,36 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
     <width>25</width>
     <height>25</height>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>MKS3</name>
+    <actions>
+      <action type="open_display">
+        <file>CstatH-MKS.bob</file>
+        <macros>
+          <GHI>CstatH-LHe:PT101:sRdV</GHI>
+          <GLO>CstatH-LHe:PT102:sRdV</GLO>
+          <MKS>CstatH-MKS:MKS3</MKS>
+          <MKSname>MKS3</MKSname>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <pv_name>CstatH-MKS:MKS3:sAuto</pv_name>
+    <text>MKS3</text>
+    <x>50</x>
+    <y>560</y>
+    <rules>
+      <rule name="background_color" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
