@@ -182,7 +182,7 @@
       <name>valve-v-r_1</name>
       <macros>
         <S>IBoxHe</S>
-        <V>FV501</V>
+        <V>FV500</V>
       </macros>
       <file>../../freia-symbols/display-builder/CstatValve-v-lr.bob</file>
       <x>75</x>
@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -991,7 +991,7 @@ System</text>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1896,7 +1896,7 @@ $(pv_value)</tooltip>
           <x>20</x>
           <y>110</y>
           <width>71</width>
-          <height>23</height>
+          <height>24</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -4165,5 +4165,52 @@ $(pv_value)</tooltip>
     <y>225</y>
     <width>560</width>
     <height>240</height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>320</x>
+    <y>400</y>
+    <width>70</width>
+    <height>120</height>
+    <points>
+      <point x="70.0" y="120.0">
+      </point>
+      <point x="0.0" y="120.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>Out</text>
+    <x>310</x>
+    <y>380</y>
+    <width>16</width>
+    <height>13</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>valve-h-u_4</name>
+    <macros>
+      <S>LHe</S>
+      <V>RV90</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll.bob</file>
+    <x>286</x>
+    <y>430</y>
+    <width>45</width>
+    <height>25</height>
   </widget>
 </display>

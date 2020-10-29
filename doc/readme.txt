@@ -72,4 +72,9 @@ TestEssProtoFreia_20200820 - KG, Added support for reading LT02 (only the cablin
 			     probe should be used in the process control.
 TestEssProtoFreia_20200918 - KG, Added support for the valves (same object valve as in Gersemi).
 			     Added GV72. 
+TestEssProtoFreia_20201029 - KG, Added support for the RV90 (only manual control). The condition for automatic opening of the valve must be added but
+			     it's unclear now what should be the condition (PT02 is not working good enough).
+ 
+
+
 
