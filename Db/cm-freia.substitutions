@@ -48,6 +48,7 @@ file "cm-Valves.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2}
 {Vac,	GV72,      1040,   544}
 {LHe,	RV90,      1042,   546}
+{Vac,	GV70,      1044,   548}
 }
 
 file cm-LT.template { pattern

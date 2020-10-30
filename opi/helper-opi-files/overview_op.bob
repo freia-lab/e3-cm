@@ -1164,89 +1164,6 @@ System</text>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
-      <name>RF2</name>
-      <macros>
-        <P>HPRF</P>
-      </macros>
-      <width>112</width>
-      <height>60</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="rectangle" version="2.0.0">
-        <name>RF2</name>
-        <width>112</width>
-        <height>60</height>
-        <line_color>
-          <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="GRAY" red="169" green="169" blue="169">
-          </color>
-        </background_color>
-        <corner_width>10</corner_width>
-        <corner_height>10</corner_height>
-        <tooltip>DBE RF station</tooltip>
-      </widget>
-      <widget type="multi_state_led" version="2.0.0">
-        <name>LED (Multi State)_1</name>
-        <pv_name>$(P)-DBE:Ampl:VisuState</pv_name>
-        <x>9</x>
-        <y>4</y>
-        <width>95</width>
-        <square>true</square>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <states>
-          <state>
-            <value>0</value>
-            <label>Mains OFF</label>
-            <color>
-              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>1</value>
-            <label>Off</label>
-            <color>
-              <color name="STOP" red="222" green="33" blue="22">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>2</value>
-            <label>Standby</label>
-            <color>
-              <color name="BLUE" red="79" green="228" blue="250">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>3</value>
-            <label>On</label>
-            <color>
-              <color name="On" red="70" green="255" blue="70">
-              </color>
-            </color>
-          </state>
-        </states>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_1</name>
-        <pv_name>$(P)-DBE1:Ampl:sTotFwdPwr</pv_name>
-        <x>6</x>
-        <y>24</y>
-        <height>30</height>
-        <font>
-          <font family="Source Code Pro" style="BOLD" size="21.0">
-          </font>
-        </font>
-        <precision>0</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <wrap_words>false</wrap_words>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
       <name>Group</name>
       <macros>
         <N>1</N>
@@ -1315,15 +1232,6 @@ System</text>
         <wrap_words>false</wrap_words>
       </widget>
     </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group-LLRF-2</name>
-    <x>370</x>
-    <y>900</y>
-    <width>112</width>
-    <height>135</height>
-    <style>3</style>
-    <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>RF2_1</name>
       <macros>
@@ -1407,6 +1315,15 @@ System</text>
         <wrap_words>false</wrap_words>
       </widget>
     </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group-LLRF-2</name>
+    <x>370</x>
+    <y>900</y>
+    <width>112</width>
+    <height>135</height>
+    <style>3</style>
+    <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>Group_3</name>
       <macros>
@@ -1472,6 +1389,89 @@ System</text>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
         </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>RF2</name>
+      <macros>
+        <P>HPRF</P>
+      </macros>
+      <width>112</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>RF2</name>
+        <width>112</width>
+        <height>60</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+        <tooltip>DBE RF station</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_1</name>
+        <pv_name>$(P)-DBE:Ampl:VisuState</pv_name>
+        <x>9</x>
+        <y>4</y>
+        <width>95</width>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label>Mains OFF</label>
+            <color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label>Off</label>
+            <color>
+              <color name="STOP" red="222" green="33" blue="22">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label>Standby</label>
+            <color>
+              <color name="BLUE" red="79" green="228" blue="250">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label>On</label>
+            <color>
+              <color name="On" red="70" green="255" blue="70">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_1</name>
+        <pv_name>$(P)-DBE1:Ampl:sTotFwdPwr</pv_name>
+        <x>6</x>
+        <y>24</y>
+        <height>30</height>
+        <font>
+          <font family="Source Code Pro" style="BOLD" size="21.0">
+          </font>
+        </font>
+        <precision>0</precision>
         <horizontal_alignment>1</horizontal_alignment>
         <wrap_words>false</wrap_words>
       </widget>
@@ -3087,6 +3087,23 @@ $(pv_value)</tooltip>
       <width>15</width>
       <height>15</height>
     </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_60</name>
+      <x>855</x>
+      <y>10</y>
+      <width>1</width>
+      <points>
+        <point x="0.0" y="20.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_43</name>
@@ -4135,7 +4152,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
-      <text>PT72</text>
+      <text>P72</text>
       <x>15</x>
       <y>20</y>
       <width>40</width>
@@ -4212,5 +4229,97 @@ $(pv_value)</tooltip>
     <y>430</y>
     <width>45</width>
     <height>25</height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_59</name>
+    <x>910</x>
+    <y>510</y>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="100.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>valve-h-u_5</name>
+    <macros>
+      <S>Vac</S>
+      <V>GV70</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
+    <x>930</x>
+    <y>488</y>
+    <width>32</width>
+    <height>32</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PT75_1</name>
+    <macros>
+      <D>PT73</D>
+      <S>Vac</S>
+    </macros>
+    <x>970</x>
+    <y>470</y>
+    <width>35</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_57</name>
+      <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+      <y>13</y>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <format>2</format>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>$(D)</text>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_4</name>
+    <x>1002</x>
+    <y>480</y>
+    <width>60</width>
+    <height>60</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_9</name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <width>60</width>
+      <height>60</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>P70</text>
+      <x>15</x>
+      <y>20</y>
+      <width>40</width>
+    </widget>
   </widget>
 </display>
