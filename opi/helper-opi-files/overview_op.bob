@@ -1154,6 +1154,44 @@ System</text>
         </color>
       </background_color>
     </widget>
+    <widget type="group" version="2.0.0">
+      <name>PT75_2</name>
+      <macros>
+        <D>PT77</D>
+        <S>Vac</S>
+      </macros>
+      <y>265</y>
+      <width>35</width>
+      <height>28</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_58</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <format>2</format>
+        <precision>1</precision>
+        <show_units>false</show_units>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_21</name>
+        <text>$(D)</text>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group-LLRF-1</name>
@@ -3087,22 +3125,44 @@ $(pv_value)</tooltip>
       <width>15</width>
       <height>15</height>
     </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_60</name>
-      <x>855</x>
-      <y>10</y>
-      <width>1</width>
-      <points>
-        <point x="0.0" y="20.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
+    <widget type="group" version="2.0.0">
+      <name>PT75_3</name>
+      <macros>
+        <D>PT71</D>
+        <S>Vac</S>
+      </macros>
+      <x>740</x>
+      <y>260</y>
+      <width>35</width>
+      <height>28</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_67</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <format>2</format>
+        <precision>1</precision>
+        <show_units>false</show_units>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_22</name>
+        <text>$(D)</text>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -4233,7 +4293,7 @@ $(pv_value)</tooltip>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_59</name>
     <x>910</x>
-    <y>510</y>
+    <y>760</y>
     <height>1</height>
     <points>
       <point x="0.0" y="0.0">
@@ -4254,7 +4314,7 @@ $(pv_value)</tooltip>
     </macros>
     <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
     <x>930</x>
-    <y>488</y>
+    <y>738</y>
     <width>32</width>
     <height>32</height>
   </widget>
@@ -4265,7 +4325,7 @@ $(pv_value)</tooltip>
       <S>Vac</S>
     </macros>
     <x>970</x>
-    <y>470</y>
+    <y>720</y>
     <width>35</width>
     <height>28</height>
     <style>3</style>
@@ -4300,7 +4360,7 @@ $(pv_value)</tooltip>
   <widget type="group" version="2.0.0">
     <name>Group_4</name>
     <x>1002</x>
-    <y>480</y>
+    <y>730</y>
     <width>60</width>
     <height>60</height>
     <style>3</style>
@@ -4321,5 +4381,22 @@ $(pv_value)</tooltip>
       <y>20</y>
       <width>40</width>
     </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_60</name>
+    <x>985</x>
+    <y>740</y>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
 </display>
