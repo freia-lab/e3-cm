@@ -271,7 +271,7 @@
     </actions>
     <states>
       <state>
-        <value>0</value>
+        <value>3</value>
         <label>Cleared</label>
         <color>
           <color name="LED-GREEN-ON" red="70" green="255" blue="70">

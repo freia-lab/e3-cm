@@ -5,11 +5,11 @@
   <height>890</height>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Seq_2K_operation.bob</file>
     <macros>
       <seq_no>SQ9</seq_no>
       <seq_title>SQ9 on HNOSS</seq_title>
     </macros>
+    <file>Seq_2K_operation.bob</file>
     <width>590</width>
     <height>830</height>
   </widget>
@@ -145,5 +145,18 @@
         </color>
       </border_color>
     </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+      <GLO>CstatH-LHe:PT100:sRdV</GLO>
+      <L>MKS2</L>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+    <x>430</x>
+    <y>170</y>
+    <width>70</width>
+    <height>40</height>
   </widget>
 </display>

@@ -1346,38 +1346,18 @@ by the PLC program</tooltip>
         <width>65</width>
       </widget>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>MKS2_1</name>
-      <actions>
-        <action type="open_display">
-          <file>CstatH-MKS.bob</file>
-          <macros>
-            <GHI>CstatH-RHtr:PT550:sRdV</GHI>
-            <GLO>CstatH-LHe:PT100:sRdV</GLO>
-            <MKS>CstatH-MKS:MKS2</MKS>
-            <MKSname>MKS2</MKSname>
-          </macros>
-          <target>window</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
-      <text>MKS2</text>
-      <x>359</x>
-      <y>5</y>
-      <height>25</height>
-      <rules>
-        <rule name="background_color" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>
-              <color name="WARNING" red="252" green="242" blue="17">
-              </color>
-            </value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+        <GLO>CstatH-LHe:PT100:sRdV</GLO>
+        <L>MKS2</L>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+      <x>369</x>
+      <y>-1</y>
+      <width>70</width>
+      <height>40</height>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -2001,5 +1981,21 @@ and return to the Initial State</tooltip>
       <limits_from_pv>false</limits_from_pv>
       <maximum>80.0</maximum>
     </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S5HelpBtn_1</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Conditioning.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>170</x>
+    <y>110</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
   </widget>
 </display>

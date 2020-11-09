@@ -19,13 +19,6 @@
     <y>40</y>
     <width>545</width>
     <height>593</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="160.0" y="454.0">
       </point>
@@ -38,13 +31,6 @@
       <point x="0.0" y="0.0">
       </point>
     </points>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_12</name>
-    <x>240</x>
-    <y>460</y>
-    <width>589</width>
-    <height>154</height>
     <line_width>2</line_width>
     <line_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -52,6 +38,13 @@
     </line_color>
     <arrows>2</arrows>
     <arrow_length>10</arrow_length>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_12</name>
+    <x>240</x>
+    <y>460</y>
+    <width>589</width>
+    <height>154</height>
     <points>
       <point x="0.0" y="35.0">
       </point>
@@ -66,13 +59,6 @@
       <point x="75.0" y="0.0">
       </point>
     </points>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline</name>
-    <x>144</x>
-    <y>59</y>
-    <width>98</width>
-    <height>573</height>
     <line_width>2</line_width>
     <line_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -80,6 +66,13 @@
     </line_color>
     <arrows>2</arrows>
     <arrow_length>10</arrow_length>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>144</x>
+    <y>59</y>
+    <width>98</width>
+    <height>573</height>
     <points>
       <point x="96.0" y="0.0">
       </point>
@@ -92,6 +85,13 @@
       <point x="25.0" y="320.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="group" version="2.0.0">
     <name> LHe Level Control </name>
@@ -768,16 +768,16 @@ MUST be active.</tooltip>
     <y>90</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_2</name>
@@ -785,16 +785,16 @@ MUST be active.</tooltip>
     <y>180</y>
     <width>37</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="37.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_3</name>
@@ -802,16 +802,16 @@ MUST be active.</tooltip>
     <y>140</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_4</name>
@@ -819,16 +819,16 @@ MUST be active.</tooltip>
     <y>520</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_5</name>
@@ -836,16 +836,16 @@ MUST be active.</tooltip>
     <y>260</y>
     <width>34</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="34.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_6</name>
@@ -853,16 +853,16 @@ MUST be active.</tooltip>
     <y>338</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_7</name>
@@ -870,16 +870,16 @@ MUST be active.</tooltip>
     <y>420</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_8</name>
@@ -887,16 +887,16 @@ MUST be active.</tooltip>
     <y>520</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_9</name>
@@ -904,16 +904,16 @@ MUST be active.</tooltip>
     <y>520</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_10</name>
@@ -921,16 +921,16 @@ MUST be active.</tooltip>
     <y>615</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_11</name>
@@ -938,13 +938,6 @@ MUST be active.</tooltip>
     <y>40</y>
     <width>96</width>
     <height>125</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="95.0" y="125.0">
       </point>
@@ -955,6 +948,13 @@ MUST be active.</tooltip>
       <point x="21.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_13</name>
@@ -962,16 +962,16 @@ MUST be active.</tooltip>
     <y>596</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_14</name>
@@ -979,16 +979,16 @@ MUST be active.</tooltip>
     <y>597</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>LT$(N)</name>
@@ -1234,16 +1234,16 @@ by the PLC program</tooltip>
       <y>59</y>
       <width>1</width>
       <height>147</height>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="147.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_10</name>
@@ -1338,38 +1338,17 @@ by the PLC program</tooltip>
         <width>65</width>
       </widget>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>MKS2_1</name>
-      <actions>
-        <action type="open_display">
-          <file>CstatH-MKS.bob</file>
-          <macros>
-            <GHI>CstatH-RHtr:PT550:sRdV</GHI>
-            <GLO>CstatH-LHe:PT100:sRdV</GLO>
-            <MKS>CstatH-MKS:MKS2</MKS>
-            <MKSname>MKS2</MKSname>
-          </macros>
-          <target>window</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
-      <text>MKS2</text>
-      <x>359</x>
-      <y>5</y>
-      <height>25</height>
-      <rules>
-        <rule name="background_color" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>
-              <color name="WARNING" red="252" green="242" blue="17">
-              </color>
-            </value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+        <GLO>CstatH-LHe:PT100:sRdV</GLO>
+        <L>MKS2</L>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+      <x>379</x>
+      <width>70</width>
+      <height>40</height>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1401,14 +1380,14 @@ by the PLC program</tooltip>
     <y>189</y>
     <width>46</width>
     <height>88</height>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="46.0" y="0.0">
       </point>
       <point x="0.0" y="88.00001525878906">
       </point>
     </points>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_18</name>
@@ -1416,13 +1395,6 @@ by the PLC program</tooltip>
     <y>561</y>
     <width>154</width>
     <height>44</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>10</arrow_length>
     <points>
       <point x="0.0" y="44.0">
       </point>
@@ -1433,6 +1405,13 @@ by the PLC program</tooltip>
       <point x="154.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>10</arrow_length>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_19</name>
@@ -1440,16 +1419,16 @@ by the PLC program</tooltip>
     <y>581</y>
     <width>33</width>
     <height>1</height>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="33.0" y="0.0">
       </point>
     </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_11</name>
@@ -2036,6 +2015,22 @@ and return to the Initial State</tooltip>
     <text></text>
     <x>400</x>
     <y>535</y>
+    <width>140</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S5HelpBtn_1</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Conditioning.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>170</x>
+    <y>110</y>
     <width>140</width>
     <height>41</height>
     <transparent>true</transparent>

@@ -140,7 +140,7 @@
     <x>30</x>
     <y>250</y>
     <width>47</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -168,7 +168,7 @@
     <x>12</x>
     <y>140</y>
     <width>184</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -267,7 +267,7 @@ $(pv_value)</tooltip>
     <x>156</x>
     <y>370</y>
     <width>190</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -2144,7 +2144,7 @@ $(pv_value)</tooltip>
       <name>Label Template_24</name>
       <text>CV01</text>
       <width>39</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -2203,36 +2203,17 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
     <width>25</width>
     <height>25</height>
   </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>MKS3</name>
-    <actions>
-      <action type="open_display">
-        <file>CstatH-MKS.bob</file>
-        <macros>
-          <GHI>CstatH-LHe:PT101:sRdV</GHI>
-          <GLO>CstatH-LHe:PT102:sRdV</GLO>
-          <MKS>CstatH-MKS:MKS3</MKS>
-          <MKSname>MKS3</MKSname>
-        </macros>
-        <target>window</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <pv_name>CstatH-MKS:MKS3:sAuto</pv_name>
-    <text>MKS3</text>
-    <x>50</x>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <GHI>CstatH-LHe:PT101:sRdV</GHI>
+      <GLO>CstatH-LHe:PT102:sRdV</GLO>
+      <L>MKS3</L>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+    <x>70</x>
     <y>560</y>
-    <rules>
-      <rule name="background_color" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="WARNING" red="252" green="242" blue="17">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
-    <tooltip>$(actions)</tooltip>
+    <width>70</width>
+    <height>40</height>
   </widget>
 </display>

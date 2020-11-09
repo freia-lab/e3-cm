@@ -75,6 +75,9 @@ TestEssProtoFreia_20200918 - KG, Added support for the valves (same object valve
 TestEssProtoFreia_20201029 - KG, Added support for the RV90 (only manual control). The condition for automatic opening of the valve must be added but
 			     it's unclear now what should be the condition (PT02 is not working good enough).
 TestEssProtoFreia_20201030 - KG, Added support for the GV70 (only manual control).
+TestEssProtoFreia_20201109 - KG, Added support for automatic mode for the RV90. Fixed a bug in the previous version (wrong parameter in the 
+			     call of #FC_VALVES.
+
 
 
 
