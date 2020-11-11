@@ -13,6 +13,20 @@
       <description>Write PV</description>
     </action>
   </actions>
+  <widget type="label" version="2.0.0">
+    <name>LN2 cooling info</name>
+    <text>Waiting for TT77
+to go below 110 K</text>
+    <x>10</x>
+    <y>280</y>
+    <width>118</width>
+    <height>44</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_15</name>
     <x>310</x>
@@ -500,6 +514,14 @@ with LN2</tooltip>
     <text>Proceed</text>
     <x>10</x>
     <y>330</y>
+    <rules>
+      <rule name="LN2 cooling Rdy" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pvInt0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(PG):sTransTempOK</pv_name>
+      </rule>
+    </rules>
     <tooltip>Start LHe cooling</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>

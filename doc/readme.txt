@@ -77,6 +77,9 @@ TestEssProtoFreia_20201029 - KG, Added support for the RV90 (only manual control
 TestEssProtoFreia_20201030 - KG, Added support for the GV70 (only manual control).
 TestEssProtoFreia_20201109 - KG, Added support for automatic mode for the RV90. Fixed a bug in the previous version (wrong parameter in the 
 			     call of #FC_VALVES.
+TestEssProtoFreia_20201110 - KG, Added support for automatic mode for the RV90. Fixed still another bug in managing RV90. Added end switches for RV90.
+
+
 
 
 
