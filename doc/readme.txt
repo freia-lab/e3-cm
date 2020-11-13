@@ -78,6 +78,10 @@ TestEssProtoFreia_20201030 - KG, Added support for the GV70 (only manual control
 TestEssProtoFreia_20201109 - KG, Added support for automatic mode for the RV90. Fixed a bug in the previous version (wrong parameter in the 
 			     call of #FC_VALVES.
 TestEssProtoFreia_20201110 - KG, Added support for automatic mode for the RV90. Fixed still another bug in managing RV90. Added end switches for RV90.
+TestEssProtoFreia_20201112 - KG, Added updating the CV61:sAutoRdV from setting in manual mode in states S4-S8 (Thermal shield cooling, 
+			     LHe cooling, 4K and 2 K operation, Stand-by).
+			     Added updating the CV04:sAutoRdV from setting in manual mode in states S5-S8 (LHe cooling, 4K and 2 K operation, Stand-by).
+
 
 
 

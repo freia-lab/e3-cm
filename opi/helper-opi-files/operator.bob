@@ -29,7 +29,7 @@
       </tab>
       <tab>
         <name>LN2 Cooling</name>
-        <file></file>
+        <file>LN2_cooling.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
