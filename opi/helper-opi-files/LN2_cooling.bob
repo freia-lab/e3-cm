@@ -536,10 +536,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_169</name>
-    <text>From Liquefier</text>
+    <text>From LN2 tank</text>
     <x>60</x>
     <y>910</y>
-    <width>108</width>
+    <width>99</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
