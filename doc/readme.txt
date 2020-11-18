@@ -81,6 +81,11 @@ TestEssProtoFreia_20201110 - KG, Added support for automatic mode for the RV90. 
 TestEssProtoFreia_20201112 - KG, Added updating the CV61:sAutoRdV from setting in manual mode in states S4-S8 (Thermal shield cooling, 
 			     LHe cooling, 4K and 2 K operation, Stand-by).
 			     Added updating the CV04:sAutoRdV from setting in manual mode in states S5-S8 (LHe cooling, 4K and 2 K operation, Stand-by).
+TestEssProtoFreia_20201117 - KG, Removed a few networks in FC3 (ACQ_CABTF) - network accessing CABTF4, and som unused data blocks. Deleted DB20, DB5 and 
+			     DBxx (some LC cable). Last backup before changing the hardware configuration (deleting CABFT4 that is moved to uGersemi).
+TestEssProtoFreia_20201118 - KG, Updated hardware configuration. Added manging CV5202 valve.
+
+
 
 
 

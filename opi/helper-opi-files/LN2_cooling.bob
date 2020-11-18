@@ -43,7 +43,7 @@
       <name>Polyline_22</name>
       <x>250</x>
       <y>30</y>
-      <width>0</width>
+      <width>1</width>
       <height>250</height>
       <points>
         <point x="0.0" y="0.0">
@@ -456,7 +456,6 @@ achieved</text>
           <S>VBox</S>
           <V>CV60</V>
         </macros>
-        <x>-1</x>
         <y>80</y>
         <width>119</width>
         <height>50</height>
@@ -493,7 +492,6 @@ achieved</text>
         <name>Label_16</name>
         <text>TT77</text>
         <x>9</x>
-        <y>-1</y>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
     </widget>
@@ -1020,37 +1018,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_178</name>
-    <text>PT001</text>
-    <x>619</x>
+    <text>PT001 (Pi)</text>
+    <x>610</x>
     <y>835</y>
-    <width>47</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_179</name>
-    <text>PT000</text>
-    <x>619</x>
-    <y>801</y>
-    <width>47</width>
+    <width>59</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -1065,6 +1036,35 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_179</name>
+    <text>PT000 (Pe)</text>
+    <x>610</x>
+    <y>801</y>
+    <width>63</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -1525,7 +1525,7 @@ $(pv_value)</tooltip>
     <text>To Cryostat</text>
     <x>590</x>
     <y>420</y>
-    <width>87</width>
+    <width>77</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -2699,5 +2699,31 @@ Click for details</tooltip>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_49</name>
+    <text>TT75</text>
+    <x>1275</x>
+    <y>530</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_50</name>
+    <text>TT60</text>
+    <x>1095</x>
+    <y>530</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
 </display>
