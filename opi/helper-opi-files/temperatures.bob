@@ -3,16 +3,12 @@
   <name>Temperatures</name>
   <width>1500</width>
   <height>750</height>
-  <background_color>
-    <color red="240" green="240" blue="240">
-    </color>
-  </background_color>
   <actions>
   </actions>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <file>cernox.bob</file>
-    <width>1090</width>
+    <width>1100</width>
     <height>665</height>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -20,6 +16,6 @@
     <file>keithley.bob</file>
     <x>1100</x>
     <width>390</width>
-    <height>740</height>
+    <height>665</height>
   </widget>
 </display>

@@ -4,7 +4,7 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1700</width>
+  <width>2150</width>
   <height>1150</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -42,7 +42,7 @@
       </tab>
     </tabs>
     <y>58</y>
-    <width>1690</width>
+    <width>2110</width>
     <height>1092</height>
   </widget>
   <widget type="label" version="2.0.0">

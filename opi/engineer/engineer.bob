@@ -4,12 +4,8 @@
   <macros>
     <P>CM</P>
   </macros>
-  <width>1578</width>
-  <height>1080</height>
-  <background_color>
-    <color red="240" green="240" blue="240">
-    </color>
-  </background_color>
+  <width>2000</width>
+  <height>1092</height>
   <actions>
   </actions>
   <widget type="label" version="2.0.0">
@@ -211,8 +207,8 @@
       </tab>
     </tabs>
     <y>90</y>
-    <width>1578</width>
-    <height>980</height>
+    <width>1998</width>
+    <height>990</height>
     <direction>0</direction>
     <active_tab>3</active_tab>
   </widget>
