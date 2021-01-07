@@ -147,10 +147,6 @@ to go below 110 K</text>
           <name>Text Update</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -176,10 +172,6 @@ to go below 110 K</text>
           <name>Text Update_4</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -242,10 +234,6 @@ to go below 110 K</text>
           <name>Text Update_2</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -271,10 +259,6 @@ to go below 110 K</text>
           <name>Text Update_6</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -325,10 +309,6 @@ to go below 110 K</text>
           <name>Text Update_8</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -354,10 +334,6 @@ to go below 110 K</text>
           <name>Text Update_10</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -1117,10 +1093,6 @@ MUST be active.</tooltip>
           <name>Text Update_20</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -1155,10 +1127,6 @@ MUST be active.</tooltip>
         <name>Text Update_18</name>
         <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
         <width>50</width>
-        <background_color>
-          <color name="Read_Background" red="230" green="235" blue="232">
-          </color>
-        </background_color>
         <show_units>false</show_units>
         <wrap_words>true</wrap_words>
       </widget>
@@ -1530,10 +1498,6 @@ and return to the Initial State</tooltip>
           <name>Text Update_26</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -1581,10 +1545,6 @@ and return to the Initial State</tooltip>
           <name>Text Update_38</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -1626,10 +1586,6 @@ and return to the Initial State</tooltip>
           <name>Text Update_40</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>
@@ -1671,10 +1627,6 @@ and return to the Initial State</tooltip>
           <name>Text Update_42</name>
           <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
           <width>50</width>
-          <background_color>
-            <color name="Read_Background" red="230" green="235" blue="232">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <wrap_words>true</wrap_words>
         </widget>

@@ -232,8 +232,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_11</name>
     <text>Bunker Status:</text>
-    <x>920</x>
-    <y>10</y>
+    <x>1200</x>
+    <y>9</y>
     <width>99</width>
     <height>21</height>
     <foreground_color>
@@ -258,8 +258,8 @@
   <widget type="multi_state_led" version="2.0.0">
     <name>LED_4</name>
     <pv_name>Env-Safety:Bunker1:VisuState</pv_name>
-    <x>1040</x>
-    <y>10</y>
+    <x>1320</x>
+    <y>9</y>
     <width>100</width>
     <height>22</height>
     <foreground_color>
@@ -315,8 +315,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
     <text>Liquefier status:</text>
-    <x>910</x>
-    <y>35</y>
+    <x>1200</x>
+    <y>34</y>
     <width>108</width>
     <height>21</height>
     <foreground_color>
@@ -341,8 +341,8 @@
   <widget type="multi_state_led" version="2.0.0">
     <name>LED (Multi State)_1</name>
     <pv_name>Cryo-System:Operation:VisuState</pv_name>
-    <x>1040</x>
-    <y>35</y>
+    <x>1320</x>
+    <y>34</y>
     <width>100</width>
     <height>22</height>
     <square>true</square>
@@ -376,8 +376,7 @@
   </widget>
   <widget type="group" version="2.0.0">
     <name>GrafcetState</name>
-    <x>1160</x>
-    <y>1</y>
+    <x>1440</x>
     <width>200</width>
     <height>55</height>
     <style>3</style>
@@ -606,5 +605,47 @@ Machine</text>
         </rule>
       </rules>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>HNOSS PLC 
+mode</text>
+    <x>910</x>
+    <y>10</y>
+    <width>81</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_11</name>
+    <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
+    <x>1010</x>
+    <y>10</y>
+    <width>140</width>
+    <height>47</height>
+    <off_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </off_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>
