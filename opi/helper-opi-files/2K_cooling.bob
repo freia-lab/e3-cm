@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>4K cooling</name>
+  <name>2K cooling</name>
   <macros>
     <PG>$(P)-Ctrl:Grafcet</PG>
   </macros>
@@ -4131,6 +4131,9 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
+    <macros>
+      <seq_no>SQ9</seq_no>
+    </macros>
     <x>10</x>
     <y>10</y>
     <width>620</width>
@@ -4144,256 +4147,9 @@ $(pv_value)</tooltip>
       <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
       </color>
     </background_color>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_63</name>
-      <x>239</x>
-      <y>40</y>
-      <width>1</width>
-      <height>200</height>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="1.0" y="200.0">
-        </point>
-      </points>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
-      <arrow_length>10</arrow_length>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_68</name>
-      <pv_name>$(P)-Ctrl:S5:sStep</pv_name>
-      <x>169</x>
-      <y>130</y>
-      <width>140</width>
-      <height>15</height>
-      <font>
-        <font family="Source Serif Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_70</name>
-      <pv_name>$(P)-Ctrl:S6:sStep</pv_name>
-      <x>169</x>
-      <y>205</y>
-      <width>140</width>
-      <height>15</height>
-      <font>
-        <font family="Source Serif Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_71</name>
-      <pv_name>$(P)-Ctrl:S4:sStep</pv_name>
-      <x>143</x>
-      <y>50</y>
-      <width>196</width>
-      <height>15</height>
-      <font>
-        <font family="Source Serif Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_6</name>
-      <pv_name>$(PG):sState6</pv_name>
-      <x>169</x>
-      <y>165</y>
-      <width>140</width>
-      <height>40</height>
-      <off_label>4K Operation (S6)</off_label>
-      <off_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </off_color>
-      <on_label>4K Operation (S6)</on_label>
-      <square>true</square>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>S6HelpBtn</name>
-      <actions>
-        <action type="open_webpage">
-          <url>http://freia.physics.uu.se/CSS/pdf/CM/4K-operation.pdf</url>
-          <description>Open Webpage</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>169</x>
-      <y>165</y>
-      <width>140</width>
-      <height>41</height>
-      <transparent>true</transparent>
-      <tooltip>Show help page in the web browser</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_5</name>
-      <pv_name>$(PG):sState5</pv_name>
-      <x>169</x>
-      <y>90</y>
-      <width>140</width>
-      <height>40</height>
-      <off_label>LHe Cooling (S5)</off_label>
-      <off_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </off_color>
-      <on_label>LHe Cooling (S5)</on_label>
-      <square>true</square>
-      <tooltip>$(pv_name)$(pv_value)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>S5HelpBtn</name>
-      <actions>
-        <action type="open_webpage">
-          <url>http://freia.physics.uu.se/CSS/pdf/CM/Cool-down.pdf</url>
-          <description>Open Webpage</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>169</x>
-      <y>90</y>
-      <width>140</width>
-      <height>41</height>
-      <transparent>true</transparent>
-      <tooltip>Show help page in the web browser</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_6</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(PG):cmdStartLHeCool</pv_name>
-      <text>Proceed</text>
-      <x>9</x>
-      <y>60</y>
-      <rules>
-        <rule name="LN2 cooling Rdy" prop_id="enabled" out_exp="false">
-          <exp bool_exp="pvInt0==0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PG):sTransTempOK</pv_name>
-        </rule>
-      </rules>
-      <tooltip>Start LHe cooling</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_35</name>
-      <text>TransMode4K</text>
-      <x>9</x>
-      <y>145</y>
-      <width>120</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </background_color>
-      <transparent>false</transparent>
-      <horizontal_alignment>1</horizontal_alignment>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pvInt0==1">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PG):sTransMode4K</pv_name>
-        </rule>
-      </rules>
-      <tooltip>Automatic conditon for entering
-4K Operation state.
-Both LT01 and LT03 PID regulators (CV02/CV03)
-MUST be active.</tooltip>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_26</name>
-      <x>223</x>
-      <y>68</y>
-      <width>33</width>
-      <height>1</height>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="33.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_61</name>
-      <x>223</x>
-      <y>150</y>
-      <width>33</width>
-      <height>1</height>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="33.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_167</name>
-      <text>LHe Cooling and Operation @ 4K</text>
+      <text>Cooling and operation @ 2K</text>
       <x>9</x>
       <width>610</width>
       <height>24</height>
@@ -4418,309 +4174,6 @@ MUST be active.</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_12</name>
-      <pv_name>$(PG):sErr</pv_name>
-      <x>389</x>
-      <y>89</y>
-      <width>120</width>
-      <height>30</height>
-      <off_color>
-        <color name="GREEN" red="61" green="216" blue="61">
-        </color>
-      </off_color>
-      <on_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </on_color>
-      <square>true</square>
-      <labels_from_pv>true</labels_from_pv>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_10</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(PG):cmdErrRst</pv_name>
-      <text>Reset Error</text>
-      <x>389</x>
-      <y>119</y>
-      <width>120</width>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name> LHe Cooling Settings - Filling 2K tank  </name>
-      <x>10</x>
-      <y>270</y>
-      <width>600</width>
-      <height>210</height>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label_37</name>
-        <text>Flow Limits</text>
-        <x>98</x>
-        <y>5</y>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Group</name>
-        <x>448</x>
-        <y>69</y>
-        <width>100</width>
-        <height>42</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="label" version="2.0.0">
-          <name>Label_54</name>
-          <text>FT552</text>
-          <width>99</width>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_82</name>
-          <pv_name>CstatH-RHtr:FT552:sRdV</pv_name>
-          <y>22</y>
-          <font>
-            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-            </font>
-          </font>
-          <precision>1</precision>
-        </widget>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Group</name>
-        <x>328</x>
-        <y>69</y>
-        <width>100</width>
-        <height>42</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="label" version="2.0.0">
-          <name>Label_64</name>
-          <text>CV03</text>
-          <width>99</width>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_101</name>
-          <pv_name>$(P)-VBox:CV03:sRdV</pv_name>
-          <y>22</y>
-          <font>
-            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-            </font>
-          </font>
-          <precision>1</precision>
-        </widget>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Group</name>
-        <x>10</x>
-        <y>100</y>
-        <width>261</width>
-        <height>62</height>
-        <style>2</style>
-        <foreground_color>
-          <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
-          </color>
-        </foreground_color>
-        <rules>
-          <rule name="New Rule" prop_id="transparent" out_exp="true">
-            <exp bool_exp="pvInt0">
-              <expression>True</expression>
-            </exp>
-            <pv_name>CstatH-RHtr:opMode:s2KHeBaloon</pv_name>
-          </rule>
-        </rules>
-        <widget type="group" version="2.0.0">
-          <name>Group_24</name>
-          <macros>
-            <D>S5_P_FT552_MAX_C</D>
-            <L>FT552_Max_C</L>
-            <S>Ctrl</S>
-          </macros>
-          <y>30</y>
-          <width>259</width>
-          <height>30</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="label" version="2.0.0">
-            <name>Label_53</name>
-            <text>  $(L)</text>
-            <y>5</y>
-            <width>129</width>
-          </widget>
-          <widget type="group" version="2.0.0">
-            <name>Group_25</name>
-            <x>129</x>
-            <y>5</y>
-            <width>121</width>
-            <height>20</height>
-            <style>3</style>
-            <transparent>true</transparent>
-            <widget type="textentry" version="3.0.0">
-              <name>Text Update_80</name>
-              <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-              <width>50</width>
-              <show_units>false</show_units>
-              <wrap_words>true</wrap_words>
-            </widget>
-            <widget type="textupdate" version="2.0.0">
-              <name>Text Update_81</name>
-              <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-              <x>55</x>
-              <width>66</width>
-            </widget>
-          </widget>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_22</name>
-          <macros>
-            <D>S5_P_FT552_MIN_C</D>
-            <L>FT552_Min_C</L>
-            <S>Ctrl</S>
-          </macros>
-          <width>259</width>
-          <height>30</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="label" version="2.0.0">
-            <name>Label_52</name>
-            <text>  $(L)</text>
-            <y>5</y>
-            <width>129</width>
-          </widget>
-          <widget type="group" version="2.0.0">
-            <name>Group_23</name>
-            <x>129</x>
-            <y>5</y>
-            <width>121</width>
-            <height>20</height>
-            <style>3</style>
-            <transparent>true</transparent>
-            <widget type="textentry" version="3.0.0">
-              <name>Text Update_78</name>
-              <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-              <width>50</width>
-              <show_units>false</show_units>
-              <wrap_words>true</wrap_words>
-            </widget>
-            <widget type="textupdate" version="2.0.0">
-              <name>Text Update_79</name>
-              <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-              <x>55</x>
-              <width>66</width>
-            </widget>
-          </widget>
-        </widget>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Group</name>
-        <x>9</x>
-        <y>29</y>
-        <width>261</width>
-        <height>62</height>
-        <style>2</style>
-        <foreground_color>
-          <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </foreground_color>
-        <transparent>true</transparent>
-        <rules>
-          <rule name="New Rule" prop_id="transparent" out_exp="true">
-            <exp bool_exp="pvInt0">
-              <expression>False</expression>
-            </exp>
-            <pv_name>CstatH-RHtr:opMode:s2KHeBaloon</pv_name>
-          </rule>
-        </rules>
-        <widget type="group" version="2.0.0">
-          <name>Group_15</name>
-          <macros>
-            <D>S5_P_FT552_MIN_GB</D>
-            <L>FT552_Min_GB</L>
-            <S>Ctrl</S>
-          </macros>
-          <width>259</width>
-          <height>30</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="label" version="2.0.0">
-            <name>Label_36</name>
-            <text>  $(L)</text>
-            <y>5</y>
-            <width>129</width>
-          </widget>
-          <widget type="group" version="2.0.0">
-            <name>Group_16</name>
-            <x>129</x>
-            <y>5</y>
-            <width>121</width>
-            <height>20</height>
-            <style>3</style>
-            <transparent>true</transparent>
-            <widget type="textentry" version="3.0.0">
-              <name>Text Update_74</name>
-              <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-              <width>50</width>
-              <show_units>false</show_units>
-              <wrap_words>true</wrap_words>
-            </widget>
-            <widget type="textupdate" version="2.0.0">
-              <name>Text Update_75</name>
-              <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-              <x>55</x>
-              <width>66</width>
-            </widget>
-          </widget>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_20</name>
-          <macros>
-            <D>S5_P_FT552_MAX_GB</D>
-            <L>FT552_Max_GB</L>
-            <S>Ctrl</S>
-          </macros>
-          <y>30</y>
-          <width>259</width>
-          <height>30</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="label" version="2.0.0">
-            <name>Label_38</name>
-            <text>  $(L)</text>
-            <y>5</y>
-            <width>129</width>
-          </widget>
-          <widget type="group" version="2.0.0">
-            <name>Group_21</name>
-            <x>129</x>
-            <y>5</y>
-            <width>121</width>
-            <height>20</height>
-            <style>3</style>
-            <transparent>true</transparent>
-            <widget type="textentry" version="3.0.0">
-              <name>Text Update_76</name>
-              <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
-              <width>50</width>
-              <show_units>false</show_units>
-              <wrap_words>true</wrap_words>
-            </widget>
-            <widget type="textupdate" version="2.0.0">
-              <name>Text Update_77</name>
-              <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
-              <x>55</x>
-              <width>66</width>
-            </widget>
-          </widget>
-        </widget>
-      </widget>
-    </widget>
     <widget type="group" version="2.0.0">
       <name> LHe Level Control </name>
       <x>10</x>
@@ -4731,13 +4184,13 @@ MUST be active.</tooltip>
       <widget type="group" version="2.0.0">
         <name>Group_26</name>
         <macros>
-          <DS>SP_LIC01-CV02</DS>
-          <DT>TrigPID-CV02</DT>
-          <L>PID CV02</L>
+          <DS>SP_LIC01-CV01</DS>
+          <DT>TrigPID-CV01</DT>
+          <L>PID CV01</L>
           <N>01</N>
           <S>Ctrl</S>
           <SUBS>CM</SUBS>
-          <V>CV02</V>
+          <V>CV01</V>
         </macros>
         <y>5</y>
         <width>268</width>
@@ -5304,7 +4757,7 @@ by the PLC program</tooltip>
     <widget type="polyline" version="2.0.0">
       <name>Separator</name>
       <x>10</x>
-      <y>255</y>
+      <y>235</y>
       <width>600</width>
       <height>1</height>
       <points>
@@ -5318,6 +4771,285 @@ by the PLC program</tooltip>
         <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
         </color>
       </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>80</x>
+      <y>30</y>
+      <width>460</width>
+      <height>190</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_63</name>
+        <x>190</x>
+        <width>120</width>
+        <height>190</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="0.0" y="190.0">
+          </point>
+          <point x="120.0" y="190.0">
+          </point>
+          <point x="120.0" y="40.0">
+          </point>
+          <point x="70.0" y="40.0">
+          </point>
+        </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
+        <arrow_length>10</arrow_length>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_70</name>
+        <pv_name>$(P)-Ctrl:S6:sStep</pv_name>
+        <x>120</x>
+        <y>60</y>
+        <width>140</width>
+        <height>15</height>
+        <font>
+          <font family="Source Serif Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_6</name>
+        <pv_name>$(PG):sState6</pv_name>
+        <x>120</x>
+        <y>20</y>
+        <width>140</width>
+        <height>40</height>
+        <off_label>4K Operation (S6)</off_label>
+        <off_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </off_color>
+        <on_label>4K Operation (S6)</on_label>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>S6HelpBtn</name>
+        <actions>
+          <action type="open_webpage">
+            <url>http://freia.physics.uu.se/CSS/pdf/CM/4K-operation.pdf</url>
+            <description>Open Webpage</description>
+          </action>
+        </actions>
+        <text></text>
+        <x>120</x>
+        <y>20</y>
+        <width>140</width>
+        <height>41</height>
+        <transparent>true</transparent>
+        <tooltip>Show help page in the web browser</tooltip>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_61</name>
+        <x>174</x>
+        <y>85</y>
+        <width>33</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="33.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_12</name>
+        <pv_name>$(PG):sErr</pv_name>
+        <x>340</x>
+        <y>49</y>
+        <width>120</width>
+        <height>30</height>
+        <off_color>
+          <color name="GREEN" red="61" green="216" blue="61">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="ERROR" red="252" green="13" blue="27">
+          </color>
+        </on_color>
+        <square>true</square>
+        <labels_from_pv>true</labels_from_pv>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_10</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(PG):cmdErrRst</pv_name>
+        <text>Reset Error</text>
+        <x>340</x>
+        <y>79</y>
+        <width>120</width>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_28</name>
+        <x>173</x>
+        <y>165</y>
+        <width>33</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="33.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_68</name>
+        <pv_name>$(P)-Ctrl:S8:sStep</pv_name>
+        <x>120</x>
+        <y>140</y>
+        <width>140</width>
+        <height>15</height>
+        <font>
+          <font family="Source Serif Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>TT118_1</name>
+        <pv_name>$(P)-CM:TT08:sRdV</pv_name>
+        <x>260</x>
+        <y>100</y>
+        <width>40</width>
+        <height>15</height>
+        <font>
+          <font family="Source Serif Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>TT218_1</name>
+        <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+        <x>260</x>
+        <y>115</y>
+        <width>40</width>
+        <height>15</height>
+        <font>
+          <font family="Source Serif Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_9</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(PG):cmdStart2KMode</pv_name>
+        <text>Proceed</text>
+        <y>70</y>
+        <tooltip>Goto 2K Operation</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_11</name>
+        <pv_name>$(PG):sState8</pv_name>
+        <x>120</x>
+        <y>100</y>
+        <width>140</width>
+        <height>40</height>
+        <off_label>2K Operation (S8)</off_label>
+        <off_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </off_color>
+        <on_label>2K Operation (S8)</on_label>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>S8HelpBtn</name>
+        <actions>
+          <action type="open_webpage">
+            <url>http://freia.physics.uu.se/CSS/pdf/CM/2K-operation.pdf</url>
+            <description>Open Webpage</description>
+          </action>
+        </actions>
+        <text></text>
+        <x>120</x>
+        <y>100</y>
+        <width>140</width>
+        <height>41</height>
+        <transparent>true</transparent>
+        <tooltip>Show help page in the web browser</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_4</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Stop the sequence</description>
+          </action>
+        </actions>
+        <pv_name>CstatH-Ctrl:$(seq_no):cmdStop</pv_name>
+        <text>Proceed</text>
+        <y>150</y>
+        <foreground_color>
+          <color name="IO Foreground" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Stop 2K operation</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <show_confirm_dialog>true</show_confirm_dialog>
+        <confirm_message>Are your sure you want to stop 2K operation?</confirm_message>
+      </widget>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -5354,9 +5086,9 @@ by the PLC program</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Select He exhaust</name>
-    <x>1460</x>
+    <x>1510</x>
     <y>480</y>
-    <width>520</width>
+    <width>250</width>
     <height>189</height>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -5408,42 +5140,6 @@ by the PLC program</tooltip>
         </color>
       </foreground_color>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_2</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>CstatH-RHtr:opMode:cmdRst2KtoBaloon</pv_name>
-          <value>1</value>
-        </action>
-      </actions>
-      <pv_name>CstatH-RHtr:opMode:cmdRst2KtoBaloon</pv_name>
-      <text>To Kaeser</text>
-      <x>265</x>
-      <y>25</y>
-      <height>35</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_3</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>CstatH-RHtr:opMode:cmdSet2KtoBaloon</pv_name>
-          <value>1</value>
-        </action>
-      </actions>
-      <pv_name>CstatH-RHtr:opMode:cmdSet2KtoBaloon</pv_name>
-      <text>To Gas Bag</text>
-      <x>370</x>
-      <y>25</y>
-      <height>35</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_168</name>
       <text>4K Circuit</text>
@@ -5472,37 +5168,10 @@ by the PLC program</tooltip>
       </border_color>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>Label Template_169</name>
-      <text>2K Circuit</text>
-      <x>335</x>
-      <y>6</y>
-      <width>57</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
       <name>Label Template_170</name>
       <text>Current settings</text>
-      <x>170</x>
-      <y>70</y>
+      <x>29</x>
+      <y>69</y>
       <width>125</width>
       <height>24</height>
       <font>
@@ -5626,106 +5295,150 @@ the state was active for at least 10 s.</tooltip>
         </border_color>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_1</name>
-      <x>285</x>
-      <y>100</y>
-      <width>172</width>
-      <height>47</height>
-      <style>3</style>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  2K Pumps   </name>
+    <x>1610</x>
+    <y>670</y>
+    <width>362</width>
+    <height>161</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_10</name>
+      <text>Pressure @ 2K pumps input</text>
+      <y>80</y>
+      <width>184</width>
+      <height>21</height>
       <foreground_color>
-        <color red="0" green="128" blue="255">
+        <color name="IO Text Fg" red="0" green="32" blue="92">
         </color>
       </foreground_color>
       <background_color>
-        <color red="240" green="240" blue="240">
+        <color name="IO Background" red="255" green="255" blue="205">
         </color>
       </background_color>
-      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
       <actions>
       </actions>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_1</name>
-        <pv_name>CstatH-RHtr:opMode:s2KHeBaloon</pv_name>
-        <x>2</x>
-        <y>27</y>
-        <width>168</width>
-        <height>18</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-        <border_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_172</name>
-        <text>Step:</text>
-        <x>2</x>
-        <y>2</y>
-        <width>27</width>
-        <height>16</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="12.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_73</name>
-        <pv_name>CstatH-RHtr:opMode:sStep_2K_X</pv_name>
-        <x>37</x>
-        <width>135</width>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>$(pv_name)
-$(pv_value)
-Step "Closing CV552" will end when the valve is closed and FT552 &lt;= 1 m3/h and 
-the state was active for at least 10 s.</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
+      <tooltip>PT101/PT102</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_71</name>
+      <pv_name>CstatH-2Kpumps:PT552:sRdV</pv_name>
+      <x>220</x>
+      <y>80</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_11</name>
+      <text>2K pumps mean rotation speed</text>
+      <y>101</y>
+      <width>210</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>PT101/PT102</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_73</name>
+      <pv_name>CstatH-2Kpumps:AllPumps:sFreq-calc</pv_name>
+      <x>220</x>
+      <y>101</y>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>CstatH-2Kpumps:Ctrl:cOn</pv_name>
+      <x>220</x>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <show_confirm_dialog>1</show_confirm_dialog>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_12</name>
+      <text>2K pumps ON/OFF switch</text>
+      <x>30</x>
+      <width>170</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>PT101/PT102</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>CstatH-2Kpumps:Ctrl-WH:cSetV</pv_name>
+      <x>220</x>
+      <y>40</y>
+      <show_units>false</show_units>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_13</name>
+      <text>WH pumps frequency [%]</text>
+      <y>40</y>
+      <width>170</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>PT101/PT102</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <seq_no>SQ9</seq_no>
+      <seq_title>SQ9 on HNOSS</seq_title>
+    </macros>
+    <file>Seq_2K_operation.bob</file>
+    <x>10</x>
+    <y>1060</y>
+    <width>610</width>
+    <height>830</height>
   </widget>
 </display>

@@ -200,7 +200,7 @@
       </tab>
       <tab>
         <name>2K Operation</name>
-        <file>../helper-opi-files/2K_operation.bob</file>
+        <file>2K_operation.bob</file>
         <macros>
         </macros>
         <group_name></group_name>

@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>SQ 2K Operation</name>
   <width>600</width>
-  <height>730</height>
+  <height>840</height>
   <background_color>
     <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
     </color>
@@ -43,7 +43,7 @@
     <name>Label Template_7</name>
     <text>CV550:</text>
     <x>20</x>
-    <y>240</y>
+    <y>330</y>
     <width>46</width>
     <height>21</height>
     <foreground_color>
@@ -67,7 +67,7 @@
     <name>Text Input Template</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
     <x>84</x>
-    <y>240</y>
+    <y>330</y>
     <width>52</width>
     <height>21</height>
     <font>
@@ -90,8 +90,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Warning pressure [mbar]:</text>
-    <x>10</x>
-    <y>182</y>
+    <x>224</x>
+    <y>235</y>
     <width>170</width>
     <height>21</height>
     <foreground_color>
@@ -115,8 +115,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_2</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
-    <x>191</x>
-    <y>180</y>
+    <x>405</x>
+    <y>233</y>
     <width>50</width>
     <height>21</height>
     <font>
@@ -137,10 +137,66 @@
     <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>Level:</text>
+    <x>30</x>
+    <y>250</y>
+    <width>47</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_14</name>
+    <text>Pressure control [mbar]</text>
+    <x>12</x>
+    <y>140</y>
+    <width>184</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>Final pressure [mbar]:</text>
-    <x>10</x>
-    <y>211</y>
+    <x>224</x>
+    <y>264</y>
     <width>147</width>
     <height>21</height>
     <foreground_color>
@@ -164,8 +220,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_Final_Pt</pv_name>
-    <x>191</x>
-    <y>209</y>
+    <x>405</x>
+    <y>262</y>
     <width>50</width>
     <height>21</height>
     <font>
@@ -187,8 +243,8 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
-    <x>10</x>
-    <y>270</y>
+    <x>12</x>
+    <y>365</y>
     <width>519</width>
     <height>1</height>
     <points>
@@ -197,9 +253,9 @@
       <point x="518.0" y="0.0">
       </point>
     </points>
-    <line_width>1</line_width>
+    <line_width>2</line_width>
     <line_color>
-      <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
+      <color name="IO Background" red="255" green="255" blue="205">
       </color>
     </line_color>
     <actions>
@@ -210,8 +266,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
     <text>   Sequence parameters   </text>
-    <x>146</x>
-    <y>280</y>
+    <x>156</x>
+    <y>370</y>
     <width>190</width>
     <height>24</height>
     <font>
@@ -239,8 +295,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_19</name>
     <text>Automatic set-point CV551 (PT03/PT02):</text>
-    <x>10</x>
-    <y>313</y>
+    <x>20</x>
+    <y>403</y>
     <width>268</width>
     <height>21</height>
     <foreground_color>
@@ -263,8 +319,8 @@ $(pv_value)</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_9</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Reg</pv_name>
-    <x>316</x>
-    <y>313</y>
+    <x>326</x>
+    <y>403</y>
     <width>52</width>
     <height>21</height>
     <font>
@@ -287,8 +343,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Panel 2</name>
-    <x>240</x>
-    <y>340</y>
+    <x>250</x>
+    <y>430</y>
     <width>280</width>
     <height>391</height>
     <style>2</style>
@@ -1655,8 +1711,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_7</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
-    <x>251</x>
-    <y>182</y>
+    <x>465</x>
+    <y>235</y>
     <width>60</width>
     <height>18</height>
     <font>
@@ -1681,8 +1737,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_13</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_Final_Pt</pv_name>
-    <x>251</x>
-    <y>211</y>
+    <x>465</x>
+    <y>264</y>
     <width>60</width>
     <height>18</height>
     <font>
@@ -1707,8 +1763,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_14</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Reg</pv_name>
-    <x>376</x>
-    <y>315</y>
+    <x>386</x>
+    <y>405</y>
     <width>74</width>
     <height>18</height>
     <font>
@@ -1734,7 +1790,7 @@ $(pv_value)</tooltip>
     <name>Text Update Template_5</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
     <x>150</x>
-    <y>241</y>
+    <y>331</y>
     <width>52</width>
     <height>18</height>
     <font>
@@ -1756,10 +1812,256 @@ $(pv_value)</tooltip>
     </actions>
     <border_width>2</border_width>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>MKS2</name>
+    <actions>
+      <action type="open_display">
+        <file>CstatH-MKS.bob</file>
+        <macros>
+          <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+          <GLO>CstatH-LHe:PT100:sRdV</GLO>
+          <MKS>CstatH-MKS:MKS2</MKS>
+          <MKSname>MKS2</MKSname>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
+    <text>MKS2</text>
+    <x>320</x>
+    <y>170</y>
+    <rules>
+      <rule name="background_color" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_9</name>
+    <macros>
+      <L>PID CV550 (PT01) SP:</L>
+      <S>Ctrl</S>
+    </macros>
+    <x>10</x>
+    <y>170</y>
+    <width>290</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_11</name>
+      <macros>
+        <D>SP_PT01-CV550</D>
+      </macros>
+      <x>150</x>
+      <y>5</y>
+      <width>130</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_21</name>
+        <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+        <x>55</x>
+        <width>80</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_22</name>
+        <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+        <width>50</width>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <wrap_words>true</wrap_words>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>$(L)</text>
+      <y>5</y>
+      <width>150</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_12</name>
+    <macros>
+      <L>PID CV01 2K(LT01):</L>
+      <S>Ctrl</S>
+    </macros>
+    <x>12</x>
+    <y>292</y>
+    <width>270</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>$(L)</text>
+      <y>5</y>
+      <width>170</width>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_14</name>
+      <macros>
+        <D>SP_LIC01-CV01</D>
+      </macros>
+      <x>144</x>
+      <y>5</y>
+      <width>120</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_25</name>
+        <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+        <width>50</width>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <wrap_words>true</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_26</name>
+        <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+        <x>55</x>
+        <width>50</width>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_22</name>
+    <text>PID Reg Status:</text>
+    <x>313</x>
+    <y>295</y>
+    <width>102</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>PT101</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Not used yet</name>
+    <y>439</y>
+    <width>232</width>
+    <height>84</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_21</name>
+      <text>PT01 SP:
+(CV550)</text>
+      <width>59</width>
+      <height>44</height>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_6</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CM_SP_MKS2</pv_name>
+      <x>70</x>
+      <y>10</y>
+      <width>50</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CM_SP_MKS2</pv_name>
+      <x>130</x>
+      <y>10</y>
+      <width>60</width>
+      <height>18</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>43</x>
+    <y>432</y>
+    <width>168</width>
+    <height>117</height>
+    <points>
+      <point x="168.0" y="117.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
-    <x>453</x>
-    <y>315</y>
+    <x>463</x>
+    <y>405</y>
     <width>100</width>
     <height>20</height>
     <style>3</style>
@@ -1792,23 +2094,23 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Current presure</text>
-    <x>450</x>
-    <y>290</y>
+    <x>460</x>
+    <y>380</y>
     <width>113</width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>CstatH-MKS:MKS3:sRegOn</pv_name>
-    <x>481</x>
-    <y>210</y>
+    <x>431</x>
+    <y>328</y>
     <width>25</width>
     <height>25</height>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_23</name>
     <text>CV551 PID Reg Status:</text>
-    <x>330</x>
-    <y>212</y>
+    <x>280</x>
+    <y>330</y>
     <width>146</width>
     <height>21</height>
     <foreground_color>
@@ -1835,7 +2137,7 @@ $(pv_value)</tooltip>
       <D>S8_P_CV01</D>
     </macros>
     <x>20</x>
-    <y>150</y>
+    <y>210</y>
     <width>290</width>
     <height>24</height>
     <style>3</style>
@@ -1895,6 +2197,14 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
       <width>80</width>
     </widget>
   </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>CM-Ctrl:CV01:sRegOn</pv_name>
+    <x>431</x>
+    <y>295</y>
+    <width>25</width>
+    <height>25</height>
+  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
     <macros>
@@ -1903,8 +2213,8 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
       <L>MKS3</L>
     </macros>
     <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
-    <x>60</x>
-    <y>470</y>
+    <x>70</x>
+    <y>560</y>
     <width>70</width>
     <height>40</height>
   </widget>

@@ -43,7 +43,7 @@
       </tab>
       <tab>
         <name>Cooling to 2K</name>
-        <file></file>
+        <file>2K_cooling.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
