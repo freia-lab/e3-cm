@@ -5,9 +5,16 @@
   <height>40</height>
   <widget type="group" version="2.0.0">
     <name>Group</name>
-    <width>740</width>
+    <macros>
+      <Cvalve>$(P)-$(S):$(V)</Cvalve>
+    </macros>
+    <width>600</width>
     <height>30</height>
     <style>3</style>
+    <font>
+      <font name="MICRO-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="10.0">
+      </font>
+    </font>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
@@ -44,52 +51,51 @@
       <y>5</y>
       <width>70</width>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-$(S):$(V):cmdAuto</pv_name>
-      <text>Auto</text>
-      <x>420</x>
-      <width>60</width>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_1</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Write PV</description>
-        </action>
-      </actions>
-      <pv_name>$(P)-$(S):$(V):cmdMan</pv_name>
-      <text>Manual</text>
-      <x>490</x>
-      <width>70</width>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_4</name>
-      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
-      <x>570</x>
-      <y>5</y>
-      <width>70</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_40</name>
       <pv_name>$(P)-$(S):$(V):sAutoRdV</pv_name>
       <x>340</x>
       <y>5</y>
       <width>70</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button Template</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(Cvalve):cmdAuto</pv_name>
+          <value>1</value>
+          <description>Auto</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(Cvalve):cmdMan</pv_name>
+          <value>1</value>
+          <description>Manual</description>
+        </action>
+      </actions>
+      <text>Ctrl Mode</text>
+      <x>420</x>
+      <width>92</width>
+      <font>
+        <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+      <x>525</x>
+      <y>5</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
 </display>

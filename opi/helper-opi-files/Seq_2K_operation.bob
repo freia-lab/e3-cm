@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>SQ 2K Operation</name>
-  <width>600</width>
-  <height>730</height>
+  <width>545</width>
+  <height>545</height>
   <background_color>
     <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
     </color>
@@ -40,58 +40,9 @@
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_7</name>
-    <text>CV550:</text>
-    <x>20</x>
-    <y>240</y>
-    <width>46</width>
-    <height>21</height>
-    <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
-    <x>84</x>
-    <y>240</y>
-    <width>52</width>
-    <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Warning pressure [mbar]:</text>
-    <x>10</x>
-    <y>182</y>
+    <y>310</y>
     <width>170</width>
     <height>21</height>
     <foreground_color>
@@ -115,32 +66,18 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_2</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
-    <x>191</x>
-    <y>180</y>
+    <x>20</x>
+    <y>330</y>
     <width>50</width>
     <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>Final pressure [mbar]:</text>
-    <x>10</x>
-    <y>211</y>
+    <y>271</y>
     <width>147</width>
     <height>21</height>
     <foreground_color>
@@ -164,37 +101,24 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_Final_Pt</pv_name>
-    <x>191</x>
-    <y>209</y>
+    <x>10</x>
+    <y>290</y>
     <width>50</width>
     <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
     <x>10</x>
-    <y>270</y>
-    <width>519</width>
+    <y>145</y>
+    <width>530</width>
     <height>1</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="518.0" y="0.0">
+      <point x="528.9788053949903" y="0.0">
       </point>
     </points>
     <line_width>1</line_width>
@@ -210,8 +134,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
     <text>   Sequence parameters   </text>
-    <x>146</x>
-    <y>280</y>
+    <x>30</x>
+    <y>460</y>
     <width>190</width>
     <height>24</height>
     <font>
@@ -240,9 +164,8 @@ $(pv_value)</tooltip>
     <name>Label Template_19</name>
     <text>Automatic set-point CV551 (PT03/PT02):</text>
     <x>10</x>
-    <y>313</y>
+    <y>150</y>
     <width>268</width>
-    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -263,1552 +186,72 @@ $(pv_value)</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_9</name>
     <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Reg</pv_name>
-    <x>316</x>
-    <y>313</y>
+    <x>100</x>
+    <y>180</y>
     <width>52</width>
-    <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
     <precision>0</precision>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Panel 2</name>
-    <x>240</x>
-    <y>340</y>
-    <width>280</width>
-    <height>391</height>
-    <style>2</style>
-    <foreground_color>
-      <color name="IO Grid" red="215" green="215" blue="215">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_33</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt12</pv_name>
-      <x>17</x>
-      <y>361</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg11</pv_name>
-      <x>152</x>
-      <y>333</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt11</pv_name>
-      <x>17</x>
-      <y>333</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg10</pv_name>
-      <x>152</x>
-      <y>305</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt10</pv_name>
-      <x>17</x>
-      <y>305</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg09</pv_name>
-      <x>152</x>
-      <y>277</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt09</pv_name>
-      <x>17</x>
-      <y>277</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg08</pv_name>
-      <x>152</x>
-      <y>249</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt08</pv_name>
-      <x>17</x>
-      <y>249</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_24</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg07</pv_name>
-      <x>152</x>
-      <y>221</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_23</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt07</pv_name>
-      <x>17</x>
-      <y>221</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg06</pv_name>
-      <x>152</x>
-      <y>193</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt06</pv_name>
-      <x>17</x>
-      <y>193</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg05</pv_name>
-      <x>152</x>
-      <y>165</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt05</pv_name>
-      <x>17</x>
-      <y>165</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg04</pv_name>
-      <x>152</x>
-      <y>137</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt04</pv_name>
-      <x>17</x>
-      <y>137</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg03</pv_name>
-      <x>152</x>
-      <y>109</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt03</pv_name>
-      <x>17</x>
-      <y>109</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg02</pv_name>
-      <x>152</x>
-      <y>81</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt02</pv_name>
-      <x>17</x>
-      <y>81</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_11</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg01</pv_name>
-      <x>152</x>
-      <y>53</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt01</pv_name>
-      <x>17</x>
-      <y>53</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_20</name>
-      <text>CV551 [%]</text>
-      <x>175</x>
-      <y>5</y>
-      <width>68</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_20</name>
-      <text>Pressure [mbar]</text>
-      <x>15</x>
-      <y>5</y>
-      <width>107</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg00</pv_name>
-      <x>152</x>
-      <y>25</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_10</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Pt00</pv_name>
-      <x>17</x>
-      <y>25</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_39</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg12</pv_name>
-      <x>212</x>
-      <y>363</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg11</pv_name>
-      <x>212</x>
-      <y>335</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg10</pv_name>
-      <x>212</x>
-      <y>307</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg09</pv_name>
-      <x>212</x>
-      <y>279</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg08</pv_name>
-      <x>212</x>
-      <y>251</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_29</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg07</pv_name>
-      <x>212</x>
-      <y>223</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg06</pv_name>
-      <x>212</x>
-      <y>195</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg05</pv_name>
-      <x>212</x>
-      <y>167</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg04</pv_name>
-      <x>212</x>
-      <y>139</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg03</pv_name>
-      <x>212</x>
-      <y>111</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg02</pv_name>
-      <x>212</x>
-      <y>83</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_16</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg01</pv_name>
-      <x>212</x>
-      <y>55</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Csg00</pv_name>
-      <x>212</x>
-      <y>27</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_38</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt12</pv_name>
-      <x>77</x>
-      <y>363</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt11</pv_name>
-      <x>77</x>
-      <y>335</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt10</pv_name>
-      <x>77</x>
-      <y>307</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt09</pv_name>
-      <x>77</x>
-      <y>279</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt08</pv_name>
-      <x>77</x>
-      <y>251</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_28</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt07</pv_name>
-      <x>77</x>
-      <y>223</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt06</pv_name>
-      <x>77</x>
-      <y>195</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt05</pv_name>
-      <x>77</x>
-      <y>167</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt04</pv_name>
-      <x>77</x>
-      <y>139</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt03</pv_name>
-      <x>77</x>
-      <y>111</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt02</pv_name>
-      <x>77</x>
-      <y>83</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt01</pv_name>
-      <x>77</x>
-      <y>55</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_15</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Pt00</pv_name>
-      <x>77</x>
-      <y>27</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_34</name>
-      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Csg12</pv_name>
-      <x>152</x>
-      <y>361</y>
-      <width>52</width>
-      <height>21</height>
-      <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_7</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
-    <x>251</x>
-    <y>182</y>
+    <x>80</x>
+    <y>332</y>
     <width>60</width>
     <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>0</precision>
     <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_13</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_Final_Pt</pv_name>
-    <x>251</x>
-    <y>211</y>
+    <x>70</x>
+    <y>292</y>
     <width>60</width>
     <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>0</precision>
     <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_14</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Reg</pv_name>
-    <x>376</x>
-    <y>315</y>
+    <x>160</x>
+    <y>180</y>
     <width>74</width>
-    <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>0</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_5</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
-    <x>150</x>
-    <y>241</y>
-    <width>52</width>
-    <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>453</x>
-    <y>315</y>
-    <width>100</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="textupdate" version="2.0.0">
-      <name>pt101</name>
-      <pv_name>CstatH-LHe:PT101:sRdV</pv_name>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0=3">
-            <value>false</value>
-          </exp>
-          <pv_name>$(pv_name).SEVR</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>pt102</name>
-      <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0=3">
-            <value>false</value>
-          </exp>
-          <pv_name>$(pv_name).SEVR</pv_name>
-        </rule>
-      </rules>
-    </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Current presure</text>
-    <x>450</x>
-    <y>290</y>
+    <x>10</x>
+    <y>210</y>
     <width>113</width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>CstatH-MKS:MKS3:sRegOn</pv_name>
-    <x>481</x>
-    <y>210</y>
+    <x>181</x>
+    <y>510</y>
     <width>25</width>
     <height>25</height>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_23</name>
     <text>CV551 PID Reg Status:</text>
-    <x>330</x>
-    <y>212</y>
+    <x>30</x>
+    <y>512</y>
     <width>146</width>
     <height>21</height>
     <foreground_color>
@@ -1829,72 +272,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <macros>
-      <D>S8_P_CV01</D>
-    </macros>
-    <x>20</x>
-    <y>150</y>
-    <width>290</width>
-    <height>24</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_24</name>
-      <text>CV01</text>
-      <width>39</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>The final opening of the valve during cooling 
-the 2K line going through HX01 (Precooling).
-
-The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Update_23</name>
-      <pv_name>$(P)-Ctrl:$(D):cSetV</pv_name>
-      <x>60</x>
-      <width>50</width>
-      <background_color>
-        <color name="Read_Background" red="230" green="235" blue="232">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <wrap_words>true</wrap_words>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_24</name>
-      <pv_name>$(P)-Ctrl:$(D):sSetV</pv_name>
-      <x>115</x>
-      <width>80</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_27</name>
-      <pv_name>$(P)-VBox:CV01:sRdV</pv_name>
-      <x>210</x>
-      <width>80</width>
-    </widget>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
     <macros>
@@ -1903,9 +280,226 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
       <L>MKS3</L>
     </macros>
     <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
-    <x>60</x>
-    <y>470</y>
+    <x>50</x>
+    <y>380</y>
     <width>70</width>
     <height>40</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <C>CstatH</C>
+    </macros>
+    <x>280</x>
+    <y>150</y>
+    <width>260</width>
+    <height>389</height>
+    <style>3</style>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_21</name>
+      <text>Pressure [mbar]</text>
+      <width>107</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_22</name>
+      <text>CV551 [%]</text>
+      <x>160</x>
+      <width>68</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <pStep>12</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>361</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <pStep>00</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>25</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <pStep>01</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>53</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <pStep>02</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>81</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <pStep>03</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>109</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <pStep>04</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>137</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <pStep>05</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>165</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <macros>
+        <pStep>06</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>193</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <macros>
+        <pStep>07</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>221</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <macros>
+        <pStep>08</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>249</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_11</name>
+      <macros>
+        <pStep>09</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>277</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <macros>
+        <pStep>10</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>305</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <macros>
+        <pStep>11</pStep>
+      </macros>
+      <file>../Embedded/SQ9-table-entry.bob</file>
+      <y>333</y>
+      <width>260</width>
+      <height>28</height>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>pt102</name>
+    <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
+    <x>130</x>
+    <y>210</y>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0=3">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name).SEVR</pv_name>
+      </rule>
+    </rules>
   </widget>
 </display>

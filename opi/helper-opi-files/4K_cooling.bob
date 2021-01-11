@@ -5058,7 +5058,7 @@ MUST be active.</tooltip>
           <x>90</x>
           <y>45</y>
           <width>80</width>
-          <tooltip>Select manual control</tooltip>
+          <tooltip>Manual valve control</tooltip>
           <border_alarm_sensitive>false</border_alarm_sensitive>
         </widget>
         <widget type="action_button" version="3.0.0">
@@ -5075,8 +5075,9 @@ MUST be active.</tooltip>
           <x>6</x>
           <y>45</y>
           <width>80</width>
-          <tooltip>Select process control
-by the PLC program</tooltip>
+          <tooltip>Valve controlled
+by the MKS's PID regulator
+according to pressure set-point</tooltip>
           <border_alarm_sensitive>false</border_alarm_sensitive>
         </widget>
         <widget type="label" version="2.0.0">

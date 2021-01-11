@@ -836,6 +836,15 @@ $(pv_value)</tooltip>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>HX1</text>
+      <x>220</x>
+      <y>205</y>
+      <width>27</width>
+      <height>21</height>
+      <auto_size>true</auto_size>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group-LLRF-1</name>
@@ -4175,295 +4184,20 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name> LHe Level Control </name>
+      <name> PT01 Pressure control (CV550)  </name>
       <x>10</x>
-      <y>740</y>
+      <y>340</y>
       <width>600</width>
-      <height>285</height>
-      <transparent>true</transparent>
-      <widget type="group" version="2.0.0">
-        <name>Group_26</name>
-        <macros>
-          <DS>SP_LIC01-CV01</DS>
-          <DT>TrigPID-CV01</DT>
-          <L>PID CV01</L>
-          <N>01</N>
-          <S>Ctrl</S>
-          <SUBS>CM</SUBS>
-          <V>CV01</V>
-        </macros>
-        <y>5</y>
-        <width>268</width>
-        <height>240</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="label" version="2.0.0">
-          <name>Label_55</name>
-          <text>$(L)</text>
-          <x>10</x>
-          <y>5</y>
-          <font>
-            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-            </font>
-          </font>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_27</name>
-          <x>8</x>
-          <y>63</y>
-          <width>95</width>
-          <height>20</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_83</name>
-            <pv_name>$(P)-$(S):$(DT):cSetV</pv_name>
-            <width>30</width>
-            <show_units>false</show_units>
-            <wrap_words>true</wrap_words>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_84</name>
-            <pv_name>$(P)-$(S):$(DT):sSetV</pv_name>
-            <x>35</x>
-            <width>50</width>
-          </widget>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_28</name>
-          <x>8</x>
-          <y>150</y>
-          <width>95</width>
-          <height>20</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_85</name>
-            <pv_name>$(P)-$(S):$(DS):cSetV</pv_name>
-            <width>30</width>
-            <show_units>false</show_units>
-            <wrap_words>true</wrap_words>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_86</name>
-            <pv_name>$(P)-$(S):$(DS):sSetV</pv_name>
-            <x>35</x>
-            <width>50</width>
-          </widget>
-        </widget>
-        <widget type="led" version="2.0.0">
-          <name>LED_13</name>
-          <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
-          <x>55</x>
-          <y>100</y>
-          <width>40</width>
-          <off_label>Off</off_label>
-          <on_label>On</on_label>
-          <square>true</square>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_57</name>
-          <text>Set-point</text>
-          <x>10</x>
-          <y>125</y>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_56</name>
-          <text>Trigger</text>
-          <x>10</x>
-          <y>35</y>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_60</name>
-          <text>PID:</text>
-          <x>15</x>
-          <y>100</y>
-          <width>30</width>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>LT$(N)</name>
-          <x>110</x>
-          <y>5</y>
-          <width>145</width>
-          <height>235</height>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_20</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sVisu</pv_name>
-            <y>4</y>
-            <horizontal_alignment>1</horizontal_alignment>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_91</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
-            <y>175</y>
-            <horizontal_alignment>1</horizontal_alignment>
-          </widget>
-          <widget type="tank" version="2.0.0">
-            <name>Tank_1</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
-            <x>15</x>
-            <y>35</y>
-            <width>70</width>
-            <height>130</height>
-            <limits_from_pv>false</limits_from_pv>
-            <maximum>80.0</maximum>
-          </widget>
-        </widget>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Group_35</name>
-        <macros>
-          <DS>SP_LIC03-CV03</DS>
-          <DT>TrigPID-CV03</DT>
-          <L>PID CV03</L>
-          <N>03</N>
-          <S>Ctrl</S>
-          <SUBS>VBox</SUBS>
-          <V>CV03</V>
-        </macros>
-        <x>290</x>
-        <y>5</y>
-        <width>268</width>
-        <height>240</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="label" version="2.0.0">
-          <name>Label_59</name>
-          <text>$(L)</text>
-          <x>10</x>
-          <y>5</y>
-          <font>
-            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-            </font>
-          </font>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_36</name>
-          <x>8</x>
-          <y>63</y>
-          <width>95</width>
-          <height>20</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_103</name>
-            <pv_name>$(P)-$(S):$(DT):cSetV</pv_name>
-            <width>30</width>
-            <show_units>false</show_units>
-            <wrap_words>true</wrap_words>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_104</name>
-            <pv_name>$(P)-$(S):$(DT):sSetV</pv_name>
-            <x>35</x>
-            <width>50</width>
-          </widget>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>Group_37</name>
-          <x>8</x>
-          <y>150</y>
-          <width>95</width>
-          <height>20</height>
-          <style>3</style>
-          <transparent>true</transparent>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_105</name>
-            <pv_name>$(P)-$(S):$(DS):cSetV</pv_name>
-            <width>30</width>
-            <show_units>false</show_units>
-            <wrap_words>true</wrap_words>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_106</name>
-            <pv_name>$(P)-$(S):$(DS):sSetV</pv_name>
-            <x>35</x>
-            <width>50</width>
-          </widget>
-        </widget>
-        <widget type="led" version="2.0.0">
-          <name>LED_16</name>
-          <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
-          <x>55</x>
-          <y>100</y>
-          <width>40</width>
-          <off_label>Off</off_label>
-          <on_label>On</on_label>
-          <square>true</square>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_70</name>
-          <text>Set-point</text>
-          <x>10</x>
-          <y>125</y>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_71</name>
-          <text>Trigger</text>
-          <x>10</x>
-          <y>35</y>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_72</name>
-          <text>PID:</text>
-          <x>15</x>
-          <y>100</y>
-          <width>30</width>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
-        <widget type="group" version="2.0.0">
-          <name>LT$(N)</name>
-          <x>110</x>
-          <y>5</y>
-          <width>145</width>
-          <height>235</height>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_107</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sVisu</pv_name>
-            <y>4</y>
-            <horizontal_alignment>1</horizontal_alignment>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update_108</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
-            <y>175</y>
-            <horizontal_alignment>1</horizontal_alignment>
-          </widget>
-          <widget type="tank" version="2.0.0">
-            <name>Tank_3</name>
-            <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
-            <x>15</x>
-            <y>35</y>
-            <width>70</width>
-            <height>130</height>
-            <limits_from_pv>false</limits_from_pv>
-            <maximum>80.0</maximum>
-          </widget>
-        </widget>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name> PT01 Pressure control (CV550) -  Filling 4K tank  </name>
-      <x>10</x>
-      <y>480</y>
-      <width>600</width>
-      <height>259</height>
+      <height>115</height>
       <transparent>true</transparent>
       <widget type="group" version="2.0.0">
         <name>Settings</name>
         <macros>
           <CV>$(P)-RHtr:CV550</CV>
         </macros>
-        <x>7</x>
-        <y>20</y>
-        <width>309</width>
-        <height>160</height>
-        <style>2</style>
+        <width>488</width>
+        <height>78</height>
+        <style>3</style>
         <foreground_color>
           <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
           </color>
@@ -4472,12 +4206,10 @@ $(pv_value)</tooltip>
         <widget type="textupdate" version="2.0.0">
           <name>Text Update_96</name>
           <pv_name>$(CV):sAuto</pv_name>
-          <x>180</x>
-          <y>19</y>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="16.0">
-            </font>
-          </font>
+          <x>105</x>
+          <y>15</y>
+          <width>95</width>
+          <height>30</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
@@ -4491,62 +4223,19 @@ $(pv_value)</tooltip>
           <wrap_words>false</wrap_words>
           <actions>
           </actions>
-          <border_width>4</border_width>
           <border_color>
             <color red="240" green="240" blue="240">
             </color>
           </border_color>
         </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_13</name>
-          <actions>
-            <action type="write_pv">
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-              <description>Write PV</description>
-            </action>
-          </actions>
-          <pv_name>$(CV):cmdMan</pv_name>
-          <text>PID Off</text>
-          <x>90</x>
-          <y>45</y>
-          <width>80</width>
-          <tooltip>Select manual control</tooltip>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_14</name>
-          <actions>
-            <action type="write_pv">
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-              <description>Write PV</description>
-            </action>
-          </actions>
-          <pv_name>$(CV):cmdAuto</pv_name>
-          <text>PID On</text>
-          <x>6</x>
-          <y>45</y>
-          <width>80</width>
-          <tooltip>Select process control
-by the PLC program</tooltip>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_13</name>
-          <text>Valve control mode:</text>
-          <y>19</y>
-          <width>151</width>
-          <horizontal_alignment>1</horizontal_alignment>
-        </widget>
         <widget type="group" version="2.0.0">
           <name>Group_17</name>
           <macros>
-            <L>PID CV550 (PT01) SP:</L>
-            <S>Ctrl</S>
+            <L>SQ8:P_SP_PT01:</L>
+            <S>Ctrl:S8</S>
           </macros>
-          <x>10</x>
-          <y>91</y>
+          <x>188</x>
+          <y>8</y>
           <width>290</width>
           <height>30</height>
           <style>3</style>
@@ -4554,7 +4243,7 @@ by the PLC program</tooltip>
           <widget type="group" version="2.0.0">
             <name>Group_18</name>
             <macros>
-              <D>SP_PT01-CV550</D>
+              <D>P_SP_PT01</D>
             </macros>
             <x>150</x>
             <y>5</y>
@@ -4564,13 +4253,13 @@ by the PLC program</tooltip>
             <transparent>true</transparent>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update_21</name>
-              <pv_name>$(P)-$(S):$(D):sSetV</pv_name>
+              <pv_name>$(P)-$(S):s$(D)</pv_name>
               <x>55</x>
               <width>80</width>
             </widget>
             <widget type="textentry" version="3.0.0">
               <name>Text Update_22</name>
-              <pv_name>$(P)-$(S):$(D):cSetV</pv_name>
+              <pv_name>$(P)-$(S):c$(D)</pv_name>
               <width>50</width>
               <show_units>false</show_units>
               <wrap_words>true</wrap_words>
@@ -4580,7 +4269,8 @@ by the PLC program</tooltip>
             <name>Label_11</name>
             <text>$(L)</text>
             <y>5</y>
-            <width>150</width>
+            <width>140</width>
+            <horizontal_alignment>2</horizontal_alignment>
           </widget>
         </widget>
         <widget type="group" version="2.0.0">
@@ -4589,8 +4279,8 @@ by the PLC program</tooltip>
             <D>CV550</D>
             <S>RHtr</S>
           </macros>
-          <x>160</x>
-          <y>131</y>
+          <x>338</x>
+          <y>41</y>
           <width>140</width>
           <height>20</height>
           <style>3</style>
@@ -4612,99 +4302,55 @@ by the PLC program</tooltip>
         <widget type="label" version="2.0.0">
           <name>Label_12</name>
           <text>Manual SP:</text>
-          <x>70</x>
-          <y>131</y>
+          <x>248</x>
+          <y>41</y>
           <width>89</width>
           <horizontal_alignment>1</horizontal_alignment>
         </widget>
-      </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_24</name>
-        <x>340</x>
-        <y>15</y>
-        <width>1</width>
-        <height>190</height>
-        <points>
-          <point x="0.0" y="190.00000000000003">
-          </point>
-          <point x="0.0" y="0.0">
-          </point>
-        </points>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>  MKS2 Actual Values</name>
-        <x>368</x>
-        <y>20</y>
-        <width>171</width>
-        <height>160</height>
-        <style>1</style>
-        <transparent>true</transparent>
-        <widget type="label" version="2.0.0">
-          <name>Label_62</name>
-          <text>SP:</text>
-          <x>5</x>
-          <y>80</y>
-          <width>65</width>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_97</name>
-          <pv_name>CstatH-MKS:MKS2:sOutV</pv_name>
-          <x>85</x>
-          <y>110</y>
-          <width>72</width>
-          <precision>1</precision>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_98</name>
-          <pv_name>CstatH-MKS:MKS2:sAuto</pv_name>
-          <x>5</x>
-          <y>35</y>
-          <width>160</width>
-          <height>25</height>
-          <show_units>false</show_units>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
-          <border_width>2</border_width>
-          <border_color>
-            <color name="BACKGROUND" red="220" green="225" blue="221">
+        <widget type="action_button" version="3.0.0">
+          <name>Menu Button Template</name>
+          <actions>
+            <action type="write_pv">
+              <pv_name>$(CV):cmdAuto</pv_name>
+              <value>1</value>
+              <description>ON</description>
+            </action>
+            <action type="write_pv">
+              <pv_name>$(CV):cmdMan</pv_name>
+              <value>1</value>
+              <description>OFF</description>
+            </action>
+          </actions>
+          <text>PID Reg.</text>
+          <y>15</y>
+          <foreground_color>
+            <color name="IO Foreground" red="0" green="0" blue="0">
             </color>
-          </border_color>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_99</name>
-          <pv_name>CstatH-MKS:MKS2:sRegOn</pv_name>
-          <x>5</x>
-          <y>5</y>
-          <width>160</width>
-          <height>25</height>
-          <show_units>false</show_units>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
-          <border_width>2</border_width>
-          <border_color>
-            <color name="BACKGROUND" red="220" green="225" blue="221">
+          </foreground_color>
+          <background_color>
+            <color name="IO Button" red="178" green="178" blue="178">
             </color>
-          </border_color>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_100</name>
-          <pv_name>CstatH-MKS:MKS2:sSetP</pv_name>
-          <x>85</x>
-          <y>80</y>
-          <width>72</width>
-          <precision>1</precision>
+          </background_color>
+          <tooltip>$(actions)</tooltip>
         </widget>
         <widget type="label" version="2.0.0">
-          <name>Label_63</name>
-          <text>CV550:</text>
-          <x>5</x>
-          <y>110</y>
-          <width>65</width>
+          <name>Label_65</name>
+          <text>PT01</text>
+          <y>55</y>
+          <width>34</width>
+          <height>21</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <auto_size>true</auto_size>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_19</name>
+          <pv_name>CstatH-RHtr:PT550:sRdV</pv_name>
+          <x>50</x>
+          <y>55</y>
+          <font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </font>
         </widget>
       </widget>
       <widget type="embedded" version="2.0.0">
@@ -4715,49 +4361,16 @@ by the PLC program</tooltip>
           <L>MKS2</L>
         </macros>
         <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
-        <x>420</x>
-        <y>185</y>
+        <x>492</x>
+        <y>18</y>
         <width>70</width>
         <height>40</height>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_19</name>
-        <pv_name>CstatH-RHtr:PT550:sRdV</pv_name>
-        <x>168</x>
-        <y>198</y>
-        <width>135</width>
-        <font>
-          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-          </font>
-        </font>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_65</name>
-        <text>PT01</text>
-        <x>98</x>
-        <y>198</y>
-        <width>60</width>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_61</name>
-        <text>Settings</text>
-        <x>117</x>
-        <y>8</y>
-        <width>85</width>
-        <height>25</height>
-        <background_color>
-          <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
-          </color>
-        </background_color>
-        <transparent>false</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
       </widget>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Separator</name>
       <x>10</x>
-      <y>235</y>
+      <y>225</y>
       <width>600</width>
       <height>1</height>
       <points>
@@ -4775,7 +4388,7 @@ by the PLC program</tooltip>
     <widget type="group" version="2.0.0">
       <name>Group</name>
       <x>80</x>
-      <y>30</y>
+      <y>25</y>
       <width>460</width>
       <height>190</height>
       <style>3</style>
@@ -5050,6 +4663,130 @@ by the PLC program</tooltip>
         <show_confirm_dialog>true</show_confirm_dialog>
         <confirm_message>Are your sure you want to stop 2K operation?</confirm_message>
       </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>  Cooling 2K line  </name>
+      <macros>
+        <D>S8_P_CV01</D>
+      </macros>
+      <x>10</x>
+      <y>228</y>
+      <width>600</width>
+      <height>80</height>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_24</name>
+        <text>CV01</text>
+        <x>10</x>
+        <y>10</y>
+        <width>39</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>The final opening of the valve during cooling 
+the 2K line going through HX01 (Precooling).
+
+The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Update_102</name>
+        <pv_name>$(P)-Ctrl:$(D):cSetV</pv_name>
+        <x>60</x>
+        <y>10</y>
+        <width>50</width>
+        <show_units>false</show_units>
+        <wrap_words>true</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_109</name>
+        <pv_name>$(P)-Ctrl:$(D):sSetV</pv_name>
+        <x>115</x>
+        <y>10</y>
+        <width>50</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_110</name>
+        <pv_name>$(P)-VBox:CV01:sRdV</pv_name>
+        <x>190</x>
+        <y>10</y>
+        <width>50</width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_25</name>
+        <text>Temperatures:</text>
+        <x>300</x>
+        <y>10</y>
+        <width>115</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>FInal cooling temperatures:
+VBox:TT03 &lt; 9K
+CM:TT08 &lt; 10K</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_111</name>
+        <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
+        <x>430</x>
+        <y>10</y>
+        <width>50</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_112</name>
+        <pv_name>$(P)-CM:TT08:sRdV</pv_name>
+        <x>500</x>
+        <y>10</y>
+        <width>50</width>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <S>VBox</S>
+        <V>CV04</V>
+      </macros>
+      <file>../Embedded/valve_wo_PID.bob</file>
+      <x>10</x>
+      <y>305</y>
+      <width>600</width>
+      <height>30</height>
+      <transparent>true</transparent>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -5429,16 +5166,296 @@ the state was active for at least 10 s.</tooltip>
       </border_color>
     </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_4</name>
-    <macros>
-      <seq_no>SQ9</seq_no>
-      <seq_title>SQ9 on HNOSS</seq_title>
-    </macros>
-    <file>Seq_2K_operation.bob</file>
-    <x>10</x>
-    <y>1060</y>
-    <width>610</width>
-    <height>830</height>
+  <widget type="group" version="2.0.0">
+    <name> LHe Level Control </name>
+    <x>40</x>
+    <y>1070</y>
+    <width>600</width>
+    <height>285</height>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_26</name>
+      <macros>
+        <DS>SP_LIC01-CV01</DS>
+        <DT>TrigPID-CV01</DT>
+        <L>PID CV01</L>
+        <N>01</N>
+        <S>Ctrl</S>
+        <SUBS>CM</SUBS>
+        <V>CV01</V>
+      </macros>
+      <y>5</y>
+      <width>268</width>
+      <height>240</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_55</name>
+        <text>$(L)</text>
+        <x>10</x>
+        <y>5</y>
+        <font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_27</name>
+        <x>8</x>
+        <y>63</y>
+        <width>95</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_83</name>
+          <pv_name>$(P)-$(S):$(DT):cSetV</pv_name>
+          <width>30</width>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_84</name>
+          <pv_name>$(P)-$(S):$(DT):sSetV</pv_name>
+          <x>35</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_28</name>
+        <x>8</x>
+        <y>150</y>
+        <width>95</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_85</name>
+          <pv_name>$(P)-$(S):$(DS):cSetV</pv_name>
+          <width>30</width>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_86</name>
+          <pv_name>$(P)-$(S):$(DS):sSetV</pv_name>
+          <x>35</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_13</name>
+        <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+        <x>55</x>
+        <y>100</y>
+        <width>40</width>
+        <off_label>Off</off_label>
+        <on_label>On</on_label>
+        <square>true</square>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_57</name>
+        <text>Set-point</text>
+        <x>10</x>
+        <y>125</y>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_56</name>
+        <text>Trigger</text>
+        <x>10</x>
+        <y>35</y>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_60</name>
+        <text>PID:</text>
+        <x>15</x>
+        <y>100</y>
+        <width>30</width>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>LT$(N)</name>
+        <x>110</x>
+        <y>5</y>
+        <width>145</width>
+        <height>235</height>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_20</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sVisu</pv_name>
+          <y>4</y>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_91</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
+          <y>175</y>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+        <widget type="tank" version="2.0.0">
+          <name>Tank_1</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
+          <x>15</x>
+          <y>35</y>
+          <width>70</width>
+          <height>130</height>
+          <limits_from_pv>false</limits_from_pv>
+          <maximum>80.0</maximum>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_35</name>
+      <macros>
+        <DS>SP_LIC03-CV03</DS>
+        <DT>TrigPID-CV03</DT>
+        <L>PID CV03</L>
+        <N>03</N>
+        <S>Ctrl</S>
+        <SUBS>VBox</SUBS>
+        <V>CV03</V>
+      </macros>
+      <x>290</x>
+      <y>5</y>
+      <width>268</width>
+      <height>240</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_59</name>
+        <text>$(L)</text>
+        <x>10</x>
+        <y>5</y>
+        <font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_36</name>
+        <x>8</x>
+        <y>63</y>
+        <width>95</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_103</name>
+          <pv_name>$(P)-$(S):$(DT):cSetV</pv_name>
+          <width>30</width>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_104</name>
+          <pv_name>$(P)-$(S):$(DT):sSetV</pv_name>
+          <x>35</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_37</name>
+        <x>8</x>
+        <y>150</y>
+        <width>95</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Update_105</name>
+          <pv_name>$(P)-$(S):$(DS):cSetV</pv_name>
+          <width>30</width>
+          <show_units>false</show_units>
+          <wrap_words>true</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_106</name>
+          <pv_name>$(P)-$(S):$(DS):sSetV</pv_name>
+          <x>35</x>
+          <width>50</width>
+        </widget>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_16</name>
+        <pv_name>$(P)-Ctrl:$(V):sRegOn</pv_name>
+        <x>55</x>
+        <y>100</y>
+        <width>40</width>
+        <off_label>Off</off_label>
+        <on_label>On</on_label>
+        <square>true</square>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_70</name>
+        <text>Set-point</text>
+        <x>10</x>
+        <y>125</y>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_71</name>
+        <text>Trigger</text>
+        <x>10</x>
+        <y>35</y>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_72</name>
+        <text>PID:</text>
+        <x>15</x>
+        <y>100</y>
+        <width>30</width>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>LT$(N)</name>
+        <x>110</x>
+        <y>5</y>
+        <width>145</width>
+        <height>235</height>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_107</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sVisu</pv_name>
+          <y>4</y>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_108</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
+          <y>175</y>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+        <widget type="tank" version="2.0.0">
+          <name>Tank_3</name>
+          <pv_name>$(P)-$(SUBS):LT$(N):sRdV</pv_name>
+          <x>15</x>
+          <y>35</y>
+          <width>70</width>
+          <height>130</height>
+          <limits_from_pv>false</limits_from_pv>
+          <maximum>80.0</maximum>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  SQ9 on HNOSS  </name>
+    <x>20</x>
+    <y>459</y>
+    <width>600</width>
+    <height>581</height>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <seq_no>SQ9</seq_no>
+        <seq_title></seq_title>
+      </macros>
+      <file>Seq_2K_operation.bob</file>
+      <width>550</width>
+      <height>545</height>
+      <resize>4</resize>
+    </widget>
   </widget>
 </display>
