@@ -4,7 +4,7 @@
     <W>freia.physics.uu.se</W>
   </macros>
   <width>540</width>
-  <height>140</height>
+  <height>110</height>
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215">
     </color>
@@ -12,40 +12,12 @@
   <actions>
   </actions>
   <widget type="label" version="2.0.0">
-    <name>Label Template</name>
-    <text>$(seq_title)</text>
-    <x>7</x>
-    <y>3</y>
-    <width>353</width>
-    <height>28</height>
-    <font>
-      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label Template_1</name>
     <text>State</text>
     <x>7</x>
-    <y>103</y>
+    <y>70</y>
     <width>27</width>
-    <height>12</height>
+    <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -67,33 +39,6 @@
       </color>
     </border_color>
   </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):cmdSetParam</pv_name>
-    <bit>0</bit>
-    <x>511</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="IO OK" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button Template_5</name>
     <actions>
@@ -106,7 +51,7 @@
     <pv_name>CstatH-Ctrl:$(seq_no):cmdReset</pv_name>
     <text>Reset</text>
     <x>120</x>
-    <y>35</y>
+    <y>5</y>
     <width>80</width>
     <height>25</height>
     <foreground_color>
@@ -120,7 +65,7 @@
   <widget type="group" version="2.0.0">
     <name>Panel 2</name>
     <x>313</x>
-    <y>32</y>
+    <y>2</y>
     <width>216</width>
     <height>55</height>
     <style>2</style>
@@ -218,13 +163,9 @@
     <name>Text Update Template_14</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sInitCond</pv_name>
     <x>495</x>
-    <y>102</y>
+    <y>70</y>
     <width>25</width>
     <height>18</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
     <foreground_color>
       <color name="IO InputPV Fg" red="0" green="32" blue="92">
       </color>
@@ -235,6 +176,7 @@
     </background_color>
     <precision>0</precision>
     <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -245,7 +187,7 @@
     <text>Init
 Cond.</text>
     <x>463</x>
-    <y>98</y>
+    <y>65</y>
     <width>35</width>
     <height>39</height>
     <font>
@@ -273,7 +215,7 @@ Cond.</text>
     <name>Text Update Template_17</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sInitCondS</pv_name>
     <x>20</x>
-    <y>65</y>
+    <y>35</y>
     <width>280</width>
     <height>25</height>
     <foreground_color>
@@ -307,7 +249,7 @@ Cond.</text>
     </actions>
     <text>Help</text>
     <x>220</x>
-    <y>35</y>
+    <y>5</y>
     <width>80</width>
     <height>25</height>
     <foreground_color>
@@ -321,13 +263,9 @@ in the web browser</tooltip>
     <name>Text Update Template</name>
     <pv_name>CstatH-Ctrl:$(seq_no):sStep</pv_name>
     <x>10</x>
-    <y>116</y>
+    <y>85</y>
     <width>20</width>
     <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
     <foreground_color>
       <color name="IO InputPV Fg" red="0" green="32" blue="92">
       </color>
@@ -353,13 +291,9 @@ in the web browser</tooltip>
   <widget type="label" version="2.0.0">
     <name>Text Update Template_3</name>
     <x>45</x>
-    <y>103</y>
+    <y>70</y>
     <width>413</width>
     <height>33</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
     <foreground_color>
       <color name="IO InputPV Fg" red="0" green="32" blue="92">
       </color>
@@ -421,167 +355,5 @@ in the web browser</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <border_width>2</border_width>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_3</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sFault</pv_name>
-    <bit>0</bit>
-    <x>490</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="ERROR" red="252" green="13" blue="27">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_4</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sActivate</pv_name>
-    <bit>0</bit>
-    <x>370</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="IO OK" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_5</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sPause</pv_name>
-    <bit>0</bit>
-    <x>410</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="ORANGE" red="254" green="194" blue="81">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_6</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sRun</pv_name>
-    <bit>0</bit>
-    <x>390</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="IO OK" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_7</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sStop</pv_name>
-    <bit>0</bit>
-    <x>450</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color red="0" green="0" blue="255">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_8</name>
-    <pv_name>CstatH-Ctrl:$(seq_no):sStopping</pv_name>
-    <bit>0</bit>
-    <x>430</x>
-    <y>10</y>
-    <width>16</width>
-    <height>16</height>
-    <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="ORANGE" red="254" green="194" blue="81">
-      </color>
-    </on_color>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
   </widget>
 </display>
