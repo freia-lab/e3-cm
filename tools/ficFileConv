@@ -18,14 +18,15 @@
 #                        ohms. It was needed for ai Raw Soft Channel record to work properly
 #                        (RVAL is an integer)
 
-if [ -d calibrations ]
+echo $1
+if [ -d calibrations/$1 ]
 then
-cd calibrations
+cd calibrations/$1
 else
 echo " calibration directory missing!"
 exit
 fi
- 
+  
 if [ -d /tmp/out ]
 then
 rm -r /tmp/out
@@ -36,10 +37,22 @@ fi
 
 # Loop over low temp files
 for f in CX*\(1.5K*; do
+    if [ -z $1 ]
+    then
+        # Extract the breaktable filename
+        fout=$(echo "$f" | sed 's/(.*//')
 
-    # Extract the breaktable filename
-    fout=$(echo "$f" | sed 's/(.*//')
+        # Extract the TT field
+        ftt=""
+	fnam=../Db/cernox-breaktables.dbd
+    else
+        # Extract the breaktable filename
+        fout=$(echo "$f" | sed 's/ .*//')
 
+        # Extract the TT field
+        ftt=$(echo "$f" | awk '{print $2}'| cut -b 2-5)
+	fnam=../../Db/cernox-cm-breaktables.dbd
+    fi
     # Save the date field
     fdat=$(echo "$f" | awk -F, '{print $4}')
 
@@ -47,30 +60,30 @@ for f in CX*\(1.5K*; do
     echo "breaktable("$fout") {" | cat -> /tmp/out/"$fout"
 
     # Remove "+" from exponentials and comment the header.
-    cat "$f" | sed 's/+//' | awk 'NR < 16 {print "# "$0 }
-                                  NR == 16 {print "# "$1, $2}' >> /tmp/out/"$fout"
+    cat "$f" | sed 's/+//' | awk '/^[^[:digit:]]/ {printf "# %s\n",$0} 
+                                  END {print "# Rmes (mOhm)\tTmes(K)"}' >> /tmp/out/"$fout"
     # Print the data.
-    cat "$f" | awk 'NR > 16 {print 1000.0*$1, $2 }' | sed 's/+//' > /tmp/temp
-                
+    cat "$f" | awk '/^[[:digit:]]/ {printf "%d %s\n",1000*$1, $2 }' | sed 's/+//' > /tmp/temp
     # Add the high temp data without header
-    f2=$(ls "$fout(10.0K"*"$fdat")
-    cat "$f2" | awk 'NR > 16 {print 1000.0*$1, $2 }' | sed 's/+//' >> /tmp/temp
+    echo "$fout"*"(10.0K"*"$fdat"
+    f2=$(ls "$fout"*"(10.0K"*"$fdat")
+    cat "$f2" | awk '/^[[:digit:]]/ {printf "%d %s\n",1000*$1, $2 }' | sed 's/+//' >> /tmp/temp
 
     # Write the sorted file, removing duplicates, to the output file
     # Check for a monotonous dependence
-    sort -gru -k 1,1 /tmp/temp | awk '$2 > prev {print $1, $2 ; prev = $2}' >> /tmp/out/"$fout"
+    sort -gru -k 1,1 /tmp/temp | awk '$2 > prev {printf "%d\t\t%s\n",$1, $2 ; prev = $2}' >> /tmp/out/"$fout"
     echo "}" | cat - >> /tmp/out/"$fout"
-
     rm /tmp/temp
-    # echo "$f"; echo "$f2"; echo "$fout";  echo "$dat";
+#    echo f="$f"; echo ftt="$ftt"; echo fdat="$fdat"; echo "f2=$f2"; echo fout="$fout";  echo "dat=$dat";
 done
 
 # Generate a combined file
-cat /tmp/out/* > ../Db/cernox-breaktables.dbd
+    echo Calibration file: $fnam
+    cat /tmp/out/* > $fnam
 
 # Print some statistics
 echo -n -e " Total number of files \t\t\t"
-ls -l C* | wc -l 
+ls -l C*.fic | wc -l 
 echo -n -e " Number of unique low temp files \t"  
 ls C*\(1.5K* | awk '!seen[$0]++' | wc -l
 echo -n -e " Number of unique high temp files \t"

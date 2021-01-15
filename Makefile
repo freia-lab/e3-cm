@@ -26,7 +26,11 @@ DOC = doc
 TESTS = test/server-cm.tcl
 #DBDS += Db/cernox-breaktables.dbd
 
-calibration : ./calibrations/*.fic ./tools/ficFileConv
+calibration-CM02 : ./calibrations/CM02/*.fic ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv CM02
 	./tools/ficFileConv
+
+#calibration : ./calibrations/*.fic ./tools/ficFileConv
+#	./tools/ficFileConv
 
 
