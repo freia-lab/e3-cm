@@ -3,11 +3,13 @@
 # Bash script to create epics breaktables for CERNOX
 # temperature probes
 #
-# Usage: Run the script by running "make calibration" in the top directory of the project.
-#        The measurement files needs to receede in the calibrations directory with names
-#        starting with "CX*(1.5K"  low temperature, and "CX*(10.0K" high temperature.
+# Usage: Run the script by running "make calibration-CMxx" in the top directory of the project.
+#        The measurement files needs to reside in the calibrations directory (VBox) and CMxx 
+#        (cryomodules) with names starting with "CX*(1.5K"  low temperature, and "CX*(10.0K" high
+#        temperature.
 #        The date should be at the end.
-#        The resulting combined files are written to Db/cernox-breaktables.dbd
+#        The resulting combined files are written to Db/cernox-breaktables.dbd and 
+#        Db/cernox-CMxx-breaktables.dbd if the program has been started with the argument CMxx.
 #
 # Version: 1.0 181012 KF 
 #          1.1 181016 KF Added sorting and a combined file
@@ -17,6 +19,17 @@
 #          2.1 181207 KG Changed the lookup table so the input value is in mohms instead of
 #                        ohms. It was needed for ai Raw Soft Channel record to work properly
 #                        (RVAL is an integer)
+#          3.0 210118 KG The name and format of the calibration files has been slightly
+#                        changed by Orsay (added the information on which TT senesor is used).
+#                        Decided to split calibration data into two files: one for the VBox
+#                        and another for the CM to be tested. This program is called without
+#                        any argumnet for the VBox calibration and with the CMxx argument for
+#                        the CM sensors. With the CMxx argument it will remove any earlier
+#                        CM calibration look-up tables and create a new tables in 
+#                        Db/cernox-CMxx-breaktables.dbd.
+#                        The calibration data files (*.fic) for the CM must be placed in the 
+#                        directory calibrations/CMxx
+#                        
 
 echo $1
 if [ -d calibrations/$1 ]
@@ -51,7 +64,8 @@ for f in CX*\(1.5K*; do
 
         # Extract the TT field
         ftt=$(echo "$f" | awk '{print $2}'| cut -b 2-5)
-	fnam=../../Db/cernox-cm-breaktables.dbd
+	fnam=../../Db/cernox-"$1"-breaktables.dbd
+	rm -f ../../Db/cernox-CM*-breaktables.dbd
     fi
     # Save the date field
     fdat=$(echo "$f" | awk -F, '{print $4}')
@@ -63,15 +77,15 @@ for f in CX*\(1.5K*; do
     cat "$f" | sed 's/+//' | awk '/^[^[:digit:]]/ {printf "# %s\n",$0} 
                                   END {print "# Rmes (mOhm)\tTmes(K)"}' >> /tmp/out/"$fout"
     # Print the data.
-    cat "$f" | awk '/^[[:digit:]]/ {printf "%d %s\n",1000*$1, $2 }' | sed 's/+//' > /tmp/temp
+    cat "$f" | awk '/^[[:digit:]]/ {printf "%f %s\n",1000.0*$1, $2 }' | sed 's/+//' > /tmp/temp
     # Add the high temp data without header
     echo "$fout"*"(10.0K"*"$fdat"
     f2=$(ls "$fout"*"(10.0K"*"$fdat")
-    cat "$f2" | awk '/^[[:digit:]]/ {printf "%d %s\n",1000*$1, $2 }' | sed 's/+//' >> /tmp/temp
+    cat "$f2" | awk '/^[[:digit:]]/ {printf "%f %s\n",1000.0*$1, $2 }' | sed 's/+//' >> /tmp/temp
 
     # Write the sorted file, removing duplicates, to the output file
     # Check for a monotonous dependence
-    sort -gru -k 1,1 /tmp/temp | awk '$2 > prev {printf "%d\t\t%s\n",$1, $2 ; prev = $2}' >> /tmp/out/"$fout"
+    sort -gru -k 1,1 /tmp/temp | awk '$2 > prev {printf "%9.0f\t%s\n",$1, $2 ; prev = $2}' >> /tmp/out/"$fout"
     echo "}" | cat - >> /tmp/out/"$fout"
     rm /tmp/temp
 #    echo f="$f"; echo ftt="$ftt"; echo fdat="$fdat"; echo "f2=$f2"; echo fout="$fout";  echo "dat=$dat";
