@@ -2685,7 +2685,7 @@ $(pv_value)</tooltip>
       <height>160</height>
       <scale_visible>false</scale_visible>
       <limits_from_pv>false</limits_from_pv>
-      <maximum>80.0</maximum>
+      <maximum>70.0</maximum>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_24</name>

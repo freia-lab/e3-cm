@@ -29,9 +29,10 @@
 #                        Db/cernox-CMxx-breaktables.dbd.
 #                        The calibration data files (*.fic) for the CM must be placed in the 
 #                        directory calibrations/CMxx
-#                        
+#          3.0 210118 KG Added automatic filling the correct sensor id (LINR field) in 
+#                        Db/cm-cbatf-freia.substitutions file for the CM sensors when running
+#                        make calibration-CMxx (xx corresponds to the CM's number under test).
 
-echo $1
 if [ -d calibrations/$1 ]
 then
 cd calibrations/$1
@@ -67,6 +68,7 @@ for f in CX*\(1.5K*; do
 	rm -f ../../Db/cernox-CM*-breaktables.dbd
 	oldsensorid="$(awk -v tt=$ftt -f ../../tools/ttsubst.awk ../../Db/cm-cbatf-freia.substitutions)"
 	echo tt=$ftt, oldsensor=$oldsensorid, newsensorid=$fout
+	sed -i 's/'$oldsensorid'/'$fout'/' ../../Db/cm-cbatf-freia.substitutions
     fi
     # Save the date field
     fdat=$(echo "$f" | awk -F, '{print $4}')
@@ -80,7 +82,7 @@ for f in CX*\(1.5K*; do
     # Print the data.
     cat "$f" | awk '/^[[:digit:]]/ {printf "%f %s\n",1000.0*$1, $2 }' | sed 's/+//' > /tmp/temp
     # Add the high temp data without header
-    echo "$fout"*"(10.0K"*"$fdat"
+#    echo "$fout"*"(10.0K"*"$fdat"
     f2=$(ls "$fout"*"(10.0K"*"$fdat")
     cat "$f2" | awk '/^[[:digit:]]/ {printf "%f %s\n",1000.0*$1, $2 }' | sed 's/+//' >> /tmp/temp
 

@@ -91,6 +91,7 @@ TestEssProtoFreia_20201123 - KG, Changed the CYC_INT5 (OB35) and S8_Parameters (
 			     S8_parameters data block. Created a new Watch table "CV01 CV03 PIDs" for easy change of the PID parameters.
 TestEssProtoFreia_20201217 - KG, Changed S8_Parameters (DB208) - new values for the CV03 PID controller. Deleted the temporary changes introduced in 
 			     TestEssProtoFreia_20201120.
+TestEssProtoFreia_20210118 - KG, CHanged the scaling of LT01 and LT02 from 74 to 68 cm.
 
 
 			    

@@ -52,7 +52,7 @@
               <C>CstatH</C>
             </macros>
             <x>330</x>
-            <y>5</y>
+            <y>20</y>
             <width>260</width>
             <height>350</height>
             <style>3</style>
@@ -249,42 +249,58 @@
               <transparent>true</transparent>
             </widget>
           </widget>
-        </children>
-      </tab>
-      <tab>
-        <name>Sequence Parameters</name>
-        <children>
+          <widget type="textupdate" version="2.0.0">
+            <name>pt102_1</name>
+            <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
+            <x>188</x>
+            <y>75</y>
+            <rules>
+              <rule name="Visibility" prop_id="visible" out_exp="false">
+                <exp bool_exp="pv0=3">
+                  <value>false</value>
+                </exp>
+                <pv_name>$(pv_name).SEVR</pv_name>
+              </rule>
+            </rules>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_15</name>
+            <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Reg</pv_name>
+            <x>88</x>
+            <y>75</y>
+            <width>74</width>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+          </widget>
           <widget type="textentry" version="3.0.0">
-            <name>Text Input Template_2</name>
-            <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
-            <x>38</x>
-            <y>180</y>
-            <width>50</width>
-            <height>21</height>
+            <name>Text Input Template_10</name>
+            <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Reg</pv_name>
+            <x>28</x>
+            <y>75</y>
+            <width>52</width>
+            <precision>0</precision>
             <show_units>false</show_units>
             <actions>
             </actions>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label Template_18</name>
-            <text>   Sequence parameters   </text>
-            <x>48</x>
-            <y>310</y>
-            <width>190</width>
-            <height>23</height>
-            <font>
-              <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-              </font>
-            </font>
+            <name>Label Template_20</name>
+            <text>Automatic set-point CV551 (PT03/PT02)</text>
+            <x>18</x>
+            <y>20</y>
+            <width>264</width>
+            <height>21</height>
             <foreground_color>
               <color name="IO Text Fg" red="0" green="32" blue="92">
               </color>
             </foreground_color>
             <background_color>
-              <color name="IO Border" red="215" green="215" blue="215">
+              <color name="IO Background" red="255" green="255" blue="205">
               </color>
             </background_color>
-            <transparent>false</transparent>
             <vertical_alignment>1</vertical_alignment>
             <auto_size>true</auto_size>
             <actions>
@@ -294,68 +310,40 @@
               </color>
             </border_color>
           </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Input Template_9</name>
-            <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551_Reg</pv_name>
-            <x>118</x>
-            <y>30</y>
-            <width>52</width>
-            <precision>0</precision>
-            <show_units>false</show_units>
-            <actions>
-            </actions>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update Template_7</name>
-            <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
-            <x>98</x>
-            <y>182</y>
-            <width>60</width>
-            <height>18</height>
-            <precision>0</precision>
-            <vertical_alignment>1</vertical_alignment>
-            <wrap_words>false</wrap_words>
-            <actions>
-            </actions>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update Template_13</name>
-            <pv_name>CstatH-Ctrl:$(seq_no):sP_Final_Pt</pv_name>
-            <x>88</x>
-            <y>142</y>
-            <width>60</width>
-            <height>18</height>
-            <precision>0</precision>
-            <vertical_alignment>1</vertical_alignment>
-            <wrap_words>false</wrap_words>
-            <actions>
-            </actions>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update Template_14</name>
-            <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551_Reg</pv_name>
-            <x>178</x>
-            <y>30</y>
-            <width>74</width>
-            <precision>0</precision>
-            <show_units>false</show_units>
-            <wrap_words>false</wrap_words>
-            <actions>
-            </actions>
-          </widget>
-          <widget type="led" version="2.0.0">
-            <name>LED</name>
-            <pv_name>CstatH-MKS:MKS3:sRegOn</pv_name>
-            <x>199</x>
-            <y>360</y>
-            <width>25</width>
-            <height>25</height>
+          <widget type="label" version="2.0.0">
+            <name>Label_1</name>
+            <text>Current presure</text>
+            <x>188</x>
+            <y>50</y>
+            <width>113</width>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label Template_23</name>
+            <name>Label_2</name>
+            <text>PID Set-point</text>
+            <x>38</x>
+            <y>50</y>
+            <width>120</width>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_15</name>
+            <macros>
+              <GHI>CstatH-LHe:PT101:sRdV</GHI>
+              <GLO>CstatH-LHe:PT102:sRdV</GLO>
+              <L>MKS3</L>
+            </macros>
+            <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+            <x>28</x>
+            <y>140</y>
+            <width>70</width>
+            <height>40</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_24</name>
             <text>CV551 PID Reg Status:</text>
-            <x>48</x>
-            <y>362</y>
+            <x>28</x>
+            <y>112</y>
             <width>146</width>
             <height>21</height>
             <foreground_color>
@@ -376,38 +364,20 @@
               </color>
             </border_color>
           </widget>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_2</name>
-            <macros>
-              <GHI>CstatH-LHe:PT101:sRdV</GHI>
-              <GLO>CstatH-LHe:PT102:sRdV</GLO>
-              <L>MKS3</L>
-            </macros>
-            <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
-            <x>68</x>
-            <y>230</y>
-            <width>70</width>
-            <height>40</height>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>pt102</name>
-            <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
-            <x>148</x>
-            <y>60</y>
-            <rules>
-              <rule name="Visibility" prop_id="visible" out_exp="false">
-                <exp bool_exp="pv0=3">
-                  <value>false</value>
-                </exp>
-                <pv_name>$(pv_name).SEVR</pv_name>
-              </rule>
-            </rules>
+          <widget type="led" version="2.0.0">
+            <name>LED_1</name>
+            <pv_name>CstatH-MKS:MKS3:sRegOn</pv_name>
+            <x>188</x>
+            <y>110</y>
+            <width>25</width>
+            <height>25</height>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label Template_19</name>
-            <text>Automatic set-point CV551 (PT03/PT02):</text>
-            <x>28</x>
-            <width>268</width>
+            <name>Label Template_25</name>
+            <text>CV551:</text>
+            <x>128</x>
+            <y>140</y>
+            <width>50</width>
             <height>21</height>
             <foreground_color>
               <color name="IO Text Fg" red="0" green="32" blue="92">
@@ -421,16 +391,155 @@
             <auto_size>true</auto_size>
             <actions>
             </actions>
+            <tooltip>PT101</tooltip>
             <border_color>
               <color name="IO Border" red="215" green="215" blue="215">
               </color>
             </border_color>
           </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>pt102_2</name>
+            <pv_name>CstatH-MKS:MKS3:sOutV</pv_name>
+            <x>188</x>
+            <y>140</y>
+            <precision>2</precision>
+            <rules>
+              <rule name="Visibility" prop_id="visible" out_exp="false">
+                <exp bool_exp="pv0=3">
+                  <value>false</value>
+                </exp>
+                <pv_name>$(pv_name).SEVR</pv_name>
+              </rule>
+            </rules>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_26</name>
+            <text>FT551:</text>
+            <x>128</x>
+            <y>170</y>
+            <width>45</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="IO Text Fg" red="0" green="32" blue="92">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="IO Background" red="255" green="255" blue="205">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>PT101</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>pt102_3</name>
+            <pv_name>CstatH-RHtr:FT551:sRdV</pv_name>
+            <x>188</x>
+            <y>170</y>
+            <precision>2</precision>
+            <rules>
+              <rule name="Visibility" prop_id="visible" out_exp="false">
+                <exp bool_exp="pv0=3">
+                  <value>false</value>
+                </exp>
+                <pv_name>$(pv_name).SEVR</pv_name>
+              </rule>
+            </rules>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_27</name>
+            <text>Pressure @ 2K pumps 
+input</text>
+            <x>28</x>
+            <y>200</y>
+            <width>149</width>
+            <height>44</height>
+            <foreground_color>
+              <color name="IO Text Fg" red="0" green="32" blue="92">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="IO Background" red="255" green="255" blue="205">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>PT101</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>pt102_4</name>
+            <pv_name>CstatH-2Kpumps:PT552:sRdV</pv_name>
+            <x>188</x>
+            <y>210</y>
+            <precision>2</precision>
+            <rules>
+              <rule name="Visibility" prop_id="visible" out_exp="false">
+                <exp bool_exp="pv0=3">
+                  <value>false</value>
+                </exp>
+                <pv_name>$(pv_name).SEVR</pv_name>
+              </rule>
+            </rules>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Sequence Parameters</name>
+        <children>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_2</name>
+            <pv_name>CstatH-Ctrl:$(seq_no):cP_Pt</pv_name>
+            <x>388</x>
+            <y>50</y>
+            <width>50</width>
+            <height>21</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_7</name>
+            <pv_name>CstatH-Ctrl:$(seq_no):sP_Pt</pv_name>
+            <x>448</x>
+            <y>52</y>
+            <width>80</width>
+            <height>18</height>
+            <precision>0</precision>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_13</name>
+            <pv_name>CstatH-Ctrl:$(seq_no):sP_Final_Pt</pv_name>
+            <x>448</x>
+            <y>20</y>
+            <width>80</width>
+            <height>18</height>
+            <precision>0</precision>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+          </widget>
           <widget type="label" version="2.0.0">
             <name>Label Template_9</name>
             <text>Warning pressure [mbar]:</text>
-            <x>258</x>
-            <y>210</y>
+            <x>208</x>
+            <y>50</y>
             <width>170</width>
             <height>21</height>
             <foreground_color>
@@ -454,8 +563,8 @@
           <widget type="label" version="2.0.0">
             <name>Label Template_17</name>
             <text>Final pressure [mbar]:</text>
-            <x>258</x>
-            <y>171</y>
+            <x>228</x>
+            <y>20</y>
             <width>147</width>
             <height>21</height>
             <foreground_color>
@@ -479,8 +588,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Input Template_8</name>
             <pv_name>CstatH-Ctrl:$(seq_no):cP_Final_Pt</pv_name>
-            <x>268</x>
-            <y>190</y>
+            <x>388</x>
+            <y>20</y>
             <width>50</width>
             <height>21</height>
             <show_units>false</show_units>
@@ -489,10 +598,23 @@
           </widget>
           <widget type="label" version="2.0.0">
             <name>Label</name>
-            <text>Current presure</text>
+            <text>Current presure:</text>
             <x>268</x>
-            <y>110</y>
+            <y>80</y>
             <width>113</width>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_16</name>
+            <pv_name>CstatH-RHtr:PT551:sRdV</pv_name>
+            <x>448</x>
+            <y>80</y>
+            <width>80</width>
+            <height>18</height>
+            <precision>0</precision>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
           </widget>
         </children>
       </tab>
@@ -642,5 +764,6 @@
       <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
       </color>
     </background_color>
+    <active_tab>1</active_tab>
   </widget>
 </display>
