@@ -29,6 +29,9 @@ TESTS = test/server-cm.tcl
 calibration-CM02 : ./calibrations/CM02/*.fic ./calibrations/*.fic ./tools/ficFileConv
 	./tools/ficFileConv CM02
 	./tools/ficFileConv
+calibration-CM04 : ./calibrations/CM04/*.fic ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv CM04
+	./tools/ficFileConv
 
 #calibration : ./calibrations/*.fic ./tools/ficFileConv
 #	./tools/ficFileConv

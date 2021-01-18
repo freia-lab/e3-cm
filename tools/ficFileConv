@@ -47,7 +47,6 @@ mkdir /tmp/out
 else
 mkdir /tmp/out
 fi
-
 # Loop over low temp files
 for f in CX*\(1.5K*; do
     if [ -z $1 ]
@@ -66,6 +65,8 @@ for f in CX*\(1.5K*; do
         ftt=$(echo "$f" | awk '{print $2}'| cut -b 2-5)
 	fnam=../../Db/cernox-"$1"-breaktables.dbd
 	rm -f ../../Db/cernox-CM*-breaktables.dbd
+	oldsensorid="$(awk -v tt=$ftt -f ../../tools/ttsubst.awk ../../Db/cm-cbatf-freia.substitutions)"
+	echo tt=$ftt, oldsensor=$oldsensorid, newsensorid=$fout
     fi
     # Save the date field
     fdat=$(echo "$f" | awk -F, '{print $4}')
@@ -109,4 +110,5 @@ ls -l /tmp/out/C* | wc -l
 
 # Clean up
 rm -r /tmp/out
+rm -f $ftmp
 exit
