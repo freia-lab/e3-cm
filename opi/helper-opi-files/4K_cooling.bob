@@ -664,7 +664,7 @@
         <precision>1</precision>
         <show_units>false</show_units>
         <wrap_words>false</wrap_words>
-        <tooltip>PT01 via MKS2
+        <tooltip>PT01 via MKS2 HI
 $(pv_name)
 $(pv_value)</tooltip>
       </widget>
@@ -678,6 +678,7 @@ $(pv_value)</tooltip>
           </font>
         </font>
         <horizontal_alignment>1</horizontal_alignment>
+        <tooltip>MKS2 HI</tooltip>
       </widget>
     </widget>
     <widget type="ellipse" version="2.0.0">
@@ -1184,6 +1185,9 @@ $(pv_value)</tooltip>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
+      <tooltip>Via MKS3 HI
+$(pv_name)
+$(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_2</name>
@@ -1195,6 +1199,7 @@ $(pv_value)</tooltip>
         </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+      <tooltip>MKS3 HI</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1222,6 +1227,9 @@ $(pv_value)</tooltip>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
+      <tooltip>Via MKS3 LO
+$(pv_name)
+$(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
@@ -1233,6 +1241,7 @@ $(pv_value)</tooltip>
         </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+      <tooltip>MKS3 LO</tooltip>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -3117,494 +3126,6 @@ $(pv_value)</tooltip>
       <color name="IO Liquid Helium" red="51" green="102" blue="255">
       </color>
     </background_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Coupler 1</name>
-    <macros>
-      <P>WtrC-Dwtr:PwrCpl</P>
-      <xa>01</xa>
-      <xc>03</xc>
-      <ya>13</ya>
-      <yc>14</yc>
-    </macros>
-    <x>1285</x>
-    <y>895</y>
-    <width>190</width>
-    <height>140</height>
-    <style>2</style>
-    <background_color>
-      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
-      </color>
-    </background_color>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <macros>
-        <x>$(xa)</x>
-        <y>$(ya)</y>
-      </macros>
-      <y>91</y>
-      <width>181</width>
-      <height>43</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label_40</name>
-        <text>TT$(x)</text>
-        <y>23</y>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_59</name>
-        <pv_name>$(P)-TT$(x):sRdV</pv_name>
-        <x>81</x>
-        <y>23</y>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: TT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_41</name>
-        <text>FT$(x)</text>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_60</name>
-        <pv_name>$(P)-FT$(x):sRdV</pv_name>
-        <x>81</x>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: FT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group_12</name>
-      <macros>
-        <x>$(xc)</x>
-        <y>$(yc)</y>
-      </macros>
-      <y>22</y>
-      <width>181</width>
-      <height>43</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label_42</name>
-        <text>TT$(x)</text>
-        <y>23</y>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_61</name>
-        <pv_name>$(P)-TT$(x):sRdV</pv_name>
-        <x>81</x>
-        <y>23</y>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: TT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_43</name>
-        <text>FT$(x)</text>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_62</name>
-        <pv_name>$(P)-FT$(x):sRdV</pv_name>
-        <x>81</x>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: FT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_44</name>
-      <text>Antenna</text>
-      <y>70</y>
-      <width>181</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_45</name>
-      <text>Power Coupler 1 Cooling</text>
-      <width>181</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Coupler 1_1</name>
-    <macros>
-      <P>WtrC-Dwtr:PwrCpl</P>
-      <xa>02</xa>
-      <xc>04</xc>
-      <ya>23</ya>
-      <yc>24</yc>
-    </macros>
-    <x>690</x>
-    <y>895</y>
-    <width>190</width>
-    <height>140</height>
-    <style>2</style>
-    <background_color>
-      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
-      </color>
-    </background_color>
-    <widget type="group" version="2.0.0">
-      <name>Group_13</name>
-      <macros>
-        <x>$(xa)</x>
-        <y>$(ya)</y>
-      </macros>
-      <y>91</y>
-      <width>181</width>
-      <height>43</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label_46</name>
-        <text>TT$(x)</text>
-        <y>23</y>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_63</name>
-        <pv_name>$(P)-TT$(x):sRdV</pv_name>
-        <x>81</x>
-        <y>23</y>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: TT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_47</name>
-        <text>FT$(x)</text>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_64</name>
-        <pv_name>$(P)-FT$(x):sRdV</pv_name>
-        <x>81</x>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: FT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group_14</name>
-      <macros>
-        <x>$(xc)</x>
-        <y>$(yc)</y>
-      </macros>
-      <y>22</y>
-      <width>181</width>
-      <height>43</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label_48</name>
-        <text>TT$(x)</text>
-        <y>23</y>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_65</name>
-        <pv_name>$(P)-TT$(x):sRdV</pv_name>
-        <x>81</x>
-        <y>23</y>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: TT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_49</name>
-        <text>FT$(x)</text>
-        <width>80</width>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_66</name>
-        <pv_name>$(P)-FT$(x):sRdV</pv_name>
-        <x>81</x>
-        <foreground_color>
-          <color red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <tooltip>New name on PID: FT$(y)
-$(pv_name)
-$(pv_value)</tooltip>
-        <border_color>
-          <color red="0" green="128" blue="255">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_50</name>
-      <text>Antenna</text>
-      <y>70</y>
-      <width>181</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_51</name>
-      <text>Power Coupler 2 Cooling</text>
-      <width>181</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
@@ -5727,6 +5248,460 @@ the state was active for at least 10 s.</tooltip>
           </color>
         </border_color>
       </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1_2</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <P1>WtrC-Dwtr</P1>
+      <n>1</n>
+      <wfg>07</wfg>
+      <xa>01</xa>
+      <xc>03</xc>
+      <ya>13</ya>
+      <yc>14</yc>
+    </macros>
+    <x>1285</x>
+    <y>895</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <widget type="group" version="2.0.0">
+      <name>Group_38</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>79</y>
+      <width>182</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_73</name>
+        <text>TT$(x)</text>
+        <y>35</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_109</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>35</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_74</name>
+        <text>WFGuard$(wfg)</text>
+        <y>5</y>
+        <width>99</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_17</name>
+        <pv_name>$(P1):WFGuard$(wfg):sOK</pv_name>
+        <x>119</x>
+        <y>5</y>
+        <off_color>
+          <color name="MAJOR" red="252" green="13" blue="27">
+          </color>
+        </off_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_39</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>27</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_75</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_110</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_76</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_111</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_77</name>
+      <text>Power Coupler $(n) Cooling</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1_3</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <P1>WtrC-Dwtr</P1>
+      <n>2</n>
+      <wfg>08</wfg>
+      <xa>02</xa>
+      <xc>04</xc>
+      <ya>23</ya>
+      <yc>24</yc>
+    </macros>
+    <x>690</x>
+    <y>895</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <widget type="group" version="2.0.0">
+      <name>Group_40</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>79</y>
+      <width>182</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_78</name>
+        <text>TT$(x)</text>
+        <y>35</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_112</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>35</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_79</name>
+        <text>WFGuard$(wfg)</text>
+        <y>5</y>
+        <width>99</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_18</name>
+        <pv_name>$(P1):WFGuard$(wfg):sOK</pv_name>
+        <x>119</x>
+        <y>5</y>
+        <off_color>
+          <color name="MAJOR" red="252" green="13" blue="27">
+          </color>
+        </off_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_41</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>27</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_80</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_113</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_81</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_114</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_82</name>
+      <text>Power Coupler $(n) Cooling</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
 </display>
