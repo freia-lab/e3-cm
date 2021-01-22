@@ -50,7 +50,7 @@
       </tab>
       <tab>
         <name>Warm Coupler Cond.</name>
-        <file></file>
+        <file>WarmPwrCplCond.bob</file>
         <macros>
         </macros>
         <group_name></group_name>

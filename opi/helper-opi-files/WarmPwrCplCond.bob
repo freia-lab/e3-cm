@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Warm PC Cond.</name>
+  <width>2000</width>
+  <height>1038</height>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1_3</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <P1>WtrC-Dwtr</P1>
+      <n>2</n>
+      <wfg>08</wfg>
+      <xa>02</xa>
+      <xc>04</xc>
+      <ya>23</ya>
+      <yc>24</yc>
+    </macros>
+    <x>260</x>
+    <y>890</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <widget type="group" version="2.0.0">
+      <name>Group_40</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>79</y>
+      <width>182</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_78</name>
+        <text>TT$(x)</text>
+        <y>35</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_113</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>35</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_79</name>
+        <text>WFGuard$(wfg)</text>
+        <y>5</y>
+        <width>99</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_18</name>
+        <pv_name>$(P1):WFGuard$(wfg):sOK</pv_name>
+        <x>119</x>
+        <y>5</y>
+        <off_color>
+          <color name="MAJOR" red="252" green="13" blue="27">
+          </color>
+        </off_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_41</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>27</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_80</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_114</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_81</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_115</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_82</name>
+      <text>Power Coupler $(n) Cooling</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Coupler 1_4</name>
+    <macros>
+      <P>WtrC-Dwtr:PwrCpl</P>
+      <P1>WtrC-Dwtr</P1>
+      <n>1</n>
+      <wfg>07</wfg>
+      <xa>01</xa>
+      <xc>03</xc>
+      <ya>13</ya>
+      <yc>14</yc>
+    </macros>
+    <x>855</x>
+    <y>890</y>
+    <width>190</width>
+    <height>140</height>
+    <style>2</style>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <widget type="group" version="2.0.0">
+      <name>Group_42</name>
+      <macros>
+        <x>$(xa)</x>
+        <y>$(ya)</y>
+      </macros>
+      <y>79</y>
+      <width>182</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_83</name>
+        <text>TT$(x)</text>
+        <y>35</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_116</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>35</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_84</name>
+        <text>WFGuard$(wfg)</text>
+        <y>5</y>
+        <width>99</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_19</name>
+        <pv_name>$(P1):WFGuard$(wfg):sOK</pv_name>
+        <x>119</x>
+        <y>5</y>
+        <off_color>
+          <color name="MAJOR" red="252" green="13" blue="27">
+          </color>
+        </off_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_43</name>
+      <macros>
+        <x>$(xc)</x>
+        <y>$(yc)</y>
+      </macros>
+      <y>27</y>
+      <width>181</width>
+      <height>43</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_85</name>
+        <text>TT$(x)</text>
+        <y>23</y>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_117</name>
+        <pv_name>$(P)-TT$(x):sRdV</pv_name>
+        <x>81</x>
+        <y>23</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: TT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_86</name>
+        <text>FT$(x)</text>
+        <width>80</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_118</name>
+        <pv_name>$(P)-FT$(x):sRdV</pv_name>
+        <x>81</x>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <tooltip>New name on PID: FT$(y)
+$(pv_name)
+$(pv_value)</tooltip>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_87</name>
+      <text>Power Coupler $(n) Cooling</text>
+      <width>181</width>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group-LLRF-1</name>
+    <x>725</x>
+    <y>895</y>
+    <width>112</width>
+    <height>135</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_44</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <x>6</x>
+      <y>60</y>
+      <width>100</width>
+      <height>75</height>
+      <style>3</style>
+      <background_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </background_color>
+      <widget type="embedded" version="2.0.0">
+        <name>Display</name>
+        <file>../../freia-symbols/display-builder/rf-switch-v.bob</file>
+        <x>22</x>
+        <width>20</width>
+        <height>30</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_119</name>
+        <pv_name>LLRF-$(N)</pv_name>
+        <x>2</x>
+        <y>30</y>
+        <width>98</width>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Background" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 == 4">
+              <value>
+                <color name="ON" red="70" green="255" blue="70">
+                </color>
+              </value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_88</name>
+        <text>RF Switch</text>
+        <x>42</x>
+        <y>15</y>
+        <width>41</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_89</name>
+        <text>LLRF-$(N)</text>
+        <x>2</x>
+        <y>50</y>
+        <width>96</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>RF2_1</name>
+      <macros>
+        <P>HPRF</P>
+      </macros>
+      <width>112</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>RF2_2</name>
+        <width>112</width>
+        <height>60</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+        <tooltip>Electrosys RF Station</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_2</name>
+        <pv_name>$(P)-Esys:Ampl:VisuState</pv_name>
+        <x>9</x>
+        <y>4</y>
+        <width>95</width>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label>Mains OFF</label>
+            <color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label>Off</label>
+            <color>
+              <color name="STOP" red="222" green="33" blue="22">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label>Standby</label>
+            <color>
+              <color name="BLUE" red="79" green="228" blue="250">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label>On</label>
+            <color>
+              <color name="On" red="70" green="255" blue="70">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_120</name>
+        <pv_name>$(P)-Esys:Ampl:sFwdPwr</pv_name>
+        <x>6</x>
+        <y>24</y>
+        <height>30</height>
+        <font>
+          <font family="Source Code Pro" style="BOLD" size="21.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group-LLRF-2</name>
+    <x>470</x>
+    <y>895</y>
+    <width>112</width>
+    <height>135</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>Group_45</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <x>6</x>
+      <y>60</y>
+      <width>100</width>
+      <height>75</height>
+      <style>3</style>
+      <background_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </background_color>
+      <widget type="embedded" version="2.0.0">
+        <name>Display_1</name>
+        <file>../../freia-symbols/display-builder/rf-switch-v.bob</file>
+        <x>22</x>
+        <width>20</width>
+        <height>30</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_121</name>
+        <pv_name>LLRF-$(N)</pv_name>
+        <x>2</x>
+        <y>30</y>
+        <width>98</width>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <rules>
+          <rule name="Background" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 == 4">
+              <value>
+                <color name="ON" red="70" green="255" blue="70">
+                </color>
+              </value>
+            </exp>
+            <pv_name>$(pv_name)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_90</name>
+        <text>RF Switch</text>
+        <x>42</x>
+        <y>15</y>
+        <width>41</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_91</name>
+        <text>LLRF-$(N)</text>
+        <x>2</x>
+        <y>50</y>
+        <width>96</width>
+        <height>13</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>RF2_3</name>
+      <macros>
+        <P>HPRF</P>
+      </macros>
+      <width>112</width>
+      <height>60</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>RF2_4</name>
+        <width>112</width>
+        <height>60</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+        <tooltip>DBE RF station</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_3</name>
+        <pv_name>$(P)-DBE:Ampl:VisuState</pv_name>
+        <x>9</x>
+        <y>4</y>
+        <width>95</width>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label>Mains OFF</label>
+            <color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label>Off</label>
+            <color>
+              <color name="STOP" red="222" green="33" blue="22">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label>Standby</label>
+            <color>
+              <color name="BLUE" red="79" green="228" blue="250">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label>On</label>
+            <color>
+              <color name="On" red="70" green="255" blue="70">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_122</name>
+        <pv_name>$(P)-DBE1:Ampl:sTotFwdPwr</pv_name>
+        <x>6</x>
+        <y>24</y>
+        <height>30</height>
+        <font>
+          <font family="Source Code Pro" style="BOLD" size="21.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_46</name>
+    <x>589</x>
+    <y>898</y>
+    <width>132</width>
+    <height>87</height>
+    <style>2</style>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label_92</name>
+      <text>Power Coupler's
+Water Cooling</text>
+      <x>10</x>
+      <width>110</width>
+      <height>44</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_20</name>
+      <pv_name>HPRF-PwrCpl:WtrCIntlk:sOutput</pv_name>
+      <x>5</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>Fault</off_label>
+      <off_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+      <tooltip>Interlock signal from power coupler's 
+water cooling system
+$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  RF Leak Detector  </name>
+    <macros>
+      <P>Env-RFleakage</P>
+    </macros>
+    <x>1310</x>
+    <y>10</y>
+    <width>317</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Node 0 - Channel 2_Content</name>
+      <macros>
+        <N>2</N>
+        <NODE>0</NODE>
+      </macros>
+      <file>../Embedded/rf-leak-det-sngl-chan-tresholds.opi</file>
+      <y>88</y>
+      <width>275</width>
+      <height>70</height>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="127" green="127" blue="127">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Node 0 - Channel 2_Content_1</name>
+      <macros>
+        <N>2</N>
+        <NODE>0</NODE>
+      </macros>
+      <file>../Embedded/rf-leak-det-sngl-chan.opi</file>
+      <x>39</x>
+      <y>38</y>
+      <width>200</width>
+      <height>52</height>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="127" green="127" blue="127">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_21</name>
+      <pv_name>$(P):RFdet-0:ALRM</pv_name>
+      <x>9</x>
+      <y>8</y>
+      <width>260</width>
+      <height>25</height>
+      <off_label>OK</off_label>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_label>ALARM</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <N>1</N>
+    </macros>
+    <x>660</x>
+    <y>240</y>
+    <width>620</width>
+    <height>560</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Cavity Vacuum</text>
+      <x>10</x>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
+      <x>160</x>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <format>2</format>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Fwd Power</text>
+      <x>10</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>HPRF-Cav$(N):FwdPwr:sRdV</pv_name>
+      <x>160</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="databrowser" version="2.0.0">
+      <name>Data Browser</name>
+      <file>../plots/PwCpl-warm.plt</file>
+      <x>10</x>
+      <y>100</y>
+      <width>600</width>
+      <height>450</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_93</name>
+      <text>Pulse width:</text>
+      <x>370</x>
+      <y>40</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_123</name>
+      <pv_name>LLRF:SigGen:PlsWdth</pv_name>
+      <x>500</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <N>2</N>
+    </macros>
+    <x>20</x>
+    <y>240</y>
+    <width>620</width>
+    <height>560</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Cavity Vacuum</text>
+      <x>10</x>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
+      <x>160</x>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <format>2</format>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Fwd Power</text>
+      <x>10</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>HPRF-Cav$(N):FwdPwr:sRdV</pv_name>
+      <x>160</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="databrowser" version="2.0.0">
+      <name>Data Browser_1</name>
+      <file>../plots/PwCpl-warm.plt</file>
+      <x>10</x>
+      <y>100</y>
+      <width>600</width>
+      <height>450</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_94</name>
+      <text>Pulse width:</text>
+      <x>370</x>
+      <y>40</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_124</name>
+      <pv_name>LLRF:SigGen:PlsWdth</pv_name>
+      <x>500</x>
+      <y>40</y>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <N>1</N>
+    </macros>
+    <x>660</x>
+    <width>620</width>
+    <height>240</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_3</name>
+      <x>30</x>
+      <width>450</width>
+      <height>230</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Cavity Fwd</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>LLRF-$(N):DWN$(chCavFwd=3)-XAXIS</x_pv>
+          <y_pv>LLRF-$(N):DWN$(chCavFwd=3)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI3 Text Update</name>
+      <pv_name>LLRF-$(N):AI3-SMON-MAGAVG</pv_name>
+      <x>490</x>
+      <y>70</y>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI3 Text Update_1</name>
+      <pv_name>LLRF-$(N):AI3-SMON-MAGMINMAX</pv_name>
+      <x>490</x>
+      <y>130</y>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Average</text>
+      <x>490</x>
+      <y>40</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Maximum</text>
+      <x>490</x>
+      <y>100</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <macros>
+      <N>2</N>
+    </macros>
+    <x>20</x>
+    <width>620</width>
+    <height>240</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_4</name>
+      <x>30</x>
+      <width>450</width>
+      <height>230</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Cavity Fwd</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>LLRF-$(N):DWN$(chCavFwd=3)-XAXIS</x_pv>
+          <y_pv>LLRF-$(N):DWN$(chCavFwd=3)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI3 Text Update_2</name>
+      <pv_name>LLRF-$(N):AI3-SMON-MAGAVG</pv_name>
+      <x>490</x>
+      <y>70</y>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI3 Text Update_3</name>
+      <pv_name>LLRF-$(N):AI3-SMON-MAGMINMAX</pv_name>
+      <x>490</x>
+      <y>130</y>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Average</text>
+      <x>490</x>
+      <y>40</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Maximum</text>
+      <x>490</x>
+      <y>100</y>
+    </widget>
+  </widget>
+</display>
