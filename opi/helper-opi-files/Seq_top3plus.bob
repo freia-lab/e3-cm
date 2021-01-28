@@ -290,10 +290,14 @@ in the web browser</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Text Update Template_3</name>
-    <x>45</x>
-    <y>70</y>
-    <width>413</width>
-    <height>33</height>
+    <x>50</x>
+    <y>60</y>
+    <width>408</width>
+    <height>43</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
     <foreground_color>
       <color name="IO InputPV Fg" red="0" green="32" blue="92">
       </color>

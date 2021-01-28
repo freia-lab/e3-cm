@@ -916,17 +916,6 @@ $(pv_value)</tooltip>
         </font>
       </font>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
-      <x>160</x>
-      <height>30</height>
-      <font>
-        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <format>2</format>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
       <text>Fwd Power</text>
@@ -980,6 +969,36 @@ $(pv_value)</tooltip>
         </font>
       </font>
     </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_4</name>
+      <x>160</x>
+      <width>100</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_2</name>
+        <pv_name>TPG300-5:UNITS-RBV</pv_name>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <horizontal_alignment>2</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_6</name>
+        <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
+        <width>60</width>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <transparent>true</transparent>
+        <format>2</format>
+      </widget>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group_2</name>
@@ -1002,17 +1021,6 @@ $(pv_value)</tooltip>
         <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
         </font>
       </font>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_4</name>
-      <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
-      <x>160</x>
-      <height>30</height>
-      <font>
-        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <format>2</format>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
@@ -1066,6 +1074,36 @@ $(pv_value)</tooltip>
         <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
         </font>
       </font>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>160</x>
+      <width>100</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>TPG300-5:UNITS-RBV</pv_name>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <horizontal_alignment>2</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_4</name>
+        <pv_name>CM-Vac:PT$(N)0:sRdV</pv_name>
+        <width>60</width>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <transparent>true</transparent>
+        <format>2</format>
+      </widget>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">

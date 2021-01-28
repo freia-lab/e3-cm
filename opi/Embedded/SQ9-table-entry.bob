@@ -106,12 +106,13 @@
       <square>true</square>
       <rules>
         <rule name="OffColor" prop_id="off_color" out_exp="true">
-          <exp bool_exp="((pvInt0==18)&amp;&amp;(pv2&gt;pv1))">
+          <exp bool_exp="(pvInt3==0)&amp;&amp;((pvInt0==12)&amp;&amp;(pv2&gt;pv1))">
             <expression>WidgetColor(70, 255, 70, 255)</expression>
           </exp>
           <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
           <pv_name>$(C)-Ctrl:$(seq_no):sP_CV551_Pt$(pStep)</pv_name>
           <pv_name>$(C)-LHe:PT102:sRdV</pv_name>
+          <pv_name>$(C)-MKS:MKS3:sRegOn</pv_name>
         </rule>
       </rules>
       <tooltip></tooltip>
