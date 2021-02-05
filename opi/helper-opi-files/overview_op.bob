@@ -3106,45 +3106,6 @@ $(pv_value)</tooltip>
       <width>15</width>
       <height>15</height>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>PT75_3</name>
-      <macros>
-        <D>PT71</D>
-        <S>Vac</S>
-      </macros>
-      <x>740</x>
-      <y>260</y>
-      <width>35</width>
-      <height>28</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_67</name>
-        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-        <y>13</y>
-        <width>35</width>
-        <height>15</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="12.0">
-          </font>
-        </font>
-        <format>2</format>
-        <precision>1</precision>
-        <show_units>false</show_units>
-        <wrap_words>false</wrap_words>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_22</name>
-        <text>$(D)</text>
-        <width>35</width>
-        <height>15</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="12.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_43</name>
@@ -4012,13 +3973,13 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_59</name>
-    <x>910</x>
-    <y>760</y>
+    <y>530</y>
+    <width>130</width>
     <height>1</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="100.0" y="0.0">
+      <point x="130.0" y="0.0">
       </point>
     </points>
     <line_color>
@@ -4033,8 +3994,8 @@ $(pv_value)</tooltip>
       <V>GV70</V>
     </macros>
     <file>../../freia-symbols/display-builder/CstatValve-h-lu.bob</file>
-    <x>930</x>
-    <y>738</y>
+    <x>95</x>
+    <y>508</y>
     <width>32</width>
     <height>32</height>
   </widget>
@@ -4044,8 +4005,8 @@ $(pv_value)</tooltip>
       <D>PT73</D>
       <S>Vac</S>
     </macros>
-    <x>970</x>
-    <y>720</y>
+    <x>60</x>
+    <y>480</y>
     <width>35</width>
     <height>28</height>
     <style>3</style>
@@ -4079,8 +4040,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group_4</name>
-    <x>1002</x>
-    <y>730</y>
+    <x>10</x>
+    <y>500</y>
     <width>60</width>
     <height>60</height>
     <style>3</style>
@@ -4093,6 +4054,7 @@ $(pv_value)</tooltip>
       </symbols>
       <width>60</width>
       <height>60</height>
+      <rotation>180.0</rotation>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_20</name>
@@ -4104,8 +4066,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_60</name>
-    <x>985</x>
-    <y>740</y>
+    <x>75</x>
+    <y>510</y>
     <width>1</width>
     <points>
       <point x="0.0" y="20.0">
@@ -4451,6 +4413,70 @@ $(pv_value)</tooltip>
       <text>Power Coupler $(n) Cooling</text>
       <width>181</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>170</x>
+    <y>410</y>
+    <width>70</width>
+    <height>70</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_1</name>
+      <symbols>
+        <symbol>../../freia-symbols/Fluid/Valves/VC On-Off 2-way Hand Valve 3 White.svg</symbol>
+      </symbols>
+      <y>30</y>
+      <width>50</width>
+      <height>40</height>
+      <rotation>-90.0</rotation>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>PT75_3</name>
+      <macros>
+        <D>PT71</D>
+        <S>Vac</S>
+      </macros>
+      <x>10</x>
+      <width>40</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_22</name>
+        <text>$(D)</text>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_67</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <format>2</format>
+        <precision>1</precision>
+        <show_units>false</show_units>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>GV71</text>
+      <x>30</x>
+      <y>40</y>
+      <width>40</width>
     </widget>
   </widget>
 </display>

@@ -1022,7 +1022,7 @@ $(pv_value)</tooltip>
     <x>610</x>
     <y>835</y>
     <width>59</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1050,7 +1050,7 @@ $(pv_value)</tooltip>
     <x>610</x>
     <y>801</y>
     <width>63</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2149,46 +2149,6 @@ display.getWidget("tabcontainer").setActiveTabIndex(2);]]></text>
         <tooltip>PT73/PT74</tooltip>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>PT71</name>
-      <macros>
-        <D>PT71</D>
-        <S>Vac</S>
-      </macros>
-      <x>160</x>
-      <y>60</y>
-      <width>35</width>
-      <height>28</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_108</name>
-        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
-        <y>13</y>
-        <width>35</width>
-        <height>15</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="12.0">
-          </font>
-        </font>
-        <format>2</format>
-        <precision>1</precision>
-        <show_units>false</show_units>
-        <wrap_words>false</wrap_words>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_45</name>
-        <text>$(D)</text>
-        <width>35</width>
-        <height>15</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="12.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-        <tooltip>PT71/PT72</tooltip>
-      </widget>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label_46</name>
       <text>Out</text>
@@ -2725,5 +2685,69 @@ Click for details</tooltip>
       </font>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>910</x>
+    <y>525</y>
+    <width>80</width>
+    <height>70</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_1</name>
+      <symbols>
+        <symbol>../../freia-symbols/Fluid/Valves/VC On-Off 2-way Hand Valve 3 White.svg</symbol>
+      </symbols>
+      <x>30</x>
+      <y>30</y>
+      <width>50</width>
+      <height>40</height>
+      <rotation>-90.0</rotation>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>PT75_3</name>
+      <macros>
+        <D>PT71</D>
+        <S>Vac</S>
+      </macros>
+      <x>40</x>
+      <width>40</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_22</name>
+        <text>$(D)</text>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_67</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>35</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <format>2</format>
+        <precision>1</precision>
+        <show_units>false</show_units>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>GV71</text>
+      <y>40</y>
+      <width>40</width>
+    </widget>
   </widget>
 </display>
