@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>350</width>
+  <height>40</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(TT):</text>
+    <x>10</x>
+    <y>10</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)-$(SUBS):$(TT):sFlt</pv_name>
+    <x>70</x>
+    <y>10</y>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)-$(SUBS):$(TT)-R:sRdV</pv_name>
+    <x>240</x>
+    <y>10</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(P)-$(SUBS):$(TT):sRdV-valid</pv_name>
+    <x>100</x>
+    <y>10</y>
+    <off_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </on_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>$(P)-VBox:TT700:sRdV_1</name>
+    <pv_name>$(P)-$(SUBS):$(TT):sRdV</pv_name>
+    <x>130</x>
+    <y>10</y>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)-calc.L</pv_name>
+        <value>1</value>
+        <description>Force data valid flag to TRUE</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(pv_name)-calc.L</pv_name>
+        <value>0</value>
+        <description>Data valid flag from hardware</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(pv_name)-calc.K</pv_name>
+        <value>1</value>
+        <description>Force data valid flag to FALSE</description>
+      </action>
+      <action type="execute">
+        <script file="EmbeddedPy">
+          <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+# var pvNam = PVUtil.getString(pvArray[0])
+print 'Hello'+ pvNam
+# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))
+]]></text>
+        </script>
+        <description>Execute Script</description>
+      </action>
+    </actions>
+    <rules>
+      <rule name="New Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0==1 or pvInt1==1">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name)-calc.L</pv_name>
+        <pv_name>$(pv_name)-calc.K</pv_name>
+      </rule>
+    </rules>
+    <tooltip>YELLOW background - "Data valid" flag is forced.
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+</display>

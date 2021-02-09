@@ -88,10 +88,6 @@
       <x>160</x>
       <y>5</y>
       <width>60</width>
-      <background_color>
-        <color name="Read_Background" red="230" green="235" blue="232">
-        </color>
-      </background_color>
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -107,10 +103,6 @@
       <x>300</x>
       <y>5</y>
       <width>60</width>
-      <background_color>
-        <color name="Read_Background" red="230" green="235" blue="232">
-        </color>
-      </background_color>
       <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">

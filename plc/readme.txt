@@ -92,6 +92,12 @@ TestEssProtoFreia_20201123 - KG, Changed the CYC_INT5 (OB35) and S8_Parameters (
 TestEssProtoFreia_20201217 - KG, Changed S8_Parameters (DB208) - new values for the CV03 PID controller. Deleted the temporary changes introduced in 
 			     TestEssProtoFreia_20201120.
 TestEssProtoFreia_20210118 - KG, CHanged the scaling of LT01 and LT02 from 74 to 68 cm.
+TestEssProtoFreia_20210127 - KG, Changed CYC_INT2 and added S4_Parameters (DB204) block to have possibility to change the PID parameters for CV60. Added CV60 PID
+			     parameters to the old watch table and renamed it to "CV01 CV03 CV60 PIDs"
+TestEssProtoFreia_20210209 - KG, Moved parameters S7_LowT and S7_HighT from memory block to DB207 (S/_Parameters). It turned out that when the parameters where 
+			     in the memory they have not been preserved when restarting the PLC.
+
+
 
 
 			    

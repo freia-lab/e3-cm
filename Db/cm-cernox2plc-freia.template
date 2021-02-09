@@ -8,14 +8,21 @@ record(ao, "$(PREFIX)-$(SUBS):$(DEV):sRdV-INT") {
   field(DOL, "$(PREFIX)-$(SUBS):$(DEV):sRdV")
   field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc")
 }
+
+# L and K fields are used to force the sRdV-calc to 1 (when L=1)
+# or to 0 (when K=1). If both K and L = 1 the value is 0.
+# The K field has been added to CALC to handle the sensors that are 
+# known to be broken but the status bit from CABTF is ok.
+# The calc will be also set to 0 when the SEVR=2 and STAT=15 - value
+# outside the look-up table
 record(calc, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc") {
   field (DESC,"Valid flag calulation")
   field (INPA, "$(PREFIX)-$(SUBS):$(DEV):sRdV-stat.VAL NMS")
-#  field (INPB, "$(PREFIX)-$(SUBS):$(DEV):sRdV.SEVR NMS")
-#  field (INPC, "$(PREFIX)-$(SUBS):$(DEV):sRdV.DISA NMS")
+  field (INPB, "$(PREFIX)-$(SUBS):$(DEV):sRdV.SEVR NMS")
+  field (INPC, "$(PREFIX)-$(SUBS):$(DEV):sRdV.STAT NMS")
 #  field (INPD, "73")
 #  field (INPE, "400")
-  field (CALC, "(A?0:1)||L")
+  field (CALC, "((A||(B==2&&C==15)?0:1)||L)&&!K")
   field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid")
 }
 

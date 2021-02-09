@@ -202,7 +202,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT03</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>10</x>
     <y>418</y>
     <width>350</width>
@@ -280,7 +280,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT900</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>30</y>
     <width>350</width>
@@ -293,7 +293,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT930</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>68</y>
     <width>350</width>
@@ -306,7 +306,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT940</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>107</y>
     <width>350</width>
@@ -319,7 +319,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT950</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>146</y>
     <width>350</width>
@@ -332,7 +332,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT960</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>185</y>
     <width>350</width>
@@ -345,7 +345,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT630</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>224</y>
     <width>350</width>
@@ -358,7 +358,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT640</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>262</y>
     <width>350</width>
@@ -371,7 +371,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT700</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>301</y>
     <width>350</width>
@@ -384,7 +384,7 @@
       <SUBS>CM</SUBS>
       <TT>TT04</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>340</y>
     <width>350</width>
@@ -397,7 +397,7 @@
       <SUBS>CM</SUBS>
       <TT>TT05</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>379</y>
     <width>350</width>
@@ -410,7 +410,7 @@
       <SUBS>CM</SUBS>
       <TT>TT06</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>418</y>
     <width>350</width>
@@ -423,7 +423,7 @@
       <SUBS>CM</SUBS>
       <TT>TT07</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>456</y>
     <width>350</width>
@@ -436,7 +436,7 @@
       <SUBS>CM</SUBS>
       <TT>TT08</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>375</x>
     <y>495</y>
     <width>350</width>
@@ -488,7 +488,7 @@
       <SUBS>CTS</SUBS>
       <TT>TT10</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>30</y>
     <width>350</width>
@@ -501,7 +501,7 @@
       <SUBS>CTS</SUBS>
       <TT>TT11</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>68</y>
     <width>350</width>
@@ -514,7 +514,7 @@
       <SUBS>CTS</SUBS>
       <TT>TT20</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>107</y>
     <width>350</width>
@@ -527,7 +527,7 @@
       <SUBS>CTS</SUBS>
       <TT>TT21</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>146</y>
     <width>350</width>
@@ -553,7 +553,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT16</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>224</y>
     <width>350</width>
@@ -579,7 +579,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT600</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>301</y>
     <width>350</width>
@@ -592,7 +592,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT610</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>340</y>
     <width>350</width>
@@ -605,7 +605,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT620</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>379</y>
     <width>350</width>
@@ -618,7 +618,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT670</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>418</y>
     <width>350</width>
@@ -631,7 +631,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT680</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>456</y>
     <width>350</width>
@@ -644,7 +644,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT690</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>495</y>
     <width>350</width>
@@ -657,7 +657,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT970</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>534</y>
     <width>350</width>
@@ -670,7 +670,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT980</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>740</x>
     <y>573</y>
     <width>350</width>
