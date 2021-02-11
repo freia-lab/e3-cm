@@ -57,7 +57,7 @@
       </tab>
       <tab>
         <name>Cold Coupler Cond.</name>
-        <file></file>
+        <file>ColdPwrCplCond.bob</file>
         <macros>
         </macros>
         <group_name></group_name>

@@ -621,12 +621,27 @@ input</text>
       <tab>
         <name>2K Pumps</name>
         <children>
+          <widget type="action_button" version="3.0.0">
+            <name>Details</name>
+            <actions>
+              <action type="open_display">
+                <file>../../freia-symbols/display-builder/CmdPanels/2Kpumps.bob</file>
+                <target>window</target>
+                <description>2K Pumps Details</description>
+              </action>
+            </actions>
+            <text>Details...</text>
+            <x>448</x>
+            <y>50</y>
+            <tooltip>$(actions)</tooltip>
+          </widget>
           <widget type="group" version="2.0.0">
-            <name>  2K Pumps   </name>
-            <x>68</x>
-            <y>40</y>
-            <width>362</width>
-            <height>161</height>
+            <name>Group</name>
+            <x>38</x>
+            <y>30</y>
+            <width>320</width>
+            <height>122</height>
+            <style>3</style>
             <transparent>true</transparent>
             <widget type="label" version="2.0.0">
               <name>Label Template_10</name>
@@ -748,6 +763,452 @@ input</text>
               <actions>
               </actions>
               <tooltip>PT101/PT102</tooltip>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Group</name>
+            <x>38</x>
+            <y>180</y>
+            <width>255</width>
+            <height>136</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="label" version="2.0.0">
+              <name>Label Template_4</name>
+              <text>Pumps' Status</text>
+              <x>80</x>
+              <width>118</width>
+              <height>25</height>
+              <font>
+                <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_1</name>
+              <pv_name>CstatH-2Kpumps:P3B:sStatus</pv_name>
+              <x>235</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_2</name>
+              <pv_name>CstatH-2Kpumps:P1A:sStatus</pv_name>
+              <x>85</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_3</name>
+              <pv_name>CstatH-2Kpumps:P1B:sStatus</pv_name>
+              <x>110</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_4</name>
+              <pv_name>CstatH-2Kpumps:P1C:sStatus</pv_name>
+              <x>135</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_5</name>
+              <pv_name>CstatH-2Kpumps:P1D:sStatus</pv_name>
+              <x>160</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_6</name>
+              <pv_name>CstatH-2Kpumps:P2:sStatus</pv_name>
+              <x>185</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_7</name>
+              <pv_name>CstatH-2Kpumps:P3A:sStatus</pv_name>
+              <x>210</x>
+              <y>45</y>
+              <width>20</width>
+              <height>48</height>
+              <numBits>3</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_8</name>
+              <pv_name>CstatH-2Kpumps:P3B:sStatus</pv_name>
+              <x>235</x>
+              <y>93</y>
+              <width>20</width>
+              <height>32</height>
+              <startBit>3</startBit>
+              <numBits>2</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_9</name>
+              <pv_name>CstatH-2Kpumps:P3A:sStatus</pv_name>
+              <x>210</x>
+              <y>93</y>
+              <width>20</width>
+              <height>32</height>
+              <startBit>3</startBit>
+              <numBits>2</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template_10</name>
+              <pv_name>CstatH-2Kpumps:P2:sStatus</pv_name>
+              <x>185</x>
+              <y>93</y>
+              <width>20</width>
+              <height>32</height>
+              <startBit>3</startBit>
+              <numBits>2</numBits>
+              <horizontal>false</horizontal>
+              <square>true</square>
+              <off_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label Template_2</name>
+              <text>1A    1B     1C    1D      2      3A    3B</text>
+              <x>86</x>
+              <y>30</y>
+              <width>166</width>
+              <height>17</height>
+              <font>
+                <font family="Source Sans Pro" style="REGULAR" size="13.0">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label Template_3</name>
+              <text>Running
+Mot. Prot. OK.
+No Error
+Overtemp.
+Temp. Reg.</text>
+              <y>42</y>
+              <width>76</width>
+              <height>94</height>
+              <font>
+                <font family="Source Sans Pro" style="REGULAR" size="13.0">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Group</name>
+            <x>360</x>
+            <y>180</y>
+            <width>141</width>
+            <height>185</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="label" version="2.0.0">
+              <name>Label Template</name>
+              <text>Faults</text>
+              <x>20</x>
+              <width>51</width>
+              <height>25</height>
+              <font>
+                <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="byte_monitor" version="2.0.0">
+              <name>Byte Monitor Template</name>
+              <pv_name>CstatH-2Kpumps:Ctrl:sFaults</pv_name>
+              <y>35</y>
+              <width>141</width>
+              <height>150</height>
+              <numBits>6</numBits>
+              <horizontal>false</horizontal>
+              <off_color>
+                <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+                </color>
+              </off_color>
+              <on_color>
+                <color name="RED" red="252" green="13" blue="27">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <font>
+                <font family="Source Sans Pro" style="REGULAR" size="14.0">
+                </font>
+              </font>
+              <labels>
+                <text> TT552 too low</text>
+                <text> PT557 too high</text>
+                <text> Emergency stop</text>
+                <text> External stop</text>
+                <text> PT552 too high</text>
+                <text> PT556 too high</text>
+              </labels>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label Template_1</name>
+              <text></text>
+              <y>10</y>
+              <width>0</width>
+              <height>12</height>
+              <font>
+                <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="IO Text Fg" red="0" green="32" blue="92">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="IO Background" red="255" green="255" blue="205">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>

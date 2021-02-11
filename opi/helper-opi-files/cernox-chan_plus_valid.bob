@@ -57,11 +57,6 @@
         <description>Force data valid flag to TRUE</description>
       </action>
       <action type="write_pv">
-        <pv_name>$(pv_name)-calc.L</pv_name>
-        <value>0</value>
-        <description>Data valid flag from hardware</description>
-      </action>
-      <action type="write_pv">
         <pv_name>$(pv_name)-calc.K</pv_name>
         <value>1</value>
         <description>Force data valid flag to FALSE</description>
@@ -70,12 +65,24 @@
         <script file="EmbeddedPy">
           <text><![CDATA[# Embedded python script
 from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
-# var pvNam = PVUtil.getString(pvArray[0])
-print 'Hello'+ pvNam
-# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))
+pvnam = widget.getPropertyValue("pv_name")
+pvnam1 = pvnam + '-calc.K'
+pvnam2 = pvnam + '-calc.L'
+
+#pv1 = PVUtil.createPV(pvnam1, 2000)
+#pv2 = PVUtil.createPV(pvnam2, 2000)
+#print ("pv1= %s pv2=%s" % (pvnam1, pvnam2))
+#print ("v1 = %d" % PVUtil.getInt(pv1))
+
+try:
+	PVUtil.writePV(pvnam1, 0, 5000)
+	PVUtil.writePV(pvnam2, 0, 5000)
+except:
+	ScriptUtil.showErrorDialog(widget, "Error writing 0 to %s and %s" % (pvnam1, pvnam2))
+
 ]]></text>
         </script>
-        <description>Execute Script</description>
+        <description>Data valid fag from hardware</description>
       </action>
     </actions>
     <rules>
