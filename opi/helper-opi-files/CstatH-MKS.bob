@@ -2,18 +2,14 @@
 <display version="2.0.0">
   <name>$(MKS)</name>
   <width>450</width>
-  <height>470</height>
-  <background_color>
-    <color name="IO Shape Fill" red="188" green="188" blue="188">
-    </color>
-  </background_color>
+  <height>480</height>
   <actions>
   </actions>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>$(MKS)</text>
-    <x>23</x>
-    <y>7</y>
+    <x>38</x>
+    <y>17</y>
     <width>201</width>
     <height>23</height>
     <font>
@@ -41,8 +37,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
     <text>Controlled from WinCC! </text>
-    <x>5</x>
-    <y>29</y>
+    <x>20</x>
+    <y>39</y>
     <width>185</width>
     <height>24</height>
     <font>
@@ -77,14 +73,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
     <text>Kp [%]</text>
-    <x>37</x>
-    <y>320</y>
-    <width>34</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>52</x>
+    <y>330</y>
+    <width>45</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -105,14 +97,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>Ti [%]</text>
-    <x>112</x>
-    <y>320</y>
-    <width>30</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>127</x>
+    <y>330</y>
+    <width>39</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -133,22 +121,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_1</name>
     <pv_name>$(MKS):cSetP</pv_name>
-    <x>197</x>
-    <y>272</y>
+    <x>212</x>
+    <y>282</y>
     <width>56</width>
     <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <actions>
@@ -161,27 +137,14 @@
         <pv_name>$(MKS):sAuto</pv_name>
       </rule>
     </rules>
-    <border_width>2</border_width>
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_2</name>
     <pv_name>$(MKS):cOutput</pv_name>
-    <x>197</x>
-    <y>237</y>
+    <x>212</x>
+    <y>247</y>
     <width>56</width>
     <height>21</height>
-    <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <actions>
@@ -194,19 +157,14 @@
         <pv_name>$(MKS):sAuto</pv_name>
       </rule>
     </rules>
-    <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Setpoint [mbar]</text>
-    <x>6</x>
-    <y>273</y>
-    <width>79</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>20</x>
+    <y>283</y>
+    <width>107</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -227,14 +185,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_10</name>
     <text>Output [%]:</text>
-    <x>25</x>
-    <y>240</y>
-    <width>59</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>20</x>
+    <y>250</y>
+    <width>78</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -255,8 +209,8 @@
   <widget type="byte_monitor" version="2.0.0">
     <name>Byte Monitor Template</name>
     <pv_name>CstatH-Ctrl:Alarms:s$(MKSname)</pv_name>
-    <x>265</x>
-    <y>7</y>
+    <x>290</x>
+    <y>17</y>
     <width>16</width>
     <height>390</height>
     <numBits>23</numBits>
@@ -275,13 +229,14 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
-    <x>260</x>
+    <x>275</x>
+    <y>10</y>
     <width>1</width>
-    <height>376</height>
+    <height>450</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="375.0">
+      <point x="0.0" y="448.80319148936167">
       </point>
     </points>
     <line_width>1</line_width>
@@ -297,14 +252,10 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_11</name>
     <text>Gauge [mbar]</text>
-    <x>5</x>
-    <y>203</y>
-    <width>70</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>20</x>
+    <y>210</y>
+    <width>92</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -314,7 +265,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -325,14 +275,10 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_12</name>
     <text>High</text>
-    <x>116</x>
-    <y>180</y>
-    <width>23</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>145</x>
+    <y>185</y>
+    <width>32</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -353,138 +299,68 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(MKS):sKp</pv_name>
-    <x>34</x>
-    <y>342</y>
+    <x>49</x>
+    <y>355</y>
     <width>48</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_6</name>
     <pv_name>$(GHI)</pv_name>
-    <x>95</x>
-    <y>202</y>
+    <x>125</x>
+    <y>210</y>
     <width>66</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_5</name>
     <pv_name>$(MKS):sOutV</pv_name>
-    <x>122</x>
-    <y>239</y>
+    <x>137</x>
+    <y>247</y>
     <width>61</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_3</name>
     <pv_name>$(MKS):sSetP</pv_name>
-    <x>122</x>
-    <y>274</y>
+    <x>137</x>
+    <y>282</y>
     <width>61</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(MKS):sTi</pv_name>
-    <x>109</x>
-    <y>342</y>
+    <x>124</x>
+    <y>355</y>
     <width>48</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(MKS):sAnalogSP</pv_name>
-    <x>261</x>
-    <y>380</y>
+    <x>290</x>
+    <y>390</y>
     <width>122</width>
     <height>21</height>
     <off_label>No Analog SP</off_label>
@@ -534,8 +410,8 @@ Fault verif status
 
 
 </text>
-    <x>290</x>
-    <y>7</y>
+    <x>315</x>
+    <y>17</y>
     <width>107</width>
     <height>374</height>
     <font>
@@ -554,8 +430,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdMan</pv_name>
     <text>Manual</text>
-    <x>70</x>
-    <y>80</y>
+    <x>85</x>
+    <y>90</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -572,8 +448,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdAuto</pv_name>
     <text>Auto</text>
-    <x>5</x>
-    <y>80</y>
+    <x>20</x>
+    <y>90</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -582,8 +458,8 @@ Fault verif status
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>$(MKS):sAuto</pv_name>
-    <x>145</x>
-    <y>80</y>
+    <x>160</x>
+    <y>90</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -605,8 +481,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdRegOn</pv_name>
     <text>Reg On</text>
-    <x>5</x>
-    <y>110</y>
+    <x>20</x>
+    <y>120</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -623,8 +499,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdRegOff</pv_name>
     <text>Reg Off</text>
-    <x>70</x>
-    <y>110</y>
+    <x>85</x>
+    <y>120</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -633,8 +509,8 @@ Fault verif status
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
     <pv_name>$(MKS):sRegOn</pv_name>
-    <x>145</x>
-    <y>110</y>
+    <x>160</x>
+    <y>120</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -656,8 +532,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdASPon</pv_name>
     <text>ASP On</text>
-    <x>5</x>
-    <y>140</y>
+    <x>20</x>
+    <y>150</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -674,8 +550,8 @@ Fault verif status
     </actions>
     <pv_name>$(MKS):cmdASPoff</pv_name>
     <text>ASP Off</text>
-    <x>70</x>
-    <y>140</y>
+    <x>85</x>
+    <y>150</y>
     <width>65</width>
     <height>25</height>
     <tooltip>$(actions) $(pv_name)</tooltip>
@@ -684,8 +560,8 @@ Fault verif status
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
     <pv_name>$(MKS):sAnalogSP</pv_name>
-    <x>145</x>
-    <y>140</y>
+    <x>160</x>
+    <y>150</y>
     <height>25</height>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
@@ -700,8 +576,8 @@ Fault verif status
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
     <text>Commands</text>
-    <x>23</x>
-    <y>53</y>
+    <x>38</x>
+    <y>63</y>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -712,8 +588,8 @@ Fault verif status
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
     <text>Status</text>
-    <x>145</x>
-    <y>53</y>
+    <x>160</x>
+    <y>63</y>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -724,40 +600,22 @@ Fault verif status
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_7</name>
     <pv_name>$(GLO)</pv_name>
-    <x>183</x>
-    <y>202</y>
+    <x>198</x>
+    <y>210</y>
     <width>66</width>
-    <height>17</height>
-    <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>2</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_13</name>
     <text>Low</text>
-    <x>210</x>
-    <y>180</y>
-    <width>20</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-      </font>
-    </font>
+    <x>225</x>
+    <y>185</y>
+    <width>28</width>
+    <height>21</height>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92">
       </color>
@@ -786,8 +644,8 @@ Fault verif status
     </actions>
     <pv_name>CstatH-Ctrl:opMode:cmdSetAck</pv_name>
     <text>Reset Errors</text>
-    <x>270</x>
-    <y>410</y>
+    <x>285</x>
+    <y>420</y>
     <width>120</width>
     <tooltip>Reset "Fault on send" error bit.
 $(pv_name)</tooltip>

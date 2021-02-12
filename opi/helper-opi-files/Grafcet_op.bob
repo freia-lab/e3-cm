@@ -14,6 +14,25 @@
     </action>
   </actions>
   <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text> To proceed stop 
+ 2K Operation </text>
+    <x>710</x>
+    <y>573</y>
+    <width>101</width>
+    <height>39</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
     <name>LN2 cooling info</name>
     <text>Waiting for TT77
 to go below 110 K</text>
@@ -1792,7 +1811,7 @@ and return to the Initial State</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>TT118</name>
     <pv_name>$(P)-CM:TT04:sRdV</pv_name>
-    <x>310</x>
+    <x>312</x>
     <y>535</y>
     <width>40</width>
     <height>15</height>
@@ -1805,8 +1824,8 @@ and return to the Initial State</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>TT218</name>
     <pv_name>$(P)-CM:TT05:sRdV</pv_name>
-    <x>310</x>
-    <y>550</y>
+    <x>312</x>
+    <y>555</y>
     <width>40</width>
     <height>15</height>
     <font>
@@ -1872,7 +1891,7 @@ and return to the Initial State</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>TT118_1</name>
     <pv_name>$(P)-CM:TT08:sRdV</pv_name>
-    <x>710</x>
+    <x>715</x>
     <y>535</y>
     <width>40</width>
     <height>15</height>
@@ -1885,8 +1904,8 @@ and return to the Initial State</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>TT218_1</name>
     <pv_name>$(P)-VBox:TT03:sRdV</pv_name>
-    <x>710</x>
-    <y>550</y>
+    <x>715</x>
+    <y>555</y>
     <width>40</width>
     <height>15</height>
     <font>
@@ -1894,25 +1913,6 @@ and return to the Initial State</tooltip>
       </font>
     </font>
     <precision>1</precision>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_21</name>
-    <text> To proceed stop 
- 2K Operation </text>
-    <x>710</x>
-    <y>570</y>
-    <width>101</width>
-    <height>39</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color name="Button_Background" red="236" green="236" blue="236">
-      </color>
-    </background_color>
-    <transparent>false</transparent>
-    <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>S5HelpBtn</name>
