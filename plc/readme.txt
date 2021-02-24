@@ -94,8 +94,10 @@ TestEssProtoFreia_20201217 - KG, Changed S8_Parameters (DB208) - new values for 
 TestEssProtoFreia_20210118 - KG, CHanged the scaling of LT01 and LT02 from 74 to 68 cm.
 TestEssProtoFreia_20210127 - KG, Changed CYC_INT2 and added S4_Parameters (DB204) block to have possibility to change the PID parameters for CV60. Added CV60 PID
 			     parameters to the old watch table and renamed it to "CV01 CV03 CV60 PIDs"
-TestEssProtoFreia_20210209 - KG, Moved parameters S7_LowT and S7_HighT from memory block to DB207 (S/_Parameters). It turned out that when the parameters where 
+TestEssProtoFreia_20210209 - KG, Moved parameters S7_LowT and S7_HighT from memory block to DB207 (S7_Parameters). It turned out that when the parameters where 
 			     in the memory they have not been preserved when restarting the PLC.
+TestEssProtoFreia_20210224 - KG, Added initialization of some data during the PLC start-up (transition STOP -> RUN). Made some relevant data retained (Epics_to_PLC, 
+			     Sequence parameters, PID settings). Tested stoping and starting the PLC many times - all data I could see in the OPI where preserved.
 
 
 
