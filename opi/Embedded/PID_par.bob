@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PID_tuning</name>
+  <width>210</width>
+  <height>25</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(PAR)</text>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-Ctrl:$(V)_PID_$(PAR):sSetV</pv_name>
+    <x>140</x>
+    <width>60</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)-Ctrl:$(V)_PID_$(PAR):cSetV</pv_name>
+    <x>80</x>
+    <width>50</width>
+    <show_units>false</show_units>
+  </widget>
+</display>

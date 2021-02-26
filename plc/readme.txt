@@ -99,4 +99,5 @@ TestEssProtoFreia_20210209 - KG, Moved parameters S7_LowT and S7_HighT from memo
 TestEssProtoFreia_20210224 - KG, Added initialization of some data during the PLC start-up (transition STOP -> RUN). Made some relevant data retained (Epics_to_PLC, 
 			     Sequence parameters, PID settings). Tested stoping and starting the PLC many times - all data I could see in the OPI where preserved.
 TestEssProtoFreia_20210225 - KG, Prepared all data block needed for PID parameters GAIN, TI, TD, TM_LAG).
+TestEssProtoFreia_20210226 - KG, Implemented setting the PID parameters for all PIDs. Added possibility to control TIC77 from Epics.
 			    

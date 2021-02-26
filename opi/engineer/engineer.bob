@@ -185,8 +185,8 @@
         <group_name></group_name>
       </tab>
       <tab>
-        <name>Grafcet</name>
-        <file>../helper-opi-files/Grafcet.bob</file>
+        <name>PID Tunning</name>
+        <file>PIDs_tuning.bob</file>
         <macros>
         </macros>
         <group_name></group_name>
@@ -210,7 +210,6 @@
     <width>1998</width>
     <height>990</height>
     <direction>0</direction>
-    <active_tab>3</active_tab>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>

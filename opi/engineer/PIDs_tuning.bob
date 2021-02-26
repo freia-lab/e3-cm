@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PIDs Tuning</name>
+  <width>1200</width>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display CV01</name>
+    <macros>
+      <OUTP>LIC01</OUTP>
+      <PV_IN>LT01</PV_IN>
+      <S>CM</S>
+      <V>CV01</V>
+    </macros>
+    <file>../Embedded/PID_tuning.bob</file>
+    <x>70</x>
+    <y>50</y>
+    <width>290</width>
+    <height>380</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display CV02</name>
+    <macros>
+      <OUTP>LIC01</OUTP>
+      <PV_IN>LT01</PV_IN>
+      <S>CM</S>
+      <V>CV02</V>
+    </macros>
+    <file>../Embedded/PID_tuning.bob</file>
+    <x>410</x>
+    <y>50</y>
+    <width>290</width>
+    <height>380</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display CV01_1</name>
+    <macros>
+      <OUTP>LIC03</OUTP>
+      <PV_IN>LT03</PV_IN>
+      <S>VBox</S>
+      <V>CV03</V>
+    </macros>
+    <file>../Embedded/PID_tuning.bob</file>
+    <x>750</x>
+    <y>50</y>
+    <width>290</width>
+    <height>380</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display CV01_2</name>
+    <macros>
+      <OUTP>TIC77</OUTP>
+      <PV_IN>TT77</PV_IN>
+      <S>VBox</S>
+      <V>CV60</V>
+    </macros>
+    <file>../Embedded/PID_tuning.bob</file>
+    <x>1100</x>
+    <y>50</y>
+    <width>290</width>
+    <height>380</height>
+  </widget>
+</display>
