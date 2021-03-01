@@ -13,7 +13,7 @@ record(calcout, "CM-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
 #  field(INPB, "CM-$(SUBS):$(DEV):sAuto PP")
   field(CALC, "A")
 #  field(OOPT, "On Change")
-  field(PINI, "YES")
+#  field(PINI, "YES")
   field(PHAS, "1")
   field(OUT, "CM-$(SUBS):$(DEV):cSetV PP")
 }
@@ -43,6 +43,7 @@ record(ao, "CM-$(SUBS):$(DEV):cSetV") {
   field(LOPR, "$(LOPR)")
   field(HOPR, "$(HOPR)")
   field(PINI, "NO")
+  field(UDFS, "NO_ALARM")
   field(PREC, "$(PREC)")
   field(FLNK, "CM-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "$(EGU)")
@@ -54,6 +55,6 @@ record(ai, "CM-$(SUBS):$(DEV):sSetV") {
   field(PREC, "$(PREC)")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
-  field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
+#  field(FLNK, "CM-$(SUBS):$(DEV):sRdV-cSetV-link")
   field(EGU, "$(EGU)")
 }

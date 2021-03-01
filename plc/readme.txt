@@ -100,4 +100,12 @@ TestEssProtoFreia_20210224 - KG, Added initialization of some data during the PL
 			     Sequence parameters, PID settings). Tested stoping and starting the PLC many times - all data I could see in the OPI where preserved.
 TestEssProtoFreia_20210225 - KG, Prepared all data block needed for PID parameters GAIN, TI, TD, TM_LAG).
 TestEssProtoFreia_20210226 - KG, Implemented setting the PID parameters for all PIDs. Added possibility to control TIC77 from Epics.
+TestEssProtoFreia_20210228 - KG, Added data that should be preserved during the IOC restart and PLC RUN->STOP->RUN transitions to the Sx_Parameters data blocks. 
+			     In this version of the program these added variables are not used yet. parameters (
+TestEssProtoFreia_20210301 - KG, Yet another intermediate version - this time all parameters set from Epics are set in Sx_Parameters data blocks and all read-back
+			     values in the PLC_to_Epics buffer are taken from Sx_Parameters blocks. The old locations for the parameters are still used in the 
+			     program (they are set from Epics and used in other places in the program. They will be replaces by data from Sx_Parameters blocks
+			     in the next version and the old locations of the parameters (memory block) will be removed.
+
+
 			    

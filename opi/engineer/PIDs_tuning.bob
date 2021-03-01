@@ -14,7 +14,7 @@
     <x>70</x>
     <y>50</y>
     <width>290</width>
-    <height>380</height>
+    <height>430</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV02</name>
@@ -28,7 +28,7 @@
     <x>410</x>
     <y>50</y>
     <width>290</width>
-    <height>380</height>
+    <height>430</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV01_1</name>
@@ -42,7 +42,7 @@
     <x>750</x>
     <y>50</y>
     <width>290</width>
-    <height>380</height>
+    <height>430</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV01_2</name>
@@ -56,6 +56,6 @@
     <x>1100</x>
     <y>50</y>
     <width>290</width>
-    <height>380</height>
+    <height>430</height>
   </widget>
 </display>
