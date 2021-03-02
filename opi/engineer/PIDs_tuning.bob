@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>PIDs Tuning</name>
-  <width>1200</width>
+  <width>1400</width>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV01</name>
     <macros>

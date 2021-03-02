@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databrowser>
-  <title></title>
+  <title>PID Controller $(OUTP) (regulated by $(V))</title>
   <show_toolbar>true</show_toolbar>
   <update_period>3.0</update_period>
   <scroll_step>5</scroll_step>
@@ -62,9 +62,9 @@
   </annotations>
   <pvlist>
     <pv>
-      <display_name>CM-Ctrl:SP_LIC01-CV01:sSetV</display_name>
+      <display_name>$(P)-Ctrl:SP_$(OUTP)-$(V)</display_name>
       <visible>true</visible>
-      <name>CM-Ctrl:SP_LIC01-CV01:sSetV</name>
+      <name>$(P)-Ctrl:SP_$(OUTP)-$(V):sSetV</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -87,9 +87,9 @@
       </archive>
     </pv>
     <pv>
-      <display_name>CM-CM:LT01:sRdV</display_name>
+      <display_name>$(P)-$(S):$(PV_IN)</display_name>
       <visible>true</visible>
-      <name>CM-CM:LT01:sRdV</name>
+      <name>$(P)-$(S):$(PV_IN):sRdV</name>
       <axis>0</axis>
       <color>
         <red>0</red>
@@ -112,9 +112,9 @@
       </archive>
     </pv>
     <pv>
-      <display_name>CM-VBox:CV01:sAutoRdV</display_name>
+      <display_name>$(V):sAutoRdV</display_name>
       <visible>true</visible>
-      <name>CM-VBox:CV01:sAutoRdV</name>
+      <name>$(P)-VBox:$(V):sAutoRdV</name>
       <axis>1</axis>
       <color>
         <red>0</red>

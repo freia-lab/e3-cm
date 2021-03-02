@@ -106,6 +106,9 @@ TestEssProtoFreia_20210301 - KG, Yet another intermediate version - this time al
 			     values in the PLC_to_Epics buffer are taken from Sx_Parameters blocks. The old locations for the parameters are still used in the 
 			     program (they are set from Epics and used in other places in the program. They will be replaces by data from Sx_Parameters blocks
 			     in the next version and the old locations of the parameters (memory block) will be removed.
+TestEssProtoFreia_20210302 - KG, The first version that survives the IOC restart from telnet session and the PLC transition RUN-STOP-RUN without loosing the
+			     settings. The unused variables are still left in cmd-from-epics function block but they are not used anymore and I will
+			     remove them later.
 
 
 			    
