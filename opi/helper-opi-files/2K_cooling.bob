@@ -3608,7 +3608,7 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name> PT01 Pressure control (CV550)  - Settings common for S6 &amp; S8 </name>
+      <name> PT01 Pressure control (CV550)  </name>
       <y>330</y>
       <width>640</width>
       <height>115</height>

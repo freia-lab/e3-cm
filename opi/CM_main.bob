@@ -648,4 +648,11 @@ mode</text>
     <labels_from_pv>true</labels_from_pv>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>sys://time</pv_name>
+    <x>1950</x>
+    <y>20</y>
+    <width>140</width>
+  </widget>
 </display>
