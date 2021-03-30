@@ -109,6 +109,7 @@ TestEssProtoFreia_20210301 - KG, Yet another intermediate version - this time al
 TestEssProtoFreia_20210302 - KG, The first version that survives the IOC restart from telnet session and the PLC transition RUN-STOP-RUN without loosing the
 			     settings. The unused variables are still left in cmd-from-epics function block but they are not used anymore and I will
 			     remove them later.
+TestEssProtoFreia_20210330 - KG, Changed control of CV07 - it is kept closed all the time. Added a new PV CM-CM:PT02-direct:sRdV - PT02 read by the PLC's ADC.
 
 
 			    
