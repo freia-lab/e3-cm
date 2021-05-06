@@ -198,13 +198,6 @@
         </macros>
         <group_name></group_name>
       </tab>
-      <tab>
-        <name>2K Operation</name>
-        <file>2K_operation.bob</file>
-        <macros>
-        </macros>
-        <group_name></group_name>
-      </tab>
     </tabs>
     <y>90</y>
     <width>1998</width>

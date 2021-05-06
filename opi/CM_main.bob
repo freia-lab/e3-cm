@@ -377,7 +377,7 @@
   <widget type="group" version="2.0.0">
     <name>GrafcetState</name>
     <x>1440</x>
-    <width>200</width>
+    <width>240</width>
     <height>55</height>
     <style>3</style>
     <background_color>
@@ -428,7 +428,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S4:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -454,7 +454,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S5:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -480,7 +480,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S6:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -506,7 +506,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S7:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -532,7 +532,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S8:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -558,7 +558,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S9:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>
@@ -584,7 +584,7 @@ Machine</text>
       <pv_name>$(P)-Ctrl:S10:sStep</pv_name>
       <x>80</x>
       <y>30</y>
-      <width>120</width>
+      <width>150</width>
       <height>25</height>
       <visible>false</visible>
       <font>

@@ -566,6 +566,8 @@ record (mbbi, "CM-Ctrl:S8:sStep") {
   field (TWST, "2K operation...")
   field (THVL, "8")
   field (THST, "Stopping...")
+  field (FRVL, "7")
+  field (FRST, "Pressure rising...")
 }
 record (mbbi, "CM-Ctrl:S9:sStep") {
   field(DTYP, "S7plc")

@@ -1736,9 +1736,9 @@ and return to the Initial State</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_31</name>
     <pv_name>$(P)-Ctrl:S10:sStep</pv_name>
-    <x>400</x>
+    <x>380</x>
     <y>575</y>
-    <width>140</width>
+    <width>190</width>
     <height>15</height>
     <font>
       <font family="Source Serif Pro" style="REGULAR" size="12.0">

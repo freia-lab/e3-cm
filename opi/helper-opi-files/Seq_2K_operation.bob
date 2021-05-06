@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>SQ 2K Operation</name>
   <width>600</width>
-  <height>545</height>
+  <height>520</height>
   <background_color>
     <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
     </color>
@@ -52,7 +52,7 @@
               <C>CstatH</C>
             </macros>
             <x>330</x>
-            <y>20</y>
+            <y>10</y>
             <width>260</width>
             <height>350</height>
             <style>3</style>
@@ -772,7 +772,7 @@ input</text>
           <widget type="group" version="2.0.0">
             <name>Group</name>
             <x>38</x>
-            <y>180</y>
+            <y>170</y>
             <width>255</width>
             <height>136</height>
             <style>3</style>
@@ -782,7 +782,7 @@ input</text>
               <text>Pumps' Status</text>
               <x>80</x>
               <width>118</width>
-              <height>25</height>
+              <height>24</height>
               <font>
                 <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
                 </font>
@@ -1120,7 +1120,7 @@ Temp. Reg.</text>
           <widget type="group" version="2.0.0">
             <name>Group</name>
             <x>360</x>
-            <y>180</y>
+            <y>170</y>
             <width>141</width>
             <height>185</height>
             <style>3</style>
@@ -1130,7 +1130,7 @@ Temp. Reg.</text>
               <text>Faults</text>
               <x>20</x>
               <width>51</width>
-              <height>25</height>
+              <height>24</height>
               <font>
                 <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
                 </font>
@@ -1220,10 +1220,11 @@ Temp. Reg.</text>
     </tabs>
     <y>110</y>
     <width>600</width>
-    <height>435</height>
+    <height>410</height>
     <background_color>
       <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
       </color>
     </background_color>
+    <active_tab>2</active_tab>
   </widget>
 </display>

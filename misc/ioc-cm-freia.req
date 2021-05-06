@@ -171,3 +171,4 @@ CM-Ctrl:TrigPID-CV03:cSetV
 CM-Ctrl:TrigPID-CV01:cSetV
 CM-Ctrl:SP_PT01-CV550:cSetV
 CM-Ctrl:S8_P_CV01:cSetV
+CM-Ctrl:S8_P_CV01_Step7:cSetV
