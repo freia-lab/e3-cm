@@ -45,14 +45,14 @@ VBox	TT960    "pt100" "" 70  400
 VBox	TT630    "pt100" "" 70  400
 VBox	TT640    "pt100" "" 70  400
 VBox	TT700    "pt100" "" 70  400
-CM	TT04     CX_LS_X139084 Cernox 1.5  310
-CM	TT05     CX_LS_X139080 Cernox 1.5  310
-CM	TT06     CX_LS_X138421 Cernox 1.5  310
-CM	TT07     CX_LS_X139079 Cernox 1.5  310
-CM	TT08     CX_LS_X138083 Cernox 1.5  310
-CM	TT09     CX_LS_X139092 Cernox 1.5  310
-PwrCpl	TT12     CX_LS_X139090 Cernox 1.5  310
-PwrCpl	TT22     CX_LS_X138084 Cernox 1.5  310}
+CM	TT04     CX_LS_X135381 Cernox 1.5  310
+CM	TT05     CX_LS_X135382 Cernox 1.5  310
+CM	TT06     CX_LS_X138025 Cernox 1.5  310
+CM	TT07     CX_LS_X138026 Cernox 1.5  310
+CM	TT08     CX_LS_X138027 Cernox 1.5  310
+CM	TT09     CX_LS_X138163 Cernox 1.5  310
+PwrCpl	TT12     CX_LS_X138417 Cernox 1.5  310
+PwrCpl	TT22     CX_LS_X138418 Cernox 1.5  310}
 }
 
 file "cm-cbatf-pt100.template" { pattern
