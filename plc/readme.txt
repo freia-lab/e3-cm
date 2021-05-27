@@ -112,6 +112,9 @@ TestEssProtoFreia_20210302 - KG, The first version that survives the IOC restart
 TestEssProtoFreia_20210330 - KG, Changed control of CV07 - it is kept closed all the time. Added a new PV CM-CM:PT02-direct:sRdV - PT02 read by the PLC's ADC.
 TestEssProtoFreia_20210506 - KG, Changed control of CV01 in S8 when quiting the sequence. Instead of letting the LIC01 controlling the CV01 I added a new parameter
 			     S8_P_CV01_Step7 that is the setting of CV01 after exiting step 12 of SQ9 on HNOSS until the end of S8.
+TestEssProtoFreia_20210527 - KG, Changed control of CV61 in S4: Set it to the value in defined in S4_Parameters data block. (25 closed e.i. open 75% because it's
+			     a normally open (NO) type of valve.
+
 
 
 			    

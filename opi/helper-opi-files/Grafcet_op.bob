@@ -2010,4 +2010,20 @@ and return to the Initial State</tooltip>
     <transparent>true</transparent>
     <tooltip>Show help page in the web browser</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>S4HelpBtn</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://freia.physics.uu.se/CSS/pdf/CM/Thermal_screen_cooling.pdf</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>140</x>
+    <y>280</y>
+    <width>200</width>
+    <height>41</height>
+    <transparent>true</transparent>
+    <tooltip>Show help page in the web browser</tooltip>
+  </widget>
 </display>
