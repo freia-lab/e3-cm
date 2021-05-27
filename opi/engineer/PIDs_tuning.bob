@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>PIDs Tuning</name>
-  <width>1400</width>
+  <width>2000</width>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV01</name>
     <macros>
@@ -57,5 +57,35 @@
     <y>50</y>
     <width>290</width>
     <height>430</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Help  </name>
+    <x>1430</x>
+    <width>552</width>
+    <height>72</height>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_webpage">
+          <url>http://freia.physics.uu.se/CSS/pdf/CM/CONT_C_function.pdf</url>
+          <description>CONT_C function description</description>
+        </action>
+      </actions>
+      <width>230</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_webpage">
+          <url>http://freia.physics.uu.se/CSS/pdf/CM/pid_controller_structures.pdf</url>
+          <description>PID parameters and algirithm</description>
+        </action>
+      </actions>
+      <x>280</x>
+      <width>230</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
 </display>

@@ -210,7 +210,7 @@ breaktable(CX_LS_X135382) {
 }
 breaktable(CX_LS_X138025) {
 # **Manufacturer reference [X138025] 
-# => Used on CM03 [TT06]**
+# => Used on CM03 [TT07]**
 # 
 # 
 # Thermometre :	CX_LS_X138025
@@ -316,7 +316,7 @@ breaktable(CX_LS_X138025) {
 }
 breaktable(CX_LS_X138026) {
 # **Manufacturer reference [X138026] 
-# => Used on CM03 [TT07]**
+# => Used on CM03 [TT06]**
 # 
 # 
 # Thermometre :	CX_LS_X138026
