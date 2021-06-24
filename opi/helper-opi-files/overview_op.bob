@@ -276,7 +276,7 @@
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1170,6 +1170,19 @@ $(pv_value)</tooltip>
         </font>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <text>TT77</text>
+      <x>300</x>
+      <y>95</y>
+      <width>35</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -4504,5 +4517,12 @@ $(pv_value)</tooltip>
       <y>40</y>
       <width>40</width>
     </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_19</name>
+    <pv_name>Cryo-CBox:LP:PI3290</pv_name>
+    <y>75</y>
+    <width>70</width>
+    <precision>2</precision>
   </widget>
 </display>
