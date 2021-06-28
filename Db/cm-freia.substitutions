@@ -123,7 +123,7 @@ file cm-cernox2plc-freia.template { pattern
 {CM	 VBox  TT690 62    131    7}
 {CM	 VBox  TT970 66    132    0}
 {CM	 VBox  TT980 70    132    1}
-{CM	 VBox  TT16  74    132    2}
+{CM	 VBox  TT02  74    132    2}
 {CM	 CM    TT06  78    132    3}
 {CM	 CM    TT07  82    132    4}
 {CM	 CTS   TT10  86    132    5}

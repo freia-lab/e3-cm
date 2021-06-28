@@ -114,6 +114,8 @@ TestEssProtoFreia_20210506 - KG, Changed control of CV01 in S8 when quiting the 
 			     S8_P_CV01_Step7 that is the setting of CV01 after exiting step 12 of SQ9 on HNOSS until the end of S8.
 TestEssProtoFreia_20210527 - KG, Changed control of CV61 in S4: Set it to the value in defined in S4_Parameters data block. (25 closed e.i. open 75% because it's
 			     a normally open (NO) type of valve.
+TestEssProtoFreia_20210624 - KG, Added control of CV02 in S7 step 7: Set it to the value in defined in S8_Parameters data block and wait until VBox:TT02 drops below
+			     threshold defined in S8_Parameters DB before proceeding to 2K mode.
 
 
 

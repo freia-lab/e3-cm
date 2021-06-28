@@ -254,7 +254,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT02</TT>
     </macros>
-    <file>cernox-chan.bob</file>
+    <file>cernox-chan_plus_valid.bob</file>
     <x>10</x>
     <y>573</y>
     <width>350</width>
@@ -553,7 +553,7 @@
       <SUBS>VBox</SUBS>
       <TT>TT16</TT>
     </macros>
-    <file>cernox-chan_plus_valid.bob</file>
+    <file>cernox-chan.bob</file>
     <x>740</x>
     <y>224</y>
     <width>350</width>
