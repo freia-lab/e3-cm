@@ -24,6 +24,29 @@
     <style>3</style>
     <transparent>true</transparent>
     <widget type="polyline" version="2.0.0">
+      <name>Polyline_35</name>
+      <x>158</x>
+      <y>28</y>
+      <width>431</width>
+      <height>70</height>
+      <points>
+        <point x="0.0" y="35.0">
+        </point>
+        <point x="15.0" y="35.0">
+        </point>
+        <point x="15.0" y="70.00000381469727">
+        </point>
+        <point x="430.0" y="70.0">
+        </point>
+        <point x="430.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
       <name>Polyline_39</name>
       <x>173</x>
       <y>97</y>
@@ -326,8 +349,8 @@ $(pv_value)</tooltip>
           <text>Reheater</text>
           <x>20</x>
           <y>110</y>
-          <width>71</width>
-          <height>24</height>
+          <width>72</width>
+          <height>26</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -446,8 +469,8 @@ $(pv_value)</tooltip>
         <file>../../freia-symbols/display-builder/CstatHValve-binary-LED-h-ld-pv.bob</file>
         <x>135</x>
         <y>9</y>
-        <width>40</width>
-        <height>40</height>
+        <width>42</width>
+        <height>42</height>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Embedded Display_4</name>
@@ -461,8 +484,8 @@ $(pv_value)</tooltip>
         <file>../../freia-symbols/display-builder/CstatHValve-binary-LED-h-ld-pv.bob</file>
         <x>135</x>
         <y>44</y>
-        <width>40</width>
-        <height>40</height>
+        <width>42</width>
+        <height>42</height>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -579,29 +602,6 @@ $(pv_value)</tooltip>
       <y>6</y>
       <width>32</width>
       <height>32</height>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_35</name>
-      <x>158</x>
-      <y>28</y>
-      <width>431</width>
-      <height>70</height>
-      <points>
-        <point x="0.0" y="35.0">
-        </point>
-        <point x="15.0" y="35.0">
-        </point>
-        <point x="15.0" y="70.00000381469727">
-        </point>
-        <point x="430.0" y="70.0">
-        </point>
-        <point x="430.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="IO 300K GHe" red="0" green="0" blue="0">
-        </color>
-      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>valve-v-l</name>
@@ -1209,7 +1209,7 @@ $(pv_value)</tooltip>
     <x>150</x>
     <y>373</y>
     <width>86</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1307,7 +1307,7 @@ $(pv_value)</tooltip>
     <x>167</x>
     <y>448</y>
     <width>74</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1335,7 +1335,7 @@ $(pv_value)</tooltip>
     <x>283</x>
     <y>484</y>
     <width>43</width>
-    <height>17</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
@@ -1623,7 +1623,7 @@ $(pv_value)</tooltip>
     <x>326</x>
     <y>925</y>
     <width>16</width>
-    <height>13</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -1726,7 +1726,7 @@ $(pv_value)</tooltip>
       <text>HNOSS</text>
       <x>60</x>
       <width>31</width>
-      <height>13</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
@@ -1739,7 +1739,7 @@ $(pv_value)</tooltip>
       <x>120</x>
       <y>190</y>
       <width>27</width>
-      <height>24</height>
+      <height>26</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -2172,7 +2172,7 @@ $(pv_value)</tooltip>
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>24</height>
+      <height>26</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -2460,7 +2460,7 @@ $(pv_value)</tooltip>
     <x>243</x>
     <y>500</y>
     <width>37</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2623,7 +2623,7 @@ $(pv_value)</tooltip>
     <x>160</x>
     <y>840</y>
     <width>28</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2681,8 +2681,8 @@ $(pv_value)</tooltip>
     <text>Cryomodule</text>
     <x>480</x>
     <y>985</y>
-    <width>94</width>
-    <height>24</height>
+    <width>95</width>
+    <height>26</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -2724,8 +2724,8 @@ Supercritical
 Helium circuit</text>
     <x>460</x>
     <y>450</y>
-    <width>82</width>
-    <height>59</height>
+    <width>83</width>
+    <height>66</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3017,8 +3017,8 @@ $(pv_value)</tooltip>
       <text>LHe 2 K</text>
       <x>11</x>
       <y>23</y>
-      <width>57</width>
-      <height>23</height>
+      <width>58</width>
+      <height>26</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -3099,7 +3099,7 @@ cavities</text>
     <x>950</x>
     <y>310</y>
     <width>64</width>
-    <height>39</height>
+    <height>43</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3128,7 +3128,7 @@ table</text>
     <x>840</x>
     <y>310</y>
     <width>64</width>
-    <height>39</height>
+    <height>43</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3516,8 +3516,8 @@ $(pv_value)</tooltip>
       <text>LHe 4 K</text>
       <x>14</x>
       <y>33</y>
-      <width>57</width>
-      <height>24</height>
+      <width>58</width>
+      <height>26</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -3545,7 +3545,7 @@ $(pv_value)</tooltip>
     <text>To interconnection box</text>
     <x>862</x>
     <width>127</width>
-    <height>17</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="13.0">
       </font>
