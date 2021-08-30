@@ -116,6 +116,8 @@ TestEssProtoFreia_20210527 - KG, Changed control of CV61 in S4: Set it to the va
 			     a normally open (NO) type of valve.
 TestEssProtoFreia_20210624 - KG, Added control of CV02 in S7 step 7: Set it to the value in defined in S8_Parameters data block and wait until VBox:TT02 drops below
 			     threshold defined in S8_Parameters DB before proceeding to 2K mode.
+TestEssProtoFreia_20210830 - KG, Set CV01 to 0 in the initialization phase of "Cooling to 4 K". Change inly in grafcet Network 19.
+
 
 
 
