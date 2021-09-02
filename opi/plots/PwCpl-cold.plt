@@ -79,7 +79,7 @@
   </annotations>
   <pvlist>
     <pv>
-      <display_name>HPRF-Cav$(N):FwdPwr:sRdV [mbar]</display_name>
+      <display_name>HPRF-Cav$(N):FwdPwr:sRdV</display_name>
       <visible>true</visible>
       <name>HPRF-Cav$(N):FwdPwr:sRdV</name>
       <axis>0</axis>
