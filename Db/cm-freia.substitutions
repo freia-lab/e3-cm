@@ -7,10 +7,11 @@ file cm-AValves.template { pattern
 {VBox	CV02	   370	   74	    "NO CONVERSION", 1.0     0}
 {VBox	CV03	   384	   80	    "NO CONVERSION", 1.0     0}
 {VBox	CV04	   398	   86	    "LINEAR", 	    -1.0     100}
-{VBox	CV05	   412	   92	    "NO CONVERSION", 1.0     0}
+{PwrCpl	CV11	   412	   92	    "NO CONVERSION", 1.0     0}
 {VBox	CV07	   426	   98	    "NO CONVERSION", 1.0     0}
 {VBox	CV60	   440	   104	    "NO CONVERSION", 1.0     0}
 {VBox	CV61	   454	   110	    "LINEAR", 	    -1.0     100}
+{PwrCpl	CV21	   468	   116	    "NO CONVERSION", 1.0     0}
 {RHtr	CV550	   482	   122	    "NO CONVERSION", 1.0     0}
 {RHtr	CV551	   496	   128	    "NO CONVERSION", 1.0     0}
 {RHtr	CV552	   510	   134	    "NO CONVERSION", 1.0     0}
