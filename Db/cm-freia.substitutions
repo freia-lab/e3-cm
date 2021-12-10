@@ -136,3 +136,9 @@ file cm-cernox2plc-freia.template { pattern
 {CM	 VBox  TT03  110   133    3}
 {CM	 CM    TT08  114   133    4}
 }
+
+file cm-cond-alarm.template { pattern
+{SUBS,  DEV,  SIG,   SV,  CALC}
+{VBox	TT60  sRdV   HSV  "E>0?1:0"}
+{VBox	TT60  sRdV   HHSV "F+G+H>0?2:0"}
+}

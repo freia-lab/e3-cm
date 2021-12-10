@@ -1,0 +1,15 @@
+record (calcout, "CM-Ctrl:$(DEV):$(SV)") {
+   field(DESC, "Conditional severity")
+   field(INPA, "CM-Ctrl:Grafcet:sState1")
+   field(INPB, "CM-Ctrl:Grafcet:sState2")
+   field(INPC, "CM-Ctrl:Grafcet:sState3")
+   field(INPD, "CM-Ctrl:Grafcet:sState4")
+   field(INPE, "CM-Ctrl:Grafcet:sState5")
+   field(INPF, "CM-Ctrl:Grafcet:sState6")
+   field(INPG, "CM-Ctrl:Grafcet:sState7")
+   field(INPH, "CM-Ctrl:Grafcet:sState8")
+   field(INPI, "CM-Ctrl:Grafcet:sState10")
+   field(CALC, "$(CALC)")
+   field(SCAN, "1 second")
+   field(OUT, "CM-$(SUBS):$(DEV):$(SIG).$(SV)")
+}

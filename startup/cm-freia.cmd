@@ -29,3 +29,5 @@ dbpf CM-RHtr:CV550:sAuto.ZNAM "PID Reg. Off"
 requireSnippet(cm-freia-postSaveRestore.cmd)
 requireSnippet(userPostDriverConf-cm-freia.cmd)
 
+dbpf CM-VBox:TT60:sRdV.HIGH 87.0
+dbpf CM-VBox:TT60:sRdV.HIHI 80.0
