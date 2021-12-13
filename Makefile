@@ -44,6 +44,15 @@ calibration-CM05 : ./calibrations/CM05/*.fic ./calibrations/*.fic ./tools/ficFil
 calibration-CM06 : ./calibrations/CM06/*.fic ./calibrations/*.fic ./tools/ficFileConv
 	./tools/ficFileConv CM06
 	./tools/ficFileConv
+calibration-CM07 : ./calibrations/CM07/*.fic ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv CM07
+	./tools/ficFileConv
+calibration-CM08 : ./calibrations/CM08/*.fic ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv CM08
+	./tools/ficFileConv
+calibration-CM09 : ./calibrations/CM09/*.fic ./calibrations/*.fic ./tools/ficFileConv
+	./tools/ficFileConv CM09
+	./tools/ficFileConv
 
 #calibration : ./calibrations/*.fic ./tools/ficFileConv
 #	./tools/ficFileConv
