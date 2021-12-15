@@ -2,19 +2,19 @@
 
 file cm-AValves.template { pattern
 
-{SUBS,	DEV,       OFFS,   OFFS2,   LINR,	     ASLO,   AOFF}
-{VBox	CV01	   356	   68	    "NO CONVERSION", 1.0     0}
-{VBox	CV02	   370	   74	    "NO CONVERSION", 1.0     0}
-{VBox	CV03	   384	   80	    "NO CONVERSION", 1.0     0}
-{VBox	CV04	   398	   86	    "LINEAR", 	    -1.0     100}
-{PwrCpl	CV11	   412	   92	    "NO CONVERSION", 1.0     0}
-{VBox	CV07	   426	   98	    "NO CONVERSION", 1.0     0}
-{VBox	CV60	   440	   104	    "NO CONVERSION", 1.0     0}
-{VBox	CV61	   454	   110	    "LINEAR", 	    -1.0     100}
-{PwrCpl	CV21	   468	   116	    "NO CONVERSION", 1.0     0}
-{RHtr	CV550	   482	   122	    "NO CONVERSION", 1.0     0}
-{RHtr	CV551	   496	   128	    "NO CONVERSION", 1.0     0}
-{RHtr	CV552	   510	   134	    "NO CONVERSION", 1.0     0}
+{SUBS,	DEV,       OFFS,   OFFS2,   LINR,	     ASLO,   AOFF,   HOPR,   EGU}
+{VBox	CV01	   356	   68	    "NO CONVERSION", 1.0     0	     100     "%"}
+{VBox	CV02	   370	   74	    "NO CONVERSION", 1.0     0	     100     "%"}
+{VBox	CV03	   384	   80	    "NO CONVERSION", 1.0     0	     100     "%"}
+{VBox	CV04	   398	   86	    "LINEAR", 	    -1.0     100     100     "%"}
+{PwrCpl	CV11	   412	   92	    "NO CONVERSION", 1.0     0	     150     "mg/s"}
+{VBox	CV07	   426	   98	    "NO CONVERSION", 1.0     0	     100     "%"}
+{VBox	CV60	   440	   104	    "NO CONVERSION", 1.0     0	     100     "%"}
+{VBox	CV61	   454	   110	    "LINEAR", 	    -1.0     100     100     "%"}
+{PwrCpl	CV21	   468	   116	    "NO CONVERSION", 1.0     0	     150     "mg/s"}
+{RHtr	CV550	   482	   122	    "NO CONVERSION", 1.0     0	     100     "%"}
+{RHtr	CV551	   496	   128	    "NO CONVERSION", 1.0     0	     100     "%"}
+{RHtr	CV552	   510	   134	    "NO CONVERSION", 1.0     0	     100     "%"}
 }
 
 file cm-Heater1.template { pattern

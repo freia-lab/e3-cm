@@ -118,5 +118,7 @@ TestEssProtoFreia_20210624 - KG, Added control of CV02 in S7 step 7: Set it to t
 			     threshold defined in S8_Parameters DB before proceeding to 2K mode.
 TestEssProtoFreia_20210830 - KG, Set CV01 to 0 in the initialization phase of "Cooling to 4 K". Change inly in grafcet Network 19.
 TestEssProtoFreia_20211108 - KG, Added support for CV11 and CV21 - control valves for SHe circuit. Quite a lot of changes in many blocks.
+TestEssProtoFreia_20211213 - KG, Changed the names of the variables related to CV11/CV21 to FT11/FT21 to indicate that we control the flow (the valves are controlled
+			     by a PID regulator connected directly to the valve and the flow meter).
 
 			    
