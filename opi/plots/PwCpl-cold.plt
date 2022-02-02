@@ -104,9 +104,9 @@
       </archive>
     </pv>
     <pv>
-      <display_name>CM-Vac:PT$(N)0:sRdV [mbar]</display_name>
+      <display_name>CM-Vac:PT$(N)0:PrsR</display_name>
       <visible>true</visible>
-      <name>CM-Vac:PT$(N)0:sRdV</name>
+      <name>CM-Vac:PT$(N)0:PrsR</name>
       <axis>2</axis>
       <color>
         <red>0</red>

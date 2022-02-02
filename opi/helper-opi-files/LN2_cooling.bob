@@ -2394,7 +2394,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_14</name>
-    <pv_name>CstatH-Vac:PT016:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT016:PrsR</pv_name>
     <x>730</x>
     <y>784</y>
     <width>49</width>
@@ -2425,7 +2425,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_15</name>
-    <pv_name>CstatH-Vac:PT014:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT014:PrsR</pv_name>
     <x>730</x>
     <y>763</y>
     <width>49</width>
@@ -2482,7 +2482,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT014:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT014:PrsR.NAME</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
@@ -2519,7 +2519,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT016:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT016:PrsR.NAME</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
@@ -2530,7 +2530,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_16</name>
-    <pv_name>CstatH-Vac:PT010:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT010:PrsR</pv_name>
     <x>811</x>
     <y>851</y>
     <width>49</width>
@@ -2587,7 +2587,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT010:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT010:PrsR.NAME</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
