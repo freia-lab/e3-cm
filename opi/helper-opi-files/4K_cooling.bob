@@ -2239,6 +2239,22 @@ $(pv_value)</tooltip>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_40</name>
+      <pv_name>Cryo-Cmp:LP:PI2240</pv_name>
+      <x>574</x>
+      <y>5</y>
+      <width>55</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>2</precision>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_33</name>
@@ -5700,5 +5716,13 @@ $(pv_value)</tooltip>
       <y>40</y>
       <width>40</width>
     </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_39</name>
+    <pv_name>Cryo-CBox:LP:PI3290</pv_name>
+    <x>730</x>
+    <y>20</y>
+    <width>70</width>
+    <precision>2</precision>
   </widget>
 </display>
