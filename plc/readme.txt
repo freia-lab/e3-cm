@@ -120,5 +120,8 @@ TestEssProtoFreia_20210830 - KG, Set CV01 to 0 in the initialization phase of "C
 TestEssProtoFreia_20211108 - KG, Added support for CV11 and CV21 - control valves for SHe circuit. Quite a lot of changes in many blocks.
 TestEssProtoFreia_20211213 - KG, Changed the names of the variables related to CV11/CV21 to FT11/FT21 to indicate that we control the flow (the valves are controlled
 			     by a PID regulator connected directly to the valve and the flow meter).
+TestEssProtoFreia_20220209 - KG, Added a PID regulator for controlling the pressure PT03 (at the moment PT02-direct sensor is used) using CV04. The regulator can be
+			     only turned on or off manually by the operator.
+
 
 			    

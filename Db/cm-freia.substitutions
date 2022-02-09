@@ -98,6 +98,11 @@ file cm-real-param.template { pattern
 {Ctrl	CV60_PID_TM_LAG    1108	  642	 0	600   1	    "s"}
 {Ctrl	SP_TIC77-CV60      1112	  648	 70	90    1	    "K"}
 {Ctrl	S8_P_CV01_Step7    1120	  654	 0	100   0	    "%"}
+{Ctrl	CV04_PID_GAIN  	   1124	  660	 0	100   2	    ""}
+{Ctrl	CV04_PID_TI  	   1128	  666	 0	600   1	    "s"}
+{Ctrl	CV04_PID_TD  	   1132	  672	 0	600   1	    "s"}
+{Ctrl	CV04_PID_TM_LAG    1136	  678	 0	600   1	    "s"}
+{Ctrl	SP_PIC03-CV04	   1140	  684	 20	1000  1	    "mbar"}
 }
 
 file cm-temp2plc-freia.template { pattern

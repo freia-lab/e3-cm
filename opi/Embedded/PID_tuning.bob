@@ -115,6 +115,7 @@
     <text>PV_IN ($(PV_IN)) :</text>
     <x>40</x>
     <y>150</y>
+    <width>150</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>

@@ -2,6 +2,7 @@
 <display version="2.0.0">
   <name>PIDs Tuning</name>
   <width>2000</width>
+  <height>800</height>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display CV01</name>
     <macros>
@@ -12,7 +13,7 @@
     </macros>
     <file>../Embedded/PID_tuning.bob</file>
     <x>70</x>
-    <y>50</y>
+    <y>90</y>
     <width>290</width>
     <height>430</height>
   </widget>
@@ -26,7 +27,7 @@
     </macros>
     <file>../Embedded/PID_tuning.bob</file>
     <x>410</x>
-    <y>50</y>
+    <y>90</y>
     <width>290</width>
     <height>430</height>
   </widget>
@@ -40,7 +41,7 @@
     </macros>
     <file>../Embedded/PID_tuning.bob</file>
     <x>750</x>
-    <y>50</y>
+    <y>90</y>
     <width>290</width>
     <height>430</height>
   </widget>
@@ -53,8 +54,8 @@
       <V>CV60</V>
     </macros>
     <file>../Embedded/PID_tuning.bob</file>
-    <x>1100</x>
-    <y>50</y>
+    <x>1450</x>
+    <y>90</y>
     <width>290</width>
     <height>430</height>
   </widget>
@@ -87,5 +88,63 @@
       <width>230</width>
       <tooltip>$(actions)</tooltip>
     </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display CV01_3</name>
+    <macros>
+      <OUTP>PIC03</OUTP>
+      <PV_IN>PT02-direct</PV_IN>
+      <S>CM</S>
+      <V>CV04</V>
+    </macros>
+    <file>../Embedded/PID_tuning.bob</file>
+    <x>1100</x>
+    <y>90</y>
+    <width>290</width>
+    <height>430</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>ON</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:CV04:cmdRegOn</pv_name>
+    <x>1110</x>
+    <y>160</y>
+    <width>40</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>OFF</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:CV04:cmdRegOff</pv_name>
+    <x>1160</x>
+    <y>160</y>
+    <width>40</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <Cvalve>$(P)-$(S):$(V)</Cvalve>
+      <S>VBox</S>
+      <V>CV04</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CM-Cvalve-cmdPanel.bob</file>
+    <x>1090</x>
+    <y>520</y>
+    <width>280</width>
+    <height>220</height>
+    <resize>4</resize>
   </widget>
 </display>

@@ -376,6 +376,31 @@ record(bo, "CM-Ctrl:opMode:cmdSetAck") {
   field(ZNAM, "")
   field(SDIS, "CM-Ctrl:opMode:sLocal")
 }
+record(bo, "CM-Ctrl:CV04:cmdRegOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/2 T=BYTE B=2")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(ONAM, "Set PID")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bo, "CM-Ctrl:CV04:cmdRegOff") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:CM/2 T=BYTE B=3")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(ONAM, "Reset PID")
+  field(ZNAM, "")
+  field(SDIS, "CM-Ctrl:opMode:sLocal")
+}
+record(bi, "CM-Ctrl:CV04:sRegOn") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:CM/2 T=BYTE B=6")
+  field(ONAM, "PID On")
+  field(ZNAM, "PID Off")
+  field(SCAN, "I/O Intr")
+}
 
 ###########################################################
 #
