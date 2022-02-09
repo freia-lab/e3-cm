@@ -52,7 +52,7 @@ CM	TT07     CX_LS_X133155 Cernox 1.5  310
 CM	TT08     CX_LS_X133087 Cernox 1.5  310
 CM	TT09     CX_LS_X132648 Cernox 1.5  310
 PwrCpl	TT12     CX_LS_X133185 Cernox 1.5  310
-PwrCpl	TT22     CX_LS_X133066 Cernox 1.5  310}
+PwrCpl	TT22     CX_LS_X132659 Cernox 1.5  310}
 }
 
 file "cm-cbatf-pt100.template" { pattern
