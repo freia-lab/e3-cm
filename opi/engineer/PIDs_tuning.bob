@@ -147,4 +147,17 @@
     <height>220</height>
     <resize>4</resize>
   </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_15</name>
+    <macros>
+      <GHI>CstatH-LHe:PT101:sRdV</GHI>
+      <GLO>CstatH-LHe:PT102:sRdV</GLO>
+      <L>MKS3</L>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatH-MKS-button.bob</file>
+    <x>1315</x>
+    <y>157</y>
+    <width>70</width>
+    <height>40</height>
+  </widget>
 </display>

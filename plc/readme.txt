@@ -122,6 +122,8 @@ TestEssProtoFreia_20211213 - KG, Changed the names of the variables related to C
 			     by a PID regulator connected directly to the valve and the flow meter).
 TestEssProtoFreia_20220209 - KG, Added a PID regulator for controlling the pressure PT03 (at the moment PT02-direct sensor is used) using CV04. The regulator can be
 			     only turned on or off manually by the operator.
+TestEssProtoFreia_20220210 - KG, Added a support for reading PT03 directly from the MKS3. Filled only value field (visuState and others will be added when we will 
+			     start to use this parameter.
 
 
 			    
