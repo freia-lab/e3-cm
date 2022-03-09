@@ -136,7 +136,7 @@ to go below 110 K</text>
     <widget type="group" version="2.0.0">
       <name>Group</name>
       <macros>
-        <L>PID CV02 (LT01):</L>
+        <L>PID CV02 (LT01/02):</L>
         <S>Ctrl</S>
         <V>CV02</V>
       </macros>
@@ -298,7 +298,7 @@ to go below 110 K</text>
     <widget type="group" version="2.0.0">
       <name>Group_5</name>
       <macros>
-        <L>PID CV01 2K(LT01):</L>
+        <L>PID CV01 2K(LT01/02):</L>
         <S>Ctrl</S>
         <V>CV01</V>
       </macros>
@@ -776,7 +776,7 @@ achieved</text>
     </rules>
     <tooltip>Automatic conditon for entering
 4K Operation state.
-Both LT01 and LT03 PID regulators (CV02/CV03)
+Both LT01/LT02 and LT03 PID regulators (CV02/CV03)
 MUST be active.</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -1008,7 +1008,7 @@ MUST be active.</tooltip>
     </line_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>LT$(N)</name>
+    <name>CM:LT$(N)</name>
     <macros>
       <N>01</N>
       <S>CM</S>
@@ -1041,7 +1041,7 @@ MUST be active.</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>LT$(N)</name>
+    <name>VBox:LT$(N)</name>
     <macros>
       <N>03</N>
       <S>VBox</S>
@@ -2025,5 +2025,76 @@ and return to the Initial State</tooltip>
     <height>41</height>
     <transparent>true</transparent>
     <tooltip>Show help page in the web browser</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_10</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Use LT01</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:LT:cmdSelLT01</pv_name>
+    <x>730</x>
+    <y>269</y>
+    <width>71</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_15</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Use LT02</description>
+      </action>
+    </actions>
+    <pv_name>$(P)-Ctrl:LT:cmdSelLT02</pv_name>
+    <x>730</x>
+    <y>301</y>
+    <width>71</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>CM:LT02</name>
+    <macros>
+      <N>02</N>
+      <S>CM</S>
+    </macros>
+    <x>561</x>
+    <y>245</y>
+    <width>141</width>
+    <height>235</height>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)-Ctrl:LTforCtrl:sLT02</pv_name>
+      </rule>
+    </rules>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(P)-$(S):LT$(N):sVisu</pv_name>
+      <y>4</y>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_37</name>
+      <pv_name>$(P)-$(S):LT$(N):sRdV</pv_name>
+      <y>175</y>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank_1</name>
+      <pv_name>$(P)-$(S):LT$(N):sRdV</pv_name>
+      <x>15</x>
+      <y>35</y>
+      <width>70</width>
+      <height>130</height>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>70.0</maximum>
+    </widget>
   </widget>
 </display>

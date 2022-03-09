@@ -191,13 +191,6 @@
         </macros>
         <group_name></group_name>
       </tab>
-      <tab>
-        <name>PID</name>
-        <file>../helper-opi-files/pid.bob</file>
-        <macros>
-        </macros>
-        <group_name></group_name>
-      </tab>
     </tabs>
     <y>90</y>
     <width>1998</width>
