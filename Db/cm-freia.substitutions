@@ -65,6 +65,7 @@ file cm-LT.template { pattern
 {PwrCpl	TT220	   996	  1	"K"}
 {CM	LT02	   1032	  1	"cm"}
 {CM	PT03-direct	   1144	  2	"mbar"}
+{CM	LT	   1152	  1	"cm"}
 }
 
 file cm-real-param.template { pattern

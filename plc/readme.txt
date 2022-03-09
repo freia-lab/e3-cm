@@ -124,6 +124,7 @@ TestEssProtoFreia_20220209 - KG, Added a PID regulator for controlling the press
 			     only turned on or off manually by the operator.
 TestEssProtoFreia_20220210 - KG, Added a support for reading PT03 directly from the MKS3. Filled only value field (visuState and others will be added when we will 
 			     start to use this parameter.
-
+TestEssProtoFreia_20220308 - KG, Added a support (not finished) for choosing the LHe level prbe to be used in the process control. Prepared Epics interface for it
+			     but haven't done any changes in the process control to use the new PV (CM_LT).
 
 			    
