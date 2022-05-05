@@ -91,7 +91,7 @@
     </widget>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_8</name>
-      <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+      <pv_name>=(`$(P)-$(S):V:UY$(V)-PercOut`!=0)</pv_name>
       <symbols>
         <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
         <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
@@ -632,7 +632,7 @@
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>24</height>
+      <height>26</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -843,7 +843,7 @@ $(pv_value)</tooltip>
       <x>220</x>
       <y>205</y>
       <width>27</width>
-      <height>21</height>
+      <height>23</height>
       <auto_size>true</auto_size>
     </widget>
   </widget>
@@ -901,8 +901,8 @@ $(pv_value)</tooltip>
         <text>RF Switch</text>
         <x>42</x>
         <y>15</y>
-        <width>41</width>
-        <height>13</height>
+        <width>42</width>
+        <height>15</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="10.0">
           </font>
@@ -1062,8 +1062,8 @@ $(pv_value)</tooltip>
         <text>RF Switch</text>
         <x>42</x>
         <y>15</y>
-        <width>41</width>
-        <height>13</height>
+        <width>42</width>
+        <height>15</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="10.0">
           </font>
@@ -1193,7 +1193,7 @@ $(pv_value)</tooltip>
     <text>Out</text>
     <x>1160</x>
     <width>16</width>
-    <height>13</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -1490,8 +1490,8 @@ $(pv_value)</tooltip>
           <text>Reheater</text>
           <x>20</x>
           <y>110</y>
-          <width>71</width>
-          <height>24</height>
+          <width>72</width>
+          <height>26</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -1704,7 +1704,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="symbol" version="2.0.0">
         <name>Symbol_3</name>
-        <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+        <pv_name>=(`$(P)-$(S):$(V):sRdV`!=0)</pv_name>
         <symbols>
           <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
           <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
@@ -1812,7 +1812,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <widget type="symbol" version="2.0.0">
         <name>Symbol_5</name>
-        <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+        <pv_name>=(`$(P)-$(S):$(V):sRdV`!=0)</pv_name>
         <symbols>
           <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
           <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
@@ -2039,7 +2039,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="symbol" version="2.0.0">
         <name>Symbol_4</name>
-        <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+        <pv_name>=(`$(P)-$(S):$(V):sRdV`!=0)</pv_name>
         <symbols>
           <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
           <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
@@ -3032,7 +3032,7 @@ $(pv_value)</tooltip>
 Water Cooling</text>
       <x>10</x>
       <width>110</width>
-      <height>44</height>
+      <height>49</height>
       <horizontal_alignment>1</horizontal_alignment>
       <auto_size>true</auto_size>
     </widget>
@@ -3302,7 +3302,7 @@ $(pv_value)</tooltip>
     <x>840</x>
     <y>380</y>
     <width>16</width>
-    <height>13</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -3476,7 +3476,7 @@ $(pv_value)</tooltip>
     <text>HNOSS</text>
     <x>1200</x>
     <width>31</width>
-    <height>13</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -3530,7 +3530,7 @@ $(pv_value)</tooltip>
     <x>690</x>
     <y>260</y>
     <width>24</width>
-    <height>16</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
@@ -3737,7 +3737,7 @@ $(pv_value)</tooltip>
           <text>PT01</text>
           <y>55</y>
           <width>34</width>
-          <height>21</height>
+          <height>25</height>
           <horizontal_alignment>1</horizontal_alignment>
           <auto_size>true</auto_size>
         </widget>
@@ -4185,8 +4185,8 @@ $(pv_value)</tooltip>
       <text>Current settings</text>
       <x>29</x>
       <y>69</y>
-      <width>125</width>
-      <height>24</height>
+      <width>126</width>
+      <height>26</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -4344,7 +4344,7 @@ the state was active for at least 10 s.</tooltip>
       <text>CV01 when cooling:</text>
       <y>10</y>
       <width>131</width>
-      <height>21</height>
+      <height>25</height>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92">
         </color>
@@ -4395,7 +4395,7 @@ The initial opening of CV01 when starting 2K sequence on HNOSS.</tooltip>
       <x>339</x>
       <y>10</y>
       <width>115</width>
-      <height>24</height>
+      <height>26</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -4451,7 +4451,7 @@ CM:TT08 &lt; 10K</tooltip>
       <text>CV01 @ pressure rise:</text>
       <y>38</y>
       <width>143</width>
-      <height>21</height>
+      <height>25</height>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92">
         </color>
