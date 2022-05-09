@@ -415,12 +415,12 @@
       <name>Action Button</name>
       <actions>
         <action type="open_display">
-          <file>asynRecord.bob</file>
+          <file>../../freia-symbols/display-builder/asyn/asynRecord.bob</file>
           <macros>
             <P>CM-Ctrl:K3607A</P>
             <R>:asynRec</R>
           </macros>
-          <target>standalone</target>
+          <target>window</target>
           <description>Open Display</description>
         </action>
       </actions>
