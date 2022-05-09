@@ -1,0 +1,61 @@
+#- ###                cm iocsh                   ###
+#- ####################################################
+#- >> Mandatory
+#- PLC_IP         - PLC's controller IP address
+#- KEITH_IP       - Keithley's controller IP address
+#-
+
+epicsEnvSet("A_PORT"   "K_PORT")
+epicsEnvSet("SCAN_EV"  "8")
+
+addScan("30")
+
+#var s7plcDebug <level>
+#level=-1:  no output
+#level=0:   errors only
+#level=1:   startup messages
+#level=2: + output record processing
+#level=3: + inputput record processing
+#level=4: + driver calls
+#level=5: + io printout
+#be careful using level>1 since many messages may introduce delays
+
+#var s7plcDebug 2
+#s7plcConfigure name,IPaddr,port,inSize,outSize,bigEndian,recvTimeout,sendIntervall
+#connects to PLC <name> on address <IPaddr> port <port>
+#<inSize>        : size of data block PLC -> IOC [bytes]
+#<outSize>       : size of data block IOC -> PLC [bytes]
+#<bigEndian>=1   : motorola format data (MSB first)
+#<bigEndian>=0   : intel format data (LSB first)
+#<recvTimeout>   : time to wait for input before disconnecting [ms]
+#<sendIntervall> : time to wait before sending new data to PLC [ms]
+
+s7plcConfigure PLC:CM,$(PLC_IP),2000,2000,1000,1,2000,500
+s7plcConfigure PLC:CM_K,$(PLC_IP),2001,40,250,1,2000,500
+
+drvAsynIPPortConfigure(K_PORT, 192.168.1.12:5025,0,0,0)
+
+dbLoadRecords("cm-General.db", "SCAN_EVNT=$(SCAN_EV)")
+dbLoadRecords("cm-keithley-general.db", "PREFIX='CM',ASYN_PORT=$(A_PORT),SCAN_EVNT=$(SCAN_EV)")
+dbLoadRecords("cm-freia.db")
+dbLoadRecords("cm-cbatf-freia.db")
+dbLoadRecords("cm-keithley-freia.db","ASYN_PORT=$(A_PORT), SCAN_EVNT=$(SCAN_EV)")
+
+dbLoadRecords("asynRecord.db","P='$(IOCNAME)',R=:asynRec,PORT='K_PORT',ADDR='0',IMAX='1024',OMAX='256'")
+
+iocshLoad("$(autosave_DIR)/autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME),IOCDIR=cm")
+
+afterInit(dbpf CM-RHtr:CV550:sAuto.ONAM "PID Reg. On")
+afterInit(dbpf CM-RHtr:CV550:sAuto.ZNAM "PID Reg. Off")
+
+afterInit(dbpf CM-VBox:TT60:sRdV.HIGH 87.0)
+afterInit(dbpf CM-VBox:TT60:sRdV.HIHI 80.0)
+afterInit(dbpf CM-PwrCpl:TT120:sRdV.LSV MINOR)
+afterInit(dbpf CM-PwrCpl:TT120:sRdV.LLSV MAJOR)
+afterInit(dbpf CM-PwrCpl:TT220:sRdV.LSV MINOR)
+afterInit(dbpf CM-PwrCpl:TT220:sRdV.LLSV MAJOR)
+afterInit(dbpf CM-PwrCpl:TT120:sRdV.HSV MINOR)
+afterInit(dbpf CM-PwrCpl:TT120:sRdV.HHSV MAJOR)
+afterInit(dbpf CM-PwrCpl:TT220:sRdV.HSV MINOR)
+afterInit(dbpf CM-PwrCpl:TT220:sRdV.HHSV MAJOR)
+
