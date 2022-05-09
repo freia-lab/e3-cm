@@ -28,51 +28,72 @@ LINK_DIR = ../../OPIS
 
 .PHONY: opiinstall	## Install the OPIs
 opiinstall:
-	rsync -va --exclude 'README.md' $(TOP)/opi/ $(OPIS_HOME)/$(E3_MODULE_NAME)/$(OPI_VERSION)/
+	rsync -va --delete --exclude 'README.md' $(TOP)/opi/ $(OPIS_HOME)/$(E3_MODULE_NAME)/$(OPI_VERSION)/
 	cd $(OPI_DIR); rm -f $(OPI_DIRNAME); ln -s $(LINK_DIR)/$(E3_MODULE_NAME)/$(OPI_VERSION)/ $(OPI_DIRNAME)
 
 .PHONY: calibration-CM01  ## Create CERNOX calibration data for CM01
-calibration-CM01 : ./calibrations/CM01/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM01
-	../tools/ficFileConv
+calibration-CM01: $(E3_MODULE_SRC_PATH)/calibrations/CM01/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM01
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM02  ## Create CERNOX calibration data for CM02
-calibration-CM02 : ./calibrations/CM02/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM02
-	../tools/ficFileConv
+calibration-CM02: $(E3_MODULE_SRC_PATH)/calibrations/CM02/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM02
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM03  ## Create CERNOX calibration data for CM03
-calibration-CM03 : ./calibrations/CM03/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM03
-	../tools/ficFileConv
+calibration-CM03: $(E3_MODULE_SRC_PATH)/calibrations/CM03/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM03
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM04  ## Create CERNOX calibration data for CM04
-calibration-CM04 : ./calibrations/CM04/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM04
-	../tools/ficFileConv
+calibration-CM04: $(E3_MODULE_SRC_PATH)/calibrations/CM04/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM04
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM05  ## Create CERNOX calibration data for CM05
-calibration-CM05 : ./calibrations/CM05/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM05
-	../tools/ficFileConv
+calibration-CM05: $(E3_MODULE_SRC_PATH)/calibrations/CM05/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM05
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM06  ## Create CERNOX calibration data for CM06
-calibration-CM06 : ./calibrations/CM06/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM06
-	../tools/ficFileConv
+calibration-CM06: $(E3_MODULE_SRC_PATH)/calibrations/CM06/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM06
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM07  ## Create CERNOX calibration data for CM07
-calibration-CM07 : ./calibrations/CM07/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM07
-	../tools/ficFileConv
+calibration-CM07: $(E3_MODULE_SRC_PATH)/calibrations/CM07/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM07
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM08  ## Create CERNOX calibration data for CM08
-calibration-CM08 : ./calibrations/CM08/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM08
-	../tools/ficFileConv
+calibration-CM08: $(E3_MODULE_SRC_PATH)/calibrations/CM08/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM08
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
 .PHONY: calibration-CM09  ## Create CERNOX calibration data for CM09
-calibration-CM09 : ./calibrations/CM09/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM09
-	../tools/ficFileConv
-.PHONY: calibration-CM010  ## Create CERNOX calibration data for CM001
-calibration-CM10 : ./calibrations/CM10/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM10
-	../tools/ficFileConv
-.PHONY: calibration-CM011  ## Create CERNOX calibration data for CM011
-calibration-CM11 : ./calibrations/CM11/*.fic ./calibrations/*.fic ../tools/ficFileConv
-	../tools/ficFileConv CM11
-	../tools/ficFileConv
-
+calibration-CM09: $(E3_MODULE_SRC_PATH)/calibrations/CM09/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM09
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
+.PHONY: calibration-CM10  ## Create CERNOX calibration data for CM10
+calibration-CM10: $(E3_MODULE_SRC_PATH)/calibrations/CM10/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM10
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
+.PHONY: calibration-CM11  ## Create CERNOX calibration data for CM11
+calibration-CM11: $(E3_MODULE_SRC_PATH)/calibrations/CM11/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM11
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
