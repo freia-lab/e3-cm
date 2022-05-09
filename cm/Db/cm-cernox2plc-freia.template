@@ -24,6 +24,7 @@ record(calc, "$(PREFIX)-$(SUBS):$(DEV):sRdV-calc") {
 #  field (INPE, "400")
   field (CALC, "((A||(B==2&&C==15)?0:1)||L)&&!K")
   field(FLNK, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid")
+  info(autosaveFields,"L K")
 }
 
 record(bo, "$(PREFIX)-$(SUBS):$(DEV):sRdV-valid") {

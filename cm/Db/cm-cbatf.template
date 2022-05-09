@@ -26,6 +26,7 @@ record(ai, "CM-$(SUBS1):$(DEV1):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS1):$(DEV1)-R:sTmp MS")
    field (LINR, "$(ID1)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS2):$(DEV2)-R:sRdV") {
@@ -56,6 +57,7 @@ record(ai, "CM-$(SUBS2):$(DEV2):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS2):$(DEV2)-R:sTmp MS")
    field (LINR, "$(ID2)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS3):$(DEV3)-R:sRdV") {
@@ -86,6 +88,7 @@ record(ai, "CM-$(SUBS3):$(DEV3):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS3):$(DEV3)-R:sTmp MS")
    field (LINR, "$(ID3)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS4):$(DEV4)-R:sRdV") {
@@ -116,6 +119,7 @@ record(ai, "CM-$(SUBS4):$(DEV4):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS4):$(DEV4)-R:sTmp MS")
    field (LINR, "$(ID4)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS5):$(DEV5)-R:sRdV") {
@@ -146,6 +150,7 @@ record(ai, "CM-$(SUBS5):$(DEV5):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS5):$(DEV5)-R:sTmp MS")
    field (LINR, "$(ID5)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS6):$(DEV6)-R:sRdV") {
@@ -176,6 +181,7 @@ record(ai, "CM-$(SUBS6):$(DEV6):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS6):$(DEV6)-R:sTmp MS")
    field (LINR, "$(ID6)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS7):$(DEV7)-R:sRdV") {
@@ -206,6 +212,7 @@ record(ai, "CM-$(SUBS7):$(DEV7):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS7):$(DEV7)-R:sTmp MS")
    field (LINR, "$(ID7)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS8):$(DEV8)-R:sRdV") {
@@ -236,6 +243,7 @@ record(ai, "CM-$(SUBS8):$(DEV8):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS8):$(DEV8)-R:sTmp MS")
    field (LINR, "$(ID8)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS9):$(DEV9)-R:sRdV") {
@@ -266,6 +274,7 @@ record(ai, "CM-$(SUBS9):$(DEV9):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS9):$(DEV9)-R:sTmp MS")
    field (LINR, "$(ID9)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS10):$(DEV10)-R:sRdV") {
@@ -296,6 +305,7 @@ record(ai, "CM-$(SUBS10):$(DEV10):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS10):$(DEV10)-R:sTmp MS")
    field (LINR, "$(ID10)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS11):$(DEV11)-R:sRdV") {
@@ -326,6 +336,7 @@ record(ai, "CM-$(SUBS11):$(DEV11):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS11):$(DEV11)-R:sTmp MS")
    field (LINR, "$(ID11)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS12):$(DEV12)-R:sRdV") {
@@ -356,6 +367,7 @@ record(ai, "CM-$(SUBS12):$(DEV12):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS12):$(DEV12)-R:sTmp MS")
    field (LINR, "$(ID12)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS13):$(DEV13)-R:sRdV") {
@@ -386,6 +398,7 @@ record(ai, "CM-$(SUBS13):$(DEV13):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS13):$(DEV13)-R:sTmp MS")
    field (LINR, "$(ID13)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS14):$(DEV14)-R:sRdV") {
@@ -416,6 +429,7 @@ record(ai, "CM-$(SUBS14):$(DEV14):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS14):$(DEV14)-R:sTmp MS")
    field (LINR, "$(ID14)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS15):$(DEV15)-R:sRdV") {
@@ -446,6 +460,7 @@ record(ai, "CM-$(SUBS15):$(DEV15):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS15):$(DEV15)-R:sTmp MS")
    field (LINR, "$(ID15)")
+   info(autosaveFields,"ADEL")
 }
 
 record(ai, "CM-$(SUBS16):$(DEV16)-R:sRdV") {
@@ -476,6 +491,7 @@ record(ai, "CM-$(SUBS16):$(DEV16):sRdV") {
    field (SCAN, "Passive")
    field (INP,"CM-$(SUBS16):$(DEV16)-R:sTmp MS")
    field (LINR, "$(ID16)")
+   info(autosaveFields,"ADEL")
 }
 
 # Fault bits (for GUI and for status propagation)

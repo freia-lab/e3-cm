@@ -27,6 +27,7 @@ record(ao, "CM-$(SUBS):$(DEV):cSetV") {
   field(PREC, "$(PREC)")
   field(FLNK, "CM-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "$(EGU)")
+  info(autosaveFields,"VAL")
 }
 
 record(ai, "CM-$(SUBS):$(DEV):sSetV") {

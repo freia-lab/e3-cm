@@ -60,6 +60,7 @@ record(bo, "CM-Ctrl:Archiving:On") {
   field(ONAM, "Archiving on")
   field(ZSV, "MINOR")
   field(PINI, "YES")
+  info(autosaveFields,"VAL")
 }
 
 record(ai, "CM-test0:sRdV") {
@@ -448,6 +449,7 @@ record(ai, "CM-VBox:PT01:sRdV") {
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "mbar")
+  info(autosaveFields,"ADEL")
 }
 record(ai, "CM-Vac:PT73:sRdV") {
   field(DTYP, "S7plc")

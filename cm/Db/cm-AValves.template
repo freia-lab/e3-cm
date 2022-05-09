@@ -125,6 +125,7 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
 #  field(LINR, "$(LINR)")
 #  field(ASLO, "$(ASLO)")
 #  field(AOFF, "$(AOFF)")
+  info(autosaveFields,"ADEL")
 }
 
 record(calc, "CM-$(SUBS):$(DEV):sOpen") {

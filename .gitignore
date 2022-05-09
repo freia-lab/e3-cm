@@ -1,4 +1,17 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
-builddir
+# Editor-related
 *~
-calibrations/out
+.vscode
+
+# OS-related
+.DS_Store
+
+# Common e3 artifacts
+*.local
+core.*
+*-loc/*.Makefile
+cm/*.Makefile
+cellMods/
+testMods*/
+*PVs.list
+pv.list
+dbl

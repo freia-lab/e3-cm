@@ -7,6 +7,7 @@ record(ai, "CM-$(SUBS):$(DEV):sRdV") {
   field(EGU, "$(EGU)")
   field(SDIS, "CM-$(SUBS):$(DEV):sFlt.VAL NPP MS")
   field(DISV, "-1") # Will never disable, but will propagate severity
+  info(autosaveFields,"ADEL LOW LOLO HIGH HIHI HYST")
 }
 
 

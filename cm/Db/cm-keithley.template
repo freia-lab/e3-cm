@@ -8,5 +8,6 @@ record(ai, "$(PREFIX)-$(SUBS):$(DEV):sRdV") {
   field(PREC, "3")
   field(DISS, "INVALID")
   field(SIMS, "MINOR")
+  info(autosaveFields,"ADEL DISA")
 }
 

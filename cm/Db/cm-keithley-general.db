@@ -31,6 +31,7 @@ record (event, "$(PREFIX)-Ctrl:K3706A:ScanEv") {
   field(DTYP, "Soft Channel")
   field(VAL, "$(SCAN_EVNT)")
   field(PINI, "YES")
+  info(autosaveFields,"SCAN")
 }
 
 record (mbbi, "$(PREFIX)-Ctrl:K3706A:sEGU") {
