@@ -35,6 +35,10 @@ REQUIRED += s7plc
 ifneq ($(strip $(S7PLC_DEP_VERSION)),)
   s7plc_VERSION=$(S7PLC_DEP_VERSION)
 endif
+REQUIRED += stream
+  ifneq ($(strip $(STREAM_DEP_VERSION)),)
+  stream_VERSION=$(STREAM_DEP_VERSION)
+endif
 REQUIRED += autosave
 ifneq ($(strip $(AUTOSAVE_DEP_VERSION)),)
   autosave_VERSION=$(AUTOSAVE_DEP_VERSION)
