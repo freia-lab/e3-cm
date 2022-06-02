@@ -417,7 +417,7 @@
         <action type="open_display">
           <file>../../freia-symbols/display-builder/asyn/asynRecord.bob</file>
           <macros>
-            <P>CM-Ctrl:K3607A</P>
+            <P>ioc17-cm</P>
             <R>:asynRec</R>
           </macros>
           <target>window</target>
