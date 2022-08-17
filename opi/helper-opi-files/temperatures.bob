@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Temperatures</name>
   <width>1500</width>
-  <height>750</height>
+  <height>920</height>
   <actions>
   </actions>
   <widget type="embedded" version="2.0.0">
@@ -17,5 +17,157 @@
     <x>1100</x>
     <width>390</width>
     <height>665</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_5</name>
+    <macros>
+      <TT>TT09</TT>
+    </macros>
+    <x>390</x>
+    <y>830</y>
+    <width>320</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_5</name>
+      <pv_name>CM-CM:$(TT)-R:sRdV.SIMM</pv_name>
+      <label>Simulate resistance: </label>
+      <x>50</x>
+      <width>170</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <pv_name>CM-CM:$(TT)-R:sRdV.SVAL</pv_name>
+      <x>220</x>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>$(TT):</text>
+      <width>40</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_6</name>
+    <macros>
+      <S>PwrCpl</S>
+      <TT>TT12</TT>
+    </macros>
+    <x>390</x>
+    <y>860</y>
+    <width>320</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_6</name>
+      <pv_name>CM-$(S):$(TT)-R:sRdV.SIMM</pv_name>
+      <label>Simulate resistance: </label>
+      <x>50</x>
+      <width>170</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>CM-$(S):$(TT)-R:sRdV.SVAL</pv_name>
+      <x>220</x>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>$(TT):</text>
+      <width>40</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_8</name>
+    <macros>
+      <S>PwrCpl</S>
+      <TT>TT22</TT>
+    </macros>
+    <x>390</x>
+    <y>890</y>
+    <width>320</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_8</name>
+      <pv_name>CM-$(S):$(TT)-R:sRdV.SIMM</pv_name>
+      <label>Simulate resistance: </label>
+      <x>50</x>
+      <width>170</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_8</name>
+      <pv_name>CM-$(S):$(TT)-R:sRdV.SVAL</pv_name>
+      <x>220</x>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>$(TT):</text>
+      <width>40</width>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <S>CM</S>
+      <TT>TT04</TT>
+    </macros>
+    <file>../Embedded/cernox-simm.bob</file>
+    <x>380</x>
+    <y>680</y>
+    <width>550</width>
+    <height>30</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <S>CM</S>
+      <TT>TT05</TT>
+    </macros>
+    <file>../Embedded/cernox-simm.bob</file>
+    <x>380</x>
+    <y>710</y>
+    <width>550</width>
+    <height>30</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <S>CM</S>
+      <TT>TT06</TT>
+    </macros>
+    <file>../Embedded/cernox-simm.bob</file>
+    <x>380</x>
+    <y>740</y>
+    <width>550</width>
+    <height>30</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <S>CM</S>
+      <TT>TT07</TT>
+    </macros>
+    <file>../Embedded/cernox-simm.bob</file>
+    <x>380</x>
+    <y>770</y>
+    <width>550</width>
+    <height>30</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <S>CM</S>
+      <TT>TT08</TT>
+    </macros>
+    <file>../Embedded/cernox-simm.bob</file>
+    <x>380</x>
+    <y>800</y>
+    <width>550</width>
+    <height>30</height>
   </widget>
 </display>

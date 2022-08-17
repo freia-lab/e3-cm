@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>cernox-simm</name>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)-calc.L</pv_name>
+        <value>1</value>
+        <description>ON</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>CM-$(S):$(TT)-R:sRdV.SIMM</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <pv_name>CM-$(S):$(TT):sRdV</pv_name>
+    <text>ON</text>
+    <x>430</x>
+    <width>50</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)-calc.L</pv_name>
+        <value>0</value>
+        <description>ON</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>CM-$(S):$(TT)-R:sRdV.SIMM</pv_name>
+        <value>0</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <pv_name>CM-$(S):$(TT):sRdV</pv_name>
+    <text>OFF</text>
+    <x>480</x>
+    <width>50</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_8</name>
+    <pv_name>CM-$(S):$(TT)-R:sRdV.SVAL</pv_name>
+    <x>230</x>
+    <width>90</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>$(TT): Simulated resistance:</text>
+    <x>10</x>
+    <width>190</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>Simulation:</text>
+    <x>340</x>
+  </widget>
+</display>
