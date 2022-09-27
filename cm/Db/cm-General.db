@@ -702,6 +702,17 @@ record (mbbi, "CM-Ctrl:Grafcet:sStateStr") {
 
 # Records for the alarm manager
 
+record(calcout, "CM-CM:LT:cLLSV") {
+  field(INPA, "CM-Ctrl:S10:sStep.RVAL")
+  field(INPB, "CM-Ctrl:S5:sStep.RVAL")
+  field(INPC, "CM-Ctrl:Grafcet:sState5")
+  field(INPD, "CM-Ctrl:Grafcet:sState6")
+  field(INPE, "CM-Ctrl:Grafcet:sState8")
+  field(INPF, "CM-Ctrl:Grafcet:sState10")
+  field(CALC, "(C&&(B>6))||D||E)?2:0")
+  field(OUT, "CM-CM:LT:sRdV.LLSV")
+  field(SCAN, "1 second")
+}
 record(calcout, "CM-CM:LT01:cLLSV") {
   field(INPA, "CM-Ctrl:S10:sStep.RVAL")
   field(INPB, "CM-Ctrl:S5:sStep.RVAL")
@@ -709,8 +720,19 @@ record(calcout, "CM-CM:LT01:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "(C&&(B>6))||D||E||(F&&(A<8))?2:0")
+  field(CALC, "(C&&(B>6))||D||E)?2:0")
   field(OUT, "CM-CM:LT01:sRdV.LLSV")
+  field(SCAN, "1 second")
+}
+record(calcout, "CM-CM:LT02:cLLSV") {
+  field(INPA, "CM-Ctrl:S10:sStep.RVAL")
+  field(INPB, "CM-Ctrl:S5:sStep.RVAL")
+  field(INPC, "CM-Ctrl:Grafcet:sState5")
+  field(INPD, "CM-Ctrl:Grafcet:sState6")
+  field(INPE, "CM-Ctrl:Grafcet:sState8")
+  field(INPF, "CM-Ctrl:Grafcet:sState10")
+  field(CALC, "(C&&(B>6))||D||E)?2:0")
+  field(OUT, "CM-CM:LT02:sRdV.LLSV")
   field(SCAN, "1 second")
 }
 
@@ -719,7 +741,7 @@ record(calcout, "CM-VBox:LT03:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "D||E||(F&&(A<6))?2:0")
+  field(CALC, "D||E)?2:0")
   field(OUT, "CM-VBox:LT03:sRdV.LLSV")
   field(SCAN, "1 second")
 }
