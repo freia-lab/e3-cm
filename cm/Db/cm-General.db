@@ -709,7 +709,7 @@ record(calcout, "CM-CM:LT:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "(C&&(B>6))||D||E)?2:0")
+  field(CALC, "((C&&(B>6))||D||E)?2:0")
   field(OUT, "CM-CM:LT:sRdV.LLSV")
   field(SCAN, "1 second")
 }
@@ -720,7 +720,7 @@ record(calcout, "CM-CM:LT01:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "(C&&(B>6))||D||E)?2:0")
+  field(CALC, "((C&&(B>6))||D||E)?2:0")
   field(OUT, "CM-CM:LT01:sRdV.LLSV")
   field(SCAN, "1 second")
 }
@@ -731,7 +731,7 @@ record(calcout, "CM-CM:LT02:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "(C&&(B>6))||D||E)?2:0")
+  field(CALC, "((C&&(B>6))||D||E)?2:0")
   field(OUT, "CM-CM:LT02:sRdV.LLSV")
   field(SCAN, "1 second")
 }
@@ -741,7 +741,7 @@ record(calcout, "CM-VBox:LT03:cLLSV") {
   field(INPD, "CM-Ctrl:Grafcet:sState6")
   field(INPE, "CM-Ctrl:Grafcet:sState8")
   field(INPF, "CM-Ctrl:Grafcet:sState10")
-  field(CALC, "D||E)?2:0")
+  field(CALC, "(D||E)?2:0")
   field(OUT, "CM-VBox:LT03:sRdV.LLSV")
   field(SCAN, "1 second")
 }
