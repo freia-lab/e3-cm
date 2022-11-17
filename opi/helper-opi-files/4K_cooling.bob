@@ -632,7 +632,7 @@
       <x>125</x>
       <y>19</y>
       <width>40</width>
-      <height>26</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -892,8 +892,8 @@ $(pv_value)</tooltip>
         <text>RF Switch</text>
         <x>42</x>
         <y>15</y>
-        <width>42</width>
-        <height>15</height>
+        <width>41</width>
+        <height>13</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="10.0">
           </font>
@@ -1053,8 +1053,8 @@ $(pv_value)</tooltip>
         <text>RF Switch</text>
         <x>42</x>
         <y>15</y>
-        <width>42</width>
-        <height>15</height>
+        <width>41</width>
+        <height>13</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="10.0">
           </font>
@@ -1268,7 +1268,7 @@ $(pv_value)</tooltip>
     <text>Out</text>
     <x>1160</x>
     <width>16</width>
-    <height>15</height>
+    <height>13</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -1299,7 +1299,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Recovery</name>
-    <x>1256</x>
+    <x>1241</x>
     <width>726</width>
     <height>465</height>
     <style>3</style>
@@ -1565,8 +1565,8 @@ $(pv_value)</tooltip>
           <text>Reheater</text>
           <x>20</x>
           <y>110</y>
-          <width>72</width>
-          <height>26</height>
+          <width>71</width>
+          <height>24</height>
           <font>
             <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
             </font>
@@ -2260,14 +2260,14 @@ $(pv_value)</tooltip>
     <name>Polyline_33</name>
     <x>985</x>
     <y>28</y>
-    <width>275</width>
+    <width>256</width>
     <height>47</height>
     <points>
       <point x="0.0" y="47.99999809265137">
       </point>
       <point x="0.0" y="0.0">
       </point>
-      <point x="275.0" y="0.0">
+      <point x="260.0" y="0.0">
       </point>
     </points>
     <line_color>
@@ -2279,14 +2279,14 @@ $(pv_value)</tooltip>
     <name>Polyline_32</name>
     <x>1130</x>
     <y>63</y>
-    <width>132</width>
+    <width>111</width>
     <height>12</height>
     <points>
       <point x="0.0" y="12.999996185302734">
       </point>
       <point x="0.0" y="0.0">
       </point>
-      <point x="132.0" y="0.0">
+      <point x="115.0" y="0.0">
       </point>
     </points>
     <line_color>
@@ -3123,7 +3123,7 @@ $(pv_value)</tooltip>
 Water Cooling</text>
       <x>10</x>
       <width>110</width>
-      <height>49</height>
+      <height>44</height>
       <horizontal_alignment>1</horizontal_alignment>
       <auto_size>true</auto_size>
     </widget>
@@ -3358,14 +3358,6 @@ $(pv_value)</tooltip>
       </color>
     </line_color>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_2</name>
-    <file>../../freia-symbols/display-builder/CmdPanels/2KpumpsAndGasBag.bob</file>
-    <x>1419</x>
-    <y>225</y>
-    <width>560</width>
-    <height>240</height>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_2</name>
     <x>850</x>
@@ -3393,7 +3385,7 @@ $(pv_value)</tooltip>
     <x>840</x>
     <y>380</y>
     <width>16</width>
-    <height>15</height>
+    <height>13</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -3567,7 +3559,7 @@ $(pv_value)</tooltip>
     <text>HNOSS</text>
     <x>1200</x>
     <width>31</width>
-    <height>15</height>
+    <height>13</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="10.0">
       </font>
@@ -3621,7 +3613,7 @@ $(pv_value)</tooltip>
     <x>690</x>
     <y>260</y>
     <width>24</width>
-    <height>18</height>
+    <height>16</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
@@ -5011,8 +5003,8 @@ according to pressure set-point</tooltip>
       <text>Current settings</text>
       <x>170</x>
       <y>70</y>
-      <width>126</width>
-      <height>26</height>
+      <width>125</width>
+      <height>24</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -5761,5 +5753,20 @@ $(pv_value)</tooltip>
     <y>20</y>
     <width>70</width>
     <precision>2</precision>
+  </widget>
+  <widget type="template" version="2.0.0">
+    <name>Template/Instance</name>
+    <x>1760</x>
+    <y>820</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <file>../../freia-symbols/display-builder/CmdPanels/2KpumpsAndGasBag.bob</file>
+    <x>1404</x>
+    <y>225</y>
+    <width>576</width>
+    <height>240</height>
   </widget>
 </display>
