@@ -197,7 +197,7 @@ internal PID controller (MKS2 "Regulator on").
       <S>VBox</S>
       <V>CV02</V>
     </macros>
-    <file>../Embedded/valve_w_PID.bob</file>
+    <file>../Embedded/valveCV1-2_w_PID.bob</file>
     <y>75</y>
     <width>740</width>
     <height>30</height>
@@ -208,7 +208,7 @@ internal PID controller (MKS2 "Regulator on").
       <S>VBox</S>
       <V>CV01</V>
     </macros>
-    <file>../Embedded/valve_w_PID.bob</file>
+    <file>../Embedded/valveCV1-2_w_PID.bob</file>
     <y>45</y>
     <width>740</width>
     <height>30</height>

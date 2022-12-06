@@ -126,8 +126,7 @@ TestEssProtoFreia_20220210 - KG, Added a support for reading PT03 directly from 
 			     start to use this parameter.
 TestEssProtoFreia_20220308 - KG, Added a support (not finished) for choosing the LHe level prbe to be used in the process control. Prepared Epics interface for it
 			     but haven't done any changes in the process control to use the new PV (CM_LT).
-TestEssProtoFreia_20220309 - KG, Completed support for choosing the LHe level prbe to be used in the process control. Prepared Epics interface for it
-			     but haven't done any changes in the process control to use the new PV (CM_LT).The selected probe is now used for all process control,
-			     not only PIDs
+TestEssProtoFreia_20221206 - KG, Made it possible to change the manual settings of CV01 and CV02 even if the valves are in Auto mode. The change is not possible when
+			     "CmdVanneEtatMEFhelium" flag is set (the first two seconds after transition to Helium cooling mode.
 
 			    

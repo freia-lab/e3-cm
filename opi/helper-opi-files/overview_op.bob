@@ -653,7 +653,7 @@ System</text>
       <macros>
         <V>CV02</V>
       </macros>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValveCV1-2-v-lr.bob</file>
       <x>70</x>
       <y>255</y>
       <width>55</width>
@@ -712,7 +712,7 @@ System</text>
       <macros>
         <V>CV01</V>
       </macros>
-      <file>../../freia-symbols/display-builder/CM-CtrlValve-v-lr.bob</file>
+      <file>../../freia-symbols/display-builder/CM-CtrlValveCV1-2-v-lr.bob</file>
       <x>199</x>
       <y>255</y>
       <width>55</width>
