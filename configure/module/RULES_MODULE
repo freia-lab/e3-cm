@@ -109,3 +109,9 @@ calibration-CM13: $(E3_MODULE_SRC_PATH)/calibrations/CM13/*.fic \
 		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
 	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM13
 	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
+.PHONY: calibration-CM14  ## Create CERNOX calibration data for CM14
+calibration-CM14: $(E3_MODULE_SRC_PATH)/calibrations/CM14/*.fic \
+		  $(E3_MODULE_SRC_PATH)/calibrations/*.fic \
+		  $(E3_MODULE_SRC_PATH)/tools/ficFileConv
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv CM14
+	cd $(E3_MODULE_SRC_PATH) && tools/ficFileConv
